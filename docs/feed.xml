@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Video Digest</title>
+    <link>https://amir-reza-azimi.github.io/matter-summaries/</link>
+    <atom:link href="https://amir-reza-azimi.github.io/matter-summaries/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Listenable summaries of AI YouTube videos, filtered for Amir's projects.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Jun 2026 07:27:01 +0000</lastBuildDate>
+
+  </channel>
+</rss>
