@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Battle Tested Sakana Fugu&#x27;s Fable Killer</title>
+<meta name="description" content="A hands-on test of multi-model orchestration (Sakana Fugu Ultra) vs Opus 4.8.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>I Battle Tested Sakana Fugu&#x27;s Fable Killer</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-06-23 &middot; <strong>Length:</strong> 12 min &middot; <a href="https://www.youtube.com/watch?v=GpSqBjW6hR4">Watch on YouTube</a></p>
+
+<p>Nate Herk stress-tests Sakana's Fugu Ultra, a model that went viral claiming to match frontier capability without export-control risk. He's upfront that this is partly a hype check. He starts impressed: a single slash-goal prompt in Claude Code, running on Fugu Ultra, built him a live YouTube analytics dashboard with refreshing data and AI analysis in about an hour.</p>
+<p>The key conceptual unlock is what Fugu actually is. It is not a new large language model that beats Fable or Opus. It's a multi-agent system delivered as one API: a small manager model trained to break a task down and route the pieces to a pool of frontier models — Opus, GPT, Gemini and others — then combine their outputs. He uses a conductor-and-specialists analogy: Claude for writing, GPT for coding and bug fixes, Gemini for research and facts. Its benchmark "wins" over Fable, GPT-5.5 and Opus 4.8 come from orchestrating those models, not from being smarter than any of them. He notes this is the same pattern you already use when Claude Code spins up Haiku, Sonnet, or Opus subagents — Fugu just makes the delegation automatic across providers. He also distinguishes it from Open Router's Fusion API, which fans the same prompt out to three models at once and has a judge merge the answers, rather than decomposing and delegating.</p>
+<p>Then the honest test. To avoid bias he had Codex generate 38 tasks across four waves — puzzles, traps, specs, and heavy algorithms — designed mostly as pass/fail for objectivity, then ran both Fugu Ultra and Opus 4.8 through them via API billing, with Codex grading the outputs blind. The result: 36 of 38 ended in a tie (Opus edged two). But Fugu was dramatically more expensive in time and money — 357 minutes of waiting versus 80 for Opus, and about $50 versus $10, roughly five times the cost and 4.5 times slower. Easy tasks Opus answered in six seconds took Fugu minutes. He also flags a practical quirk: routing through Fugu's server kept his Claude Code context window near zero across many turns, which is interesting but not worth the latency for him.</p>
+<h2>Standout point</h2>
+<p>His conclusion is measured and, honestly, the most useful part. For his knowledge work he won't use Fugu — same results, much slower and pricier — and he's clear Fable still felt noticeably better than Opus 4.8 to him whereas Fugu did not. But he thinks the orchestration idea is genuinely the future: not locking yourself to one provider, and understanding the unit economics well enough to pick the cheapest model that hits the quality bar for each task. He predicts that as more capable models arrive and likely get more expensive, being a master at optimizing that efficiency becomes a core skill. He does see real value in orchestration for heavy software teams working a shared codebase, where a GPT reviewer plus a Claude planner in one API could pay off.</p>
+<h2>Why this matters for my work</h2>
+<p>The transferable lesson isn't Fugu itself — it's the cost/quality/latency discipline. For any LLM feature in bi-data or a client build, the right instinct is to route each sub-task to the cheapest model that clears the bar rather than defaulting to the most powerful one, and to actually measure ties-versus-cost the way he did with a small blind test harness. So I could build a tiny "model bake-off" eval (Codex-style generated tasks, blind grading, cost and latency logged) as a reusable way to justify model choices to clients, and frame multi-model orchestration as a near-future capability for AI-native teams rather than something to adopt today.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=66">1:06</a> &mdash; What Fugu is: a manager model routing to Opus/GPT/Gemini via one API</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=180">3:00</a> &mdash; The benchmark claim: it wins by orchestrating, not by being a new LLM</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=294">4:54</a> &mdash; Conductor/specialist routing — same idea as Claude Code subagents</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=312">5:12</a> &mdash; Vs Open Router&#x27;s Fusion API (fan-out + judge merge)</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=420">7:00</a> &mdash; The blind test: Codex-generated 38 tasks</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=560">9:20</a> &mdash; Cost/latency: 357 min &amp; $50 (Fugu) vs 80 min &amp; $10 (Opus)</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=635">10:35</a> &mdash; Takeaway: orchestration is the future; cost/quality optimization is the skill</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=GpSqBjW6hR4">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

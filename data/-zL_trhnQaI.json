@@ -1,0 +1,53 @@
+{
+  "id": "-zL_trhnQaI",
+  "title": "So You Learned Claude, Now What?",
+  "channel": "Nate Herk | AI Automation",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=-zL_trhnQaI",
+  "published": "2026-06-22",
+  "duration_minutes": 17,
+  "description": "A positioning and four-step roadmap for AI consulting and the in-house 'AI person' role.",
+  "watch_list": [
+    {
+      "t": 45,
+      "label": "The skills underneath the tool matter, not the tool"
+    },
+    {
+      "t": 67,
+      "label": "The phases: automation -> agency -> agent builder -> agentic"
+    },
+    {
+      "t": 156,
+      "label": "The gap: ~88% use AI, only ~1/3 have real projects"
+    },
+    {
+      "t": 178,
+      "label": "Consultant = doctor, not pharmacist"
+    },
+    {
+      "t": 223,
+      "label": "Two roads: independent vs in-house AI consultant"
+    },
+    {
+      "t": 290,
+      "label": "In-house roles, six figures; 76% now have a CAIO-type role"
+    },
+    {
+      "t": 603,
+      "label": "AI-skill pay premium 21.5% -> 56% (PwC)"
+    },
+    {
+      "t": 714,
+      "label": "Operating principle: constraint first, KPI second, build third"
+    },
+    {
+      "t": 802,
+      "label": "The four steps: audit -> small projects -> patterns -> formalize"
+    },
+    {
+      "t": 894,
+      "label": "Case study: email dev to head of AI in a year"
+    }
+  ],
+  "summary_html": "\n<p>Nate Herk's thesis is that getting good at Claude, by itself, means almost nothing long-term, because the tools change constantly. What matters are the skills underneath the tool and your ability to reapply them to each new phase of AI. He sketches those phases — single automations, then the AI-agency era of done-for-you systems, then agent builders, and now the agentic phase (he cites Gartner projecting around $202B of agentic AI spend in 2026). Each shift opened a window for whoever moved early.</p>\n<p>The gap he keeps returning to is the opportunity. McKinsey found ~88% of organizations use AI somewhere, but only about a third have turned it into real projects: almost everyone is using AI, almost nobody is good at it. So the value is shifting from the person who builds to the person who decides what to build, why, and whether it worked — the AI consultant. His framing is a doctor versus a pharmacist: a pharmacist hands you what you ask for; a doctor figures out what you actually need. Builders are pharmacists, consultants are doctors, and the doctor gets paid because clients only know what hurts, not what they need. He backs it with market size (AI consulting projected past $64B by 2028) and the fact that roughly 30% of company AI projects get abandoned and only ~6% of AI-using companies are actually good at it — and they know it.</p>\n<p>He splits the role into two roads. Road one is the independent AI consultant: go into businesses, diagnose problems, prescribe and build the fix — framed as a long-term partner selling solutions, not a scrappy automation shop selling automations. Road two, the one he wants to talk about more, is the in-house AI consultant: become the go-to AI person inside one company, possibly the one you already work at. Companies are creating chief-AI-officer and director-of-AI roles in the low-to-mid six figures; he cites IBM finding 76% of (large) organizations now have a CAIO-type role, up from 26% two years ago — while honestly caveating that those are giant enterprises and the mid-market is still wide open. For employees who just want to level up, becoming the company's AI person protects your job and acts like a raise: PwC found the AI-skill pay premium more than doubled in a year, from 21.5% to 56%.</p>\n<h2>The roadmap</h2>\n<p>The operating principle that makes it work: constraint first, KPI second, build third. The wrong move is hunting for repetitive tasks to automate — you can spend a week saving twenty minutes nobody was waiting on. The right move is to target an actual business constraint (something that, if fixed, makes the business faster or makes or stops losing money) and attach a specific KPI before you build. That's also how you communicate value nobody else does: not \"I built an AI agent,\" but \"I built an agent that moved this number by this much for this business.\"</p>\n<p>The four steps: one, audit your own role through the constraint lens and, for each item, write the number you'd move. Two, take on a small project — scope and build one fix, implement it in one corner of the business, and prove it works; that result is your first case study. Three, become an expert at solving problems, not just building, by doing enough small builds that you start to see the recurring patterns across businesses. Four, formalize it — take the evidence to leadership and propose the role yourself, because most of these jobs aren't posted, you create them from the inside.</p>\n<h2>Standout point</h2>\n<p>He argues the \"AI consultant\" label has an expiration date — like \"Excel accountant\" or \"internet marketer,\" it'll soon just be \"consultant\" because every consultant will be AI-native. The edge is real now but the window won't stay this wide. He closes with a case study: Alana, a 15-year email developer with no AI background, learned n8n and Claude Code, built in public on two YouTube channels and LinkedIn, and when she applied for a head-of-AI role the recruiter's one question was \"what have you built?\" — she sent links and proof, skipped HR, went straight to the CEO, and got the job within a year.</p>\n<h2>Why this matters for my work</h2>\n<p>This is almost a manifesto for my consultancy and the course. The doctor-not-pharmacist framing and the \"constraint first, KPI second, build third\" rule are exactly the positioning and method I teach for making commercial departments AI-native — and they're a sharper way to scope engagements so I'm selling diagnosed outcomes, not automations. So I could lift the four-step roadmap (audit -> small project -> pattern recognition -> formalize) into a course module and a client onboarding worksheet, and use the in-house-AI-person path as a concrete offer for clients who want to grow the capability internally rather than outsource it.</p>\n"
+}

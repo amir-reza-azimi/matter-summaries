@@ -9,7 +9,142 @@
     <atom:link href="https://amir-reza-azimi.github.io/matter-summaries/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Listenable summaries of AI YouTube videos, filtered for Amir's projects.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Jun 2026 07:27:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 09:14:18 +0000</lastBuildDate>
+    <item>
+      <title>I Battle Tested Sakana Fugu&#x27;s Fable Killer</title>
+      <link>https://www.youtube.com/watch?v=GpSqBjW6hR4</link>
+      <guid isPermaLink="false">yt-GpSqBjW6hR4</guid>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Nate Herk | AI Automation</dc:creator>
+      <description>A hands-on test of multi-model orchestration (Sakana Fugu Ultra) vs Opus 4.8.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-06-23 &middot; <strong>Length:</strong> 12 min &middot; <a href="https://www.youtube.com/watch?v=GpSqBjW6hR4">Watch on YouTube</a></p>
 
+<p>Nate Herk stress-tests Sakana's Fugu Ultra, a model that went viral claiming to match frontier capability without export-control risk. He's upfront that this is partly a hype check. He starts impressed: a single slash-goal prompt in Claude Code, running on Fugu Ultra, built him a live YouTube analytics dashboard with refreshing data and AI analysis in about an hour.</p>
+<p>The key conceptual unlock is what Fugu actually is. It is not a new large language model that beats Fable or Opus. It's a multi-agent system delivered as one API: a small manager model trained to break a task down and route the pieces to a pool of frontier models — Opus, GPT, Gemini and others — then combine their outputs. He uses a conductor-and-specialists analogy: Claude for writing, GPT for coding and bug fixes, Gemini for research and facts. Its benchmark "wins" over Fable, GPT-5.5 and Opus 4.8 come from orchestrating those models, not from being smarter than any of them. He notes this is the same pattern you already use when Claude Code spins up Haiku, Sonnet, or Opus subagents — Fugu just makes the delegation automatic across providers. He also distinguishes it from Open Router's Fusion API, which fans the same prompt out to three models at once and has a judge merge the answers, rather than decomposing and delegating.</p>
+<p>Then the honest test. To avoid bias he had Codex generate 38 tasks across four waves — puzzles, traps, specs, and heavy algorithms — designed mostly as pass/fail for objectivity, then ran both Fugu Ultra and Opus 4.8 through them via API billing, with Codex grading the outputs blind. The result: 36 of 38 ended in a tie (Opus edged two). But Fugu was dramatically more expensive in time and money — 357 minutes of waiting versus 80 for Opus, and about $50 versus $10, roughly five times the cost and 4.5 times slower. Easy tasks Opus answered in six seconds took Fugu minutes. He also flags a practical quirk: routing through Fugu's server kept his Claude Code context window near zero across many turns, which is interesting but not worth the latency for him.</p>
+<h2>Standout point</h2>
+<p>His conclusion is measured and, honestly, the most useful part. For his knowledge work he won't use Fugu — same results, much slower and pricier — and he's clear Fable still felt noticeably better than Opus 4.8 to him whereas Fugu did not. But he thinks the orchestration idea is genuinely the future: not locking yourself to one provider, and understanding the unit economics well enough to pick the cheapest model that hits the quality bar for each task. He predicts that as more capable models arrive and likely get more expensive, being a master at optimizing that efficiency becomes a core skill. He does see real value in orchestration for heavy software teams working a shared codebase, where a GPT reviewer plus a Claude planner in one API could pay off.</p>
+<h2>Why this matters for my work</h2>
+<p>The transferable lesson isn't Fugu itself — it's the cost/quality/latency discipline. For any LLM feature in bi-data or a client build, the right instinct is to route each sub-task to the cheapest model that clears the bar rather than defaulting to the most powerful one, and to actually measure ties-versus-cost the way he did with a small blind test harness. So I could build a tiny "model bake-off" eval (Codex-style generated tasks, blind grading, cost and latency logged) as a reusable way to justify model choices to clients, and frame multi-model orchestration as a near-future capability for AI-native teams rather than something to adopt today.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=66">1:06</a> &mdash; What Fugu is: a manager model routing to Opus/GPT/Gemini via one API</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=180">3:00</a> &mdash; The benchmark claim: it wins by orchestrating, not by being a new LLM</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=294">4:54</a> &mdash; Conductor/specialist routing — same idea as Claude Code subagents</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=312">5:12</a> &mdash; Vs Open Router&#x27;s Fusion API (fan-out + judge merge)</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=420">7:00</a> &mdash; The blind test: Codex-generated 38 tasks</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=560">9:20</a> &mdash; Cost/latency: 357 min &amp; $50 (Fugu) vs 80 min &amp; $10 (Opus)</li>
+<li><a href="https://youtu.be/GpSqBjW6hR4?t=635">10:35</a> &mdash; Takeaway: orchestration is the future; cost/quality optimization is the skill</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=GpSqBjW6hR4">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>So You Learned Claude, Now What?</title>
+      <link>https://www.youtube.com/watch?v=-zL_trhnQaI</link>
+      <guid isPermaLink="false">yt--zL_trhnQaI</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Nate Herk | AI Automation</dc:creator>
+      <description>A positioning and four-step roadmap for AI consulting and the in-house &#x27;AI person&#x27; role.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-06-22 &middot; <strong>Length:</strong> 17 min &middot; <a href="https://www.youtube.com/watch?v=-zL_trhnQaI">Watch on YouTube</a></p>
+
+<p>Nate Herk's thesis is that getting good at Claude, by itself, means almost nothing long-term, because the tools change constantly. What matters are the skills underneath the tool and your ability to reapply them to each new phase of AI. He sketches those phases — single automations, then the AI-agency era of done-for-you systems, then agent builders, and now the agentic phase (he cites Gartner projecting around $202B of agentic AI spend in 2026). Each shift opened a window for whoever moved early.</p>
+<p>The gap he keeps returning to is the opportunity. McKinsey found ~88% of organizations use AI somewhere, but only about a third have turned it into real projects: almost everyone is using AI, almost nobody is good at it. So the value is shifting from the person who builds to the person who decides what to build, why, and whether it worked — the AI consultant. His framing is a doctor versus a pharmacist: a pharmacist hands you what you ask for; a doctor figures out what you actually need. Builders are pharmacists, consultants are doctors, and the doctor gets paid because clients only know what hurts, not what they need. He backs it with market size (AI consulting projected past $64B by 2028) and the fact that roughly 30% of company AI projects get abandoned and only ~6% of AI-using companies are actually good at it — and they know it.</p>
+<p>He splits the role into two roads. Road one is the independent AI consultant: go into businesses, diagnose problems, prescribe and build the fix — framed as a long-term partner selling solutions, not a scrappy automation shop selling automations. Road two, the one he wants to talk about more, is the in-house AI consultant: become the go-to AI person inside one company, possibly the one you already work at. Companies are creating chief-AI-officer and director-of-AI roles in the low-to-mid six figures; he cites IBM finding 76% of (large) organizations now have a CAIO-type role, up from 26% two years ago — while honestly caveating that those are giant enterprises and the mid-market is still wide open. For employees who just want to level up, becoming the company's AI person protects your job and acts like a raise: PwC found the AI-skill pay premium more than doubled in a year, from 21.5% to 56%.</p>
+<h2>The roadmap</h2>
+<p>The operating principle that makes it work: constraint first, KPI second, build third. The wrong move is hunting for repetitive tasks to automate — you can spend a week saving twenty minutes nobody was waiting on. The right move is to target an actual business constraint (something that, if fixed, makes the business faster or makes or stops losing money) and attach a specific KPI before you build. That's also how you communicate value nobody else does: not "I built an AI agent," but "I built an agent that moved this number by this much for this business."</p>
+<p>The four steps: one, audit your own role through the constraint lens and, for each item, write the number you'd move. Two, take on a small project — scope and build one fix, implement it in one corner of the business, and prove it works; that result is your first case study. Three, become an expert at solving problems, not just building, by doing enough small builds that you start to see the recurring patterns across businesses. Four, formalize it — take the evidence to leadership and propose the role yourself, because most of these jobs aren't posted, you create them from the inside.</p>
+<h2>Standout point</h2>
+<p>He argues the "AI consultant" label has an expiration date — like "Excel accountant" or "internet marketer," it'll soon just be "consultant" because every consultant will be AI-native. The edge is real now but the window won't stay this wide. He closes with a case study: Alana, a 15-year email developer with no AI background, learned n8n and Claude Code, built in public on two YouTube channels and LinkedIn, and when she applied for a head-of-AI role the recruiter's one question was "what have you built?" — she sent links and proof, skipped HR, went straight to the CEO, and got the job within a year.</p>
+<h2>Why this matters for my work</h2>
+<p>This is almost a manifesto for my consultancy and the course. The doctor-not-pharmacist framing and the "constraint first, KPI second, build third" rule are exactly the positioning and method I teach for making commercial departments AI-native — and they're a sharper way to scope engagements so I'm selling diagnosed outcomes, not automations. So I could lift the four-step roadmap (audit -> small project -> pattern recognition -> formalize) into a course module and a client onboarding worksheet, and use the in-house-AI-person path as a concrete offer for clients who want to grow the capability internally rather than outsource it.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=45">0:45</a> &mdash; The skills underneath the tool matter, not the tool</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=67">1:07</a> &mdash; The phases: automation -&gt; agency -&gt; agent builder -&gt; agentic</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=156">2:36</a> &mdash; The gap: ~88% use AI, only ~1/3 have real projects</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=178">2:58</a> &mdash; Consultant = doctor, not pharmacist</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=223">3:43</a> &mdash; Two roads: independent vs in-house AI consultant</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=290">4:50</a> &mdash; In-house roles, six figures; 76% now have a CAIO-type role</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=603">10:03</a> &mdash; AI-skill pay premium 21.5% -&gt; 56% (PwC)</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=714">11:54</a> &mdash; Operating principle: constraint first, KPI second, build third</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=802">13:22</a> &mdash; The four steps: audit -&gt; small projects -&gt; patterns -&gt; formalize</li>
+<li><a href="https://youtu.be/-zL_trhnQaI?t=894">14:54</a> &mdash; Case study: email dev to head of AI in a year</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=-zL_trhnQaI">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Claude Code Has Become DANGEROUS</title>
+      <link>https://www.youtube.com/watch?v=ARJMA4kvWWg</link>
+      <guid isPermaLink="false">yt-ARJMA4kvWWg</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Simon Scrapes</dc:creator>
+      <description>A build-vs-buy framework for Claude-Code-built tools, with two real examples.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-20 &middot; <strong>Length:</strong> 10 min &middot; <a href="https://www.youtube.com/watch?v=ARJMA4kvWWg">Watch on YouTube</a></p>
+
+<p>Simon Scrapes opens with the shift that's quietly happened in his business: when he hits an annoying problem he'd normally buy a SaaS tool for, he now often spends a day or a week building exactly what he needs in Claude Code instead. The provocative claim isn't that you should rebuild everything — it's the opposite. The hardest, most valuable skill now is no longer writing the software. It's deciding which problems are actually worth solving yourself.</p>
+<p>He starts with the trap. Just because you can build something doesn't mean you should. He's watched people try to rebuild entire platforms — someone rebuilding a whole GoHighLevel-style CRM inside Claude Code — sinking hundreds of hours into something that already exists, works well, and costs less per month than the time you'll burn maintaining your version. The real decision is a trade: a monthly subscription versus your own time to build and, crucially, to maintain.</p>
+<p>His rule for when to build is tight. Build it yourself only if one of two things is true. First and most important: it's core to your own product and the value you deliver to customers. Second: nothing off the shelf actually solves your specific problem, or the limitations of existing tools are a genuine dealbreaker for how you work. If neither is true, buy the tool — he's emphatic that the maintenance burden will make you regret building just to save fifty or a hundred dollars a month.</p>
+<p>He then walks through two builds that passed the test. The first is a content studio, born from a real bottleneck: he wasn't staying consistent on social because he refused to post carousels and infographics that looked half-done or obviously AI-generated. The problem with AI image generation for multi-layer assets is that you get to ninety percent, then one word is misspelled or one element is misplaced and you can't fix it without regenerating the whole thing. His solution broke the problem into phases: generate visual style templates from inspiration posts, use those templates to keep image generation consistent across slides, then — the part he couldn't get elsewhere — use APIs that turn flat outputs into proper layered files where every element is individually editable, so he can re-prompt one layer cheaply, then auto-post through an API. He's candid that it took well over a week, justified only because it's core to his brand.</p>
+<p>The second build came straight out of a Claude Code limitation: its out-of-the-box memory is, in his words, terribly bad. Decisions, context, and prior work get forgotten, which becomes a tax on every session and a dealbreaker once you're running real clients across months. Instead of reinventing, he cherry-picked the best parts of the best open-source memory systems — sourced from YouTube comments, his community, and research — and reassembled them to fit business owners. The four capabilities he wanted: cited sources (it tells you the conversation, the words, and the date, and admits when it doesn't know), recent context kept in fast short-term memory, long-term search by meaning (ask about "payment processing" and it surfaces "Stripe" even with no shared keywords), and scoped access across a team so every memory is tagged by owner and every query filtered by who's asking.</p>
+<h2>Standout point</h2>
+<p>The throughline of both builds is identical and worth internalizing: define the criteria before you start, break the problem into its root-cause phases, and make the build-versus-buy decision <em>per phase</em> — combining off-the-shelf pieces with the small slice you genuinely need to own. Keep the scope deliberately small so maintenance doesn't eat you alive; he explicitly would not rebuild a twenty-feature CRM, only the narrow workflow he needs.</p>
+<h2>Why this matters for my work</h2>
+<p>This is a clean, repeatable decision framework for the AI consultancy and the course: clients constantly ask "should we build this with AI or buy a tool?" and the core-value-plus-no-good-alternative test, applied phase by phase, is a crisp way to answer. The phased "combine APIs for the 90%, build only the missing 10%" pattern is exactly how to scope client builds without creating maintenance debt — so I could turn this into a one-page build-vs-buy diagnostic for AI-native commercial teams, and reuse the content-studio architecture for my own posting pipeline.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=46">0:46</a> &mdash; The trap: just because you can build it doesn&#x27;t mean you should</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=91">1:31</a> &mdash; The two criteria for building it yourself</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=136">2:16</a> &mdash; Example 1 — the branded content studio</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=251">4:11</a> &mdash; Phased build: templates -&gt; image gen -&gt; layered files -&gt; auto-post</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=342">5:42</a> &mdash; Example 2 — rebuilding Claude Code&#x27;s memory</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=521">8:41</a> &mdash; The repeatable framework recap</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=ARJMA4kvWWg">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Claude Code Agentic OS… It Remembers Everything</title>
+      <link>https://www.youtube.com/watch?v=F4At4St1iH8</link>
+      <guid isPermaLink="false">yt-F4At4St1iH8</guid>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Simon Scrapes</dc:creator>
+      <description>A concrete architecture for durable, cited, team-scoped Claude Code memory.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-19 &middot; <strong>Length:</strong> 15 min &middot; <a href="https://www.youtube.com/watch?v=F4At4St1iH8">Watch on YouTube</a></p>
+
+<p>This is the deeper companion to Simon's build-vs-buy video, and it's the blueprint for a serious Claude Code memory system. His premise: for a tool this capable, Claude Code's default memory is embarrassingly bad — it forgets decisions, context, and prior work, which becomes a tax on every session. Over months he tore apart the best open-source memory projects (Hermes, GBrain, memarch and others) to see what each does well, then rebuilt the best parts into his own agent operating system.</p>
+<p>He defines "perfect memory" for a business as four distinct capabilities, each borrowed from the project that nailed it. One: it cites its sources — not just a file, but the actual conversation context, the words used, and the date agreed, and it says so when it doesn't know rather than fabricating. This recall-with-citation approach he credits to GBrain (the project Gary Tan built). Two: quick recall of recent context, where today's pricing, active clients, and current decisions sit close to every session. The trick is a small, curated snapshot injected silently at session start via a hook — and capped, so it doesn't bloat context and cause "context rot." He recognizes this as Hermes's frozen-snapshot pattern. Three: long-term search by meaning, so something agreed six months ago surfaces because you asked about something similar, not because you matched exact words. That's semantic search over chunked, vectorized conversations, paired with hybrid keyword search — heavily used by memarch. Four: scoped access across clients and team, where one shared brain tags every memory by owner and filters every query by who's asking — again the GBrain "company brain" idea.</p>
+<p>Before showing his implementation, he diagnoses why Claude Code fails at all three fundamental jobs. Storage: its automemory only saves the odd thing it decides matters — in a repo he'd run for months, the memory index held a single record. Injection: at session start it loads little beyond CLAUDE.md, so there's no curated snapshot of what matters about the business. Recall: there's essentially no search — it can only crawl the thin automemory file or trawl token-heavy session history by keyword, so "what did we agree with that client six months ago?" reliably returns nothing.</p>
+<p>He then makes the architecture decisions explicit as a decision tree. Do you need word-for-word recall (tools like claude-mem) or is summarized-with-key-snippets fine (memarch, OpenClaw patterns)? At session start, inject none, some, or all context — he strongly recommends "some," the Hermes frozen snapshot of soul, user, memory, and today's work, never stuffing thousands of lines. How thorough must recall be — keyword (Hermes default) or semantic-plus-keyword hybrid (memarch)? And how is the answer delivered — raw vector chunks, or a reranked, synthesized, cited answer (the GBrain layer that also admits gaps)?</p>
+<h2>How he actually built it</h2>
+<p>He replaced memarch's store with a locally hosted PGLite plus pgvector, for three reasons: no external dependencies (runs locally), it installs on Windows (memarch was painful there), and — the big one — it lets him scope memory per user. For teams he moves that to a Railway-hosted Postgres with row-level security, so access is scoped by system, team, client, and private. End to end: after every turn a stop hook judges whether something is a durable fact (a decision, a price change, a preference) and promotes it into a capped short-term memory.md, deduping against what's there; everything is also chunked, embedded, and filed long-term regardless. Retrieval is three-tier — read short-term context first, then vector-plus-keyword search, then rerank the top results and return a synthesized answer that cites the file, line, and date, and confirms nothing newer contradicts it.</p>
+<h2>Standout point</h2>
+<p>Two details elevate this above a typical RAG setup. First, a backfill step converts your entire existing session history into long-term and short-term memories, so the day you install it you start with everything you've ever told Claude already remembered and searchable — not from zero. Second, the team layer lets non-technical members edit source-of-truth files (brand context, CLAUDE.md) in Notion or Google Drive while Claude Code owns skills and memory, all version-controlled in GitHub.</p>
+<h2>Why this matters for my work</h2>
+<p>I already run a file-based memory system, so this is directly comparable: the citation layer (file + line + date, with honest "I don't know") and the capped frozen-snapshot injection are upgrades I could adopt immediately to make recall trustworthy. The per-user row-level-security model is the missing piece for ever offering a shared "company brain" to a client or to the course community — so I could prototype a scoped Postgres memory for an AI-native commercial team, and the backfill idea means existing client context isn't wasted on day one.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/F4At4St1iH8?t=44">0:44</a> &mdash; The four pillars of &#x27;perfect memory&#x27;</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=68">1:08</a> &mdash; Cite sources (from GBrain) — and admit when it doesn&#x27;t know</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=95">1:35</a> &mdash; Frozen-snapshot injection (Hermes), capped against context rot</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=135">2:15</a> &mdash; Semantic long-term search (memarch)</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=204">3:24</a> &mdash; Team-scoped access: tagged by owner, filtered by asker</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=409">6:49</a> &mdash; Why Claude Code is weak at storage/injection/recall</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=554">9:14</a> &mdash; Local PGLite + pgvector, per-user scoping via Railway Postgres RLS</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=705">11:45</a> &mdash; Three-tier retrieval with rerank + cited synthesis</li>
+<li><a href="https://youtu.be/F4At4St1iH8?t=775">12:55</a> &mdash; Backfill old sessions into memory from day one</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=F4At4St1iH8">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
   </channel>
 </rss>

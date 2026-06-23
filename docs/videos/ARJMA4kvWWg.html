@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Has Become DANGEROUS</title>
+<meta name="description" content="A build-vs-buy framework for Claude-Code-built tools, with two real examples.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Claude Code Has Become DANGEROUS</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-20 &middot; <strong>Length:</strong> 10 min &middot; <a href="https://www.youtube.com/watch?v=ARJMA4kvWWg">Watch on YouTube</a></p>
+
+<p>Simon Scrapes opens with the shift that's quietly happened in his business: when he hits an annoying problem he'd normally buy a SaaS tool for, he now often spends a day or a week building exactly what he needs in Claude Code instead. The provocative claim isn't that you should rebuild everything — it's the opposite. The hardest, most valuable skill now is no longer writing the software. It's deciding which problems are actually worth solving yourself.</p>
+<p>He starts with the trap. Just because you can build something doesn't mean you should. He's watched people try to rebuild entire platforms — someone rebuilding a whole GoHighLevel-style CRM inside Claude Code — sinking hundreds of hours into something that already exists, works well, and costs less per month than the time you'll burn maintaining your version. The real decision is a trade: a monthly subscription versus your own time to build and, crucially, to maintain.</p>
+<p>His rule for when to build is tight. Build it yourself only if one of two things is true. First and most important: it's core to your own product and the value you deliver to customers. Second: nothing off the shelf actually solves your specific problem, or the limitations of existing tools are a genuine dealbreaker for how you work. If neither is true, buy the tool — he's emphatic that the maintenance burden will make you regret building just to save fifty or a hundred dollars a month.</p>
+<p>He then walks through two builds that passed the test. The first is a content studio, born from a real bottleneck: he wasn't staying consistent on social because he refused to post carousels and infographics that looked half-done or obviously AI-generated. The problem with AI image generation for multi-layer assets is that you get to ninety percent, then one word is misspelled or one element is misplaced and you can't fix it without regenerating the whole thing. His solution broke the problem into phases: generate visual style templates from inspiration posts, use those templates to keep image generation consistent across slides, then — the part he couldn't get elsewhere — use APIs that turn flat outputs into proper layered files where every element is individually editable, so he can re-prompt one layer cheaply, then auto-post through an API. He's candid that it took well over a week, justified only because it's core to his brand.</p>
+<p>The second build came straight out of a Claude Code limitation: its out-of-the-box memory is, in his words, terribly bad. Decisions, context, and prior work get forgotten, which becomes a tax on every session and a dealbreaker once you're running real clients across months. Instead of reinventing, he cherry-picked the best parts of the best open-source memory systems — sourced from YouTube comments, his community, and research — and reassembled them to fit business owners. The four capabilities he wanted: cited sources (it tells you the conversation, the words, and the date, and admits when it doesn't know), recent context kept in fast short-term memory, long-term search by meaning (ask about "payment processing" and it surfaces "Stripe" even with no shared keywords), and scoped access across a team so every memory is tagged by owner and every query filtered by who's asking.</p>
+<h2>Standout point</h2>
+<p>The throughline of both builds is identical and worth internalizing: define the criteria before you start, break the problem into its root-cause phases, and make the build-versus-buy decision <em>per phase</em> — combining off-the-shelf pieces with the small slice you genuinely need to own. Keep the scope deliberately small so maintenance doesn't eat you alive; he explicitly would not rebuild a twenty-feature CRM, only the narrow workflow he needs.</p>
+<h2>Why this matters for my work</h2>
+<p>This is a clean, repeatable decision framework for the AI consultancy and the course: clients constantly ask "should we build this with AI or buy a tool?" and the core-value-plus-no-good-alternative test, applied phase by phase, is a crisp way to answer. The phased "combine APIs for the 90%, build only the missing 10%" pattern is exactly how to scope client builds without creating maintenance debt — so I could turn this into a one-page build-vs-buy diagnostic for AI-native commercial teams, and reuse the content-studio architecture for my own posting pipeline.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=46">0:46</a> &mdash; The trap: just because you can build it doesn&#x27;t mean you should</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=91">1:31</a> &mdash; The two criteria for building it yourself</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=136">2:16</a> &mdash; Example 1 — the branded content studio</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=251">4:11</a> &mdash; Phased build: templates -&gt; image gen -&gt; layered files -&gt; auto-post</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=342">5:42</a> &mdash; Example 2 — rebuilding Claude Code&#x27;s memory</li>
+<li><a href="https://youtu.be/ARJMA4kvWWg?t=521">8:41</a> &mdash; The repeatable framework recap</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=ARJMA4kvWWg">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "id": "F4At4St1iH8",
+  "title": "Claude Code Agentic OS… It Remembers Everything",
+  "channel": "Simon Scrapes",
+  "channel_url": "https://www.youtube.com/@simonscrapes",
+  "url": "https://www.youtube.com/watch?v=F4At4St1iH8",
+  "published": "2026-06-19",
+  "duration_minutes": 15,
+  "description": "A concrete architecture for durable, cited, team-scoped Claude Code memory.",
+  "watch_list": [
+    {
+      "t": 44,
+      "label": "The four pillars of 'perfect memory'"
+    },
+    {
+      "t": 68,
+      "label": "Cite sources (from GBrain) — and admit when it doesn't know"
+    },
+    {
+      "t": 95,
+      "label": "Frozen-snapshot injection (Hermes), capped against context rot"
+    },
+    {
+      "t": 135,
+      "label": "Semantic long-term search (memarch)"
+    },
+    {
+      "t": 204,
+      "label": "Team-scoped access: tagged by owner, filtered by asker"
+    },
+    {
+      "t": 409,
+      "label": "Why Claude Code is weak at storage/injection/recall"
+    },
+    {
+      "t": 554,
+      "label": "Local PGLite + pgvector, per-user scoping via Railway Postgres RLS"
+    },
+    {
+      "t": 705,
+      "label": "Three-tier retrieval with rerank + cited synthesis"
+    },
+    {
+      "t": 775,
+      "label": "Backfill old sessions into memory from day one"
+    }
+  ],
+  "summary_html": "\n<p>This is the deeper companion to Simon's build-vs-buy video, and it's the blueprint for a serious Claude Code memory system. His premise: for a tool this capable, Claude Code's default memory is embarrassingly bad — it forgets decisions, context, and prior work, which becomes a tax on every session. Over months he tore apart the best open-source memory projects (Hermes, GBrain, memarch and others) to see what each does well, then rebuilt the best parts into his own agent operating system.</p>\n<p>He defines \"perfect memory\" for a business as four distinct capabilities, each borrowed from the project that nailed it. One: it cites its sources — not just a file, but the actual conversation context, the words used, and the date agreed, and it says so when it doesn't know rather than fabricating. This recall-with-citation approach he credits to GBrain (the project Gary Tan built). Two: quick recall of recent context, where today's pricing, active clients, and current decisions sit close to every session. The trick is a small, curated snapshot injected silently at session start via a hook — and capped, so it doesn't bloat context and cause \"context rot.\" He recognizes this as Hermes's frozen-snapshot pattern. Three: long-term search by meaning, so something agreed six months ago surfaces because you asked about something similar, not because you matched exact words. That's semantic search over chunked, vectorized conversations, paired with hybrid keyword search — heavily used by memarch. Four: scoped access across clients and team, where one shared brain tags every memory by owner and filters every query by who's asking — again the GBrain \"company brain\" idea.</p>\n<p>Before showing his implementation, he diagnoses why Claude Code fails at all three fundamental jobs. Storage: its automemory only saves the odd thing it decides matters — in a repo he'd run for months, the memory index held a single record. Injection: at session start it loads little beyond CLAUDE.md, so there's no curated snapshot of what matters about the business. Recall: there's essentially no search — it can only crawl the thin automemory file or trawl token-heavy session history by keyword, so \"what did we agree with that client six months ago?\" reliably returns nothing.</p>\n<p>He then makes the architecture decisions explicit as a decision tree. Do you need word-for-word recall (tools like claude-mem) or is summarized-with-key-snippets fine (memarch, OpenClaw patterns)? At session start, inject none, some, or all context — he strongly recommends \"some,\" the Hermes frozen snapshot of soul, user, memory, and today's work, never stuffing thousands of lines. How thorough must recall be — keyword (Hermes default) or semantic-plus-keyword hybrid (memarch)? And how is the answer delivered — raw vector chunks, or a reranked, synthesized, cited answer (the GBrain layer that also admits gaps)?</p>\n<h2>How he actually built it</h2>\n<p>He replaced memarch's store with a locally hosted PGLite plus pgvector, for three reasons: no external dependencies (runs locally), it installs on Windows (memarch was painful there), and — the big one — it lets him scope memory per user. For teams he moves that to a Railway-hosted Postgres with row-level security, so access is scoped by system, team, client, and private. End to end: after every turn a stop hook judges whether something is a durable fact (a decision, a price change, a preference) and promotes it into a capped short-term memory.md, deduping against what's there; everything is also chunked, embedded, and filed long-term regardless. Retrieval is three-tier — read short-term context first, then vector-plus-keyword search, then rerank the top results and return a synthesized answer that cites the file, line, and date, and confirms nothing newer contradicts it.</p>\n<h2>Standout point</h2>\n<p>Two details elevate this above a typical RAG setup. First, a backfill step converts your entire existing session history into long-term and short-term memories, so the day you install it you start with everything you've ever told Claude already remembered and searchable — not from zero. Second, the team layer lets non-technical members edit source-of-truth files (brand context, CLAUDE.md) in Notion or Google Drive while Claude Code owns skills and memory, all version-controlled in GitHub.</p>\n<h2>Why this matters for my work</h2>\n<p>I already run a file-based memory system, so this is directly comparable: the citation layer (file + line + date, with honest \"I don't know\") and the capped frozen-snapshot injection are upgrades I could adopt immediately to make recall trustworthy. The per-user row-level-security model is the missing piece for ever offering a shared \"company brain\" to a client or to the course community — so I could prototype a scoped Postgres memory for an AI-native commercial team, and the backfill idea means existing client context isn't wasted on day one.</p>\n"
+}
