@@ -140,10 +140,14 @@ def build_feed(records):
     items = []
     for rec in records:
         content = article_inner_html(rec)
+        # Link to our own hosted summary page, NOT the YouTube URL. If the link is a
+        # YouTube URL, Matter treats the item as a video and parses YouTube's own page
+        # (ignoring our summary). Pointing at our page makes Matter render the summary.
+        page_url = f'{SITE_BASE}/videos/{rec["id"]}.html'
         items.append(f"""    <item>
       <title>{esc(rec["title"])}</title>
-      <link>{esc(rec["url"])}</link>
-      <guid isPermaLink="false">yt-{esc(rec["id"])}</guid>
+      <link>{page_url}</link>
+      <guid isPermaLink="true">{page_url}</guid>
       <pubDate>{rfc822(rec.get("published"))}</pubDate>
       <dc:creator>{esc(rec.get("channel", ""))}</dc:creator>
       <description>{esc(rec.get("description", ""))}</description>

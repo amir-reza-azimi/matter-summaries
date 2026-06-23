@@ -9,11 +9,11 @@
     <atom:link href="https://amir-reza-azimi.github.io/matter-summaries/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Listenable summaries of AI YouTube videos, filtered for Amir's projects.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jun 2026 09:14:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 09:28:08 +0000</lastBuildDate>
     <item>
       <title>I Battle Tested Sakana Fugu&#x27;s Fable Killer</title>
-      <link>https://www.youtube.com/watch?v=GpSqBjW6hR4</link>
-      <guid isPermaLink="false">yt-GpSqBjW6hR4</guid>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/GpSqBjW6hR4.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/GpSqBjW6hR4.html</guid>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
       <dc:creator>Nate Herk | AI Automation</dc:creator>
       <description>A hands-on test of multi-model orchestration (Sakana Fugu Ultra) vs Opus 4.8.</description>
@@ -43,8 +43,8 @@
     </item>
     <item>
       <title>So You Learned Claude, Now What?</title>
-      <link>https://www.youtube.com/watch?v=-zL_trhnQaI</link>
-      <guid isPermaLink="false">yt--zL_trhnQaI</guid>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/-zL_trhnQaI.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/-zL_trhnQaI.html</guid>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
       <dc:creator>Nate Herk | AI Automation</dc:creator>
       <description>A positioning and four-step roadmap for AI consulting and the in-house &#x27;AI person&#x27; role.</description>
@@ -80,8 +80,8 @@
     </item>
     <item>
       <title>Claude Code Has Become DANGEROUS</title>
-      <link>https://www.youtube.com/watch?v=ARJMA4kvWWg</link>
-      <guid isPermaLink="false">yt-ARJMA4kvWWg</guid>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/ARJMA4kvWWg.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/ARJMA4kvWWg.html</guid>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
       <dc:creator>Simon Scrapes</dc:creator>
       <description>A build-vs-buy framework for Claude-Code-built tools, with two real examples.</description>
@@ -112,8 +112,8 @@
     </item>
     <item>
       <title>Claude Code Agentic OS… It Remembers Everything</title>
-      <link>https://www.youtube.com/watch?v=F4At4St1iH8</link>
-      <guid isPermaLink="false">yt-F4At4St1iH8</guid>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/F4At4St1iH8.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/F4At4St1iH8.html</guid>
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <dc:creator>Simon Scrapes</dc:creator>
       <description>A concrete architecture for durable, cited, team-scoped Claude Code memory.</description>
