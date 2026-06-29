@@ -1,0 +1,45 @@
+{
+  "id": "CBcyKfpldTo",
+  "title": "Watch This If You're Serious About Claude Code (Most People Skip This Step)",
+  "channel": "Simon Scrapes",
+  "channel_url": "https://www.youtube.com/@simonscrapes",
+  "url": "https://www.youtube.com/watch?v=CBcyKfpldTo",
+  "published": "2026-06-01",
+  "duration_minutes": 14,
+  "description": "Four fixes for Claude Code's out-of-box limitations: brand context folder, autonomous loops, auto mode, and scheduled routines.",
+  "summary_html": "<p>Out of the box, Claude Code has four problems that quietly undermine every session you run: it does not know who you are, it loses context the moment you close the terminal, it stops working unless you are actively supervising it, and if you give it poor inputs it can create problems faster than it solves them. This video covers what power users have built to fix each of those, and all four fixes are practical enough to set up this week.</p>\n\n<h2>Fix 1: The Brand Context Folder</h2>\n<p>Every session with a fresh Claude Code install produces outputs that could belong to anyone. The fix is a brand context folder containing three files: a voice profile (how you write, the rules and real examples that define your style), a visual identity file (your fonts, color tokens, design system — stored as JSON or markdown so Claude can pull from it when building anything visual), and a positioning file (who your audience is, what you stand for, and the angles you use in your messaging). The critical architectural move is that your CLAUDE.md points to these files as an index rather than dumping all the content directly into it. CLAUDE.md as a pointer prevents context rot — loading too many lines into the main instruction file degrades the model's ability to follow them. Skills then pull from whichever context files they need at the right time. The payoff is that every session inherits your full context by default, and every output sounds like you rather than like a generic AI.</p>\n\n<h2>Fix 2: Autonomous Loops with /goal</h2>\n<p>By default, Claude Code only works while you are sitting at the keyboard. Close the terminal and work stops. The first partial fix is auto mode, activated by pressing Shift and Tab twice. This enables a background classifier that checks each action Claude is about to take and only pauses when something is genuinely risky — like connecting to a new external system or deleting a file. For routine safe operations, Claude simply keeps going without asking. The deeper fix is the /goal command, which lets you set a measurable completion condition. Claude then spins up additional agents and keeps iterating until that condition is met — you define not just the task but the finish line. The important constraint is that the goal must have an objective, measurable check and an exit condition to prevent infinite loops. This shifts the interaction from you supervising every step to you defining the destination and letting Claude find the route.</p>\n\n<h2>Fix 3: Scheduled Routines</h2>\n<p>Beyond /goal for one-off tasks, certain workflows in your business should run continuously without you ever triggering them. The /loop and /routines commands address this. Loop runs a recurring prompt on an interval you specify, up to a three-day maximum. Routines runs on a cloud server and handles longer cycles — the kind you want to run weekly or monthly. Combined with /goal, this means you can set up a workflow that runs on a schedule, works toward a defined outcome, and reports back when it is done, all without you being present at the keyboard.</p>\n\n<h2>Fix 4: Prompt Quality as a System</h2>\n<p>The fourth fix is less a single command and more a mindset about inputs. Poor prompts produce problems faster than they produce solutions because Claude will confidently execute on a bad specification. The brand context folder handles the ambient context problem. The goal and verification work handles the output quality problem. But the input itself — the specific task prompt — still needs to be clear about scope, deliverable, and what done looks like. Building even a short prompt template for recurring task types eliminates the most common source of bad outputs.</p>\n\n<h2>Why This Matters</h2>\n<p>The brand context folder setup maps directly to the vault and to the 10x Operator course, where teaching clients to build a persistent AI identity is one of the first practical exercises. The CLAUDE.md-as-index pattern is something worth adopting in the vault immediately to reduce context rot across long sessions. The /goal pattern is already partially implemented in this vault via the process-inbox skill, but the explicit framing of a measurable finish condition with an exit clause is a useful refinement. This video would work well as a reference for a course module on setting up Claude Code as a professional operating environment rather than just a chatbot.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "The four out-of-box limitations of Claude Code"
+    },
+    {
+      "t": 60,
+      "label": "Brand context folder structure: 3 files, CLAUDE.md as index"
+    },
+    {
+      "t": 115,
+      "label": "Why CLAUDE.md as a dump causes context rot"
+    },
+    {
+      "t": 225,
+      "label": "How skills pull from voice profile and visual identity"
+    },
+    {
+      "t": 446,
+      "label": "Auto mode: Shift+Tab twice to stop constant permission prompts"
+    },
+    {
+      "t": 530,
+      "label": "/goal command: set a measurable finish condition"
+    },
+    {
+      "t": 635,
+      "label": "/goal + loops for always-on autonomous agents"
+    },
+    {
+      "t": 720,
+      "label": "Routines: cloud-scheduled tasks that run without you"
+    }
+  ]
+}

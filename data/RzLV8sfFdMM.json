@@ -1,0 +1,45 @@
+{
+  "id": "RzLV8sfFdMM",
+  "title": "How to Build Effective Claude Code Agents in 2026",
+  "channel": "Nate Herk",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=RzLV8sfFdMM",
+  "published": "2026-06-15",
+  "duration_minutes": 68,
+  "description": "Podcast with a software engineer on being the director of Claude Code: context dumb zones, verification checks, real guardrail failures, and the planning-over-building principle.",
+  "summary_html": "<p>This is a sixty-eight minute podcast conversation between Nate Herk and a software engineer named Cole who uses Claude Code as his primary business operating system. The density of practical insight is unusually high for a podcast format, and several specific points are worth sitting with.</p>\n\n<h2>The Context Dumb Zone</h2>\n<p>The most widely cited piece of advice in the conversation is about context windows. Everyone has heard that Claude now supports up to one million tokens of context. Cole's counter-argument is that this creates a false sense of security. In his experience, Claude's effective performance starts degrading around two hundred and fifty thousand tokens — what he calls the dumb zone. The model still runs, it still produces output, but the quality drops measurably and inconsistently. The practical implication is not to use the one million token window as a license to pile everything in. The productive strategy is to treat the context window like a clean workspace and to reset or hand off before you hit the dumb zone rather than waiting for degradation to show up in your outputs.</p>\n\n<h2>Planning Over Building</h2>\n<p>One of Cole's core principles — borrowed directly from software engineering practice — is that you should spend more time planning with a coding agent than you spend building with it. This is counterintuitive because the agent is fast and it is tempting to just start. But starting without a clear specification means the agent will make assumptions, and correcting those assumptions mid-build costs more time than spending thirty minutes on a clear plan would have. The planning phase is also where you decide how to structure the task so that verification is possible — what does done look like, what can be checked programmatically, and what edge cases are you building guardrails for in advance.</p>\n\n<h2>Verification Checks: From 65 to 92 Percent</h2>\n<p>The specific number Cole cites is striking: without verification checks built into the workflow, first-pass quality tends to land around sixty-five to seventy percent. With self-verification — where the agent checks its own output against defined criteria and iterates before handing off — that number rises to around ninety-two percent. The mechanism is not complicated: you give the agent a definition of done, you require it to prove completion rather than assert it, and you build in the ability to iterate. For visual outputs like diagrams or websites, Cole has Claude render a PNG or screenshot and then inspect the image for layout errors, spacing issues, and overlapping text. The agent can often catch and fix these itself without human intervention.</p>\n\n<h2>The Cautionary Tale</h2>\n<p>The most important story in the podcast is about an agent that nearly caused a serious business problem. Cole had an agent that was proactive — it scanned its task list and acted on what it saw. At some point it misread a task, concluded that it was time to send a promotional email with a discount code, and sent that email to the entire mailing list. The promotion was not supposed to go out. The email went out. The principle Cole draws from this experience is clear and repeatable: if an agent can read something or touch something, assume that it will, even if you never explicitly asked it to. Build your guardrails around that assumption. Limit the scope of what an agent can access to exactly what it needs for its specific task, and nothing more.</p>\n\n<h2>Being the Director</h2>\n<p>The framing Cole returns to throughout the conversation is that your job when working with Claude Code is to be the director, not the producer. The director sets the goal, defines the constraints, specifies the verification criteria, and reviews the final output. The producer is doing the work turn by turn. If you are acting as the producer, you are spending your scarce human attention on the part of the job the agent should be doing. The transition from producer to director is mostly a mindset shift, but it has practical implications: prompts get longer and more specific up front, verification criteria get explicit, and you stop reviewing intermediate steps and start reviewing final deliverables instead.</p>\n\n<h2>Claude Code Beyond Coding</h2>\n<p>One of the running themes in the conversation is that Claude Code is not just for software engineers. Cole uses it as his second brain for business operations, and Nate uses it in a non-technical context for content and strategy work. The tools — CLAUDE.md, skills, memory systems, verification loops — are applicable to any knowledge work that involves producing complex deliverables where quality matters. The software engineering principles that underlie effective agent use translate directly: specification before implementation, tests as a stop condition, modular design, and systematic debugging.</p>\n\n<h2>Why This Matters</h2>\n<p>The context dumb zone at two hundred and fifty thousand tokens is a specific, actionable threshold to build around in the vault and in client work. The planning-over-building principle is directly applicable to the 10x Operator course — it reframes the value of the process mapping step from the previous video in a different register. The guardrail story is the most important thing to share with consulting clients who are nervous about agent autonomy: it validates the concern and gives a clear mitigation principle. And the director framing is possibly the cleanest single way to explain what non-technical professionals should be doing with Claude Code.</p>",
+  "watch_list": [
+    {
+      "t": 120,
+      "label": "Claude Code as a second brain / AIOS — beyond coding"
+    },
+    {
+      "t": 480,
+      "label": "Context dumb zone at 250k tokens despite 1M window"
+    },
+    {
+      "t": 966,
+      "label": "Spend more time planning than building — the director principle"
+    },
+    {
+      "t": 1200,
+      "label": "Verification checks lift first-pass quality from 65% to 92%"
+    },
+    {
+      "t": 1487,
+      "label": "Guardrail story: agent sent discount email to entire list"
+    },
+    {
+      "t": 1600,
+      "label": "Rule: if agent can read/touch it, assume it will"
+    },
+    {
+      "t": 2045,
+      "label": "Self-verification with PNG rendering for diagrams"
+    },
+    {
+      "t": 3102,
+      "label": "Being the director: review deliverables, not intermediate steps"
+    }
+  ]
+}

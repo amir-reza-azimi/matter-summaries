@@ -1,0 +1,41 @@
+{
+  "id": "EuzYhzB0vbI",
+  "title": "Finally. Agent Loops Clearly Explained.",
+  "channel": "Nate Herk",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=EuzYhzB0vbI",
+  "published": "2026-06-18",
+  "duration_minutes": 14,
+  "description": "A clear, anti-hype explanation of agent loops: trigger + action + stop condition, with a real example and honest advice on when not to use them.",
+  "summary_html": "<p>There is a lot of noise around agent loops right now, and most of it is either too abstract to act on or pitched at a level of infrastructure that most people do not need. This video cuts through both problems by defining the concept precisely, showing a real implementation, and being honest about who should and should not be running continuous loops.</p>\n\n<h2>What an Agent Loop Actually Is</h2>\n<p>An agent loop is an AI that reasons about what to do, acts on that reasoning, observes the result, and then repeats that cycle until a defined stop condition is met. Three components are required: a trigger, an action, and a stop condition. Without a stop condition, you do not have a loop — you have an agent that runs indefinitely and costs money indefinitely. The broader concept is sometimes called loop engineering, and the cleanest definition is this: loop engineering is replacing yourself as the person who prompts the agent. Instead of you iterating through feedback rounds, you design a system that does the iterating for you.</p>\n<p>The quality curve framing is useful here. On attempt one, you might get an output that is fifty percent of where you want it. Your feedback moves it to sixty. Another round gets you to seventy. Eventually you reach a plateau around ninety or ninety-five percent where you are satisfied. The question the loop asks is: why is the human doing that iteration? If the feedback criteria are objective enough to be expressed to a model, the model can run the loop. You just need to show up for the final review.</p>\n\n<h2>A Real Example</h2>\n<p>The creator built an agent loop to produce a polished HTML research summary. The loop checked forty-five sources — articles, YouTube transcripts, social posts — synthesizing them into a coherent picture of what to build. It did not ship on the first pass. It shipped on the seventh. Between passes, the agent screenshotted the output, reviewed it visually, identified spacing and layout issues, and iterated without any human involvement between runs. The final output, shown in the video, is genuinely polished — not because the agent got it right immediately, but because the loop gave it the budget to iterate until it was right.</p>\n\n<h2>Who Should Not Run Continuous Loops</h2>\n<p>This is where the video is more useful than most. The framing that you should be running fleets of agents around the clock is mostly wrong for most people. If you do not understand what you are building, a loop will not help you — it will scale your problems. If your work is not the kind that benefits from continuous parallel processing, you do not need 24/7 agents. The creator is explicit: they use agents on cadence, triggered by specific events, not running continuously for its own sake. The exception is people who are actively building a product on a live codebase with a team, where there is always something to process. For everyone else, the right pattern is event-based loops or scheduled loops — not always-on.</p>\n\n<h2>When Loops Make Sense</h2>\n<p>Loops add value when the output is objective enough to verify programmatically, when iteration budget matters more than latency, and when the task genuinely benefits from multiple passes. Writing and research tasks fit this well: draft a piece, check it against criteria, revise, repeat. Code tasks fit it well with a test suite as the stop condition. Marketing asset creation fits it when you have a defined visual standard to check against. The stop condition is the key ingredient — without it you are just burning tokens, and with it you have a real quality-control loop.</p>\n\n<h2>Why This Matters</h2>\n<p>The agent loop concept is something clients ask about constantly, and most explanations either oversell it or undersell it. This video's framing — trigger, action, stop condition, and honest anti-hype — is the kind of explanation that works in a consulting context. The quality curve framing is particularly useful for teaching: it makes the value proposition concrete without needing to understand the underlying mechanics. And the warning about not scaling problems is the most important practical takeaway for anyone who is tempted to spin up five continuous agents before they understand what those agents are actually doing.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "Demo: 4 looping agents working in parallel"
+    },
+    {
+      "t": 90,
+      "label": "Loop definition: trigger + action + stop condition"
+    },
+    {
+      "t": 215,
+      "label": "Quality curve: outsource the iteration loop to the agent"
+    },
+    {
+      "t": 323,
+      "label": "Anti-hype: 24/7 agent swarms are not for most people"
+    },
+    {
+      "t": 430,
+      "label": "When loops do make sense: event-based and cadence-based"
+    },
+    {
+      "t": 540,
+      "label": "Real example: HTML built across 45 sources, iterated to V7"
+    },
+    {
+      "t": 652,
+      "label": "Stop condition examples: X metric equals Y, all tests pass"
+    }
+  ]
+}

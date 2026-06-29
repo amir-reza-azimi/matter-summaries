@@ -1,0 +1,53 @@
+{
+  "id": "Nj9yzBp14EM",
+  "title": "My Proven AI Agent Formula Explained",
+  "channel": "AI Automation Society",
+  "channel_url": "https://www.youtube.com/@aiautomationsociety",
+  "url": "https://www.youtube.com/watch?v=Nj9yzBp14EM",
+  "published": "2025-06-01",
+  "duration_minutes": 15,
+  "description": "A 5-step framework for building AI automation systems — designed for non-technical builders.",
+  "summary_html": "<p>The premise of this video is that anyone can build serious AI automation systems without a technical background, provided they follow a disciplined methodology rather than jumping straight into the tools. The creator has used this five-step playbook across seven months of building systems that have generated real revenue, and this is the first time they are making the actual framework explicit.</p>\n\n<h2>Step 1: Foundations</h2>\n<p>Before you build anything, you need to understand three things at a working level, not a deep academic level. First, how large language models work: they predict the next token in a sequence, which means at their core they cannot take action in the world on their own. Second, what RAG and vector databases do: they let an agent search through a custom document library by meaning rather than by keyword, so the agent draws on your actual content instead of hallucinating from its training data. Third, how JSON and HTTP API calls work: if you cannot read a JSON object, you cannot debug why your automation is failing, and every modern API speaks JSON. The rule the creator lives by is \"understand enough to get the system to provide value.\" You do not need to know the mathematical distance formula behind vector search. You just need to understand the input, the output, and what you can tune.</p>\n\n<h2>Step 2: Identify High-ROI Opportunities</h2>\n<p>Not every process is worth automating. The four criteria are: repetitive, time-consuming, error-prone, and scalable. The scalable criterion is the most important and the most overlooked. A lead-research workflow that saves a sales rep five hours per week at fifty leads compounds powerfully as the business grows. When the business scales to two hundred leads per week, that same automation saves twenty hours per week instead of five, which frees the team to drive more growth, which brings in more leads. The compounding effect is the whole point. Something like a personal assistant does not compound in the same way. Half the battle is choosing the right process to automate in the first place.</p>\n\n<h2>Step 3: Process Mapping</h2>\n<p>The creator never opens their automation tool and starts building cold. The analogy is building a Lego set without the instruction manual — technically possible, but slower and messier than it needs to be. Process mapping means writing out every single step of the workflow, no matter how small, before touching the tool. This surfaces bottlenecks and edge cases in advance, enforces scalability thinking, and makes the actual build time dramatically faster. Every workflow, once mapped, resolves into five building blocks: a trigger (the event that starts the process — a new email, a form submission, a CRM record), data sources (the trigger's payload plus any external lookups like a vector database or a web search), data transformation (filtering, merging, cleaning), a decision point (where AI classifies or chooses a branch), and a data destination (where the result lands). If you can identify all five for your use case, you have your instruction manual.</p>\n\n<h2>Step 4: Workflows vs. AI Agents</h2>\n<p>This is the step most people get wrong. AI is exciting, and agents are exciting, but forcing an agent into a process that does not need one only increases latency, cost, and the risk of inconsistent outputs. The distinction is simple: if the process runs in a predictable fixed order every time, it is a workflow, not an agent. A workflow goes 1-2-3-4-5-6, and guardrails keep it on that path. An agent might go 1-2-3-4-5-6-7, but you do not know which branch it will take. That freedom is useful only when the task genuinely requires it. A customer support email bot that looks up knowledge base content and sends a reply works perfectly as a workflow — same steps, same order, every time, faster and cheaper than using an agent.</p>\n\n<h2>Step 5: Proof of Concept and Guardrails</h2>\n<p>Three sub-rules govern this phase. First, fail fast and debug often: when you start a workflow from scratch you will hit errors, and the sooner you reach a working proof of concept the better. Second, you do not know what you do not know: edge cases only reveal themselves once real users and real data flow through the system. No process map, however thorough, catches everything in advance. Third, there is no finished product: new models drop, new techniques appear, and the system always has room to be made faster or cheaper. The practical implication is that production is where you learn. Identify the patterns behind recurring errors, build a conditional check or a retry loop to handle each one, and treat the system as permanently in iteration.</p>\n\n<h2>Why This Matters</h2>\n<p>The whole framework is a direct mirror of the 10x Operator course premise: non-technical professionals can build powerful AI systems by treating them as engineering problems with a repeatable process. The workflows-vs-agents distinction alone would save most people significant wasted effort. The process mapping step is the one that is most consistently skipped and most consistently the source of messy builds. This is a video worth turning into a course module or a client onboarding framework.</p>",
+  "watch_list": [
+    {
+      "t": 19,
+      "label": "Step 1: Foundations — what you need to understand and what you can safely skip"
+    },
+    {
+      "t": 83,
+      "label": "RAG and vector databases explained for practitioners"
+    },
+    {
+      "t": 145,
+      "label": "Why JSON and API calls are the most important foundation"
+    },
+    {
+      "t": 229,
+      "label": "Step 2: The four ROI criteria, especially scalable"
+    },
+    {
+      "t": 302,
+      "label": "How a lead automation compounds as the business grows"
+    },
+    {
+      "t": 332,
+      "label": "Step 3: Process mapping — the Lego analogy"
+    },
+    {
+      "t": 449,
+      "label": "Five building blocks in every workflow"
+    },
+    {
+      "t": 529,
+      "label": "Step 4: When NOT to use an agent — the linear vs non-linear distinction"
+    },
+    {
+      "t": 667,
+      "label": "Step 5: POC + fail fast + you don't know what you don't know"
+    },
+    {
+      "t": 813,
+      "label": "Real guard rail example: empty query conditional check"
+    }
+  ]
+}

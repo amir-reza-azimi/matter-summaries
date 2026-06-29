@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Has Quietly Evolved (People Haven&#x27;t Noticed)</title>
+<meta name="description" content="Three major shifts in how Claude Code is used: community memory plugins, the /effort command, and ultra-code for multi-agent workflows.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Claude Code Has Quietly Evolved (People Haven&#x27;t Noticed)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-10 &middot; <strong>Length:</strong> 18 min &middot; <a href="https://www.youtube.com/watch?v=4iMZA1omCkM">Watch on YouTube</a></p>
+<p>Six months ago the advice about how to use Claude Code looked substantially different. The models have not changed all that dramatically, but the community has built a layer of infrastructure around Claude Code that changes how you should interact with it. This video identifies three specific shifts that most people following older guides are missing.</p>
+
+<h2>Shift 1: Memory is No Longer Just CLAUDE.md</h2>
+<p>Out of the box, Claude Code's memory is still essentially one markdown file you write and maintain by hand. That has not changed. What has changed is what is possible around it, thanks to the open-source community. If you split memory into three distinct functions, the gap becomes clear. Storage is where information gets kept and how the system decides what to capture — out of the box this is your CLAUDE.md, and it captures almost nothing automatically. Short-term injection is how relevant context gets pulled into the active conversation — out of the box this is whatever is in your CLAUDE.md, which becomes outdated the moment you forget to update it. Long-term recall is the ability to find information from months ago using natural language rather than exact keyword matches — out of the box this is effectively impossible.</p>
+<p>Community frameworks have solved all three. Memsarch, Gbrain, and Hermes each address the problem from slightly different angles. Memsarch installs in two commands — a slash command and a restart — and immediately begins capturing transcripts, injecting relevant context into conversations, and enabling semantic search over your entire history. Gbrain adds multi-user support and cited recall, so you can ask what you decided about something six months ago and get a sourced answer. The practical recommendation is to install memsarch as a minimum for anyone using Claude Code over long projects, and to explore Gbrain if working with a team.</p>
+
+<h2>Shift 2: Planning Effort is Now Explicit</h2>
+<p>The old approach to complex tasks was either to dump everything into one long session or to use plan mode. Both approaches hit the same wall: context management. As the conversation grows, relevant information gets buried, and the model's effective intelligence degrades. The community response was to architect file structures for specific context and to build dashboards over them — what people started calling agentic operating systems. Anthropic's response was more direct: let users control how hard Claude reasons before it acts.</p>
+<p>The /effort command lets you set a reasoning budget from low through to ultra-code. Low is right for quick tasks with obvious answers. High or max is right for complex planning, architecture decisions, or anything where getting it wrong costs real time to fix. The default is auto, which the model uses to self-select an appropriate effort level. The important correction to make is to explicitly signal when a task is more complex than it looks, because auto mode underestimates the need for high reasoning far more often than it overestimates it.</p>
+
+<h2>Shift 3: Ultra-Code Changes Multi-Agent Work</h2>
+<p>Ultra-code is the extreme end of the effort spectrum. When you invoke it, Claude does not just think harder about your task — it writes a bespoke workflow for it. It identifies which parts of the problem can run in parallel, spins up a small team of agents and gives each one a clean context window and a single clearly-scoped job, runs them in parallel, and then has them check each other's work before assembling the final output. This is meaningful for complex deliverables where a single agent running one long session would exhaust its context or lose coherence. The practical use cases the creator demonstrates include writing a detailed content system, building a full technical architecture diagram with self-verification, and producing multi-file deliverables where consistency across files matters.</p>
+<p>The shift here is not just a new feature but a new mental model: for complex work, you are no longer waiting for one agent to grind through the whole thing sequentially. You are delegating to a team, and the team's individual clean contexts mean the final output quality is higher than what a single exhausted context window would produce.</p>
+
+<h2>Why This Matters</h2>
+<p>All three shifts apply directly to the vault setup and to the 10x Operator course. The memory framework is something to implement today, particularly the memsarch plugin for long-running projects. The /effort command with explicit ultra-code invocation is worth teaching as a standard practice for complex tasks rather than a power-user trick. And the mental model of ultra-code as team delegation rather than solo execution is exactly the kind of concept that lands well with non-technical audiences who already understand what it means to delegate work to a team.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=0">0:00</a> &mdash; Why older Claude Code guides are leading people the wrong way</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=60">1:00</a> &mdash; Memory gap: what Claude captures vs what it should</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=143">2:23</a> &mdash; 3 memory functions: storage, injection, recall — all broken out of the box</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=289">4:49</a> &mdash; Memsarch 2-line install — fixes all 3 memory functions</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=350">5:50</a> &mdash; Gbrain for team/multi-user memory with cited recall</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=437">7:17</a> &mdash; /effort command: low to ultra-code explained</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=530">8:50</a> &mdash; Ultra-code: Claude writes its own workflow and spins up a team</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=715">11:55</a> &mdash; Practical ultra-code example with self-verification loop</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=4iMZA1omCkM">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

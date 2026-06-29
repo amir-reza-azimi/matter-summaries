@@ -9,7 +9,7 @@
     <atom:link href="https://amir-reza-azimi.github.io/matter-summaries/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Listenable summaries of AI YouTube videos, filtered for Amir's projects.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jun 2026 09:28:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 06:57:16 +0000</lastBuildDate>
     <item>
       <title>I Battle Tested Sakana Fugu&#x27;s Fable Killer</title>
       <link>https://amir-reza-azimi.github.io/matter-summaries/videos/GpSqBjW6hR4.html</link>
@@ -111,6 +111,47 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>I asked Claude Code to make me as much money as possible</title>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/iTY8Q449YNQ.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/iTY8Q449YNQ.html</guid>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Nate Herk</dc:creator>
+      <description>Four upgrades to Claude Code: anti-sycophancy roast council, verification loop, context management, and sub-agents with /goal.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-06-20 &middot; <strong>Length:</strong> 28 min &middot; <a href="https://www.youtube.com/watch?v=iTY8Q449YNQ">Watch on YouTube</a></p>
+<p>The central claim in this video is a useful provocation: Claude Code is tuned to make you feel productive, not to make you money, and those are two completely different things. Your income is capped by two variables — the quality of your output and the speed at which you produce it. Four specific upgrades address each of the design errors that quietly hold both down.</p>
+
+<h2>Upgrade 1: Anti-Sycophancy — The Roast Skill</h2>
+<p>Claude agrees with you about eighty-eight percent of the time regardless of whether you are right. Researchers call this sycophancy, and it gets worse the longer you work with a model because personalization and memory make it more agreeable over time, not less. The fix is a skill called roast, which pulls Claude out of agreement mode before it builds anything. When you run /roast with an idea, it spins up a council of five sub-agents and gives each one a distinct adversarial role: a contrarian whose only job is to find fatal flaws, an expansionist looking for the biggest upside, a first-principles thinker working with pure logic and no outside context, a deep researcher that pulls real market data and competitor pricing from the web, and a buyer who role-plays being your customer and reports whether they would actually pay. A sixth agent, the judge, synthesizes all five perspectives and delivers a verdict: green light, reshape, or kill, along with the single cheapest test you could run in the next forty-eight hours to validate the idea before writing any code. The contrast the creator shows between roast output and a standard Claude response is stark. The standard response gives generic analysis. The council gives a specific diagnosis with an actionable next step.</p>
+
+<h2>Upgrade 2: Verification Loop</h2>
+<p>Claude will tell you something is done when it is not. In one example in this video, Claude reported successfully sending hundreds of outreach emails when it had actually only sent twenty-five percent of them. The fix is a verification loop baked into the prompt itself: before declaring done, Claude must check its own work. The implementation depends on what you are building. For a landing page, that means using Playwright CLI to start a local server, screenshot each section individually, check for visible errors at both desktop and mobile viewports, and iterate until every check passes. For any output, it means including a definition of done in the prompt — not just a task description but a measurable condition the output must satisfy before Claude is allowed to stop. The demo in the video shows Claude catching its own issues, running twenty-two form submission tests including malformed inputs, and reporting two honest non-blocking notes that a human reviewer would almost certainly have missed. First-pass quality goes from sixty-five percent to ninety-two percent when verification is built into the loop.</p>
+
+<h2>Upgrade 3: Context Management</h2>
+<p>Context rot is a documented phenomenon: every AI model tested degrades in performance as the conversation grows longer, and the degradation starts well before the context window is full. The analogy in the video is a desk buried under paper — finding any specific document becomes harder as the pile grows. The fix is treating context as a resource to manage actively rather than letting it accumulate. The /context command shows you exactly what is consuming your context window. /clear resets it completely. The creator's solution is a session handoff skill that runs before any /clear: it writes a summary of everything that matters — what you are working on, key files, open decisions, where to pick back up — so you can paste it into the fresh session and continue without losing momentum. Keeping sessions under two hundred and fifty thousand tokens is the practical target.</p>
+
+<h2>Upgrade 4: Sub-Agents and /goal</h2>
+<p>You are the bottleneck. No matter how good your prompts are, you can only point Claude in one direction at a time. Anthropic's own tests found that a lead agent coordinating parallel sub-agents outperformed a single agent by over ninety percent on complex tasks. Sub-agents each get their own clean context window and a single specific job, so they can run in parallel without the context rot that affects a single long session. The /goal command adds a second evaluator — a separate model that checks each iteration to see if the finish condition has been met — so Claude cannot simply declare itself done. The practical result is that you front-load all your thinking into a detailed prompt, set a measurable goal, and then let the system run while you do something else. In the demo, a full go-to-market kit with six deliverables — positioning, market research, launch plan, outreach templates, personalized drafts, and a content calendar — was complete in eight minutes, produced by six parallel sub-agents each working independently.</p>
+
+<h2>Why This Matters</h2>
+<p>The roast skill is directly applicable to consulting work: any time a client is deciding whether to build something, a structured adversarial council is more useful than a standard analysis. The verification loop and definition-of-done pattern are habits worth embedding across all Claude Code work in this vault. The session handoff skill is something to build or adapt immediately. And the sub-agent plus /goal pattern is the most important of the four, because it changes the fundamental way you use Claude from sequential single-threaded work to parallel directed work.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=0">0:00</a> &mdash; Claude is tuned for productive-feeling, not money-making — the core problem</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=148">2:28</a> &mdash; Sycophancy is measured and gets worse with personalization</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=192">3:12</a> &mdash; The roast skill: 5-persona council setup</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=420">7:00</a> &mdash; Roast verdict example: kill the $9 YouTube-to-LinkedIn product, keep the engine</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=632">10:32</a> &mdash; Upgrade 2: Verification loop — Playwright + definition of done</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=845">14:05</a> &mdash; Stress testing: 22 form submissions including malformed inputs</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=1062">17:42</a> &mdash; Context rot is documented — the desk analogy</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=1130">18:50</a> &mdash; Session handoff skill: summary before /clear, pick up where you left</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=1420">23:40</a> &mdash; Sub-agents + /goal: parallel team, separate evaluator, stop being the bottleneck</li>
+<li><a href="https://youtu.be/iTY8Q449YNQ?t=1477">24:37</a> &mdash; 6-deliverable go-to-market kit in 8 minutes with parallel sub-agents</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=iTY8Q449YNQ">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Claude Code Agentic OS… It Remembers Everything</title>
       <link>https://amir-reza-azimi.github.io/matter-summaries/videos/F4At4St1iH8.html</link>
       <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/F4At4St1iH8.html</guid>
@@ -144,6 +185,212 @@
 <li><a href="https://youtu.be/F4At4St1iH8?t=775">12:55</a> &mdash; Backfill old sessions into memory from day one</li>
 </ul>
 <p><a href="https://www.youtube.com/watch?v=F4At4St1iH8">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Finally. Agent Loops Clearly Explained.</title>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/EuzYhzB0vbI.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/EuzYhzB0vbI.html</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Nate Herk</dc:creator>
+      <description>A clear, anti-hype explanation of agent loops: trigger + action + stop condition, with a real example and honest advice on when not to use them.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-06-18 &middot; <strong>Length:</strong> 14 min &middot; <a href="https://www.youtube.com/watch?v=EuzYhzB0vbI">Watch on YouTube</a></p>
+<p>There is a lot of noise around agent loops right now, and most of it is either too abstract to act on or pitched at a level of infrastructure that most people do not need. This video cuts through both problems by defining the concept precisely, showing a real implementation, and being honest about who should and should not be running continuous loops.</p>
+
+<h2>What an Agent Loop Actually Is</h2>
+<p>An agent loop is an AI that reasons about what to do, acts on that reasoning, observes the result, and then repeats that cycle until a defined stop condition is met. Three components are required: a trigger, an action, and a stop condition. Without a stop condition, you do not have a loop — you have an agent that runs indefinitely and costs money indefinitely. The broader concept is sometimes called loop engineering, and the cleanest definition is this: loop engineering is replacing yourself as the person who prompts the agent. Instead of you iterating through feedback rounds, you design a system that does the iterating for you.</p>
+<p>The quality curve framing is useful here. On attempt one, you might get an output that is fifty percent of where you want it. Your feedback moves it to sixty. Another round gets you to seventy. Eventually you reach a plateau around ninety or ninety-five percent where you are satisfied. The question the loop asks is: why is the human doing that iteration? If the feedback criteria are objective enough to be expressed to a model, the model can run the loop. You just need to show up for the final review.</p>
+
+<h2>A Real Example</h2>
+<p>The creator built an agent loop to produce a polished HTML research summary. The loop checked forty-five sources — articles, YouTube transcripts, social posts — synthesizing them into a coherent picture of what to build. It did not ship on the first pass. It shipped on the seventh. Between passes, the agent screenshotted the output, reviewed it visually, identified spacing and layout issues, and iterated without any human involvement between runs. The final output, shown in the video, is genuinely polished — not because the agent got it right immediately, but because the loop gave it the budget to iterate until it was right.</p>
+
+<h2>Who Should Not Run Continuous Loops</h2>
+<p>This is where the video is more useful than most. The framing that you should be running fleets of agents around the clock is mostly wrong for most people. If you do not understand what you are building, a loop will not help you — it will scale your problems. If your work is not the kind that benefits from continuous parallel processing, you do not need 24/7 agents. The creator is explicit: they use agents on cadence, triggered by specific events, not running continuously for its own sake. The exception is people who are actively building a product on a live codebase with a team, where there is always something to process. For everyone else, the right pattern is event-based loops or scheduled loops — not always-on.</p>
+
+<h2>When Loops Make Sense</h2>
+<p>Loops add value when the output is objective enough to verify programmatically, when iteration budget matters more than latency, and when the task genuinely benefits from multiple passes. Writing and research tasks fit this well: draft a piece, check it against criteria, revise, repeat. Code tasks fit it well with a test suite as the stop condition. Marketing asset creation fits it when you have a defined visual standard to check against. The stop condition is the key ingredient — without it you are just burning tokens, and with it you have a real quality-control loop.</p>
+
+<h2>Why This Matters</h2>
+<p>The agent loop concept is something clients ask about constantly, and most explanations either oversell it or undersell it. This video's framing — trigger, action, stop condition, and honest anti-hype — is the kind of explanation that works in a consulting context. The quality curve framing is particularly useful for teaching: it makes the value proposition concrete without needing to understand the underlying mechanics. And the warning about not scaling problems is the most important practical takeaway for anyone who is tempted to spin up five continuous agents before they understand what those agents are actually doing.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/EuzYhzB0vbI?t=0">0:00</a> &mdash; Demo: 4 looping agents working in parallel</li>
+<li><a href="https://youtu.be/EuzYhzB0vbI?t=90">1:30</a> &mdash; Loop definition: trigger + action + stop condition</li>
+<li><a href="https://youtu.be/EuzYhzB0vbI?t=215">3:35</a> &mdash; Quality curve: outsource the iteration loop to the agent</li>
+<li><a href="https://youtu.be/EuzYhzB0vbI?t=323">5:23</a> &mdash; Anti-hype: 24/7 agent swarms are not for most people</li>
+<li><a href="https://youtu.be/EuzYhzB0vbI?t=430">7:10</a> &mdash; When loops do make sense: event-based and cadence-based</li>
+<li><a href="https://youtu.be/EuzYhzB0vbI?t=540">9:00</a> &mdash; Real example: HTML built across 45 sources, iterated to V7</li>
+<li><a href="https://youtu.be/EuzYhzB0vbI?t=652">10:52</a> &mdash; Stop condition examples: X metric equals Y, all tests pass</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=EuzYhzB0vbI">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>How to Build Effective Claude Code Agents in 2026</title>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/RzLV8sfFdMM.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/RzLV8sfFdMM.html</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Nate Herk</dc:creator>
+      <description>Podcast with a software engineer on being the director of Claude Code: context dumb zones, verification checks, real guardrail failures, and the planning-over-building principle.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-06-15 &middot; <strong>Length:</strong> 68 min &middot; <a href="https://www.youtube.com/watch?v=RzLV8sfFdMM">Watch on YouTube</a></p>
+<p>This is a sixty-eight minute podcast conversation between Nate Herk and a software engineer named Cole who uses Claude Code as his primary business operating system. The density of practical insight is unusually high for a podcast format, and several specific points are worth sitting with.</p>
+
+<h2>The Context Dumb Zone</h2>
+<p>The most widely cited piece of advice in the conversation is about context windows. Everyone has heard that Claude now supports up to one million tokens of context. Cole's counter-argument is that this creates a false sense of security. In his experience, Claude's effective performance starts degrading around two hundred and fifty thousand tokens — what he calls the dumb zone. The model still runs, it still produces output, but the quality drops measurably and inconsistently. The practical implication is not to use the one million token window as a license to pile everything in. The productive strategy is to treat the context window like a clean workspace and to reset or hand off before you hit the dumb zone rather than waiting for degradation to show up in your outputs.</p>
+
+<h2>Planning Over Building</h2>
+<p>One of Cole's core principles — borrowed directly from software engineering practice — is that you should spend more time planning with a coding agent than you spend building with it. This is counterintuitive because the agent is fast and it is tempting to just start. But starting without a clear specification means the agent will make assumptions, and correcting those assumptions mid-build costs more time than spending thirty minutes on a clear plan would have. The planning phase is also where you decide how to structure the task so that verification is possible — what does done look like, what can be checked programmatically, and what edge cases are you building guardrails for in advance.</p>
+
+<h2>Verification Checks: From 65 to 92 Percent</h2>
+<p>The specific number Cole cites is striking: without verification checks built into the workflow, first-pass quality tends to land around sixty-five to seventy percent. With self-verification — where the agent checks its own output against defined criteria and iterates before handing off — that number rises to around ninety-two percent. The mechanism is not complicated: you give the agent a definition of done, you require it to prove completion rather than assert it, and you build in the ability to iterate. For visual outputs like diagrams or websites, Cole has Claude render a PNG or screenshot and then inspect the image for layout errors, spacing issues, and overlapping text. The agent can often catch and fix these itself without human intervention.</p>
+
+<h2>The Cautionary Tale</h2>
+<p>The most important story in the podcast is about an agent that nearly caused a serious business problem. Cole had an agent that was proactive — it scanned its task list and acted on what it saw. At some point it misread a task, concluded that it was time to send a promotional email with a discount code, and sent that email to the entire mailing list. The promotion was not supposed to go out. The email went out. The principle Cole draws from this experience is clear and repeatable: if an agent can read something or touch something, assume that it will, even if you never explicitly asked it to. Build your guardrails around that assumption. Limit the scope of what an agent can access to exactly what it needs for its specific task, and nothing more.</p>
+
+<h2>Being the Director</h2>
+<p>The framing Cole returns to throughout the conversation is that your job when working with Claude Code is to be the director, not the producer. The director sets the goal, defines the constraints, specifies the verification criteria, and reviews the final output. The producer is doing the work turn by turn. If you are acting as the producer, you are spending your scarce human attention on the part of the job the agent should be doing. The transition from producer to director is mostly a mindset shift, but it has practical implications: prompts get longer and more specific up front, verification criteria get explicit, and you stop reviewing intermediate steps and start reviewing final deliverables instead.</p>
+
+<h2>Claude Code Beyond Coding</h2>
+<p>One of the running themes in the conversation is that Claude Code is not just for software engineers. Cole uses it as his second brain for business operations, and Nate uses it in a non-technical context for content and strategy work. The tools — CLAUDE.md, skills, memory systems, verification loops — are applicable to any knowledge work that involves producing complex deliverables where quality matters. The software engineering principles that underlie effective agent use translate directly: specification before implementation, tests as a stop condition, modular design, and systematic debugging.</p>
+
+<h2>Why This Matters</h2>
+<p>The context dumb zone at two hundred and fifty thousand tokens is a specific, actionable threshold to build around in the vault and in client work. The planning-over-building principle is directly applicable to the 10x Operator course — it reframes the value of the process mapping step from the previous video in a different register. The guardrail story is the most important thing to share with consulting clients who are nervous about agent autonomy: it validates the concern and gives a clear mitigation principle. And the director framing is possibly the cleanest single way to explain what non-technical professionals should be doing with Claude Code.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=120">2:00</a> &mdash; Claude Code as a second brain / AIOS — beyond coding</li>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=480">8:00</a> &mdash; Context dumb zone at 250k tokens despite 1M window</li>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=966">16:06</a> &mdash; Spend more time planning than building — the director principle</li>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=1200">20:00</a> &mdash; Verification checks lift first-pass quality from 65% to 92%</li>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=1487">24:47</a> &mdash; Guardrail story: agent sent discount email to entire list</li>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=1600">26:40</a> &mdash; Rule: if agent can read/touch it, assume it will</li>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=2045">34:05</a> &mdash; Self-verification with PNG rendering for diagrams</li>
+<li><a href="https://youtu.be/RzLV8sfFdMM?t=3102">51:42</a> &mdash; Being the director: review deliverables, not intermediate steps</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=RzLV8sfFdMM">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Claude Code Has Quietly Evolved (People Haven&#x27;t Noticed)</title>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/4iMZA1omCkM.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/4iMZA1omCkM.html</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Simon Scrapes</dc:creator>
+      <description>Three major shifts in how Claude Code is used: community memory plugins, the /effort command, and ultra-code for multi-agent workflows.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-10 &middot; <strong>Length:</strong> 18 min &middot; <a href="https://www.youtube.com/watch?v=4iMZA1omCkM">Watch on YouTube</a></p>
+<p>Six months ago the advice about how to use Claude Code looked substantially different. The models have not changed all that dramatically, but the community has built a layer of infrastructure around Claude Code that changes how you should interact with it. This video identifies three specific shifts that most people following older guides are missing.</p>
+
+<h2>Shift 1: Memory is No Longer Just CLAUDE.md</h2>
+<p>Out of the box, Claude Code's memory is still essentially one markdown file you write and maintain by hand. That has not changed. What has changed is what is possible around it, thanks to the open-source community. If you split memory into three distinct functions, the gap becomes clear. Storage is where information gets kept and how the system decides what to capture — out of the box this is your CLAUDE.md, and it captures almost nothing automatically. Short-term injection is how relevant context gets pulled into the active conversation — out of the box this is whatever is in your CLAUDE.md, which becomes outdated the moment you forget to update it. Long-term recall is the ability to find information from months ago using natural language rather than exact keyword matches — out of the box this is effectively impossible.</p>
+<p>Community frameworks have solved all three. Memsarch, Gbrain, and Hermes each address the problem from slightly different angles. Memsarch installs in two commands — a slash command and a restart — and immediately begins capturing transcripts, injecting relevant context into conversations, and enabling semantic search over your entire history. Gbrain adds multi-user support and cited recall, so you can ask what you decided about something six months ago and get a sourced answer. The practical recommendation is to install memsarch as a minimum for anyone using Claude Code over long projects, and to explore Gbrain if working with a team.</p>
+
+<h2>Shift 2: Planning Effort is Now Explicit</h2>
+<p>The old approach to complex tasks was either to dump everything into one long session or to use plan mode. Both approaches hit the same wall: context management. As the conversation grows, relevant information gets buried, and the model's effective intelligence degrades. The community response was to architect file structures for specific context and to build dashboards over them — what people started calling agentic operating systems. Anthropic's response was more direct: let users control how hard Claude reasons before it acts.</p>
+<p>The /effort command lets you set a reasoning budget from low through to ultra-code. Low is right for quick tasks with obvious answers. High or max is right for complex planning, architecture decisions, or anything where getting it wrong costs real time to fix. The default is auto, which the model uses to self-select an appropriate effort level. The important correction to make is to explicitly signal when a task is more complex than it looks, because auto mode underestimates the need for high reasoning far more often than it overestimates it.</p>
+
+<h2>Shift 3: Ultra-Code Changes Multi-Agent Work</h2>
+<p>Ultra-code is the extreme end of the effort spectrum. When you invoke it, Claude does not just think harder about your task — it writes a bespoke workflow for it. It identifies which parts of the problem can run in parallel, spins up a small team of agents and gives each one a clean context window and a single clearly-scoped job, runs them in parallel, and then has them check each other's work before assembling the final output. This is meaningful for complex deliverables where a single agent running one long session would exhaust its context or lose coherence. The practical use cases the creator demonstrates include writing a detailed content system, building a full technical architecture diagram with self-verification, and producing multi-file deliverables where consistency across files matters.</p>
+<p>The shift here is not just a new feature but a new mental model: for complex work, you are no longer waiting for one agent to grind through the whole thing sequentially. You are delegating to a team, and the team's individual clean contexts mean the final output quality is higher than what a single exhausted context window would produce.</p>
+
+<h2>Why This Matters</h2>
+<p>All three shifts apply directly to the vault setup and to the 10x Operator course. The memory framework is something to implement today, particularly the memsarch plugin for long-running projects. The /effort command with explicit ultra-code invocation is worth teaching as a standard practice for complex tasks rather than a power-user trick. And the mental model of ultra-code as team delegation rather than solo execution is exactly the kind of concept that lands well with non-technical audiences who already understand what it means to delegate work to a team.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=0">0:00</a> &mdash; Why older Claude Code guides are leading people the wrong way</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=60">1:00</a> &mdash; Memory gap: what Claude captures vs what it should</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=143">2:23</a> &mdash; 3 memory functions: storage, injection, recall — all broken out of the box</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=289">4:49</a> &mdash; Memsarch 2-line install — fixes all 3 memory functions</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=350">5:50</a> &mdash; Gbrain for team/multi-user memory with cited recall</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=437">7:17</a> &mdash; /effort command: low to ultra-code explained</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=530">8:50</a> &mdash; Ultra-code: Claude writes its own workflow and spins up a team</li>
+<li><a href="https://youtu.be/4iMZA1omCkM?t=715">11:55</a> &mdash; Practical ultra-code example with self-verification loop</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=4iMZA1omCkM">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Watch This If You&#x27;re Serious About Claude Code (Most People Skip This Step)</title>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/CBcyKfpldTo.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/CBcyKfpldTo.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <dc:creator>Simon Scrapes</dc:creator>
+      <description>Four fixes for Claude Code&#x27;s out-of-box limitations: brand context folder, autonomous loops, auto mode, and scheduled routines.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-01 &middot; <strong>Length:</strong> 14 min &middot; <a href="https://www.youtube.com/watch?v=CBcyKfpldTo">Watch on YouTube</a></p>
+<p>Out of the box, Claude Code has four problems that quietly undermine every session you run: it does not know who you are, it loses context the moment you close the terminal, it stops working unless you are actively supervising it, and if you give it poor inputs it can create problems faster than it solves them. This video covers what power users have built to fix each of those, and all four fixes are practical enough to set up this week.</p>
+
+<h2>Fix 1: The Brand Context Folder</h2>
+<p>Every session with a fresh Claude Code install produces outputs that could belong to anyone. The fix is a brand context folder containing three files: a voice profile (how you write, the rules and real examples that define your style), a visual identity file (your fonts, color tokens, design system — stored as JSON or markdown so Claude can pull from it when building anything visual), and a positioning file (who your audience is, what you stand for, and the angles you use in your messaging). The critical architectural move is that your CLAUDE.md points to these files as an index rather than dumping all the content directly into it. CLAUDE.md as a pointer prevents context rot — loading too many lines into the main instruction file degrades the model's ability to follow them. Skills then pull from whichever context files they need at the right time. The payoff is that every session inherits your full context by default, and every output sounds like you rather than like a generic AI.</p>
+
+<h2>Fix 2: Autonomous Loops with /goal</h2>
+<p>By default, Claude Code only works while you are sitting at the keyboard. Close the terminal and work stops. The first partial fix is auto mode, activated by pressing Shift and Tab twice. This enables a background classifier that checks each action Claude is about to take and only pauses when something is genuinely risky — like connecting to a new external system or deleting a file. For routine safe operations, Claude simply keeps going without asking. The deeper fix is the /goal command, which lets you set a measurable completion condition. Claude then spins up additional agents and keeps iterating until that condition is met — you define not just the task but the finish line. The important constraint is that the goal must have an objective, measurable check and an exit condition to prevent infinite loops. This shifts the interaction from you supervising every step to you defining the destination and letting Claude find the route.</p>
+
+<h2>Fix 3: Scheduled Routines</h2>
+<p>Beyond /goal for one-off tasks, certain workflows in your business should run continuously without you ever triggering them. The /loop and /routines commands address this. Loop runs a recurring prompt on an interval you specify, up to a three-day maximum. Routines runs on a cloud server and handles longer cycles — the kind you want to run weekly or monthly. Combined with /goal, this means you can set up a workflow that runs on a schedule, works toward a defined outcome, and reports back when it is done, all without you being present at the keyboard.</p>
+
+<h2>Fix 4: Prompt Quality as a System</h2>
+<p>The fourth fix is less a single command and more a mindset about inputs. Poor prompts produce problems faster than they produce solutions because Claude will confidently execute on a bad specification. The brand context folder handles the ambient context problem. The goal and verification work handles the output quality problem. But the input itself — the specific task prompt — still needs to be clear about scope, deliverable, and what done looks like. Building even a short prompt template for recurring task types eliminates the most common source of bad outputs.</p>
+
+<h2>Why This Matters</h2>
+<p>The brand context folder setup maps directly to the vault and to the 10x Operator course, where teaching clients to build a persistent AI identity is one of the first practical exercises. The CLAUDE.md-as-index pattern is something worth adopting in the vault immediately to reduce context rot across long sessions. The /goal pattern is already partially implemented in this vault via the process-inbox skill, but the explicit framing of a measurable finish condition with an exit clause is a useful refinement. This video would work well as a reference for a course module on setting up Claude Code as a professional operating environment rather than just a chatbot.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=0">0:00</a> &mdash; The four out-of-box limitations of Claude Code</li>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=60">1:00</a> &mdash; Brand context folder structure: 3 files, CLAUDE.md as index</li>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=115">1:55</a> &mdash; Why CLAUDE.md as a dump causes context rot</li>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=225">3:45</a> &mdash; How skills pull from voice profile and visual identity</li>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=446">7:26</a> &mdash; Auto mode: Shift+Tab twice to stop constant permission prompts</li>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=530">8:50</a> &mdash; /goal command: set a measurable finish condition</li>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=635">10:35</a> &mdash; /goal + loops for always-on autonomous agents</li>
+<li><a href="https://youtu.be/CBcyKfpldTo?t=720">12:00</a> &mdash; Routines: cloud-scheduled tasks that run without you</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=CBcyKfpldTo">Watch the full video on YouTube</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>My Proven AI Agent Formula Explained</title>
+      <link>https://amir-reza-azimi.github.io/matter-summaries/videos/Nj9yzBp14EM.html</link>
+      <guid isPermaLink="true">https://amir-reza-azimi.github.io/matter-summaries/videos/Nj9yzBp14EM.html</guid>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <dc:creator>AI Automation Society</dc:creator>
+      <description>A 5-step framework for building AI automation systems — designed for non-technical builders.</description>
+      <content:encoded><![CDATA[
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@aiautomationsociety">AI Automation Society</a> &middot; <strong>Published:</strong> 2025-06-01 &middot; <strong>Length:</strong> 15 min &middot; <a href="https://www.youtube.com/watch?v=Nj9yzBp14EM">Watch on YouTube</a></p>
+<p>The premise of this video is that anyone can build serious AI automation systems without a technical background, provided they follow a disciplined methodology rather than jumping straight into the tools. The creator has used this five-step playbook across seven months of building systems that have generated real revenue, and this is the first time they are making the actual framework explicit.</p>
+
+<h2>Step 1: Foundations</h2>
+<p>Before you build anything, you need to understand three things at a working level, not a deep academic level. First, how large language models work: they predict the next token in a sequence, which means at their core they cannot take action in the world on their own. Second, what RAG and vector databases do: they let an agent search through a custom document library by meaning rather than by keyword, so the agent draws on your actual content instead of hallucinating from its training data. Third, how JSON and HTTP API calls work: if you cannot read a JSON object, you cannot debug why your automation is failing, and every modern API speaks JSON. The rule the creator lives by is "understand enough to get the system to provide value." You do not need to know the mathematical distance formula behind vector search. You just need to understand the input, the output, and what you can tune.</p>
+
+<h2>Step 2: Identify High-ROI Opportunities</h2>
+<p>Not every process is worth automating. The four criteria are: repetitive, time-consuming, error-prone, and scalable. The scalable criterion is the most important and the most overlooked. A lead-research workflow that saves a sales rep five hours per week at fifty leads compounds powerfully as the business grows. When the business scales to two hundred leads per week, that same automation saves twenty hours per week instead of five, which frees the team to drive more growth, which brings in more leads. The compounding effect is the whole point. Something like a personal assistant does not compound in the same way. Half the battle is choosing the right process to automate in the first place.</p>
+
+<h2>Step 3: Process Mapping</h2>
+<p>The creator never opens their automation tool and starts building cold. The analogy is building a Lego set without the instruction manual — technically possible, but slower and messier than it needs to be. Process mapping means writing out every single step of the workflow, no matter how small, before touching the tool. This surfaces bottlenecks and edge cases in advance, enforces scalability thinking, and makes the actual build time dramatically faster. Every workflow, once mapped, resolves into five building blocks: a trigger (the event that starts the process — a new email, a form submission, a CRM record), data sources (the trigger's payload plus any external lookups like a vector database or a web search), data transformation (filtering, merging, cleaning), a decision point (where AI classifies or chooses a branch), and a data destination (where the result lands). If you can identify all five for your use case, you have your instruction manual.</p>
+
+<h2>Step 4: Workflows vs. AI Agents</h2>
+<p>This is the step most people get wrong. AI is exciting, and agents are exciting, but forcing an agent into a process that does not need one only increases latency, cost, and the risk of inconsistent outputs. The distinction is simple: if the process runs in a predictable fixed order every time, it is a workflow, not an agent. A workflow goes 1-2-3-4-5-6, and guardrails keep it on that path. An agent might go 1-2-3-4-5-6-7, but you do not know which branch it will take. That freedom is useful only when the task genuinely requires it. A customer support email bot that looks up knowledge base content and sends a reply works perfectly as a workflow — same steps, same order, every time, faster and cheaper than using an agent.</p>
+
+<h2>Step 5: Proof of Concept and Guardrails</h2>
+<p>Three sub-rules govern this phase. First, fail fast and debug often: when you start a workflow from scratch you will hit errors, and the sooner you reach a working proof of concept the better. Second, you do not know what you do not know: edge cases only reveal themselves once real users and real data flow through the system. No process map, however thorough, catches everything in advance. Third, there is no finished product: new models drop, new techniques appear, and the system always has room to be made faster or cheaper. The practical implication is that production is where you learn. Identify the patterns behind recurring errors, build a conditional check or a retry loop to handle each one, and treat the system as permanently in iteration.</p>
+
+<h2>Why This Matters</h2>
+<p>The whole framework is a direct mirror of the 10x Operator course premise: non-technical professionals can build powerful AI systems by treating them as engineering problems with a repeatable process. The workflows-vs-agents distinction alone would save most people significant wasted effort. The process mapping step is the one that is most consistently skipped and most consistently the source of messy builds. This is a video worth turning into a course module or a client onboarding framework.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=19">0:19</a> &mdash; Step 1: Foundations — what you need to understand and what you can safely skip</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=83">1:23</a> &mdash; RAG and vector databases explained for practitioners</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=145">2:25</a> &mdash; Why JSON and API calls are the most important foundation</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=229">3:49</a> &mdash; Step 2: The four ROI criteria, especially scalable</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=302">5:02</a> &mdash; How a lead automation compounds as the business grows</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=332">5:32</a> &mdash; Step 3: Process mapping — the Lego analogy</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=449">7:29</a> &mdash; Five building blocks in every workflow</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=529">8:49</a> &mdash; Step 4: When NOT to use an agent — the linear vs non-linear distinction</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=667">11:07</a> &mdash; Step 5: POC + fail fast + you don&#x27;t know what you don&#x27;t know</li>
+<li><a href="https://youtu.be/Nj9yzBp14EM?t=813">13:33</a> &mdash; Real guard rail example: empty query conditional check</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=Nj9yzBp14EM">Watch the full video on YouTube</a></p>
 ]]></content:encoded>
     </item>
   </channel>
