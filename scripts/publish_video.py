@@ -201,20 +201,32 @@ def build_index(records):
 
 
 def main():
-    if len(sys.argv) != 2:
-        sys.exit("usage: publish_video.py <record.json | ->")
-    raw = sys.stdin.read() if sys.argv[1] == "-" else open(sys.argv[1]).read()
+    # --page-only: write just docs/videos/<id>.html and skip the RSS feed/index.
+    # This is the current workflow — summaries are pushed to Matter directly via the
+    # Matter CLI/API (matter items save --url <page>), NOT via an RSS subscription.
+    args = [a for a in sys.argv[1:] if a != "--page-only"]
+    page_only = "--page-only" in sys.argv[1:]
+    if len(args) != 1:
+        sys.exit("usage: publish_video.py [--page-only] <record.json | ->")
+
+    raw = sys.stdin.read() if args[0] == "-" else open(args[0]).read()
     rec = json.loads(raw)
     for field in ("id", "title", "channel", "url"):
         if not rec.get(field):
             sys.exit(f"record is missing required field: {field}")
 
-    os.makedirs(DATA_DIR, exist_ok=True)
     os.makedirs(VIDEOS_DIR, exist_ok=True)
+    write_page(rec)
+
+    if page_only:
+        print(f'page-only: wrote docs/videos/{rec["id"]}.html '
+              f'(feed.xml/index.html NOT rebuilt — push to Matter via CLI/API)')
+        return
+
+    # Legacy full-feed mode (RSS). Kept for back-compat; the digest skill no longer uses it.
+    os.makedirs(DATA_DIR, exist_ok=True)
     with open(os.path.join(DATA_DIR, f'{rec["id"]}.json'), "w") as f:
         json.dump(rec, f, indent=2, ensure_ascii=False)
-
-    write_page(rec)
     records = load_records()
     build_feed(records)
     build_index(records)
