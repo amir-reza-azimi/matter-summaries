@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build Self-Improving Claude Code Skills. The Results Are Crazy.</title>
+<meta name="description" content="Applying Karpathy&#x27;s auto-research loop to Claude Code skills: an overnight self-improvement loop that edits SKILL.md and keeps or reverts changes based on the pass rate over binary true/false assertions.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Build Self-Improving Claude Code Skills. The Results Are Crazy.</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-03-13 &middot; <strong>Length:</strong> 11 min &middot; <a href="https://www.youtube.com/watch?v=wQ0duoTeAAU">Watch on YouTube</a></p>
+<h2>TL;DR</h2>
+<p>Simon Scrapes shows how to make your Claude Code skills improve themselves overnight by borrowing Andrej Karpathy's auto-research loop. You give an agent one thing to improve and one clear, measurable way to know it got better, then it makes a change, runs a test, keeps what helps and reverts what does not, looping unattended until it plateaus or you stop it. Applied to skills, the metric becomes the pass rate over binary true or false assertions, and the file being edited is the skill's SKILL.md.</p>
+
+<h2>Walkthrough</h2>
+<p>Building good Claude Code skills is slow. Simon has built over 20, and taking one from a rough first version to something reliable usually takes weeks of manual tweaking: run the skill, spot a problem, open SKILL.md, edit, and repeat. It is repetitive and inconsistent.</p>
+<p>The unlock came from Andrej Karpathy, of the OpenAI founding team and former head of AI at Tesla, who shared an idea called auto research. The concept is simple. Give an AI system something to improve and one clear way to measure whether it got better, then let it loop. It makes a change, runs a test, and checks the score. If the score improves it keeps the change and commits it; if not, it rolls back and tries something else. Crucially, it keeps going all night, so you sleep and wake up to a better system.</p>
+<p>Karpathy's setup is three files: a program file with the instructions telling the agent what to test, a fixed data file that records every result, and a training script that the agent actually edits. The core of the instruction file is about ten lines: tune the training script with an experimental idea by directly hacking the code, run the experiment, read the results, and if the measured value improved, advance the branch and keep the commit, otherwise reset to the starting point. Simon highlights one line especially, a never-stop instruction telling the agent not to pause and ask the human whether to continue, because the human might be asleep. The agent is autonomous and works until there are no more gains or it is manually stopped.</p>
+<p>Applied to skills there are two layers of self-improvement. Layer one is getting the skill to trigger at all. Claude reads a skill's description to decide relevance, and community testing found activation can be as low as 20 percent with vague descriptions. Anthropic's own skill-creator skill already has a built-in loop for this. You give it test queries, some meant to trigger the skill and some not, it runs each one multiple times, measures trigger accuracy, proposes a better description, and retests. Simon's advice is not to reinvent this, just use the skill-creator.</p>
+<p>Layer two, the new part, is improving the quality of the skill's output autonomously. Triggering reliably and producing great output are different problems. The skill-creator's evaluations let you score output against your own metrics, but that part was not self-improving on its own, so Simon adds the Karpathy-style overnight loop on top.</p>
+<p>The key concept is binary assertions. Every test must be a true or false statement, for example, does not contain em dashes, is under 300 words, or the final line is a question. These can be automated. Subjective checks like does it have a compelling subject line cannot, because two people can disagree on what compelling means, so the loop cannot score them reliably.</p>
+<p>The concrete setup: inside a marketing copywriting skill, create an evaluation folder with an evaluation file holding 25 binary assertions across five tests. Each test feeds a prompt, such as write a LinkedIn post about why simple automations beat complex ones, with an expected output that follows the skill's reference files, like a tone-of-voice guide, a persuasion toolkit, and example posts. The assertions check structural things tied to the skill instructions and the process: is the first line a standalone sentence, does it contain at least one specific number, is the final line not a question, and is the word count under 300. You do not write the evaluation file by hand; you ask Claude Code to generate it with assertions that can be validated true or false from your skill instructions.</p>
+<p>To run it autonomously, you tell Claude Code to use the skill-creator skill and run a self-improvement loop on the copywriting skill, pointing at the evaluations file. It scores each iteration, returns pass or fail, and if any assertion fails it makes one change to the skill, reruns, and recalculates. If the score improved it keeps and commits; if it dropped it resets and tries a different change. It logs everything, and it is told not to ask permission and to keep looping until interrupted or a perfect score is hit.</p>
+<p>The result: on the first run the skill scored 23 out of 24, or about 96 percent. The single failure was an end-with-a-question rule that lived in the tone-of-voice file but not in the skill instructions, creating a contradiction. The loop added a matching rule to the skill and hit a perfect score on the second run. This example only needed two runs because it was already a mature fifth version; a brand-new skill would take many more.</p>
+
+<h2>Standout moments</h2>
+<p>The never-stop instruction is the philosophical core: the agent assumes the human is asleep and works indefinitely until interrupted. And binary is everything is the practical core: if a check is not strictly true or false, it cannot be automated, which is where most people testing their skills go wrong.</p>
+<p>The stated limitation matters too. The binary loop handles structure, format, word counts, and forbidden patterns, but not tone of voice, creative quality, or whether the skill is genuinely using its reference-file context. Those still need human judgment, or the skill-creator's side-by-side qualitative dashboard and A/B testing of reference files.</p>
+
+<h2>Why this matters for my work</h2>
+<p>This is a direct, repeatable pattern I can apply to my own skill library: wrap each skill in an evaluation folder with binary assertions and let a self-improvement loop harden it overnight, instead of hand-tweaking for weeks. It is also clean teaching material for the course and community, and a sellable deliverable for consulting work, where the eval harness plus overnight loop makes client skills more structurally sound and self-maintaining. So I could take my most-used skills, have Claude Code generate a 20 to 30 assertion evaluation file for each, and leave a loop running overnight to improve them without manual iteration.
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=21">0:21</a> &mdash; Karpathy&#x27;s auto-research idea: one thing to improve plus one measurable metric, then loop</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=64">1:04</a> &mdash; Karpathy&#x27;s three files: instructions, a fixed results data file, and the training script the agent edits</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=102">1:42</a> &mdash; The never-stop line: the agent runs autonomously and assumes you are asleep</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=142">2:22</a> &mdash; Vague descriptions can drop skill activation to as low as 20 percent</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=150">2:30</a> &mdash; Layer 1: Anthropic skill-creator&#x27;s built-in description-improvement loop (do not reinvent it)</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=327">5:27</a> &mdash; Why binary is everything: true or false assertions only, not subjective judgments</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=370">6:10</a> &mdash; The setup: an evaluation folder plus 25 binary assertions across 5 tests</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=517">8:37</a> &mdash; Results: 23/24 (about 96 percent) on run one, perfect score on run two after fixing a rule conflict</li>
+<li><a href="https://youtu.be/wQ0duoTeAAU?t=604">10:04</a> &mdash; Limitations: the binary loop covers structure, not tone or creative quality</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=wQ0duoTeAAU">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
