@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X digest — week of 2026-07-04</title>
+<meta name="description" content="2026-06-28 – 2026-07-04">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>X digest — week of 2026-07-04</h1>
+<p><strong>Week:</strong> 2026-W27 &middot; <strong>Window:</strong> 2026-06-28 – 2026-07-04 &middot; <strong>Sources:</strong> 11 posts</p>
+
+<h2>TL;DR</h2>
+<p>A quiet week from Karpathy and Ammaar, but a strong one for Claude Code and for how AI is reshaping team roles. The throughline: the tools are getting more autonomous, with background subagents and Artifacts landing in Claude Code, and the sharpest people are openly rethinking what engineering, product, and design roles even mean.</p>
+<h2>Claude Code and tooling</h2>
+<p>Boris Cherny had the most directly useful week. The headline for your workflow: in the next version of Claude Code, subagents run in the background by default, so you can keep working with Claude in the foreground while your subagents grind away in parallel. If you want one in the foreground, you just tell Claude. He also announced that Artifacts inside Claude Code are expanding to Pro and Max plans, which he calls life changing for building small tools inline, and that Claude Desktop is now on Linux. Thariq added a useful clarification on the model routing classifiers: a small fraction of routine coding and debugging tasks get flagged and fall back to Opus, so if you see routing surprises, that is expected behavior, not a bug.</p>
+<h2>AI-native roles, the standout</h2>
+<p>The single best post of the week for you is Boris Cherny's reflection on how engineering, product, design, and data science are melting into a new kind of role. He describes five archetypes he sees on the Claude Code team. The Prototyper churns out many ideas, most of which don't ship. The Builder turns a prototype into production-grade product. The Sweeper simplifies, unships, and optimizes. The Grower iterates a built product toward product-market fit. And the Maintainer keeps a mature system secure, reliable, and fast as it scales. His key insight is that these are not tied to job title, and a healthy team blends them by stage: pre product-market fit needs Prototyper, Builder, and Sweeper; a growing product needs Builder, Sweeper, and Grower; a mature one needs Sweeper, Grower, and Maintainer. Leading a BI function going AI-native, this is a ready-made lens for your own team's shape as the old domain-specific roles blur. So I could map my team against these five archetypes and see which stage-fit we are missing.</p>
+<h2>Prompting and agent workflows</h2>
+<p>Thariq shared how he actually gets value out of the frontier model. The most important part, he says, is discovering your own unknowns so you can prompt it better, and he walks through his method for surfacing them. He also described his writing process, which is now a loop of engineering work, talking to people, brainstorming and researching with Claude, drafting, giving a talk or two, and rewriting. That is a nice template if you want to systematize how Pursuit pieces or course material get made. Jason Liu had the sharpest workflow observation: the friction with keyboard-bound commands is that they tether you to a keyboard, whereas most of his real work now happens by dictation, pacing around the house saying keep an eye on this, or go ahead and set a goal. Worth thinking about for hands-free agent control.</p>
+<h2>Models and building for everyone</h2>
+<p>Logan Kilpatrick launched two Gemini media models: Nano Banana 2 Lite, which produces an image in under four seconds at about three cents per thousand images, and Omni Flash, described as state-of-the-art video editing at ten cents a second. Given you already run a nano-banana image tool, the Lite model's speed and price are worth a look. He also noted that nearly two hundred thousand apps built in Google AI Studio were deployed for free in the last month, reinforcing the anyone-can-ship-an-idea theme that sits right at the center of your course.</p>
+<h2>Worth a click</h2>
+<p>Jason Liu's note to young engineers about rest being part of the work, treating yourself like a high-performance athlete who needs an offseason, reads like a Pursuit passage and might spark one. And Boris Cherny's five-archetypes post is worth opening in full to sit with the framing.</p>
+<p>Quiet this week: Andrej Karpathy posted nothing substantive, and Ammaar Reshi did not post in the window.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><strong>@bcherny</strong> &mdash; Claude Code: background subagents by default (<a href="https://x.com/bcherny/status/2071647677591466098">open on X</a>)</li>
+<li><strong>@bcherny</strong> &mdash; Five team archetypes as roles melt together (<a href="https://x.com/bcherny/status/2071379474277613732">open on X</a>)</li>
+<li><strong>@bcherny</strong> &mdash; Artifacts in Claude Code expanding to Pro/Max (<a href="https://x.com/bcherny/status/2072777472970563995">open on X</a>)</li>
+<li><strong>@bcherny</strong> &mdash; Claude Desktop on Linux (<a href="https://x.com/bcherny/status/2072000214634742243">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Discovering your own unknowns to prompt better (<a href="https://x.com/trq212/status/2073101078145724589">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; His writing process with Claude (<a href="https://x.com/trq212/status/2071787401475960892">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Classifier routing / Opus fallback clarification (<a href="https://x.com/trq212/status/2072185565076988326">open on X</a>)</li>
+<li><strong>@jxnlco</strong> &mdash; Dictation-driven agent commands (<a href="https://x.com/jxnlco/status/2073110085119983868">open on X</a>)</li>
+<li><strong>@jxnlco</strong> &mdash; Advice to young engineers: rest is part of the work (<a href="https://x.com/jxnlco/status/2073112647231513028">open on X</a>)</li>
+<li><strong>@OfficialLoganK</strong> &mdash; Nano Banana 2 Lite + Omni Flash launch (<a href="https://x.com/OfficialLoganK/status/2071988351083921690">open on X</a>)</li>
+<li><strong>@OfficialLoganK</strong> &mdash; ~200k apps deployed free from AI Studio (<a href="https://x.com/OfficialLoganK/status/2070704787444887998">open on X</a>)</li>
+</ul>
+</article>
+</body>
+</html>
