@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Masterclass for People Who Don&#x27;t Code</title>
+<meta name="description" content="A ground-up Claude Code masterclass for non-coders: execution layer, CLAUDE.md, skills and skill chains, MCP vs CLI vs hooks, and the three jobs of memory.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Claude Code Masterclass for People Who Don&#x27;t Code</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-14 &middot; <strong>Length:</strong> 25 min &middot; <a href="https://www.youtube.com/watch?v=C2Izj7hxIlE">Watch on YouTube</a></p>
+<p>This is a ground-up rebuild of the "Claude Code for non-coders" masterclass, reordered around what actually matters after months more daily use. The pitch is simple: Claude Code has dozens of features, but a small handful deliver most of the value, so the video moves fast through basics and spends the real time on what actually changes outcomes.</p>
+<p>The core reframe is that a chatbot is a thinking layer, advice only, while Claude Code is an execution layer that can create files, connect to tools, and run repetitive tasks directly. The terminal looks intimidating, but once you type claude to open it, you're just in a chat window that happens to be able to touch your files. The first habit worth building is specificity: vague instructions produce vague outputs, and the more detail you front-load, the less correction you need later.</p>
+<p>Because Claude Code can actually change files and run commands, permissions matter. The default mode asks for approval on almost everything, most of which reads as unreadable jargon, which kills flow fast. Auto mode fixes this: a background classifier lets routine actions through and only stops for genuinely risky ones, like deleting files or connecting to new systems. The recommendation is to switch it on from the first session.</p>
+<p>The single highest-leverage idea in the whole video is CLAUDE.md, a markdown file Claude reads at the start of every session, functioning like a permanent system prompt. Instead of re-explaining your business, your preferences, and how you work every time, you write it once into this file and it's applied forever. From there, skills extend the same idea to specific tasks: a skill is a pre-written, step-by-step instruction set with a clear description of when it should trigger, so Claude reads it and executes a task the way you'd do it yourself, rather than generically. The real leverage isn't a single skill, though; it's chaining several together into a system where the output of one becomes the input of the next, so a single command replaces an entire manual process. The video's own example: turning one idea into a finished Instagram carousel is really three chained skills, picking the topic, writing the copy in your voice, and laying out the visual design, run end to end from one instruction.</p>
+<p>Connecting Claude to day-to-day tools introduces MCP, the model context protocol, which functions as a bridge to things like Notion or Google Drive: ask Claude to connect and it finds the docs, sets up the connection, and walks you through authenticating. The catch most people miss is that an MCP connection stays loaded for the entire session, quietly eating into the context window whether you use it or not. For a tool you touch only occasionally, a CLI connection is often better: Claude just runs a single command at the moment it's needed rather than keeping the whole tool definition resident. Not everything needs AI at all, either. For pure if-this-then-that logic with no judgment involved, like reformatting a file every time it's saved, a hook, a small script that fires automatically at a defined moment, is both cheaper and more reliable than asking Claude to remember to do it manually every time.</p>
+<p>The video closes on memory, which it calls Claude Code's biggest remaining limitation. Out of the box, automemory saves a memory.md file of facts and pointers, but this only covers one of memory's three actual jobs: storage, injection (what loads automatically at session start, which should stay concise and under roughly 200 lines to avoid context rot), and recall (finding the right old information later, which by default only works by matching literal keywords). Recall is the weak link: ask about a decision from six months ago in different words, or after the conversation's been compacted, and default Claude Code often finds nothing. The fix suggested is layering in an open-source semantic-search tool like mem-search, which finds prior context by meaning instead of exact wording, so long-term recall actually holds up as your history of sessions grows.</p>
+<h2>Standout moments</h2>
+<p>The clearest line in the video: a skill is a process document telling Claude how to do something properly, while a sub-agent is who's doing the work, off in its own isolated context, reporting back only the finished result. That distinction, kept separate through the whole masterclass, resolves a genuinely common point of confusion. The concise-CLAUDE.md-plus-reference-files pattern, where the main file only points to detail stored elsewhere so context loads selectively, is likewise a small habit with outsized effect on output quality over time.</p>
+<h2>Why this matters for my work</h2>
+<p>This is close to a ready-made curriculum outline for the 10x Operator course: the same non-coder-to-competent arc (execution layer, CLAUDE.md, skills, skill chains, MCP vs CLI vs hooks, memory) maps almost directly onto a module sequence for teaching non-technical professionals. So I could lift this structure as the backbone of a first course module and adapt the carousel-skill-chain example into a marketing- or BI-flavored equivalent for the audience.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=40">0:40</a> &mdash; Chatbot as thinking layer vs Claude Code as execution layer</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=220">3:40</a> &mdash; Auto mode: the classifier that removes constant approval friction</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=340">5:40</a> &mdash; CLAUDE.md explained as a persistent system prompt</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=460">7:40</a> &mdash; Skills as reusable, task-specific instruction files</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=540">9:00</a> &mdash; Chaining skills into systems: the Instagram carousel example</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=700">11:40</a> &mdash; MCP vs CLI: the context-cost tradeoff for tool connections</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=820">13:40</a> &mdash; Hooks for deterministic, no-AI-needed actions</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=980">16:20</a> &mdash; The three jobs of memory: storage, injection, recall</li>
+<li><a href="https://youtu.be/C2Izj7hxIlE?t=1120">18:40</a> &mdash; Why default keyword recall breaks down over months of use</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=C2Izj7hxIlE">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

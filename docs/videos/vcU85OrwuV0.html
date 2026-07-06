@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Anthropic Engineers Actually Prompt Fable 5</title>
+<meta name="description" content="Six specific prompting habits distilled from Anthropic&#x27;s own Claude Fable 5 prompting guide: intent, negative prompting, effort matching, proof of completion, and a silent safety-routing trap.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>How Anthropic Engineers Actually Prompt Fable 5</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-07-01 &middot; <strong>Length:</strong> 11 min &middot; <a href="https://www.youtube.com/watch?v=vcU85OrwuV0">Watch on YouTube</a></p>
+<p>This video distills Anthropic's own official prompting guide for Claude Fable 5 into six specific habits, cross-checked against what people are actually finding on X and what Anthropic engineers themselves describe. The context: Fable 5 costs twice as much as Opus per token and, at time of recording, sits on a promotional free-usage window rather than being a permanent part of the standard plan, so getting genuinely more out of each prompt matters more than usual.</p>
+<p>The first habit, which applies to any model, not just Fable 5, is to give it the why: the context behind why you're doing something, not just the task itself. Anthropic's documentation states the model performs better when it understands your intent, because that context lets it connect the task to the right background information instead of guessing. Concretely, instead of "write me an email to a client about the delay," you'd say what the bigger task is, who the email is for, and what they specifically need, before asking for the email itself. If your context files (a CLAUDE.md, a second brain) are already set up well, this framing also cues the model to actually go look in the right specific files rather than defaulting to generic phrasing.</p>
+<p>The second habit is negative prompting: explicitly stating what not to do, not just what to do. The reasoning given is that a model is fundamentally predicting the next most likely token, so left unconstrained it will sometimes get creative in ways you didn't ask for. Anthropic's own guide is shown doing exactly this repeatedly: "when you have information to act on, act," followed immediately by "do not do this," "don't add features," "do the simplest thing that works well." The suggested mental model is treating the instruction like briefing an intern: you'd tell them explicitly what not to touch until you say go, not assume they'll infer it. This is called out as something that used to work less reliably on older models but has become noticeably more effective as models have improved.</p>
+<p>The third habit is letting it act once it has enough information, rather than over-planning. The advice is to stop defaulting to plan mode for everything and instead say something like "when you have enough information to act, then act," because individual requests on hard tasks can already run for many minutes at higher effort settings when they require gathering context, building, and self-verifying, so excessive up-front planning adds latency without adding quality. This connects directly to effort levels: Anthropic recommends high effort as the default for most tasks, extra-high only for the most capability-sensitive work, and medium or low for routine tasks, since Fable 5 on low effort can land in a similar capability range to Opus on extra-high or max, but cheaper. The advice is to reach for Fable 5 for perhaps only 5 to 15 percent of tasks; using it for everything is close to guaranteed overkill given the token cost.</p>
+<p>The fourth habit, arguably the most broadly important, is making it prove completion rather than just asserting it. Instead of asking "is this done and is it working," the suggested phrasing is "before you tell me something is done, point to the result that proves it, only report work you can show evidence for, if something isn't verified, say so plainly instead of guessing." This is described as something worth baking permanently into skills, sub-agent definitions, and CLAUDE.md files rather than repeating at the end of every individual prompt.</p>
+<p>The fifth habit is specific to Fable 5: don't ask it to show its reasoning, especially in a system prompt, because a standing "explain your reasoning" instruction can trigger a safety-related handoff, silently routing your task to the less capable Opus 4.8 instead. This ties to Fable 5's broader safety-routing behavior: if it judges a request might fall into a sensitive bucket (hacking, dangerous biology, exposing its own private reasoning), it can quietly hand off to Opus without telling you, unless you're on the API where the response metadata reveals it happened.</p>
+<p>The sixth habit is saying less, not more, once the surrounding environment (context, tools, skills) is already solid, which sounds like it contradicts habit one but doesn't: giving the why is not the same as spelling out every rule by name. Because Fable 5 is more capable, a short instruction like "lead with the outcome, keep it simple, and pause only when the work truly needs me" can now steer behavior as effectively as an exhaustively itemized rule list did with older models.</p>
+<h2>Standout moments</h2>
+<p>The silent-handoff-to-Opus behavior triggered by asking Fable 5 to expose its own reasoning is a genuinely non-obvious operational trap: without knowing this, someone could be paying for and believing they're using Fable 5 while actually getting routed to a cheaper, less capable model without any visible warning outside the API.</p>
+<h2>Why this matters for my work</h2>
+<p>All six habits are directly encodable into standing instructions rather than one-off prompt phrasing: the "prove it with evidence" and "negative-prompt explicitly" habits in particular are immediately applicable to every skill and CLAUDE.md file across the vault and any BI agent work. So I could add a standing "point to evidence before declaring done" clause to the vault's core CLAUDE.md and to any Claude Code skill that currently just reports completion without a verification step.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=20">0:20</a> &mdash; Fable 5&#x27;s cost and the promotional free-usage window</li>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=90">1:30</a> &mdash; Habit 1: give it the why, not just the task</li>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=180">3:00</a> &mdash; Habit 2: negative prompting, explicitly stating what not to do</li>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=300">5:00</a> &mdash; Habit 3: let it act once it has enough, and matching effort levels</li>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=420">7:00</a> &mdash; Habit 4: make it prove completion with evidence</li>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=480">8:00</a> &mdash; Habit 5: don&#x27;t ask Fable 5 to expose its reasoning</li>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=520">8:40</a> &mdash; The silent safety handoff to Opus 4.8, explained</li>
+<li><a href="https://youtu.be/vcU85OrwuV0?t=570">9:30</a> &mdash; Habit 6: say less once context and skills are solid</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=vcU85OrwuV0">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Teach Claude to Write Content Like You</title>
+<meta name="description" content="A concrete three-file brand system, voice profile, body of work, and visual identity, so AI-written content sounds and looks like you, with an AI-detector validation step.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>How to Teach Claude to Write Content Like You</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-06 &middot; <strong>Length:</strong> 16 min &middot; <a href="https://www.youtube.com/watch?v=yh_fZZVbNwc">Watch on YouTube</a></p>
+<p>The central claim of this video is that the single biggest lever for better AI-written content isn't a better prompt, it's giving Claude your actual brand context. AI content today is competent but generic; it could belong to anyone. The fix is building three durable files once, so that from then on, everything Claude produces sounds and looks like you, and you never re-explain who you are again.</p>
+<p>The first file is a voice profile, built by a skill with four modes: import an existing brand voice, extract it from raw content you paste in, scrape it from a LinkedIn URL or website, or build it from scratch through a guided interview. The from-scratch flow is demonstrated live: the skill asks about stance and personality (does an anti-corporate angle apply, what annoys you about how business is normally done in your industry), your natural response style in real conversations, and your professional background, all via Claude's ask-a-question feature so you can answer multiple choice or paste examples. If you don't already have a positioning document, it separately walks through ideal client pain (who you're talking to and the exact pain point that makes them open an email or click a post), what tone resonates and what would immediately turn the audience off, and natural language patterns, down to specific words or phrases people notice you repeating. The best-quality input for this step is a transcribed podcast appearance or video where you're actually talking, since that captures real cadence better than written samples. Once built, the skill generates three test outputs (an email opening, a LinkedIn post, a landing-page headline) you can iterate on, and the video demonstrates running a generated LinkedIn post through an AI-content detector, which scored it at roughly 12% likelihood of being AI-generated, evidence that personalization measurably changes detectability, not just how something feels to the reader.</p>
+<p>The second file is a "body of work" document: the seven to twelve recurring core theses and opinions you keep returning to, distilled from your own past long-form posts, video or podcast transcripts, sales pages, and about pages, plus optionally an AI's scan of your last 30 to 90 days of chat history for recurring themes. The output is a single-line thesis plus a handful of strong supporting opinions that underpin it, meant to get every new piece of content to a 60-70% draft immediately, anchored to a consistent point of view, instead of Claude generating a fresh generic angle on the same topic every time.</p>
+<p>The third file is visual identity: a design-token system built by reverse-engineering what a branding agency would produce, reduced to a skill. It walks through color palette (including a defined accent color), typography and how it scales, logo handling, and crucially, three to five reference visual assets you admire (other people's carousels, brand book PDFs, a landing page's vibe), which get analyzed to extract palette, typography, and specific design moves. Everything gets locked into a tokens.json file plus exported font and logo assets, so downstream generation skills (a LinkedIn carousel generator, in the demo) inject the same tokens every time instead of producing visually inconsistent output. Skipping the reference-material step is explicitly discouraged: without it, templates won't look anything like the intended brand.</p>
+<h2>Standout moments</h2>
+<p>Running the generated LinkedIn post through an AI detector and getting a concrete, low percentage back is a rare moment of actual measurement in a genre usually built on vibes: it validates the underlying claim that a voice profile isn't just a nice-to-have, it changes an objectively measurable property of the output. The instruction to use a transcribed podcast or video appearance as your best voice-extraction sample, rather than polished writing, is a genuinely counterintuitive but correct insight: how you actually talk carries more real signal than how you write when trying to capture natural voice.</p>
+<h2>Why this matters for my work</h2>
+<p>This is a directly usable three-file system for the Pursuit newsletter and any AI-assisted marketing or LinkedIn drafting work: a voice-profile document distilled from actual transcribed talks would likely outperform relying on the existing voice-sample.md alone, and the body-of-work document is a natural complement, capturing recurring theses across 150-plus newsletter issues rather than starting fresh each week. So I could pilot the body-of-work extraction against the Pursuit archive as a first test of whether it measurably tightens future AI-assisted drafts.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=20">0:20</a> &mdash; Why brand context, not better prompts, is the real lever</li>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=120">2:00</a> &mdash; The voice-profile skill&#x27;s four extraction modes</li>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=260">4:20</a> &mdash; Live from-scratch interview: personality and positioning questions</li>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=480">8:00</a> &mdash; Why a transcribed podcast beats written samples for voice extraction</li>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=560">9:20</a> &mdash; Testing generated copy through an AI-content detector</li>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=640">10:40</a> &mdash; Body of work: distilling 7-12 recurring core theses</li>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=820">13:40</a> &mdash; Visual identity as a design-token system fed by reference assets</li>
+<li><a href="https://youtu.be/yh_fZZVbNwc?t=980">16:20</a> &mdash; Applying tokens.json downstream to a LinkedIn carousel generator</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=yh_fZZVbNwc">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

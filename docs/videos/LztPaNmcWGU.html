@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Become AI Native in less than 60 mins</title>
+<meta name="description" content="A masterclass on what AI-native concretely means: people, agents, and context, with a live skill-chain demo generating a personalized client proposal from real meeting context.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Become AI Native in less than 60 mins</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@GregIsenberg">Greg Isenberg</a> &middot; <strong>Published:</strong> 2026-06-08 &middot; <strong>Length:</strong> 57 min &middot; <a href="https://www.youtube.com/watch?v=LztPaNmcWGU">Watch on YouTube</a></p>
+<p>This is a near hour-long masterclass, with Theo Taba (co-founder of LCA, which advises major companies on becoming AI-native), on what "AI native" concretely means beyond just using ChatGPT. The framing: an AI-native org is one where people manage agents, agents can read and write to the company, and the company gets measurably smarter over time. Using a tool doesn't make you AI-native any more than having a website makes you a tech company; the actual system is people, agents, and context, and it's what unlocks speed and market signal that becomes a genuine moat.</p>
+<p>On people: the reframe is that AI eats the middle of most knowledge work, the execution portion, freeing you to focus on the bookends: strategy and judgment at the start, review and quality control at the end. Everyone becomes a manager now, even individual contributors, because the skill that matters is setting agents up to succeed the way a manager sets up a team, not learning a new tool.</p>
+<p>On agents: autonomy requires four things, a clear goal, the right skills, the right tools, and sufficient context, mirrored against what a new hire would need on day one to do real work without supervision. Evals are the visibility layer here: they let you see what an agent produced, compare it against a defined quality bar, and know objectively whether the output is good, not just whether it feels okay. The video introduces skill chains as the mechanism for agent autonomy at scale: a macro-skill made of several skills firing sequentially, skill one calling skill two calling skill three. A live demo runs a real internal proposal-generation skill chain, a trigger detects a prospect requesting a proposal, then three chained skills fire: a proposal microsite generator, a copy skill tuned to sound like the founder rather than generic AI, and a QA skill checking for overpromising or fabricated claims. The output deploys live and pings Slack. Critically, the proposal pulls in a specific detail from a meeting transcript months earlier (a client's offhand comment about record stores and vinyl) and weaves it naturally into the copy, which is only possible because of the underlying context layer, not the skill chain alone.</p>
+<p>That context layer is described as a loop: capture, curate, store, execute, experience. Capture means a routine (essentially a scheduled cron job run inside Claude, described as "scheduled tasks but on steroids") pulls in Slack messages, meeting recordings, emails, and linear tickets on a recurring basis into an inbox for the system. Curate means a librarian-like step reads, cleans, files, and decides what to ignore before anything reaches long-term storage, because dumping everything in creates noise, not signal. Storage, the "brain," is just folders of markdown files organized so agents can search, retrieve, and write back to them over time, no different in kind from anything else described elsewhere in this digest as folder-based memory. Execute is where agents leverage that context to actually do the ideating, prototyping, and shipping. Experience is customers encountering the output and generating signal back, which flows back into curation and updates the brain, closing the loop. A second live build demonstrates going from a spoken feature request (a "daily music blitz" feature for a Spotify-style prototype) to a working, testable prototype in under ten minutes, followed immediately by an in-app usability test skill that collects structured feedback and can synthesize results from multiple respondents into a "plan V2" step, all inside the same session.</p>
+<p>The video closes on a specific startup-idea framework for anyone wanting to build a service business on this system: niche down along three axes, industry, function, and company size, and prioritize workflows that are both niche and high-frequency first (a layup), because those clients will then want the more general, lower-frequency work too once trust is established.</p>
+<h2>Standout moments</h2>
+<p>The proposal demo's callback to a months-old, seemingly throwaway line from a client meeting is the single clearest illustration in this entire digest of why a context layer matters more than a clever prompt: no amount of prompt engineering recreates a detail that was never captured and indexed in the first place. The distinction drawn between "traces" or "exhaust," the decisions and explorations made along the way to a finished artifact, and the finished artifact itself, with the point that most orgs throw the traces away when they're often the most valuable material for future skill or context improvements, is an underused idea worth deliberately capturing.</p>
+<h2>Why this matters for my work</h2>
+<p>The capture-curate-store-execute-experience loop is a clean architectural model for what a genuinely AI-native BI function should look like, beyond just having agents available, and the niche-times-frequency prioritization framework is directly usable for scoping AI-native consulting engagements. So I could map join.com's existing Slack/meeting/ticket sources against this five-stage loop to identify which stage (likely curation) is currently the weakest link.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=180">3:00</a> &mdash; AI native defined: people manage agents, agents read/write to the company</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=420">7:00</a> &mdash; AI eats the middle: why everyone becomes a manager now</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=620">10:20</a> &mdash; The four requirements for agent autonomy</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=780">13:00</a> &mdash; Skill chains explained: macro-skills firing sequentially</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=1020">17:00</a> &mdash; Live demo: a 3-skill proposal chain pulls in a real meeting detail</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=1500">25:00</a> &mdash; The capture-curate-store-execute-experience context loop</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=1980">33:00</a> &mdash; Live demo: spoken feature request to working prototype in under 10 minutes</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=2260">37:40</a> &mdash; In-app usability testing and synthesizing feedback into a V2 plan</li>
+<li><a href="https://youtu.be/LztPaNmcWGU?t=2600">43:20</a> &mdash; Niche x frequency: prioritizing startup-idea workflows</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=LztPaNmcWGU">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

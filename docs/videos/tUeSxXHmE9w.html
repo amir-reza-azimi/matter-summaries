@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAI Codex: Build Apps That Work For You 24/7</title>
+<meta name="description" content="A live Codex Sites build showing the exact prompts for memory/persistence, safe actions, skill creation, save gates, and proving an autonomous update loop.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>OpenAI Codex: Build Apps That Work For You 24/7</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@GregIsenberg">Greg Isenberg</a> &middot; <strong>Published:</strong> 2026-06-04 &middot; <strong>Length:</strong> 25 min &middot; <a href="https://www.youtube.com/watch?v=tUeSxXHmE9w">Watch on YouTube</a></p>
+<p>This video is a live, narrated build using OpenAI's new Codex Sites feature, framed initially as a skeptical question, is this just a worse Replit or Lovable, and answered by actually building something and showing the specific prompts that make it work. The key differentiator argued for Codex Sites over an all-in-one builder like Replit or Lovable: if you're already living in the Codex ecosystem with your context there, Codex Sites lets an agent keep updating your app autonomously afterward, not just generate it once. The tradeoff: Codex Sites is missing built-in auth, databases, payments, email, and analytics compared to an all-in-one builder, and as of this recording you can't yet deploy to your own custom domain, so it's positioned as an internal-tool builder for people comfortable enough to bolt on auth and storage themselves, not a replacement for Replit-style one-prompt full products.</p>
+<p>The build itself is a "startup ideas OS," a Kanban-style board (inbox, researching, validating, building, killed) where each card tracks an idea's buyer, pain, proof, next step, and score. It's built in six sequential prompts, each one demonstrated with the actual wording used. The first prompt invokes the sites plugin directly, asks for realistic sample data, and explicitly says "save for review, do not deploy" rather than letting it auto-deploy, which is called out as an important habit since Codex will otherwise try to publish immediately.</p>
+<p>The second prompt asks Codex to add persistent storage so ideas survive between visits, but critically asks it to first show the proposed data model and the specific actions the app would need, before writing any code. Codex responds by choosing Cloudflare D1 as the durable store and lays out the record type (an idea card, its content, its current column) and the exact mutations needed: list, add, update, move, score, archive, ensure-seeded, then explicitly waits for approval before touching code. This "ask for the model first" habit is highlighted as especially useful for non-technical builders who wouldn't otherwise know what to ask for.</p>
+<p>The third prompt asks for "safe actions", named, bounded mutations (add idea, update idea) rather than arbitrary raw SQL access, so that later automated chats can only call approved operations, not run open-ended database commands. The fourth prompt asks Codex to create a Codex skill, a reusable instruction file, that documents how to read the board, add ideas, move cards, and score them, plus five example commands, so future sessions and even other chats know how to operate this specific app without re-explaining it. The fifth prompt is a "save gate": explicitly checkpoint the current build as a reviewable version without deploying it, confirming build status, storage choice, and access settings, functioning like a manual save point in a video game since Codex doesn't autosave.</p>
+<p>The sixth and most important prompt "proves the loop": in a brand-new chat, with no prior context carried over, the instruction simply asks the app (via the skill created earlier) to add a new startup idea to the board. Codex correctly loads the skill, finds the right local API route, and adds the card using only the safe-action layer, no raw SQL, no generic database writes, confirming the whole point of the exercise: a completely fresh conversation can safely operate this app because the skill and safe actions persist independently of any one chat's memory. The video closes by publishing the site live and reiterating the three concepts to internalize: give it memory (a database, or it's just a demo), safe actions (bounded operations an agent can call without a human reviewing raw code each time), and skills (so any future chat, not just the one that built it, knows how to operate the app).</p>
+<h2>Standout moments</h2>
+<p>The "prove the loop" test, opening a genuinely fresh chat and confirming it can still operate the app correctly through the skill alone, is a rigorous and rare moment of actually verifying a claimed capability rather than just asserting it works. The explicit "save for review, do not deploy" habit, stated as a specific correction to Codex's default behavior of trying to publish immediately, is a small but consequential operational detail that would otherwise trip up a first-time user.</p>
+<h2>Why this matters for my work</h2>
+<p>The memory-plus-safe-actions-plus-skill pattern is a directly portable checklist for building any small internal tool meant to be updated autonomously by future agent sessions, relevant both to BI internal tooling and to any AI-native consulting deliverable built for a client. So I could apply the same three-step checklist (data model first, safe actions before code, skill for future chats) the next time an internal BI tool is scoped with Claude Code rather than Codex, since the underlying pattern is tool-agnostic.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=60">1:00</a> &mdash; Codex Sites vs Replit/Lovable: what it has and what it&#x27;s missing</li>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=260">4:20</a> &mdash; Prompt 1: inviting sites plugin, sample data, save-not-deploy</li>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=420">7:00</a> &mdash; Prompt 2: asking for the data model before any code</li>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=560">9:20</a> &mdash; Prompt 3: safe actions instead of raw SQL access</li>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=700">11:40</a> &mdash; Prompt 4: creating a reusable Codex skill for the app</li>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=820">13:40</a> &mdash; Prompt 5: save gate as a checkpoint without deploying</li>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=900">15:00</a> &mdash; Prompt 6: proving the loop in a brand-new chat</li>
+<li><a href="https://youtu.be/tUeSxXHmE9w?t=1020">17:00</a> &mdash; Publishing live and recapping memory, safe actions, skills</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=tUeSxXHmE9w">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

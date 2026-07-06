@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fable 5 + Karpathy&#x27;s LLM Wiki is Basically Cheating</title>
+<meta name="description" content="A step-by-step implementation of Andrej Karpathy&#x27;s LLM-wiki second-brain concept in Obsidian and Claude Code, with a live PDF-and-URL ingest demo.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Fable 5 + Karpathy&#x27;s LLM Wiki is Basically Cheating</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-07-03 &middot; <strong>Length:</strong> 15 min &middot; <a href="https://www.youtube.com/watch?v=hQvwMj7IJe4">Watch on YouTube</a></p>
+<p>This video implements Andrej Karpathy's "LLM wiki" idea, originally a short post describing how he builds personal knowledge bases by having an LLM index sources and using Obsidian as the front end, as an actual working setup in Claude Code. The starting point is a demo: dozens of the creator's own YouTube video transcripts ingested into a wiki, connected by relationships the AI found on its own, so clicking into one video's notes surfaces linked tools, techniques, and other videos that reference the same concept, and you can follow those backlinks indefinitely.</p>
+<p>What makes this more than a static summary is demonstrated directly: asking an AI model to turn the same messy blob of connections into a single simple HTML resource for a beginner-friendly audience produces something meaningfully more usable than the raw wiki view, because the model can be prompted in an emotional, audience-aware register ("in a way a beginner could understand and could click through without being overwhelmed") that a plain summarization request doesn't capture as well.</p>
+<p>The setup itself is deliberately simple. Install Obsidian, create a new vault (the video recommends nesting it inside your broader AI-operating-system project folder rather than on the desktop, so your main assistant can see it too), then open that same vault folder in Claude Code. From there, you copy Karpathy's original LLM-wiki gist in full and paste it into Claude Code with an instruction along these lines: "you are now my LLM wiki agent, implement this exact idea file as my complete second brain, guide me step by step, create the CLAUDE.md schema with my full rules, set up the index, the log, define folder conventions, and show me the first ingest example. From now on every interaction follows the schema." Claude then defines the actual folder structure: a raw folder where new source material lands before processing, a wiki folder where the AI creates individual note pages (organized into concepts, entities, sources, techniques, or whatever categories it decides fit the ingested material, dynamically, not a preset taxonomy), an index file functioning as a table of contents, and a log file that records every ingest batch with a timestamp.</p>
+<p>Two ingest methods are demonstrated live: dragging a PDF (a model system card) directly into the raw folder, and simply pasting a URL and asking Claude to read the article and ingest it. Both are processed in the same instruction, along with a note about which each source is. After roughly ten to twelve minutes, both sources had produced twenty new, fully cross-linked wiki pages, and critically, the two separate sources ended up referencing each other on a shared topic, surfacing a nuance easy to miss reading them in isolation, that one comparison in the source material used a different baseline model than the other, so the numbers didn't line up directly. That cross-source connection, not available from two standalone summaries, is presented as the actual justification for building a wiki instead of just asking for two separate write-ups.</p>
+<p>An important structural point: whether a given knowledge base should be flat (all notes at one level, best when the material genuinely doesn't have deep sub-categories, like a raw stream of meeting transcripts) or organized into sub-folders (like the YouTube-transcript wiki's concepts/entities/sources/techniques split) is a judgment call the video says should be made by whether it actually makes retrieval easier for the AI, not by following a fixed template. The whole system is explicitly described as portable, since it's just markdown files with routing rules, it works identically whether the agent driving it is Claude Code, Codex, or a Hermes-style agent.</p>
+<h2>Standout moments</h2>
+<p>The specific example of the wiki catching that two sources used different comparison baselines, something invisible if you'd simply asked for two separate summaries, is the clearest concrete evidence in the video that cross-linking adds real analytical value beyond organization. The framing that "everything in this wiki is just a markdown file with routing" as the reason it isn't locked to any single agent tool is a useful principle to apply broadly.</p>
+<h2>Why this matters for my work</h2>
+<p>This is directly applicable to how this vault's own Resources and knowledge-base folders could evolve: the index-log-raw-wiki structure, and letting an agent decide categories dynamically rather than imposing a fixed taxonomy up front, maps closely onto existing vault conventions and could meaningfully improve cross-note discovery. So I could pilot this exact ingest pattern on a bounded slice of the vault, for instance the Snipd podcast highlights or the AI Video Digest Resources, to see whether cross-linking surfaces connections the current flat folder structure misses.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=30">0:30</a> &mdash; Demo: YouTube transcripts ingested into a cross-linked wiki</li>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=180">3:00</a> &mdash; Prompting a beginner-friendly HTML view from the same wiki data</li>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=420">7:00</a> &mdash; Setting up the Obsidian vault and opening it in Claude Code</li>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=520">8:40</a> &mdash; Pasting Karpathy&#x27;s gist and defining the CLAUDE.md schema</li>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=640">10:40</a> &mdash; Index, log, raw, and wiki folder conventions explained</li>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=780">13:00</a> &mdash; Live ingest: dragging a PDF and pasting a URL</li>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=900">15:00</a> &mdash; The cross-source connection the wiki catches that a summary would miss</li>
+<li><a href="https://youtu.be/hQvwMj7IJe4?t=1000">16:40</a> &mdash; Flat vs sub-foldered structure: a judgment call, not a template</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=hQvwMj7IJe4">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

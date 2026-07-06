@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>14 GENIUS Ways to Give Claude Code SUPERPOWERS</title>
+<meta name="description" content="Fourteen power-user upgrades for Claude Code: ultra-code&#x27;s six dynamic-workflow patterns, chained skill systems, memory synthesis, and the slot-machine rewind habit.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>14 GENIUS Ways to Give Claude Code SUPERPOWERS</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-12 &middot; <strong>Length:</strong> 29 min &middot; <a href="https://www.youtube.com/watch?v=mNawxNjrR_E">Watch on YouTube</a></p>
+<p>A year ago, the top tip for Claude Code was to plan everything before letting it build. Now it's to flip on auto mode and stop approving every permission. This video packs fourteen of the highest-leverage setup decisions, gathered from watching thousands of users in a paid community, into one video, arguing that the gap between people treating Claude Code as a slightly better chatbot and people running their business through it is a handful of setup choices, not prompting skill.</p>
+<p>The newest and biggest feature is ultra code, which comes from dynamic workflows. Out of the box, Claude plans and executes in a single context window, which degrades on long jobs in three specific ways: it declares itself finished before it actually is, it's overconfident when judging its own work, and it slowly loses the original objective as context grows and gets compacted. Ultra code fixes this by letting Claude write its own workflow for a specific task, spinning up a team of sub-agents, each with a clean context and one job, coordinated together. Anthropic documents six patterns it composes from: classify-and-act (routing tasks by type, like sorting support tickets), fan-out-and-synthesize (splitting work across parallel researchers and merging results, the standard shape for deep research), adversarial verification (a second agent tries to break the first agent's claims), generate-and-filter (produce many options, then deduplicate down to the strongest, good for brainstorming), tournament (agents compete for a winner), and loop-until-done. A live demo runs a deep-research task on Claude Code's own latest features: it fans out five scouts across sources, deep-reads the strongest eight, adversarially verifies twelve key claims, and synthesizes a report, using 670,000 tokens and 26 agents over 13 minutes, an explicit reminder this is not for small jobs.</p>
+<p>Auto mode remains the top recommendation for saving time: a background classifier lets safe actions through automatically and only interrupts for genuinely risky ones, letting you physically walk away from the desk. Paired with it are two commands for autonomous long-running work: loop, which repeats a prompt on an interval (capped at three days), and goal, which defines a condition Claude must satisfy before it's allowed to stop, checked after every turn. Chained together, a task like "clear my inbox daily" becomes self-verifying and self-scheduling; a live Gmail-triage demo completes in one turn once authorized.</p>
+<p>On skills, the video argues most people build them badly: without clean triggering descriptions and progressive disclosure (detail loading only when needed), Claude activates them inconsistently and burns tokens. Done well, a skill is a concise, reusable instruction guide, ideally reusable across systems rather than hyper-specific, so a copywriting skill should work for any writing task, not just one ad format. The deeper unlock is skill systems: several skills chained so the output of one feeds the next, turning individual building blocks into an end-to-end pipeline. The video's own social-content system is eighteen chained skills covering brand voice, visual identity, scraping, and image generation sub-agents, and the value is explicitly said to live in the chain, not the individual parts.</p>
+<p>On tool connections, MCP keeps a tool's full definition loaded for the entire session, which is worth it for rich, daily, multi-tool interactions (a live CRM, for example) but wasteful for a single occasional action, where a CLI call that runs once and forgets the infrastructure is cheaper. On memory, the video repeats its now-familiar three-job framework (storage, injection, recall), noting Anthropic is "quite behind" here relative to open-source frameworks like mem-search, Hermes, and open-claw, and that a custom-built system pulling the best of each, plus access control for team use, is what they've settled on. The video closes on two habits: the "slot machine" principle (when Claude goes wrong, don't correct it further; use the rewind feature to return to a clean checkpoint and try again with better context, since correcting in place just compounds broken context) and the sub-agent-versus-skill distinction: a skill is what Claude knows how to do, a sub-agent is who does the work in isolation, useful when you need different tools, permissions, a different model, or to run several jobs in parallel without polluting the main conversation.</p>
+<h2>Standout moments</h2>
+<p>The reframe that "a skill is basically a sub-agent without a role" because a role is just context applied to a task is a genuinely clarifying way to resolve what's normally a confusing distinction. The live ultra-code demo's raw numbers, 670,000 tokens and 26 agents for one deep-research pass, are a useful gut-check on when this pattern is actually worth reaching for versus overkill.</p>
+<h2>Why this matters for my work</h2>
+<p>The six named dynamic-workflow patterns give a concrete vocabulary for designing multi-agent BI and content pipelines rather than reinventing ad hoc structures each time, and the skill-system chaining example is a direct template for content and reporting pipelines in both the BI and marketing repos. So I could pick one recurring BI deliverable and rebuild it as a chained skill system rather than a single monolithic prompt, then measure whether output consistency improves.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=60">1:00</a> &mdash; Ultra code and dynamic workflows: why single-context execution degrades</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=260">4:20</a> &mdash; The six named dynamic-workflow patterns from Anthropic&#x27;s docs</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=560">9:20</a> &mdash; Live demo: a 26-agent, 670,000-token deep-research run</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=900">15:00</a> &mdash; Auto mode plus goal and loop for self-verifying automation</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=1180">19:40</a> &mdash; What makes a well-built skill vs a poorly triggered one</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=1340">22:20</a> &mdash; Skill systems: the 18-skill social-content pipeline example</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=1620">27:00</a> &mdash; MCP vs CLI token-cost tradeoff, revisited</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=1780">29:40</a> &mdash; Synthesized memory framework: mem-search, Hermes, GBrain</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=2020">33:40</a> &mdash; The slot-machine principle and the rewind feature</li>
+<li><a href="https://youtu.be/mNawxNjrR_E?t=2200">36:40</a> &mdash; Sub-agent vs skill: who does the work vs what Claude knows</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=mNawxNjrR_E">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

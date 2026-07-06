@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stanford&#x27;s Method Turns Claude Into a PHD Level Research Team</title>
+<meta name="description" content="Stanford&#x27;s STORM method packaged as a Claude Code skill: five adversarial research personas, contradiction mapping, synthesis, and citation verification, benchmarked against native deep research.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Stanford&#x27;s Method Turns Claude Into a PHD Level Research Team</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-06-29 &middot; <strong>Length:</strong> 12 min &middot; <a href="https://www.youtube.com/watch?v=Tj3018n5MVg">Watch on YouTube</a></p>
+<p>This video packages Stanford's STORM research method, shown in peer-reviewed testing to produce roughly 25% more organized articles than the next-best comparison method, into a free, reusable Claude Code skill, and demonstrates it head to head against Claude's own native deep-research feature.</p>
+<p>The core idea behind STORM is that firing off a single research prompt gives you one angle and therefore predictable blind spots, so the method instead runs five distinct expert personas researching the same topic in parallel: a practitioner, an academic, a skeptic, an economist, and a historian. Each perspective is positioned to catch a different kind of gap the others miss. After the five perspectives report back, a contradiction-mapping step explicitly looks for where they disagree and rates which side has stronger evidence, then a synthesis step merges everything into a single report, and finally an adversarial peer-review pass verifies every citation and factual claim against its primary source before the report is finalized. The video shows this catching real errors: the first-pass draft contained information that later verification found to be incorrect, and the final output explicitly marks sources as confirmed, corrected, or demoted.</p>
+<p>The head-to-head comparison uses Claude Code's built-in deep-research feature (its own dynamic-workflow-based research mode, which in this run spun up around 103 agents) against the same prompt run through the STORM skill instead (which used roughly 12 agents total across five research personas plus verification). The native deep-research output came back as a fairly thin markdown file with only two confirmed sources and several unconfirmed items and open questions; the STORM version produced a full HTML report with a sixty-second summary, key findings explicitly ranked by reliability (labeling which personas supported versus challenged each finding), and, notably, an identified "missing sixth lens": all five personas analyzed the situation from the business owner's chair, none from the customer's or frontline employee's seat, which the video then extends by explicitly re-running a sixth persona and producing a V3 report. Feeding both outputs into a separate model (Codex) for a blind comparison, the STORM report was judged better on all six evaluated categories: evidence quality, source diversity, thesis strength, actionability, risk control, and suitability for turning into video content, while also being faster and cheaper to run because it used a small fixed number of agents rather over a hundred.</p>
+<p>The actual skill is built from four chained prompts: kick off the five expert lenses on a given topic, run the contradiction-mapping step where perspectives analyze each other's outputs, synthesize everything into a single report, then run the adversarial peer review that verifies every citation against its source before final delivery. This is packaged as a skill.md file plus a fixed HTML report template (also shared for free), so every run produces a consistently formatted output rather than a one-off document. The skill is explicitly said to work with any coding agent, not just Claude Code, since it lives as a markdown file and can be dropped into a Codex or agents folder just as easily. A live run against a new topic, "voice AI agents," demonstrates the pipeline end to end, including opening each individual sub-agent's session to see its actual research prompt and browsing activity in real time, and the video separately clarifies the distinction between sub-agents (which report only to the main session and can't talk to each other) and agent teams (which can also debate each other directly, a more expensive but sometimes more useful pattern for genuinely contested decisions).</p>
+<h2>Standout moments</h2>
+<p>The identified "missing sixth lens," realizing after the fact that all five expert personas shared the same blind spot (the owner's perspective, never the customer's or employee's), and then simply adding a sixth persona to patch it, is the clearest demonstration in the video of why multi-perspective research beats a single deep pass: even a well-designed multi-agent system can still share a collective blind spot, and the method makes that visible rather than hiding it.</p>
+<h2>Why this matters for my work</h2>
+<p>This is a directly reusable pattern for market and competitive research inside the BI function: the same five-persona-plus-verification structure, adapted with personas relevant to hiring/HR-tech (a candidate, a hiring manager, a competitor analyst, a compliance officer, a data skeptic, for example) would likely surface blind spots a single research pass misses. So I could adapt this skill's four-prompt structure with BI-relevant personas as a first pilot for the next competitive or market research task rather than using a single-pass research prompt.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=20">0:20</a> &mdash; Stanford&#x27;s STORM method: five expert personas researching in parallel</li>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=140">2:20</a> &mdash; Contradiction mapping and adversarial citation verification</li>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=260">4:20</a> &mdash; Head-to-head vs Claude&#x27;s native deep research (103 agents vs 12)</li>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=400">6:40</a> &mdash; The missing sixth lens: a shared blind spot across all five personas</li>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=480">8:00</a> &mdash; Blind comparison judged by a separate model: STORM wins on all six criteria</li>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=560">9:20</a> &mdash; The skill.md and fixed HTML report template, shared for free</li>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=660">11:00</a> &mdash; Live run on a new topic, watching individual sub-agent sessions</li>
+<li><a href="https://youtu.be/Tj3018n5MVg?t=760">12:40</a> &mdash; Sub-agents vs agent teams: the debate-capable variant</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=Tj3018n5MVg">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

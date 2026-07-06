@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Built The Best Claude Memory System (Beats Hermes)</title>
+<meta name="description" content="A precise memory-architecture breakdown of storage, injection, and recall, with a synthesized recipe combining mem-search, Hermes, and GBrain-style ideas.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>I Built The Best Claude Memory System (Beats Hermes)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-10 &middot; <strong>Length:</strong> 13 min &middot; <a href="https://www.youtube.com/watch?v=H9BUkgDf5Y4">Watch on YouTube</a></p>
+<p>This video sets out to design the "perfect" memory system for an agentic setup: something that recalls a decision from six months ago even without remembering the exact words used, loads the right context automatically at session start, cites where an answer came from, and admits plainly when it doesn't know something. After digging through roughly twenty memory frameworks including Hermes, GBrain, and mem-search, the conclusion is that no single one solves this well, so the approach taken is to pull the best idea from each into a custom Claude Code setup.</p>
+<p>The framework breaks memory into three jobs, each with its own design variables. Storage has two: who triggers the save (a hook firing automatically, or the agent deciding what's worth keeping), and what form it's saved in (verbatim, which is bulky but complete, or summarized, which is lean but risks losing detail depending on what the agent chooses to keep). Injection, what loads automatically at the start of a session, has its own variables: hook-loaded (guaranteed, happens every time) versus agent-decided (judgment call, might get skipped), and whether there's a character cap keeping it lean versus unbounded injection that can bloat context. Recall comes down to search method: keyword (exact words only), semantic (finds by meaning), or hybrid (both).</p>
+<p>Claude Code's own defaults, evaluated against this framework, land as: storage is agent-decided and summarized, meaning the agent quietly judges what's worth saving and writes a condensed version, which works but is leaky since anything the agent doesn't flag is simply never saved. Injection is hook-loaded (so it always happens) but completely unbounded, with no character cap keeping it lean. Recall is the weakest of the three: there is no real search at all. If a fact wasn't explicitly saved as a memory referenced by the index file, it's effectively gone, and the only fallback is manually resuming the original session, which may itself already be compressed.</p>
+<p>The synthesized fix keeps what works in each layer and patches the gap. For storage, the summarizing behavior stays, but an automatic hook is added (borrowed from mem-search) so a cheap, fast model like Haiku summarizes every turn into a daily log regardless of whether the main agent judges it worth keeping, removing the dependency on the agent noticing. Hermes was considered here too but captures the raw transcript, which is bulkier than needed, and GBrain goes further still, building a full knowledge graph linking people and companies, which is judged overkill for a business the size being described. For injection, Hermes's approach is adopted: at session start, a frozen snapshot of specific memory files (identity, user profile, most important recent memories) is loaded, capped around 1,300 tokens and cached, so you only pay for those tokens once per session rather than re-injecting them into every turn. Mem-search was not used here because it has no injection layer at all, purely storage and search. For recall, the biggest upgrade, mem-search's base is used: everything stored gets indexed as vectors locally (zero API cost), searched hybrid (semantic plus keyword) through a multi-tiered system that checks the already-injected snapshot first before searching deeper. On top of that hybrid search, a GBrain-style layer is added: a reranker that reorders matched chunks so the best ones surface first, and critically, the system returns a written, cited answer rather than raw chunks, naming which file or conversation the information came from, and explicitly saying so when the information isn't there at all.</p>
+<p>The video closes on team scaling, flagged as harder: memory needs to be shared in some places and private in others, split by client, department, or project. Two approaches are given. The simple version is one memory index and one database per person, built only from files that person can access, which sacrifices any shared brain across the team. The scalable version, inspired by GBrain's "company brain" architecture, is one shared store (for example Postgres on Supabase) with row-level security, where every memory row is tagged by client or department and every query is filtered by who's asking.</p>
+<h2>Standout moments</h2>
+<p>The line that "a confident answer with no source is actually worse than useless when you're running real work for a client" crystallizes why the GBrain-style cited-answer layer matters more than raw semantic search alone. The three-way comparison table (Claude Code's defaults vs Hermes vs mem-search vs GBrain, mapped against each of storage, injection, and recall) is the single most reusable artifact in the video for anyone actually building this.</p>
+<h2>Why this matters for my work</h2>
+<p>This is a directly portable blueprint for upgrading this vault's own Claude Code memory setup: an auto-capture hook for storage, a capped cached injection snapshot, and hybrid recall with cited answers map cleanly onto the vault's existing folder-based memory system. So I could prototype the auto-capture hook first, since it's the smallest change with the clearest payoff: no memory gets lost just because the agent didn't think to flag it.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=30">0:30</a> &mdash; What perfect agentic memory should look like</li>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=90">1:30</a> &mdash; The three jobs of memory and their design variables</li>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=300">5:00</a> &mdash; Claude Code&#x27;s own defaults scored against the framework</li>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=480">8:00</a> &mdash; Why Claude Code&#x27;s out-of-the-box recall is the weakest link</li>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=560">9:20</a> &mdash; Storage fix: an automatic Haiku summarization hook</li>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=680">11:20</a> &mdash; Injection fix: Hermes-style capped, cached session snapshot</li>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=780">13:00</a> &mdash; Recall fix: hybrid semantic search plus GBrain-style cited answers</li>
+<li><a href="https://youtu.be/H9BUkgDf5Y4?t=900">15:00</a> &mdash; Scaling memory across a team: per-person vs shared row-level-security store</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=H9BUkgDf5Y4">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

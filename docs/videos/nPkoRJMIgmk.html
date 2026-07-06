@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You&#x27;re Only Using 10% of Claude Code (I&#x27;m Being Serious)</title>
+<meta name="description" content="A four-phase system for running Claude Code closer to autonomously: auto mode, goal-driven loops, ultra-code dynamic workflows, and always-on mobile access.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>You&#x27;re Only Using 10% of Claude Code (I&#x27;m Being Serious)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-16 &middot; <strong>Length:</strong> 12 min &middot; <a href="https://www.youtube.com/watch?v=nPkoRJMIgmk">Watch on YouTube</a></p>
+<p>This video makes the case that most Claude Code users are stuck treating it like a slightly better chatbot, when four setup decisions turn it into something that runs work in the background while you're not even at your desk. The video breaks this into four phases that build on each other: get Claude working continuously without stopping, get it capable of bigger jobs without quality falling apart, get it off your laptop entirely, and open it up to things that felt impossible a year ago.</p>
+<p>Phase one is autonomous workflows. Out of the box, Claude Code stops constantly to ask for approval, and most of those approvals look like unreadable jargon anyway. Auto mode fixes this: hit shift-tab twice, and a background classifier decides what's safe to let through automatically versus what's genuinely risky, like deleting files. That alone removes most of the approval friction. Then there's the harder problem: a normal prompt runs once and stops, often declaring itself done before it actually is. The fix is the goal command, which lets you define a condition that has to be true before Claude is allowed to stop, verified by a second, independent Claude agent that audits the work before the goal is allowed to close. Pair that with a loop command (repeat a prompt on an interval, capped at three days) or routines (for weekly recurring jobs), and you get something like: clear my inbox every day, and don't stop until it's actually empty.</p>
+<p>Phase two addresses why quality degrades on bigger jobs even when they run unattended. Two causes: context rot, where a long conversation bloats and Claude loses track of earlier decisions, and insufficient reasoning effort on hard problems. The fixes are an effort dial from low up through max and then ultra code, and getting your plans saved inside the project folder rather than the default throwaway location, so Claude can keep re-reading the plan even after context gets compacted. Ultra code is the deeper concept here: instead of doing everything in one context window, Claude writes its own bespoke workflow for a task and spins out a team of sub-agents, each with a clean context and a single job, coordinated by an orchestrator. Anthropic documents six common patterns these dynamic workflows compose from. For example, deep research typically uses a fan-out-and-synthesize pattern, where several agents each research one source and a final agent merges the findings, with a separate verification pass fact-checking specific claims.</p>
+<p>Phase three is getting off the laptop. The built-in options, remote control and channels through Telegram or Discord, both share the same flaw: the session dies after about ten minutes of inactivity or on disconnect, so nothing runs in the background once you close the app. The workaround is to rent a cheap VPS, roughly $15 a month, that never sleeps, and pair Claude Code's channels feature with a persistence tool (referred to here as T-Max, effectively a tmux-style session keeper) so the session survives disconnects. That combination means you can dispatch a task from your phone and walk away; approvals get relayed back through the channel too.</p>
+<p>Phase four is about expanding what you even think is automatable. Two things are highlighted. First, connectors: inside the desktop app's customize settings, there's a whole library of pre-built connections, including Claude-in-Chrome, authorized once with your normal login, after which you just talk to the connected app in plain English. Second, and more impressive, Claude can now act inside your actual browser, clicking through apps and taking screenshots to figure out what to click, effectively emulating you. It's still in research preview and Mac-only, and it's slow, but it's most valuable for old, clunky enterprise apps you have no API access to. The video demos this live: Claude is told to open a browser, go to a community platform, read all member posts from the last 24 hours, and produce a prioritized triage list in three buckets, needs a reply today, can wait, and wins worth celebrating, with a one-line summary of each, without replying to anyone. It comes back roughly 15 minutes later having correctly parsed nine posts and sorted them accurately, including direct links back to each post.</p>
+<h2>Standout moments</h2>
+<p>The framing of auto mode as eliminating 90 percent of your approval problem by using a background safety classifier, rather than an all-or-nothing choice between full permission-babysitting and dangerously-skip-permissions, is a clean mental model. Equally sharp is the point about plan mode's hidden failure mode: by default the plan is saved to a disposable folder outside your project, so Claude reads it reliably once or twice and then loses track of it entirely once context compacts. The fix is just to put the plan inside the project folder itself.</p>
+<h2>Why this matters for my work</h2>
+<p>The goal-plus-loop pattern is directly usable for recurring BI and content operations: daily inbox triage, scheduled data-quality checks, or weekly competitor scans that don't stop until a defined completion condition is met, not just until a single pass finishes. The VPS-and-channels setup is a lower-effort alternative worth comparing against the Discord bot already running for this vault. So I could pilot a goal-plus-routine job for one recurring BI reporting task this week and measure whether it actually reaches a defined done state unattended.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=30">0:30</a> &mdash; Auto mode explained: the classifier that eliminates 90% of approval friction</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=116">1:56</a> &mdash; The goal command: Claude keeps working until a defined completion condition is met</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=172">2:52</a> &mdash; Combining goal with loop and routines for recurring, self-verifying tasks</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=330">5:30</a> &mdash; Why quality degrades: context rot and under-applied reasoning effort</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=372">6:12</a> &mdash; Effort dial and ultra-code&#x27;s six dynamic-workflow patterns</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=470">7:50</a> &mdash; The hidden flaw in plan mode&#x27;s default save location</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=620">10:20</a> &mdash; VPS + channels + T-Max for always-on mobile dispatch</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=740">12:20</a> &mdash; Connectors library and Claude-in-Chrome browser automation</li>
+<li><a href="https://youtu.be/nPkoRJMIgmk?t=820">13:40</a> &mdash; Live demo: Claude triages 24 hours of community posts unattended</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=nPkoRJMIgmk">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

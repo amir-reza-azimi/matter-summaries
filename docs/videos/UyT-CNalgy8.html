@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How To Use Claude Code Anywhere (VPS &amp; Mobile Setup)</title>
+<meta name="description" content="A full step-by-step VPS, SSH, and Telegram-channels setup for running Claude Code always-on and reachable from a phone.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>How To Use Claude Code Anywhere (VPS &amp; Mobile Setup)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-06-08 &middot; <strong>Length:</strong> 32 min &middot; <a href="https://www.youtube.com/watch?v=UyT-CNalgy8">Watch on YouTube</a></p>
+<p>This is a full, literal walkthrough of running Claude Code on a virtual private server so it never depends on a laptop being open, reachable from a phone via Telegram. The core argument for doing this over Anthropic's own cloud offerings: the chat interface at claude.ai is great for one-off conversation but has no persistent file structure or context injection; managed agents on the web are good for a single isolated task pointed at a repo, but reset every time rather than accumulating an evolving folder structure. A rented VPS is different: it's your own files on someone else's always-on machine, with your brand context, skills, and cron jobs persisting and updating exactly like a local setup, but never turned off, and if you ever want to leave Claude Code, the same VPS and folder structure works with Codex or any other agent instead.</p>
+<p>The mechanism underpinning everything is SSH: your laptop is the client, the server is the host, and instead of a password you generate a key pair, a private key that stays on your laptop and a public key that's safe to share with the server. The walkthrough runs the exact commands: generate an ed25519 key pair from the terminal with your email, accept the default save location, optionally set a passphrase, then copy the printed public key for the next step.</p>
+<p>For the server itself, two paths are offered: a do-it-yourself route through a raw provider like Hetzner, cheaper but you're the admin handling backups and patches yourself, or a managed route through a provider like Alestio, which provisions the same underlying Hetzner box but handles backups and monitoring for you, leaving you to install only Claude Code and Node.js yourself. The walkthrough uses the managed route: add the SSH public key under account security, then create a new Ubuntu service, selecting a nearby cloud region and attaching the SSH key under advanced configuration (roughly $17/month in the example).</p>
+<p>Back on the laptop, the VS Code Remote-SSH extension is installed, then a local SSH config file is created (via nano) mapping a friendly host nickname to the server's IP address and the root user, followed by locking down file permissions on the key and config file so SSH will accept them (SSH refuses to use keys or configs readable by other users on the machine). A direct terminal test (ssh myvps) confirms the connection before involving VS Code at all. Once VS Code's Remote-SSH command connects using the same config file, the editor opens the server's actual filesystem, not the local one, and a terminal inside that window is now genuinely operating on the VPS. From there, a non-root user is created (best practice for running Claude Code with flags like dangerously-skip-permissions later), the SSH key is copied over to that new user's account, git is installed, and your context repository is cloned in with a token-authenticated URL, bringing the full folder structure of skills and context onto the server exactly as it exists locally. Claude Code itself is then installed via its standard install command (with a quick PATH fix if the claude binary isn't found immediately), and logging in authenticates against your existing subscription.</p>
+<p>The final piece is reachability from a phone without needing the laptop at all. Five requirements are laid out: secure (only you can reach it), reachable from an app you already use (Telegram, Discord, or the Claude app itself), able to dispatch a task and walk away without losing it, always-on, and able to access the full background context, not a stripped-down mobile experience. Anthropic's own built-in mobile options, remote control and channels, both fail the "dispatch and walk away" test: the session dies after roughly ten minutes of inactivity or on disconnect. The fix is pairing Claude Code's official Telegram channels plugin with tmux (referred to as T-Max here) as a persistent session keeper: start a tmux session, launch Claude Code inside it pointed at your context folder, install the Telegram channels plugin for all collaborators, generate a bot token via BotFather, configure and enable it inside Claude Code, then relaunch with the channels flag so the bot actually goes live and responds. After pairing your Telegram account (and immediately locking the bot down to just that one paired user), every message sent to the bot reaches the live Claude Code session, and because it's inside tmux, the work continues even after Telegram is closed. The walkthrough also covers running multiple agents in parallel: one tmux session with separate windows, each pointed at a different bot and a different folder (a client folder versus the main context repo, for example), so each Telegram chat maps to a distinct, isolated agent.</p>
+<h2>Standout moments</h2>
+<p>The comparison of Anthropic's own mobile options against the VPS-plus-tmux setup is unusually honest for a channel this invested in the ecosystem: remote control and channels are acknowledged to categorically fail the "dispatch and walk away" requirement, which is the whole point of building this in the first place. The one-bot-per-agent, one-tmux-window-per-agent pattern for running multiple isolated contexts from a single VPS is a clean, reusable structure.</p>
+<h2>Why this matters for my work</h2>
+<p>This is a directly actionable alternative or complement to the vault's existing always-on Discord bot setup: the SSH-key-pair-to-Remote-SSH-to-tmux-to-channels sequence is concrete enough to follow step by step for hosting recurring vault or BI automation jobs on infrastructure independent of any single laptop. So I could evaluate whether moving the vault's scheduled digest jobs onto a similarly configured VPS reduces the operational fragility of depending on a machine staying open.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=40">0:40</a> &mdash; Why a VPS beats Anthropic&#x27;s own cloud offerings for this use case</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=220">3:40</a> &mdash; Generating an SSH key pair from the terminal</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=340">5:40</a> &mdash; Managed vs DIY VPS providers (Alestio vs Hetzner)</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=520">8:40</a> &mdash; VS Code Remote-SSH config and connecting to the server</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=780">13:00</a> &mdash; Creating a non-root user and cloning your context repo</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=900">15:00</a> &mdash; Installing Claude Code on the VPS and logging in</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=1000">16:40</a> &mdash; Five requirements for real phone-based agent access</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=1140">19:00</a> &mdash; Setting up the Telegram channels plugin and pairing your account</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=1300">21:40</a> &mdash; tmux keeping the session alive after disconnect</li>
+<li><a href="https://youtu.be/UyT-CNalgy8?t=1420">23:40</a> &mdash; One bot per agent: running multiple isolated contexts in parallel</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=UyT-CNalgy8">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
