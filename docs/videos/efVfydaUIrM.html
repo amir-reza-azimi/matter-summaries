@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code with Claude: The 5 biggest updates explained</title>
+<meta name="description" content="Claire Vo breaks down five things Anthropic shipped at Code with Claude: Routines, Outcomes (rubric-graded self-iterating agents), multi-agent orchestration, Dreams (session-to-memory), and doubled usage limits.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Code with Claude: The 5 biggest updates explained</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@howiaipodcast">How I AI</a> &middot; <strong>Published:</strong> 2026-05-06 &middot; <strong>Length:</strong> 12 min &middot; <a href="https://www.youtube.com/watch?v=efVfydaUIrM">Watch on YouTube</a></p>
+<h2>TL;DR</h2>
+<p>Claire Vo, host of How I AI, walks through five things Anthropic announced at its first developer event, Code with Claude, and what she'd actually build with each. The two most interesting are Outcomes, a rubric-driven self-grading loop for managed agents, and Dreams, a research-preview memory system that turns a batch of past agent sessions into written-down lessons. Routines, multi-agent orchestration, and doubled usage limits round out the list.</p>
+<h2>Walkthrough</h2>
+<p>The first update lands inside the Claude Code app itself: Routines, the ability to trigger an agent run on a schedule or a webhook. Claire demos it live by setting up a weekly newsletter draft. She points Claude Code at a change log file in her docs folder, tells it to review it every Monday and write a customer-facing newsletter based on the best shipped features, explicitly instructing it to skip internal things like tech debt or security work unless those genuinely impress customers. She sets the routine to run weekly on Mondays at six a.m., picks the project folder, and creates it. From then on, Claude Code runs that draft automatically instead of her kicking it off by hand every week. Under the hood there are three trigger types: a cron schedule, a generic HTTP webhook, or a GitHub webhook, and routines can run either locally on your machine or remotely in the cloud. Anything already wired up through connectors, like Slack or GitHub, is available inside the routine too. She offers a second example that's closer to a BI or product-ops use case: a weekly routine that checks every PRD modified that week against a rubric and posts a summary to a team channel.</p>
+<p>The second and, in her view, most interesting update is Outcomes, available through the Claude API for managed agents. It's Anthropic's answer to something OpenAI shipped in Codex called goal mode, where an agent keeps working a problem until it actually hits a defined target. With Outcomes, you define what "done" looks like for an agent, and the agent self-grades and iterates until it gets there. Mechanically, every Outcome anchors on a rubric: a markdown file, uploaded either through the files API or written inline, that spells out what success looks like. A grader then evaluates the agent's work against that rubric, and the agent can run up to twenty iterations trying to satisfy it. Claire's concrete example is a product manager shipping a PRD: instead of manually cycling a draft through feedback, checking it against priorities and technical constraints, you write a rubric describing what a ship-ready PRD looks like, hand the agent your rough draft or idea, and let it iterate against that rubric on its own, up to twenty passes, until it's fixed. She notes you could eventually expose this directly to customers inside a product.</p>
+<p>The third update is multi-agent orchestration, also in the managed-agent API. You can now explicitly define a team of agents working against the same container and file system, up to twenty-five of them, with an orchestrator role driving delegate agents that each carry their own tool set. Her example is a PRD-writing team: an orchestrator that drives the overall work, a strategy sub-agent that channels a CPO's voice, a critic sub-agent whose job is to poke holes in the draft, and a review sub-agent with GitHub access to sanity-check technical feasibility. All three sub-agents can work in parallel against the same problem, coordinated by the orchestrator, and the whole hierarchy is defined declaratively through the API.</p>
+<p>Fourth is Dreams, a research-preview memory primitive Claire doesn't have API access to yet but flags as conceptually important. Most current agent memory gets written reactively, on a hook or an event: when a session closes, or when you explicitly tell the agent to remember something. Dreams instead is an explicit call you make against a list of past agent sessions, say fifty of them, asking the system to review that whole batch and decide what's actually worth committing to memory. She compares it, only half-jokingly, to what humans do when we sleep: review the day silently, then decide what to keep. She also flags the flip side nobody's built yet: a "forgetting" primitive that prunes memory rather than just accumulating it.</p>
+<p>The fifth update is the one with the broadest immediate impact: starting the day of the event, Claude Code's five-hour usage limits doubled across Pro, Max, Team, and seat-based Enterprise plans, peak-hour restrictions are being removed for Pro and Max, and Opus rate limits in the API are going up.</p>
+<h2>Standout moment</h2>
+<p>Her framing of the rubric mechanic is the sharpest line in the episode — "this idea of outcome is define a rubric, give the agent the task, let it bang its head against that at least twenty times till it gets it right." That's a plain description of an eval loop built directly into the product, not bolted on by the developer.</p>
+<h2>Why this matters for my work</h2>
+<p>Outcomes is essentially a managed eval harness: define a rubric, let the agent self-grade against it, iterate to convergence. That maps directly onto BI work at join.com — a rubric for "this dashboard is ready to ship" or "this SQL model matches the tracking plan" is a natural fit, and it's also good material for the course, since "outcome plus rubric" is a clean way to teach non-technical people how to brief an agent. Dreams is the more personal hit: it's structurally the same idea as the memory system already running in this vault, batch-reviewing sessions and writing down what's worth keeping, which means the "How I AI" framing is a useful external validation point and possibly a source of refinements once Dreams leaves research preview. Routines is the most immediately actionable: the PRD-against-rubric weekly check is a pattern worth stealing directly for recurring BI or marketing QA jobs, so I could set up a Monday routine that checks new dashboards or campaign briefs against a written rubric and posts the verdict to a team channel, the same shape as the newsletter demo but pointed at a data-quality or campaign-review use case instead.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/efVfydaUIrM?t=35">0:35</a> &mdash; Routines: schedule or webhook-triggered Claude Code runs, demoed on a weekly newsletter draft</li>
+<li><a href="https://youtu.be/efVfydaUIrM?t=225">3:45</a> &mdash; Outcomes: define what &quot;done&quot; looks like, agent self-grades and iterates</li>
+<li><a href="https://youtu.be/efVfydaUIrM?t=251">4:11</a> &mdash; How a rubric works: a markdown file plus a grader, up to 20 iterations</li>
+<li><a href="https://youtu.be/efVfydaUIrM?t=329">5:29</a> &mdash; Multi-agent orchestration: orchestrator + up to 25 delegate agents via the API</li>
+<li><a href="https://youtu.be/efVfydaUIrM?t=437">7:17</a> &mdash; Dreams: batch-reviewing past sessions to decide what memory to write</li>
+<li><a href="https://youtu.be/efVfydaUIrM?t=580">9:40</a> &mdash; Claude Code 5-hour usage limits doubled, peak hours removed for Pro/Max</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=efVfydaUIrM">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
