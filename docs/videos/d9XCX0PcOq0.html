@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stop Using Fable 5 in Claude Code (It’s Holding You Back)</title>
+<meta name="description" content="Which Claude Code tasks actually justify Fable 5&#x27;s price, and the settings that stop your bill from quietly running away.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Stop Using Fable 5 in Claude Code (It’s Holding You Back)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-07-10 &middot; <strong>Length:</strong> 20 min &middot; <a href="https://www.youtube.com/watch?v=d9XCX0PcOq0">Watch on YouTube</a></p>
+<p>Fable 5 just moved off flat-rate subscription pricing onto API rates: $10 per million input tokens and $50 per million output tokens. That change is what triggered this video, because it turns out a single one-word message like "Hi" can burn 30,000+ tokens before Claude writes a single character back — system prompt, MCP tool schemas, custom agents, memory files, and skills all load before you type anything. The video's real argument is that per-token pricing is misleading: what matters is cost per finished task, not cost per token, and different models burn wildly different amounts of tokens to reach the same result.</p><p>Three real workload comparisons make the point concrete. A 200-line code review cost about 10 cents on a cheaper model versus roughly eight times that on Fable — but Fable's review caught edge cases the cheaper model missed. A full pricing-page build cost $25 on Sonnet but needed two hours of human rework to become shippable; Fable's version cost $48 but was ready to ship immediately, meaning Fable was actually cheaper once you price in your own time. A multi-hour, multi-agent CRUD build showed Sonnet losing coherence entirely over long sessions, while Opus and Fable both finished, with Fable costing more but delivering tests, docs, and a merge-ready result.</p><p>That leads to three concrete patterns for when Fable is worth it. Pattern one: plan on Fable, build on a cheaper model. Since there's no built-in Fable equivalent of the /model opus-plan alias yet, you build it manually — switch to Fable, have it plan and write out a plan.md file without executing, then switch back to Sonnet and tell it to execute that file. Planning burns far fewer tokens than implementation, so you get Fable's reasoning where it matters most and pay cheap-model rates for the token-heavy execution. Pattern two: use Fable specifically as a reviewer, via a simple sub-agent (a code-reviewer.md file) that's instructed to only return findings, never write code, since generated code is what actually costs the big money. Pattern three: use Fable for genuinely ambiguous, hard-to-prescribe goals with clear success and verification criteria — the video's example is an accounting reconciliation task where thousands of small judgment calls (is "Uber trip" the same line as "Uber" plus a separate tip?) are far easier to hand to a reasoning-heavy model with a goal and a way to verify success than to write out as rigid matching rules for a less capable model.</p><p>The second half is a rapid-fire list of settings changes that cut spend regardless of which model you're on. Switch your default model to Sonnet rather than Fable or Opus — teams that made only this change reportedly cut bills roughly in half with no quality loss on everyday tasks. Sub-agents inherit the parent model by default, so if you're on Fable and spin up five research sub-agents, all five run at Fable rates unless you override it; setting CLAUDE_CODE_SUBAGENT_MODEL to Haiku in settings.json fixes that for a fraction of the cost. Every line in CLAUDE.md loads on every single message, so the real question for each line is whether Claude could have inferred it from the codebase anyway — one comparison in the video showed a 3,847-token CLAUDE.md trimmed to 312 tokens with zero quality regression, a 92% context reduction that translates to real monthly savings at any meaningful spend level. HTML comments and @-imports don't count against token budget, so they're a free way to keep notes out of the loaded context. A .claude-ignore file plus enforced deny rules in settings.json (blocking reads of node_modules, dist, lock files, and similar) produced an 85.5% context reduction in one measured case. Every connected MCP server loads its full tool schema at session start whether you use it that session or not — often 10-20K tokens per server — so disconnecting anything unused in the last couple of weeks, or enabling tool-search-based lazy loading, meaningfully shrinks the baseline cost of every message.</p><p>Smaller tips round it out: raise the default 30-day session history retention if you don't want old context silently deleted, understand that the effort level (low through max) barely improves output quality below max but does increase spend, disable non-essential telemetry and feedback-survey calls, and set a hard monthly spend cap in the Claude web interface as a safety net.</p><p>For Amir's work, the most directly transferable pieces are the plan-on-expensive/build-on-cheap pattern (relevant to any Claude Code workflow across bi-data, marketing, and the AI-native consulting practice), the CLAUDE.md-slimming discipline (worth auditing in the vault's own CLAUDE.md and skill files), and the sub-agent model override — all of which are concrete enough to teach directly in the 'Beyond Chat' course as cost-management fundamentals for non-technical Claude Code users.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=40">0:40</a> &mdash; A single &#x27;Hi&#x27; message burning 30K+ tokens before Claude replies</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=195">3:15</a> &mdash; Three real workload cost comparisons: code review, pricing page, CRUD build</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=620">10:20</a> &mdash; Pattern 1: plan on Fable via plan.md, execute on Sonnet</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=900">15:00</a> &mdash; Pattern 2: a code-reviewer sub-agent that only returns findings</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=1040">17:20</a> &mdash; Pattern 3: ambiguous goals with verification criteria (accounting reconciliation demo)</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=1320">22:00</a> &mdash; Sub-agent model override in settings.json</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=1440">24:00</a> &mdash; CLAUDE.md token audit: 3,847 tokens cut to 312 with no quality loss</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=1600">26:40</a> &mdash; .claude-ignore + deny rules: an 85.5% context reduction</li>
+<li><a href="https://youtu.be/d9XCX0PcOq0?t=1700">28:20</a> &mdash; Disconnecting unused MCP servers to cut per-message overhead</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=d9XCX0PcOq0">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

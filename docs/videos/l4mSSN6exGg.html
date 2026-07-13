@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Anthropic Teams ACTUALLY use Claude Code day to day (for non-engineers)</title>
+<meta name="description" content="Anthropic&#x27;s own internal guide on how legal, marketing, design, and finance teams use Claude Code day to day — four patterns that repeat across every team.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>How Anthropic Teams ACTUALLY use Claude Code day to day (for non-engineers)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-07-07 &middot; <strong>Length:</strong> 9 min &middot; <a href="https://www.youtube.com/watch?v=l4mSSN6exGg">Watch on YouTube</a></p>
+<p>Anthropic recently published a guide describing how its own non-engineering teams — legal, marketing, design, and finance — actually use Claude Code, and the patterns that repeat across every team look nothing like typical online advice about prompt engineering. Four patterns showed up consistently: how they prompt it, how they turn repeated work into skills, the narrow tasks they actually use it for, and how they think about running a session at all.</p><p>On prompting, none of the ten internal teams write clever, hyper-specific prompts the way older chatbot-era advice suggests. Instead they do three things: they build a context or memory file first that tells Claude who they are and how they work (the product design team keeps a file that says, in effect, "I'm a designer with little coding experience, give me smaller incremental changes"), they plan the whole task or session before touching Claude Code at all (the legal team plans in the browser first, then moves to Claude Code only once they know what they're building, explicitly telling it to slow down and go one step at a time), and they work through tasks step by step rather than expecting one giant prompt to return a finished result. The practical translation for Amir: getting the CLAUDE.md and any brand-voice or positioning files genuinely right is what makes prompting trivial afterward — this reads closer to organizing a Notion workspace than to prompt engineering.</p><p>Skills get built with real intention. A skill's name and description are what Claude reads into memory every time and are the sole basis for whether it gets triggered at all, so a vague description means Claude never reaches for it, while a specific one — stating when to use it, when not to use it, and what it actually does — gets grabbed at exactly the right moment without being asked. The instructions file itself should stay under roughly 200 lines, focused purely on steps; the single biggest mistake teams make is cramming everything into one file. Detailed examples and reference material belong in separate files pointed to from the main skill file, so the deeper detail only loads when the task actually needs it, rather than bloating every session's context.</p><p>The narrow-use-case pattern is the one most likely to correct a misconception. None of Anthropic's own non-technical teams talk about full autonomy or "replacing yourself" as the source of value — not one example in the guide involves an unattended task running the show. Growth marketing at Anthropic is a single person who built a workflow generating hundreds of ad variations from an existing spreadsheet in minutes, and a Figma plugin producing a hundred ad variations from one mockup — but a human still picks which ones go live. Legal built tooling to route reviews to the right lawyer rather than resolve them autonomously. Product design shipped a copy change across an entire codebase in two 30-minute calls instead of a week of back-and-forth. Every example follows the same shape: Claude does the heavy repetitive lifting — generating, finding, drafting — while a human sits at the decision point. The marketing example splits the work into two specialized sub-agents (one that only writes headlines, one that only writes descriptions) rather than one prompt trying to do everything, echoing the same small-focused-composable principle as the skills guidance.</p><p>The final pattern is a genuine mindset shift: Anthropic's own teams treat Claude Code like a slot machine rather than something to correct mid-session. The data science team's phrase for it is literal — save your state, let Claude run for roughly 30 minutes, then either accept the result or start completely fresh, rather than re-explaining and course-correcting a session that's drifting. The engineering team saves checkpoints constantly specifically to roll back in seconds, and is candid that Claude nails a task on the first try only about a third of the time. The product team starts every session from a clean slate for the same reason. Across all three teams, nobody tries to rescue a drifting session; restarting fresh has a measurably higher success rate than trying to fix it in place, and Claude Code's rewind flag makes that reset trivial.</p><p>Every one of these four patterns — context-first prompting, disciplined skill-writing, narrow human-in-loop use cases, and treating sessions as disposable rather than precious — is directly teachable, low-jargon material for the 'Beyond Chat: Claude Code for Business Professionals' course, and comes with genuine Anthropic-internal credibility behind it rather than being one more independent creator's opinion.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=40">0:40</a> &mdash; The four patterns that repeat across legal, marketing, design, and finance</li>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=120">2:00</a> &mdash; Context-first prompting: plan before you touch Claude Code</li>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=260">4:20</a> &mdash; How to write a skill&#x27;s name and description so it actually triggers</li>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=330">5:30</a> &mdash; Keep skill instructions under 200 lines; push detail into reference files</li>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=420">7:00</a> &mdash; Why none of Anthropic&#x27;s own teams chase full autonomy</li>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=480">8:00</a> &mdash; The marketing team&#x27;s two-specialist-sub-agent split</li>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=600">10:00</a> &mdash; Treating a session like a slot machine — save state, run, accept or reset</li>
+<li><a href="https://youtu.be/l4mSSN6exGg?t=680">11:20</a> &mdash; Claude nails it first try only ~1/3 of the time — restart, don&#x27;t rescue</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=l4mSSN6exGg">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

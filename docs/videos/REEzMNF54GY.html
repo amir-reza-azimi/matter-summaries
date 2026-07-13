@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Just Changed Social Media Carousels Forever</title>
+<meta name="description" content="A brand-voice and visual-identity skill system for generating on-brand social carousels that don&#x27;t look AI-made.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Claude Code Just Changed Social Media Carousels Forever</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-07-04 &middot; <strong>Length:</strong> 17 min &middot; <a href="https://www.youtube.com/watch?v=REEzMNF54GY">Watch on YouTube</a></p>
+<p>Most AI-generated LinkedIn or Instagram carousels look AI-made because there's no brand continuity between posts, every slide uses the same layout with no visual hierarchy, and the content itself is often shallow because the tool skipped real research. This video demos a system built to fix that specifically: one input produces a full carousel that reads as consistent across posts while still varying layout enough to stay engaging.</p><p>The case for carousels specifically starts with data: a report on 1.5 million LinkedIn posts found carousels generate roughly three times the reach of plain text posts, because dwell time runs 15-20 seconds versus 8-10 seconds for a single image or text post, and LinkedIn's algorithm reads that dwell time as a quality signal. On Instagram, carousels have the highest engagement rate of any format heading into 2026, ahead of Reels and single images, and get a second distribution window that single-image posts don't. The catch is that every carousel needs the same fonts, accent colors, and layout grid so the audience recognizes the brand, while avoiding an identical layout slide to slide so it doesn't get boring — 8-10 slides is cited as the consistent sweet spot for length. That combination of consistency-with-variety is usually what requires a human designer, and it's the specific thing this system targets.</p><p>First-time setup covers three things. Input flexibility is broad: a topic or idea (triggering a trending-research skill that pulls real Reddit/X/web discussion rather than inventing content), a scrape of your own feed for inspiration, a web article URL, a local audio file, a PDF, or an existing post to adapt for a different platform. Brand voice comes from an existing voice-profile document if you have one, or a dedicated skill that quizzes you and pulls writing samples to build one if you don't. The most important setup step is visual identity: the system checks for existing design tokens (palette, typography, templates for hero/body/CTA slides) and, if none exist, walks through building brand guidelines from scratch — logo presentation rules, color combinations, typeface weights — comparable to what a paid brand agency would produce. Consistency across slides is enforced by passing those same brand tokens into every generation; visual variety comes from collecting 3-5 reference images during setup (screenshots of styles you admire, from Instagram, Canva, or Figma templates) which get converted into your own templates using your brand colors rather than the original source's.</p><p>The generation pipeline itself runs several stages. It gathers inspiration relevant to the scenario (a topic triggers the trending-research skill; other input types trigger different research paths), then a designer sub-agent builds a visual inventory of available logos, icons, photos, and screenshots, chooses a narrative arc, and specifically stress-tests the hook on slide one, since getting someone to stop scrolling is treated as the single highest-leverage moment. It outlines each slide visually before writing headlines, producing a caption and a full slide plan that comes back for a human-in-loop review before any image generation happens — checking whether the content is actually valuable for the intended audience, not just visually complete. A separate image-generation agent then receives the approved slide plan and produces each image, using combinations of pure HTML templates, AI-generated imagery dropped into a template (including a real headshot or a company logo pulled automatically), or real screenshots scraped directly from a source URL. The output includes the finished carousel plus the accompanying post caption, generated in roughly one to two minutes.</p><p>The last-mile step matters: rather than looping back into the AI to fix small details, the near-final export (described as a "95% version") gets imported into Canva's Magic Layers feature, which converts the AI-generated image into fully editable layers — text size, logo placement, subtext — turning what would otherwise be an annoying re-prompt cycle into a normal manual edit.</p><p>For Amir's LinkedIn presence, the Pursuit newsletter's visual assets, and any client-facing marketing work, the core reusable idea is the design-token discipline: capturing a brand's visual identity as a small set of reusable tokens (not a one-off template) that every future asset — carousel, infographic, slide deck — reads from, which is the same design.md pattern also covered independently in Greg Isenberg's design-workflow episode this week.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/REEzMNF54GY?t=90">1:30</a> &mdash; Why AI carousels usually look AI-made: no continuity, no hierarchy, no research</li>
+<li><a href="https://youtu.be/REEzMNF54GY?t=150">2:30</a> &mdash; The data: carousels get ~3x the reach of text posts, plus a 2nd Instagram distribution window</li>
+<li><a href="https://youtu.be/REEzMNF54GY?t=340">5:40</a> &mdash; Setup: brand voice from an existing profile or a quiz-based skill</li>
+<li><a href="https://youtu.be/REEzMNF54GY?t=420">7:00</a> &mdash; Building brand guidelines from scratch when none exist</li>
+<li><a href="https://youtu.be/REEzMNF54GY?t=520">8:40</a> &mdash; Collecting 3-5 reference images and converting them into your own templates</li>
+<li><a href="https://youtu.be/REEzMNF54GY?t=780">13:00</a> &mdash; Stress-testing the slide-1 hook before writing any other copy</li>
+<li><a href="https://youtu.be/REEzMNF54GY?t=900">15:00</a> &mdash; The human-in-loop review step before any image gets generated</li>
+<li><a href="https://youtu.be/REEzMNF54GY?t=1080">18:00</a> &mdash; Exporting the &#x27;95% version&#x27; into Canva Magic Layers for last-mile edits</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=REEzMNF54GY">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

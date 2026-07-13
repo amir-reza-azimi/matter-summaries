@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Rebuilt Hermes&#x27;s Best Feature in Claude Code (Steal This)</title>
+<meta name="description" content="Rebuilding the Hermes agent&#x27;s memory system natively inside Claude Code instead of switching platforms.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>I Rebuilt Hermes&#x27;s Best Feature in Claude Code (Steal This)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-07-09 &middot; <strong>Length:</strong> 15 min &middot; <a href="https://www.youtube.com/watch?v=9CiOwbmOKdU">Watch on YouTube</a></p>
+<p>The Hermes agent went from zero to over 200,000 GitHub stars in five months, and an analysis of 1,300 Reddit comments about people switching to it from Claude Code found the top reason wasn't integrations or self-building skills — it was memory. Roughly 30% of switchers cited better default memory as the reason. Rather than switch platforms, this video rebuilds the same capability natively inside Claude Code, on the existing subscription, with no external server or VPS.</p><p>The framework for evaluating any memory system is three questions: storage (when something matters, how and where does it get saved), injection (what loads automatically at session start), and recall (when you ask about something old, how does it get found, and does it find it reliably). Claude Code's out-of-the-box behavior is weak on all three — it saves the odd thing into a bare memory.md index, injects almost nothing beyond CLAUDE.md, and recalls by keyword search across the last 30 days of session files, meaning if you don't use the exact words from the original conversation, it won't find it.</p><p>Hermes does better but has real limitations: a self-rewriting loop that can overwrite good information when the agent overestimates its own edits (some users have had to bolt on approval gates and rollback features), a completely separate runtime with its own billing, security surface, and update cycle to maintain, and even its memory has hard character limits that compress or drop entries. The conclusion: Hermes proved the demand for better memory, but not that you need Hermes itself to get it — the same capability can be built from portable markdown files and folders that move with you across Claude Code, Codex, or whatever comes next.</p><p>Three concepts are borrowed directly from Hermes. First, a frozen snapshot: a size-capped memory.md file (2,500 characters max) holding pricing, active clients, and current decisions, injected silently into every session alongside a profile and today's memories — capped deliberately to prevent context bloat. Second, the agent decides what's worth keeping, not the user: a hook runs after every turn, checks whether anything is durable (a decision, a price change, a preference), promotes it into memory.md, checks for duplicates, and replaces stale entries with more recent ones, guided by a separate meta-memory-write skill whose rules you can edit over time. Third, nothing is lost — every turn produces both a summary and a full transcript filed to long-term storage, regardless of importance, so nothing has to be pre-judged as unimportant and discarded.</p><p>Where this build goes further than Hermes is recall, which the video argues is Hermes's weakest link — it searches an SQLite database with FTS5 keyword matching only, meaning a question about "payment processing" won't surface a conversation that only ever said "Stripe." The rebuilt system instead embeds everything as vectors in a local Postgres/pgvector setup, searches by meaning and keyword, re-ranks results, and expands into the neighboring conversation for full context. It also cites its sources precisely — the exact words, who decided it, and the date — rather than guessing, an idea borrowed from Gary Tan's "Gbrain" concept, which matters especially on a team where you need to trust a teammate's decision without re-litigating it. It solves the cold-start problem too: rather than starting with an empty memory database the day you install a new system, it imports existing session history (a full month in the demo, sourced from the current workspace or across all Claude Code projects), summarizes it with a cheap model, and embeds it into long-term memory so recall works from day one. A live demo asking "when did I last ask about my brand?" returns the exact date, the exact question asked, and an honest note about which other matches didn't quite fit — a genuinely useful pattern for source-cited recall.</p><p>A fourth idea extends past personal use to teams: scoping memory so one client's context stays isolated from another's, with every memory tagged by owner and every query filtered by who's asking — described as an early-stage "TeamOS" the creator is still testing.</p><p>For Amir's own memory model — the vault's `.claude/memory/` system with MEMORY.md as an index, feedback/project/user/reference categories, and the harness-level auto-memory — this maps almost one-to-one onto an architecture Amir is already running, and gives a concrete blueprint (frozen snapshot, agent-decided promotion, full transcript retention, semantic recall with citations, cold-start import) for anywhere the current setup could be strengthened, particularly the recall-by-meaning piece, which the vault's grep-based retrieval doesn't currently do.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=20">0:20</a> &mdash; Why 30% of Hermes switchers cite memory as the reason</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=180">3:00</a> &mdash; The three-question framework: storage, injection, recall</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=340">5:40</a> &mdash; Hermes&#x27;s real limitations: self-rewriting loop, separate runtime, character caps</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=520">8:40</a> &mdash; Concept 1: the frozen snapshot — a 2,500-character memory.md</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=640">10:40</a> &mdash; Concept 2: an after-turn hook decides what&#x27;s durable</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=780">13:00</a> &mdash; Concept 3: full transcripts filed long-term, nothing pre-judged as unimportant</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=900">15:00</a> &mdash; Why Hermes&#x27;s keyword-only recall misses meaning-based questions</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=1080">18:00</a> &mdash; Cited recall: exact words, who decided, and the date</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=1220">20:20</a> &mdash; Importing existing session history so recall works from day one</li>
+<li><a href="https://youtu.be/9CiOwbmOKdU?t=1400">23:20</a> &mdash; TeamOS: scoping shared memory across teammates and clients</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=9CiOwbmOKdU">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

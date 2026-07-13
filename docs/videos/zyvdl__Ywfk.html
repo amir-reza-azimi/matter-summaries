@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code + Clay Makes Lead Generation Actually Fun</title>
+<meta name="description" content="Orchestrating Clay&#x27;s B2B data waterfall entirely through natural language in Claude Code, from lead sourcing to personalized outreach.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Claude Code + Clay Makes Lead Generation Actually Fun</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-07-02 &middot; <strong>Length:</strong> 18 min &middot; <a href="https://www.youtube.com/watch?v=zyvdl__Ywfk">Watch on YouTube</a></p>
+<p>Cold outbound has three recurring failure points: finding the right businesses, getting real contact information, and writing outreach that doesn't read as obviously AI-generated and spammy. This video's approach is to let Clay solve the data problem (it aggregates its own dataset plus negotiated access to many other B2B data providers into a single "waterfall" — checking a top provider first, then falling back down the list until it gets a hit, pushing match rates from roughly 30% on a single vendor up to 80-90%) and let Claude Code solve the tool problem, so you never have to learn Clay's full interface — you just describe what you want in plain language and Claude figures out which Clay endpoints to call.</p><p>Setup is a one-time Claude Code marketplace plugin install (done through the terminal specifically, though the plugin itself works fine afterward in the desktop app or VS Code extension), followed by asking Claude to authenticate the connection — it surfaces a link, you authorize the workspace, and Claude Code has full access to Clay's action set: finding emails, enriching a person or company, looking up phone numbers, reading and editing tables, validating workflows.</p><p>The core demo uses Clay's "goal prompt" feature (accessed via /goal), which lets you set an end condition and let Claude keep working autonomously until it's met, rather than a single-shot request. The example: find 50 fully enriched HVAC/home-service leads targeting business-owner decision-makers, each needing an email, business pain points, recent notable achievements, and a fully personalized subject line and body aimed at getting the recipient to agree to a 90-second Loom video — with an explicit instruction not to stop until all 50 rows are complete and every column is filled. Critically, before running this, the project folder already contained context files: a business profile, case studies, FAQs, proof points, the offer, and website copy for a fictional home-services automation agency — the point being that even perfectly enriched leads don't matter if Claude has no grounding in your actual business to write convincing, specific copy.</p><p>The goal prompt triggered a genuinely multi-agent workflow: six parallel sub-agents fanned out across different cities (Houston, San Antonio, Atlanta, Charlotte, Tampa, Las Vegas), each sourcing and enriching roughly 25 shops, before the results were aggregated, deduplicated, and checked for completeness — including agents debating whether a given subject line and body were actually good enough before accepting them. That thoroughness meant this particular run took about an hour (a simpler "just find me 50 leads" version without the verification passes took five minutes), and cost 172 Clay credits, roughly $12 for 50 enriched, ready-to-send leads — cheap enough that even a 1% reply-to-close rate comfortably clears the cost.</p><p>The output columns show the depth of enrichment available: business name, decision-maker name and title, verified email and status, phone, website, city, Google rating and review count, business pain points, a recent signal, a notable achievement, and a specific personalization hook with its source, alongside the drafted subject and body. One sample email opens by referencing a specific negative review about a missed callback — the kind of concrete, individualized detail that separates real personalization from templated mail-merge.</p><p>The final step closes the loop back into Clay: importing the generated CSV as a new table, building a campaign against it using the pre-written subject/body columns as variables (rather than generating messaging inside Clay itself), and — for anyone starting from zero — buying pre-warmed sending domains directly inside Clay (five accounts per domain, capped at roughly 30 sends/day per domain to protect deliverability) with built-in follow-up sequencing.</p><p>This is a directly transferable, concretely costed template for marketing/GTM lead-generation automation — the context-files-before-generation discipline and the goal-prompt-with-verification-criteria pattern both apply cleanly beyond Clay specifically, to any Claude Code-driven outbound or enrichment workflow at join.com or for amir-azimi client work.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=120">2:00</a> &mdash; Why Clay&#x27;s data waterfall gets 80-90% match rates vs. ~30% on one vendor</li>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=300">5:00</a> &mdash; Installing the Clay marketplace plugin and authenticating via Claude Code</li>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=480">8:00</a> &mdash; Context files (business profile, case studies, offer) loaded before generation</li>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=600">10:00</a> &mdash; The /goal prompt: 50 enriched HVAC leads, don&#x27;t stop until done</li>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=750">12:30</a> &mdash; Six parallel sub-agents fanning out across cities, then deduping and verifying</li>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=900">15:00</a> &mdash; Cost: 172 Clay credits (~$12) for 50 fully enriched, copy-ready leads</li>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=1000">16:40</a> &mdash; A sample email built around a specific review-based personalization hook</li>
+<li><a href="https://youtu.be/zyvdl__Ywfk?t=1100">18:20</a> &mdash; Closing the loop: importing the CSV into a Clay campaign and buying warmed domains</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=zyvdl__Ywfk">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

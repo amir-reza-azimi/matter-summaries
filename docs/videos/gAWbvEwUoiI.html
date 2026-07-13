@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPT-5.6 Sol vs. Claude Fable: Why OpenAI&#x27;s new model crushes my benchmark</title>
+<meta name="description" content="Claire Vo&#x27;s structured LLM eval harness — LLM judge plus a weighted human taste score — applied to GPT-5.6, Fable, and Sonnet.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>GPT-5.6 Sol vs. Claude Fable: Why OpenAI&#x27;s new model crushes my benchmark</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@howiaipodcast">How I AI</a> &middot; <strong>Published:</strong> 2026-06-27 &middot; <strong>Length:</strong> 37 min &middot; <a href="https://www.youtube.com/watch?v=gAWbvEwUoiI">Watch on YouTube</a></p>
+<p>Claire Vo runs a recurring benchmark she calls the "How I AI vibe review," built specifically because she got tired of pure subjective vibe-checking and wanted something closer to a repeatable evaluation process. This episode applies it to the newly released GPT-5.6 family (Sol, the frontier model; Terra, a balanced everyday model; Luna, a cheap high-volume model) against Fable 5 and Sonnet 5.</p><p>The evaluation methodology is the part worth extracting independent of which model won. Four task categories get tested across every model: writing PRDs, wireframing and prototyping app ideas into fully designed builds, agentic multi-step debugging, and "agentic voice" (how the model responds conversationally as an assistant). Every output first goes through an LLM-as-judge pass (GPT-5.5 is used specifically because it's described as the hardest, most reliably critical judge), producing a per-task score. Separately, every output gets a human "taste" pass — direct manual review of PRDs, prototypes, and wireframes, with written notes attached to each one. The final score is an explicitly weighted blend of the two: 70% human taste, 30% the LLM judge's score, chosen deliberately because the host trusts her own product/design judgment more than an automated grader, particularly for anything design- or writing-related where "correct" isn't well defined by an LLM judge alone.</p><p>On the actual results: GPT-5.6 Sol had the highest weighted taste score by a meaningful margin, particularly on prototyping and full-fidelity design tasks, where it was preferred in three to four out of five head-to-head comparisons against Fable — largely because outputs were functional (buttons actually worked, layouts were assignable and clickable) and visually more opinionated and unique rather than defaulting to a generic dark-mode monospace layout. Terra, the mid-tier GPT-5.6 model, was preferred specifically for PRD writing — described as more streamlined and to the point. Sonnet 5 scored lowest overall on the design-heavy tasks that dominate this benchmark's weighting, but won clearly on "agentic voice," praised as the only model that reads like talking to an actual human rather than an engineer communicating with other agents — a specific complaint leveled repeatedly at Fable, which is described as intelligent and hardworking but frustrating to collaborate with conversationally, and prone to over-hardening its own technical decisions in a way that occasionally worked against getting a product actually shipped.</p><p>Two recurring model tells are called out as things to watch for and correct in your own prompting: excessive em-dashes and "AI slop" language across every model tested (a consistent pattern worth explicitly prompting against), and GPT-5.6's apparent visual preference for forest-green color palettes across generated designs — evidently baked into its default aesthetic tendencies closely enough that it's described as a recognizable "tell."</p><p>Beyond the design benchmark, two additional use cases are demonstrated as genuine strengths of GPT-5.6/Codex specifically: video editing (dropping a long recorded talk into Codex, describing the cuts and pacing wanted, and getting sharp social-ready clips back without manual editing) and browser automation via Codex's Chrome integration (used live to triage and reply to several hundred LinkedIn connection requests and messages against an explicit quality bar — only replying to executives at qualifying companies — completing a task that would otherwise consume hours of manual review).</p><p>The reusable takeaway for Amir isn't which specific model won this particular week's comparison (a fast-moving, quickly-stale question) — it's the eval-harness structure itself: a fixed set of representative tasks, a documented LLM-judge model, an explicit human taste layer with a stated weighting against the machine score, and written qualitative notes attached to each output. That's a directly applicable pattern for building any internal LLM-feature eval harness at bi-data, or for evaluating which model/prompt combination actually performs best on a recurring business task before committing to it.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=420">7:00</a> &mdash; The four benchmark categories: PRDs, prototyping, debugging, agentic voice</li>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=560">9:20</a> &mdash; The eval structure: LLM-judge score plus a 70/30 human-taste-weighted blend</li>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=900">15:00</a> &mdash; Why Sol won on functional, opinionated prototype design</li>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=1050">17:30</a> &mdash; Why Terra won specifically on PRD writing</li>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=1150">19:10</a> &mdash; Why Sonnet won &#x27;agentic voice&#x27; despite losing on design tasks</li>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=1400">23:20</a> &mdash; Two model tells: em-dash slop, and GPT-5.6&#x27;s forest-green bias</li>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=1900">31:40</a> &mdash; Video editing: cutting a full talk into social clips inside Codex</li>
+<li><a href="https://youtu.be/gAWbvEwUoiI?t=2100">35:00</a> &mdash; Browser automation: triaging hundreds of LinkedIn messages against a quality bar</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=gAWbvEwUoiI">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How I Make Opus Think Like Fable (5 easy steps)</title>
+<meta name="description" content="Extracting Fable&#x27;s working discipline into an installable skill file, plus a practical model-routing table for dynamic workflows.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>How I Make Opus Think Like Fable (5 easy steps)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-06-30 &middot; <strong>Length:</strong> 10 min &middot; <a href="https://www.youtube.com/watch?v=XTBWVVcF3Pk">Watch on YouTube</a></p>
+<p>After spending a few thousand dollars in Fable usage credits testing what it's actually good for, the central claim here is that the model isn't the moat — the process is. The illustration: give a total beginner Fable 5 and an expert like Andrej Karpathy the much weaker Sonnet 3.7, and the expert still builds something better, because how you instruct a model and the loops you build around it matter more than raw model intelligence. A more controlled version of the same test: running identical dynamic workflows with Fable orchestrating Fable sub-agents versus Fable orchestrating Opus or Sonnet sub-agents produced roughly equivalent results at a fraction of the cost — the direct evidence that you can't keep a model's raw intelligence, but you can keep its process.</p><p>The practical response is to treat Fable less like a workhorse and more like a teacher — extract how it approaches a problem and transplant that discipline onto cheaper models, rather than defaulting to Fable for everything. After reading through Fable's leaked system prompt with Fable itself and picking out the operating principles worth keeping (verify rather than assume something is current just because it's in memory, confirm a file actually exists rather than assuming it because a prompt implies it, address an ambiguous query directly before asking a single clarifying question, calibrate research depth to the task — one source for a simple fact, five to ten for deeper comparative research), those principles get compiled into an installable skill file the creator calls "Fable mode."</p><p>Fable mode is structured around five gates: scoping (before any work begins), evidence (gathering before reasoning), adversarial reasoning (actively arguing against your own plan to find what could go wrong, which the video argues is specifically where Fable is unusually strong — planning that includes genuine devil's-advocate scrutiny rather than just a step list), verification (before declaring anything done), and calibration. Applying this skill file to Opus 4.8 is described as making the model "feel elevated" — closing much of the practical gap with Fable at a fraction of the cost, and portable to any model, including GPT or open-source models, since the skill only encodes a working discipline, not anything Fable-specific.</p><p>The reasoning behind why this works ties back to dynamic workflows specifically: if Fable plans a workflow, stress-tests every likely failure mode as part of that plan, and then hands execution to cheaper Sonnet workers who report back for Fable to review and iterate on, the quality holds up close to a full Fable-to-Fable run — because the expensive reasoning happened once, up front, in the plan, not repeatedly across every execution step.</p><p>The second half introduces a concrete model-routing table: list every model available in your toolkit alongside a cost score (higher meaning cheaper) and separate ratings for intelligence (how well it reasons, reviews code, catches issues) and taste (creativity, UI/UX judgment, out-of-the-box thinking). This table becomes the basis for assembling dynamic agent teams deliberately rather than defaulting every sub-agent to the same model — a demonstrated test compared an Opus orchestrator delegating to a mix of Sonnet and Opus workers against the same orchestrator delegating entirely to Haiku "scouts": the Haiku-only version came out roughly three times cheaper with an equivalent result, mirroring the same finding from the Fable-vs-cheaper-worker comparison.</p><p>The closing point is framed around the fact that Fable access itself isn't guaranteed to be permanent (subscriptions can change, models can be pulled), which the creator uses to argue for investing in owned processes and methodology rather than any single vendor's model — the actual asset is the skill file and the routing logic, both of which are portable regardless of which model happens to be available next month.</p><p>The Fable-mode skill file and the cost/intelligence/taste routing table are both directly reusable prompting techniques — the routing table in particular is a concrete, teachable framework for anyone building multi-agent workflows in the vault or for client work, independent of which specific frontier model is current at the time.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/XTBWVVcF3Pk?t=40">0:40</a> &mdash; The core claim: the model isn&#x27;t the moat, the process is</li>
+<li><a href="https://youtu.be/XTBWVVcF3Pk?t=180">3:00</a> &mdash; Testing Fable-orchestrating-Fable vs. Fable-orchestrating-cheaper-models</li>
+<li><a href="https://youtu.be/XTBWVVcF3Pk?t=380">6:20</a> &mdash; Reading Fable&#x27;s leaked system prompt for its operating principles</li>
+<li><a href="https://youtu.be/XTBWVVcF3Pk?t=560">9:20</a> &mdash; The five gates of &#x27;Fable mode&#x27;: scoping, evidence, adversarial reasoning, verifying, calibrating</li>
+<li><a href="https://youtu.be/XTBWVVcF3Pk?t=700">11:40</a> &mdash; Why Fable&#x27;s adversarial planning is the specific thing worth extracting</li>
+<li><a href="https://youtu.be/XTBWVVcF3Pk?t=820">13:40</a> &mdash; The cost / intelligence / taste model-routing table</li>
+<li><a href="https://youtu.be/XTBWVVcF3Pk?t=900">15:00</a> &mdash; Opus-orchestrator-to-Haiku-scouts: 3x cheaper, same result</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=XTBWVVcF3Pk">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fable 5 Just Built Me a Business With One Prompt</title>
+<meta name="description" content="A single long-form /goal prompt orchestrating dozens of sub-agents to build a complete company package in a few hours.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Fable 5 Just Built Me a Business With One Prompt</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-07-01 &middot; <strong>Length:</strong> 12 min &middot; <a href="https://www.youtube.com/watch?v=R0qF17BVl9w">Watch on YouTube</a></p>
+<p>A single goal prompt given to Fable produced a fairly complete company in one run: a landing page, a product concept, a business plan, market research, brand guidelines, and two launch videos — one of which included a founder testimonial video assembled from an existing avatar and voice clone already present in the project. The resulting product, "Counterbrief," targets Shopify store owners fighting chargebacks, pulling real evidence (tracking data, order history, customer emails) into an evidence packet the merchant reviews before the bank does, priced at a flat $19.</p><p>The prompt itself was written to a file and read in by Claude, specifically to get around the roughly 4,000-character limit on /goal prompts — a workaround worth remembering for any sufficiently detailed goal prompt. The instruction: build a complete company from nothing but the open internet, find a real, painful, underserved problem people are actively complaining about, design a product and brand around it, and hand over a finished package usable to go to market this month, all without asking any clarifying questions mid-run. Guardrails limited it to existing API keys already in the project, forbade any real spending or publishing (everything stays local), and required every fact and statistic to be independently verified rather than invented.</p><p>The critical instruction, credited with doing most of the heavy lifting, defined what "orchestrate" meant explicitly: use multi-agent workflows aggressively, fan out parallel researchers across sources and angles, run tournaments where independent agents pitch competing ideas and get scored by judge personas, adversarially verify every important claim with dedicated skeptic agents, and apply a completeness critic before considering any phase finished — with those patterns treated as a floor, not a ceiling, leaving Fable free to design whatever additional orchestration the work called for.</p><p>The result of that instruction is that Fable itself barely did any of the token-heavy work — it used roughly 500,000 tokens total (a modest fraction of a weekly budget) because every actual sub-agent it spun up ran on Opus or Sonnet, not Fable. Fable's role was purely to plan, delegate, and review — described as functioning like a manager or a retiring senior engineer packaging up institutional knowledge for a junior team, rather than an individual contributor doing the building itself. That's the same principle demonstrated independently in this channel's separate "How I Make Opus Think Like Fable" video: intelligence used for orchestration and review, not for volume execution.</p><p>The actual run moved through nine phases. A pain-hunt stage had ten research agents sweep Reddit, Hacker News, and G2, surfacing 35 raw problems that were merged into 18 candidates, each independently fact-checked by a separate verifier agent (all 18 survived that check). A tournament stage scored the 18 opportunities across pain, urgency, reachability, willingness to pay, buildability, and incumbent weakness across five judge personas; the top four each got a dedicated advocate and skeptic, and three fresh judges voted the chargeback-evidence idea the winner unanimously. From there: competitor and platform research, brand and logo development (six AI-generated logo candidates through a critique loop, then hand-vectorized), landing page and offer copy, both launch videos, and a red-team phase where six skeptic agents attacked the business plan across 38 distinct claims, all resolved with fixes folded back into the plan and site before the final package was assembled.</p><p>The honest caveat at the end: the visual design and landing page are acknowledged as mediocre, and the creator frames this as roughly halfway to something genuinely usable — the real value demonstrated is compressing weeks of research, brand development, and go-to-market prep into three to four hours, not a finished, polished product.</p><p>The most transferable piece for amir-azimi client work or course material is the explicit definition of "orchestrate" (parallel research, tournament scoring, adversarial verification, a completeness critic) as a reusable prompt structure for any ambiguous, high-stakes creative or research task — independent of which specific model executes it.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=40">0:40</a> &mdash; The finished output: landing page, brand, business plan, two launch videos</li>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=300">5:00</a> &mdash; Reading a long goal prompt from a file to bypass the /goal character limit</li>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=420">7:00</a> &mdash; The explicit &#x27;what orchestrate means&#x27; instruction — the key paragraph</li>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=560">9:20</a> &mdash; Why Fable only used ~500K tokens: every sub-agent ran on Opus or Sonnet</li>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=700">11:40</a> &mdash; Phase 1: 10 research agents, 35 problems merged and verified into 18</li>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=780">13:00</a> &mdash; Phase 2: the judged tournament that picked the chargeback-evidence idea</li>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=950">15:50</a> &mdash; The red-team phase: 6 skeptic agents, 38 claims attacked and resolved</li>
+<li><a href="https://youtu.be/R0qF17BVl9w?t=1080">18:00</a> &mdash; The honest caveat: roughly halfway to a genuinely shippable product</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=R0qF17BVl9w">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

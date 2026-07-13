@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Made Claude Code FOR TEAMS (It&#x27;s Incredible)</title>
+<meta name="description" content="A three-tier architecture for a team-wide agentic operating system: shared where it should be, private where it shouldn&#x27;t.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>I Made Claude Code FOR TEAMS (It&#x27;s Incredible)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-07-06 &middot; <strong>Length:</strong> 12 min &middot; <a href="https://www.youtube.com/watch?v=TE6zNesGcvY">Watch on YouTube</a></p>
+<p>Building an agentic operating system for yourself is straightforward; building one a whole team can use is harder, because memory needs to be shared without exposing everything to everyone, teammates need to improve the system without touching technical internals, and the setup needs to survive whatever tool comes after Claude Code. This video walks through a team operating system built on three ideas borrowed from Gary Tan's "Gbrain" concept, combined with standard software separation-of-concerns principles.</p><p>The first decision is where files live, and the answer is a three-tier system based on who edits them. Human-maintained files — company rules in CLAUDE.md, brand context, voice, visual identity, anything non-technical teammates need to read or edit — live in a familiar shared tool like Notion or Google Drive (or OneDrive/Dropbox, whatever the team already uses), because it's already where people work and markdown editing there is genuinely easy. Agent-maintained files — skills, settings, memory that don't need to face the team — live inside Claude Code itself, since notion/Drive formatting can break YAML frontmatter and other technical details when passed back and forth. GitHub is the third tier: a pure version-control backbone that backs up everything, including whatever gets pulled down from Notion or Drive, without non-technical teammates ever needing to touch it directly.</p><p>The full folder structure follows from that split: company-wide rules, agent identity (a "soul.md"), and brand context sit in the shared/human tier; a context or knowledge-base folder holds memory files, some shared across a project or client, others private per teammate, with a personal CLAUDE.md-equivalent letting an individual override or add to inherited global rules without touching the shared version. Project outputs get pushed back into Notion for non-technical teammates to view (read-only there — editable only inside Claude Code), while the technical version-control record stays in GitHub.</p><p>Access control follows a similarly layered logic across four systems that have to stay in sync. The shared drive is the actual source of truth: the team owner sets per-document view/edit rights and which workspace each login can see, so if a client's space isn't shared with someone, they simply can't pull that context into Claude Code at all. The local machine only ever holds what a teammate's token was permitted to pull from that shared drive — nothing more. GitHub is the part the creator says tripped him up initially, because Notion or Drive permissions do nothing there; it's a fully separate system, so the safe pattern is one repository per client, scoped to exactly the same people who have Notion access to that client, with any private per-user tweaks kept in a gitignored, locally-private CLAUDE-local.md file.</p><p>The fourth and hardest layer is a shared long-term memory database, relevant only if you've built semantic (vector) recall on top of your files. Two approaches are laid out: separate local indexes, one per person, built only from the files they're permitted to sync — simple, fully isolated by construction, but with no true shared memory across the team; or a single shared Postgres/pgvector database that everyone queries live, tagged by client, with row-level security so a query from someone with Acme-only access is refused any row outside Acme and company-wide tags. The shared database is harder to stand up and secure — it becomes one more thing you have to protect — but scales properly across a growing team, which is the direction the creator says they're building toward.</p><p>The closing point is the one worth carrying forward: underneath all of this jargon, the entire system is just markdown files in folders with a handful of rules about which files load when — genuinely portable, with no vendor lock-in, so the same structure works whether the interface is Claude Code, Codex, or whatever replaces either of them.</p><p>This maps directly onto both the bi-data/marketing knowledge-sharing problem at join.com (where team-wide context needs to be shared without leaking client- or department-specific detail) and the amir-azimi consultancy's positioning around building portable, non-vendor-locked AI-native infrastructure for commercial teams — the three-tier and row-level-security patterns here are concrete enough to reference directly when scoping either kind of engagement.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/TE6zNesGcvY?t=60">1:00</a> &mdash; The three-tier split: human-edited, agent-edited, version-controlled</li>
+<li><a href="https://youtu.be/TE6zNesGcvY?t=180">3:00</a> &mdash; Why shared context lives in Notion/Drive, not Claude Code directly</li>
+<li><a href="https://youtu.be/TE6zNesGcvY?t=260">4:20</a> &mdash; The full folder structure: rules, soul.md, brand context, per-person overrides</li>
+<li><a href="https://youtu.be/TE6zNesGcvY?t=420">7:00</a> &mdash; Access control layer 1: the shared drive as source of truth</li>
+<li><a href="https://youtu.be/TE6zNesGcvY?t=480">8:00</a> &mdash; Access control layer 3: why GitHub permissions don&#x27;t inherit from Notion</li>
+<li><a href="https://youtu.be/TE6zNesGcvY?t=560">9:20</a> &mdash; Two models for shared long-term memory: local index vs. shared pgvector + row-level security</li>
+<li><a href="https://youtu.be/TE6zNesGcvY?t=680">11:20</a> &mdash; Why the whole system stays portable: it&#x27;s just markdown and load rules</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=TE6zNesGcvY">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

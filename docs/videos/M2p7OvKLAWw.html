@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12 Hidden Settings to Enable in Claude Code</title>
+<meta name="description" content="Twelve concrete settings.json and workflow changes for faster, cheaper, safer day-to-day Claude Code use.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>12 Hidden Settings to Enable in Claude Code</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-07-08 &middot; <strong>Length:</strong> 14 min &middot; <a href="https://www.youtube.com/watch?v=M2p7OvKLAWw">Watch on YouTube</a></p>
+<p>This is a rapid tour of twelve settings changes that most people never turn on, each demonstrated live with the exact config line. The first is a notification sound: running /config and toggling local notifications (terminal bell, desktop notification, or a third-party library called Claude Sounds) stops the common failure mode of stepping away from a long task and losing twenty minutes because Claude was quietly waiting on a permission prompt. Related to that, the mobile remote-control feature can also push a notification to your phone when it's waiting on input, via a single settings.json line (agent-push-notify-enabled: true), letting Claude keep working while you're away from your desk.</p><p>The third tip addresses permission fatigue without going full auto-mode: the /fewer-permission-prompt command scans your session transcripts for the read-only bash and MCP calls you always approve anyway, and generates a tailored allowlist for settings.json — effectively a dialed-down auto mode built from your own actual approval history rather than a blanket policy. The inverse is deny rules, which are checked before any allow rule at any level: the two recommended defaults are blocking reads of .env files (so API keys and secrets never load into context) and blocking git push outright, so publishing to a repository always stays a deliberate human action.</p><p>Model routing gets real attention. The built-in /model opus-plan alias plans on a bigger model and automatically drops to a cheaper one the moment you switch to building — matching the broader industry pattern of using an expensive model only where a mistake is costly (planning, review, hard problems) and a cheap, fast model where volume is high (implementation, file reads). Since Fable doesn't yet have a plan-equivalent alias, the video notes you currently have to build that pattern manually. Effort level (/effort, low through max) is flagged as commonly misunderstood — independent testing referenced in the video found quality barely moves below max, and the extra tokens burned at max mostly buy re-verification and caveats rather than better answers, so the practical guidance is default effort for routine work, high for genuinely hard problems, and essentially never max.</p><p>Privacy and noise-reduction settings get four lines added to the ENV section of settings.json: disabling the feedback survey prompt, disabling telemetry, disabling automatic error reporting to Sentry, and disabling non-essential model calls (the small conversational flavor text Claude sometimes adds). A separate toggle in the claude.ai web interface's privacy settings controls whether your chats and coding sessions are used to improve Anthropic's models. History retention is another easy miss: Claude Code only keeps 30 days of session history by default, silently deleting anything older, so setting a cleanup-period-days value (a year, for instance) in settings.json prevents losing access to old conversations — the video specifically warns against setting it to zero, which wipes everything immediately rather than extending retention.</p><p>The auto-compact threshold is worth tuning manually: Claude Code waits until the context window is 95% full by default, but quality measurably degrades well before that (context rot typically starts around 70-80%), so lowering the auto-compact-percentage-override to roughly 75% compresses the session before quality drops rather than after. A custom status line (/statusline, with a natural-language instruction like "show model name and context percentage with a progress bar") makes that context usage visible at a glance so you can manage it proactively. Two small workflow tips round it out: Ctrl+S stashes an in-progress prompt (functionally a cut, so Ctrl+V or a second Ctrl+S restores it) if you realize mid-typing that you need to ask something else first, and spinner-tips-enabled: false in settings.json removes the rotating tip text under the loading spinner for a less distracting interface. The final tip is about commit attribution — a settings.json line removes the default "generated with AI, co-authored by" footer Claude Code adds to commits and PRs, for teams that don't want every AI-assisted commit publicly attributed that way.</p><p>The video closes on a broader mindset point worth carrying into the course material: 2026's guidance from Anthropic has inverted the old prompt-engineering instinct of writing longer, more prescriptive prompts — the better pattern now is closing the gap between the outcome you want and what needs to happen, giving the model a goal and a definition of done rather than a script of steps, which is what people are calling "loop engineering."</p><p>Nearly every setting here is a direct, teachable fix for the 'Beyond Chat' course audience — notifications, the fewer-permission-prompt workflow, deny rules, and the auto-compact override in particular are exactly the kind of low-effort, high-payoff changes a non-technical Claude Code user could apply in five minutes.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=25">0:25</a> &mdash; Desktop notifications so you don&#x27;t lose time to a stuck permission prompt</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=130">2:10</a> &mdash; Mobile push notifications via remote control</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=195">3:15</a> &mdash; /fewer-permission-prompt: an allowlist built from your own approval history</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=260">4:20</a> &mdash; Deny rules for .env reads and git push</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=330">5:30</a> &mdash; The opus-plan alias and why Fable doesn&#x27;t have one yet</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=430">7:10</a> &mdash; Why max effort mostly buys re-verification, not better answers</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=560">9:20</a> &mdash; Four privacy/telemetry lines in settings.json</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=660">11:00</a> &mdash; The 30-day history default — and why not to set cleanup days to zero</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=730">12:10</a> &mdash; Lowering the auto-compact threshold to ~75% to avoid context rot</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=790">13:10</a> &mdash; A custom status line showing context percentage live</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=840">14:00</a> &mdash; Ctrl+S to stash a half-typed prompt</li>
+<li><a href="https://youtu.be/M2p7OvKLAWw?t=900">15:00</a> &mdash; Removing the AI co-author footer from commits</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=M2p7OvKLAWw">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

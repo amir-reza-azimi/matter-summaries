@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is an AI harness? I build one live in less than 30 minutes</title>
+<meta name="description" content="Demystifying &#x27;harness&#x27; and live-building one on the Claude Agent SDK for Sentry bug triage — with a full architecture walkthrough.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>What is an AI harness? I build one live in less than 30 minutes</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@howiaipodcast">How I AI</a> &middot; <strong>Published:</strong> 2026-06-25 &middot; <strong>Length:</strong> 25 min &middot; <a href="https://www.youtube.com/watch?v=ofS-4RRw9zw">Watch on YouTube</a></p>
+<p>The definition offered here is deliberately plain: a harness is code around an AI agent that makes it more effective at a specific job. The code doesn't have to include AI itself, though it usually does; the point of the code is simply to make the agent better at one constrained task. A harness makes sense specifically when the same workflow needs the same setup and the same outcome repeatedly — which is why coding harnesses became the first popular category, but the same logic applies to production-incident response, release prep, support escalation handling, migrations, or even non-technical repeatable processes like research or documentation consolidation.</p><p>The use case chosen and built live is debugging Sentry issues for the podcast's own product, ChatPRD — picked specifically because it already involved custom internal tooling, needed both coding and non-coding context, and had clear desired outcomes (a Linear ticket tracked for every fix, a written follow-up doc other engineers could use). The stated reason for building a dedicated harness instead of just using Claude Code or Codex directly: with a general-purpose coding tool you still have to explain the task and your intent from scratch every session, whereas a harness already knows the job, can be deliberately restricted to specific allowed actions (an investigate-only mode that never writes code, for instance), enforces the exact same output format every time without babysitting, and can route different sub-steps to different models rather than using one model for everything.</p><p>The architecture demoed: a terminal UI (built with the Ink library, though the video stresses a harness's interface can just as easily be a CLI or a full web app — the interface is not what defines a harness) sits on top of a core built on the Claude Agent SDK, which supplies the same underlying primitives Claude Code itself uses (file access, planning) without any of Claude Code's general-purpose framing. Connected data sources are deliberately opinionated rather than generic MCP access: purpose-built adapters to Sentry, Vercel, Linear, and GitHub, each written to pull specifically the fields useful for bug triage rather than letting the model wander through a general API. The model running the actual work is Sonnet 4.6, chosen deliberately for this specific job rather than defaulting to the most powerful available model.</p><p>Live, a real Sentry warning (an edit operation being silently dropped, affecting roughly 150 users hourly) is fed into the harness in investigate-only mode. It gathers evidence, checks it against custom-written adapters, and produces a structured investigation brief: confirmed impact, identified likely root causes with a stated blind spot, a recommendation on whether to open a Linear ticket, and an explicit recommendation on whether the harness itself has enough confidence to attempt an automated fix (in this run, it correctly recommends against fixing without more verification data) — every run's output gets saved to an artifacts folder as a durable record.</p><p>Building the harness itself took two parallel sessions — one on Claude Code, one on Codex — with an honest admission that neither one-shot the result: both defaulted to overly rigid, deterministic code and had to be explicitly redirected toward a more agentic design with heavier use of the SDK. Interestingly, Codex produced the better final harness architecture despite that architecture itself being implemented on top of the Claude Agent SDK — a small but useful reminder that the model doing the building and the SDK the result runs on don't have to match.</p><p>The five-step method offered for building your own: identify one specific, repeatable workflow; decide what a single run (a "task") needs as input and what output it should produce; write opinionated adapters to the specific data sources involved rather than generic tool access; decide explicitly what the harness is and isn't allowed to do (read-only vs. write access, for instance); and choose which model or model router actually executes the work, before finally building a surface — TUI, CLI, or web app — to interact with it.</p><p>This is one of the cleanest available templates for building the kind of narrow, reliable automation amir-azimi's consulting practice and the vault's own automations depend on — the investigate-only mode and opinionated-adapter pattern in particular are directly applicable to any client-facing agent build where reliability and constrained scope matter more than general capability.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=40">0:40</a> &mdash; The plain definition: a harness is just code around an agent</li>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=240">4:00</a> &mdash; Why Sentry bug triage was chosen as the demo use case</li>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=400">6:40</a> &mdash; Why a harness beats a general coding tool for a repeatable job</li>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=620">10:20</a> &mdash; The architecture: TUI on Claude Agent SDK, opinionated Sentry/Vercel/Linear/GitHub adapters</li>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=900">15:00</a> &mdash; Live run: a real Sentry warning triaged in investigate-only mode</li>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=1100">18:20</a> &mdash; The output: a structured investigation brief with a fix/no-fix recommendation</li>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=1250">20:50</a> &mdash; Building the harness itself took two redirected sessions, not a one-shot</li>
+<li><a href="https://youtu.be/ofS-4RRw9zw?t=1450">24:10</a> &mdash; The five-step method for building your own harness</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=ofS-4RRw9zw">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
