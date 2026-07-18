@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Cloud Datastream: What It Actually Is, and What "Not Battle-Tested" Should Cost You</title>
+<meta name="description" content="A grounded look at Google Cloud Datastream's change-data-capture model, and the specific engineering gaps worth closing before leaning on it for production workloads.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+  code { background: #f0f0f0; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<article>
+<h1>Google Cloud Datastream: What It Actually Is, and What "Not Battle-Tested" Should Cost You</h1>
+<p><strong>Context:</strong> notes from evaluating Datastream as a real-time sync layer alongside the more common batch-ETL and live-query approaches to getting production data into a warehouse.</p>
+
+<h2>What Datastream actually is</h2>
+<p>Google Cloud Datastream is a serverless change data capture (CDC) and replication service. Instead of periodically querying a source database and diffing the results, it reads the database's own write-ahead log (WAL, for Postgres) and streams every insert, update, and delete as a discrete event, in order, with minimal lag. It runs in two phases: a one-time <strong>backfill</strong> that snapshots existing rows, followed by continuous <strong>streaming</strong> of everything that changes afterward. It supports Postgres, MySQL, Oracle, SQL Server, MongoDB, Spanner, and several SaaS sources, writing to BigQuery directly or to Cloud Storage for custom pipelines via Dataflow.</p>
+<p>This is a fundamentally different mechanism from the two approaches teams usually reach for first. A scheduled batch sync (Airflow-style) diffs on a watermark column at intervals, which means it can silently miss hard deletes &mdash; a row removed between two sync runs leaves no trace for a watermark-based diff to catch. A live query against a read replica gets you real-time data but usually comes with a query timeout and isn't built for repeated or heavy use. Log-based CDC doesn't have either blind spot: a <code>DELETE</code> is a WAL event like any other, so it's captured whether or not anyone thought to query for it. That's arguably the single biggest reason to prefer CDC over batch sync wherever it's viable, independent of the real-time-latency argument that usually gets the most attention.</p>
+
+<h2>What "not fully battle-tested" should actually mean</h2>
+<p>Teams evaluating Postgres-source CDC often describe it as "basic alerting exists, but not fully battle-tested" during an early rollout. That isn't a vague hedge &mdash; Postgres-source CDC has a specific, well-known set of failure modes worth checking against before expanding coverage or leaning on it for anything critical:</p>
+<ul>
+<li><strong>Replication slot health.</strong> CDC tools hold a logical replication slot open on the source Postgres instance. If the stream stalls or falls behind (network issue, destination-side backpressure, a paused stream during a migration), Postgres retains WAL segments until the slot is consumed &mdash; unbounded growth here can fill disk on the production database itself, not just delay the pipeline. Worth confirming there's alerting on slot lag / retained WAL size, not only on "is the stream running."</li>
+<li><strong>Schema and DDL changes.</strong> CDC pipelines are notoriously fragile across a source column rename, type change, or drop. Depending on configuration, a DDL change can either propagate cleanly, silently stop replicating the affected table, or require an explicit stream/object refresh. On any actively-developed table, it's worth confirming what actually happens the next time a migration touches it &mdash; ideally tested deliberately rather than discovered in production.</li>
+<li><strong>At-least-once delivery.</strong> Most CDC systems, Datastream included, guarantee at-least-once delivery, not exactly-once. Downstream consumers need to be built assuming occasional duplicate events are possible and dedupe on a primary key plus change sequence number, rather than assuming row-for-row uniqueness.</li>
+<li><strong>REPLICA IDENTITY on the source tables.</strong> Postgres only includes full old-row data on <code>UPDATE</code>/<code>DELETE</code> in the WAL if the table's <code>REPLICA IDENTITY</code> is set to <code>FULL</code> (the default is primary-key-only, which omits changed non-key column values from the change event). Worth checking this is actually set correctly on any table you're depending on, since it directly affects whether the delete-capture advantage is fully realized or only partial.</li>
+</ul>
+
+<h2>The practical takeaway</h2>
+<p>CDC is the right direction for anything currently limping along on a stale batch sync or a timeout-prone live query, and its deletion-capture advantage over batch sync is worth calling out on its own merits &mdash; it's a real fix for a real gap, not just a latency upgrade. Before leaning on it more broadly than an initial pilot, the concrete thing to close the loop on is whether the four items above have actually been deliberately tested, rather than just not-yet-encountered. "Basic alerting exists" and "battle-tested" are different claims, and the gap between them is exactly those four items.</p>
+</article>
+</body>
+</html>
