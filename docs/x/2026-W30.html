@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X digest — week of 2026-07-14</title>
+<meta name="description" content="2026-07-04 to 2026-07-20">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>X digest — week of 2026-07-14</h1>
+<p><strong>Week:</strong> 2026-W30 &middot; <strong>Window:</strong> 2026-07-04 to 2026-07-20 &middot; <strong>Sources:</strong> 8 posts</p>
+<h2>TL;DR</h2>
+<p>This week's signal comes almost entirely from two people on Anthropic's own Claude Code team, Boris Cherny and Thariq Shihipar, clustering around two threads: concrete new tooling (a context-hygiene command, shareable artifact dashboards, a compact prompting heuristic) and a recurring observation about the gap between individuals who've 10x'd their output with Claude and organizations that haven't caught up yet. Ammaar Reshi, Logan Kilpatrick, and Jason Liu were all active this week too, but mostly in demo, product-news, or personal territory, with nothing from any of the three clearing the bar on its own.</p>
+
+<h2>Claude Code &amp; tooling</h2>
+<p>Boris Cherny shipped a genuinely useful piece of maintenance tooling: a new <code>/checkup</code> command that, after confirming with you first, cleans up unused skills, MCPs, and plugins to save context, dedupes a local CLAUDE.md against whatever's actually checked into the repo, breaks an oversized root CLAUDE.md into nested CLAUDE.md files plus skills, turns off slow hooks, updates Claude Code itself, enables auto mode by default, and pre-approves commands that keep getting denied even though they're always allowed anyway. That's close to a direct upgrade for how this vault currently manages CLAUDE.md and skill sprawl, and worth running as a periodic health check rather than only reaching for it once things already feel bloated.</p>
+<p>Thariq Shihipar had the most concentrated run of practical posts this week. On prototyping discipline: build mockups, schemas, data models, and proof-of-concepts first, because that's the cheapest way to discover you don't actually want the output before burning a large token budget on the real thing — a habit worth encoding explicitly into any Claude Code workflow that starts from an ambiguous brief rather than a fully specified one. On prompting technique, he distilled his own practice into a compact heuristic: thin prompts, thick artifacts plus context, thin skills — meaning the prompt itself should stay short, the surrounding reference material and context should carry the real weight, and skills should stay narrowly scoped rather than becoming another place logic quietly sprawls into. And on Claude's artifact system specifically, he pointed out that artifacts have become expressive enough to combine in creative ways, one of his favorites being a live dashboard for a project inside Claude Tag that can be edited collaboratively by other people or driven directly from a local Claude Code session — a meaningfully different use case than a one-off chart or demo output.</p>
+
+<h2>Teaching &amp; GTM</h2>
+<p>Boris Cherny's other post this week is the one worth sitting with longest, and it comes with an actual framework attached. Talking to engineers at other companies, he keeps hearing the same pattern: one person on a team is 10x'ing their output with Claude while the rest of the org hasn't caught up at all, and he's mapped the adoption gap he keeps observing into four repeating steps, linked out as "Steps of AI Adoption." That gap between individual power-user adoption and organizational adoption is close to the exact problem the amir-azimi consultancy and the 10x Operator course exist to solve, so the four-step framework itself is worth pulling and comparing against the course's own adoption narrative. His companion post extends the same idea technically: the best engineers have always spent real time automating their own work (better editor tooling, lint rules, end-to-end test suites), and he argues that habit matters even more now, for three stacked reasons — automation compounds across a whole fleet of agents rather than just one person, turning a fix into a permanent lint rule or CI step beats re-solving the same class of issue token by token every time (his read on why people are calling this "loops"), and most importantly, encoding domain knowledge as CLAUDE.md files, skills, and docs is what lets both non-engineers and agents contribute to a codebase on day one rather than needing tribal knowledge that only lived in someone's head. His conclusion: every team should be writing the CLAUDE.md's, REVIEW.md's, and skills that let Claude work productively in their codebase with zero extra context from the prompter, since a rejected PR or a design that violates unwritten conventions is really just a failure of automation, not a failure of the person.</p>
+
+<h2>Claude Code as a general agent</h2>
+<p>Two more from Thariq worth a direct look rather than just a mention. He live-tweeted editing his AI Engineer talk footage with Claude Code, feeding it four videos totaling roughly 60GB plus his HTML deck and a specific starting prompt, a solid concrete example of Claude Code being used as a general-purpose agent on a non-coding, non-trivial-file-size task. And earlier in the week he flagged that his AI Engineer World's Fair keynote, "A Field Guide to Fable," is now live on YouTube — the same field guide referenced secondhand in one of this week's video-digest passes, where "12 Hidden Settings to Enable in Claude Code" credits it directly as the source for its closing point on outcome-first prompting. Watching the primary source directly is worth doing rather than only getting it filtered through other creators' summaries of it.</p>
+
+<h2>Worth a click</h2>
+<p>Thariq's "Field Guide to Fable" keynote and his video-editing thread are both worth opening directly; Boris's "Steps of AI Adoption" link is worth pulling up next to the 10x Operator course material to see how closely the two framings already line up.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><strong>@bcherny</strong> &mdash; New /checkup command for Claude Code hygiene (<a href="https://x.com/bcherny/status/2074997570317779038">open on X</a>)</li>
+<li><strong>@bcherny</strong> &mdash; The 10x-user-vs-org adoption gap, with a 4-step framework (<a href="https://x.com/bcherny/status/2077929379661844559">open on X</a>)</li>
+<li><strong>@bcherny</strong> &mdash; Why encoding domain knowledge as CLAUDE.md/skills matters more now (<a href="https://x.com/bcherny/status/2077460395279692197">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Prototype mockups/schemas before spending tokens on the real build (<a href="https://x.com/trq212/status/2078189833445654714">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Thin prompts, thick artifacts + context, thin skills (<a href="https://x.com/trq212/status/2077539537992229076">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Shareable Claude Tag dashboards built from artifacts (<a href="https://x.com/trq212/status/2076790799011131735">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Live-tweeted video editing via Claude Code (<a href="https://x.com/trq212/status/2074617786408845774">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; &quot;A Field Guide to Fable&quot; keynote now on YouTube (<a href="https://x.com/trq212/status/2074163788853760175">open on X</a>)</li>
+</ul>
+</article>
+</body>
+</html>
