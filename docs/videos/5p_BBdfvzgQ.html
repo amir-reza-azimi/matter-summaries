@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Making $$$ with Loop Engineering</title>
+<meta name="description" content="Agent loops applied to SEO, Facebook ads, and product feedback — with a working Google Search Console loop as the concrete example.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Making $$$ with Loop Engineering</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@GregIsenberg">Greg Isenberg</a> &middot; <strong>Published:</strong> 2026-07-20 &middot; <strong>Length:</strong> 40 min &middot; <a href="https://www.youtube.com/watch?v=5p_BBdfvzgQ">Watch on YouTube</a></p>
+<h2>TL;DR</h2>
+<p>"Loop engineering" gets applied beyond coding to whole business functions: SEO, Facebook ads, and product development, each run as a continuous build-verify-learn cycle with an objective metric as the stop condition. Greg Isenberg and guest Ellie walk through a working SEO loop against Google Search Console, live numbers included, plus lighter sketches of an ads loop and a product-feedback loop.</p>
+
+<h2>Walkthrough</h2>
+<p>The concept borrows directly from the lean-startup build-measure-learn cycle and from Toyota-style lean manufacturing: constant iteration against a real, measurable outcome rather than a single shipped attempt. Applied to an AI agent, the same shape becomes build, verify, and learn, with a hard stop condition so the loop doesn't run forever without a reason. In an engineering context that stop condition might be Claude Code's /goal running until a signup flow actually works in the browser, or an eval score for a feature (their example is an email-categorization AI) climbing past a 90% accuracy threshold before the loop is allowed to stop adjusting the prompt or model choice. In a business context, the same structure works as long as there's some objective metric feeding back into the system, which is really the whole trick: find the metric first, then let the loop run against it.</p>
+<p>The SEO loop is the one they build out in real detail. The objective metric is simply Google ranking position for a target term. The setup starts with connecting an agent to real data: Google Search Console (which shows current rankings and the pages currently ranking above yours for terms you want) and DataForSEO as a competitive-research API. From there, the loop mirrors what an SEO agency actually does: audit the site for quick technical wins (meta tags, JSON-LD, sitemaps), then experiment with specific underperforming terms, make changes, and check back a month later to see whether rankings moved up or down, keeping a markdown log of what was tried so the agent doesn't repeat failed experiments. He shows this running live against draftfantasy.com, a small side project, where a term ranked fourth is being pushed toward the top three; on his AI product Inbox Zero, the same loop is already producing "numbers going in the right direction" a few months in. Cost is the other half of the pitch: each run is roughly monthly, not continuous, so a full SEO loop costs an estimated few dollars a month in tokens, trivial next to what an SEO agency or freelancer would charge, and effectively already covered if you're on a higher-tier Claude or Codex plan.</p>
+<p>The Facebook ads loop follows the same shape with a different metric: run multiple ad variants, let the agent read performance data, and double down on winners while cutting losers, the same volume game a human media buyer already plays but at a pace and breadth an agent can sustain more easily. They're candid that AI-generated ad creative isn't yet as strong as top human work, so the more realistic version blends a human-shot base (a person talking into a phone for 30 seconds) with AI doing the editing and iteration around it, rather than a fully AI-generated ad. The most ambitious loop discussed is a product-feedback loop: an agent reading customer feedback, analytics (PostHog), and error logs (Sentry) to prioritize pain points, prototype fixes, and ship them, judged against whatever core metric matters most, whether that's retention, DAU/MAU, or virality. They flag this as the "holy grail" version and, honestly, riskier to run unsupervised on a real business today, more a preview of where things are heading than something to hand over fully right now.</p>
+
+<h2>Standout moments</h2>
+<p>The most useful practical detail is the cost framing: "I wouldn't be shocked if this cost you less than $5 in tokens to run one time" for a monthly SEO check, versus thousands for an agency retainer, which reframes the whole idea from a coding curiosity into a genuinely cheap business habit. And the closing advice on scope is worth remembering before starting one of these: don't set a loop's target as something vague and huge like "100,000 followers" &mdash; find the smallest verifiable outcome (more likes on individual posts, not follower count) and loop against that instead.</p>
+
+<h2>Why this matters for my work</h2>
+<p>The SEO loop recipe transfers directly to join.com's marketing repo: Search Console plus an SEO-competitor API is exactly the kind of agent-over-a-warehouse pattern worth prototyping for organic/content work, and the monthly-cadence, cheap-token framing removes the usual "won't this get expensive" objection before it's raised. It's also good amir-azimi course material as a concrete, non-coding-specific illustration of what "agent loop" actually means for a marketing or ops audience, since most loop-engineering content stays purely in the coding domain.</p>
+<p>The underlying discipline, pick the metric first and only then build the loop against it, is also a useful gut-check for bi-data work generally: it's the same instinct behind a good tracking plan or a well-scoped eval harness, just applied to a marketing function instead of a model. Given the digest's own publish loop already runs on roughly this shape (score against a rubric, publish what passes, log what didn't), it's a small but real validation that the pattern generalizes past coding into ordinary recurring business work, which is exactly the pitch worth making to non-technical teams who assume "agent loop" only means software.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/5p_BBdfvzgQ?t=74">1:14</a> &mdash; What &#x27;loop engineering&#x27; actually means</li>
+<li><a href="https://youtu.be/5p_BBdfvzgQ?t=259">4:19</a> &mdash; The lean-startup build-measure-learn roots of the idea</li>
+<li><a href="https://youtu.be/5p_BBdfvzgQ?t=437">7:17</a> &mdash; The build/verify/learn shape, with Claude Code&#x27;s /goal as the example</li>
+<li><a href="https://youtu.be/5p_BBdfvzgQ?t=1304">21:44</a> &mdash; A working SEO loop, shown live on a real site&#x27;s rankings</li>
+<li><a href="https://youtu.be/5p_BBdfvzgQ?t=1347">22:27</a> &mdash; Wiring up Google Search Console + DataForSEO as the data source</li>
+<li><a href="https://youtu.be/5p_BBdfvzgQ?t=1753">29:13</a> &mdash; The Facebook ads variant-testing loop</li>
+<li><a href="https://youtu.be/5p_BBdfvzgQ?t=2097">34:57</a> &mdash; The &#x27;holy grail&#x27; product-feedback loop</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=5p_BBdfvzgQ">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

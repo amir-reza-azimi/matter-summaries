@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Cowork Just Went Fully Hands-Off (Scheduled Tasks V2)</title>
+<meta name="description" content="Claude scheduled tasks now run fully in the cloud with zero server setup — live-built as a subscription/expense audit.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Claude Cowork Just Went Fully Hands-Off (Scheduled Tasks V2)</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-07-20 &middot; <strong>Length:</strong> 16 min &middot; <a href="https://www.youtube.com/watch?v=b3OiEUp1GIU">Watch on YouTube</a></p>
+<h2>TL;DR</h2>
+<p>Anthropic's Cowork update lets Claude scheduled tasks run entirely inside Anthropic's own cloud, with zero server setup required. Simon Scrapes live-builds a monthly subscription-and-expense audit from a single plain-English prompt, showing how a solo business owner can replace a maintained VPS or an N8N-style workflow build with little more than a five-minute conversation.</p>
+
+<h2>Walkthrough</h2>
+<p>The video opens with the pain point directly: before this release, getting a recurring AI-powered task to run meant choosing between three unsatisfying paths. Local scheduled tasks inside the desktop app worked, but only while your laptop stayed open and awake, which meant deliberately forcing the lid to stay up. Claude's managed agents were the developer route: powerful, but you were setting up credential vaults and GitHub repos, which most business owners have zero interest in touching. And renting a VPS to run Claude Code yourself, which Simon had actually done in an earlier video, meant wiring up tmux sessions and a Telegram bot just to check in remotely, and then maintaining that server indefinitely. The new release removes all three: you describe the task, pick a frequency, and it runs on Anthropic's infrastructure, billed against your existing Pro, Max, Team, or Enterprise plan rather than as separate metered usage.</p>
+<p>He walks through the two automations he already has running. The first is a weekly invoice and receipt reconciliation job: every Friday at 4pm, Claude scans roughly 600 transactions in his accounting software (Free Agent), searches three separate inboxes for the matching receipt, and attaches it automatically, closing out a task that used to pile up for a painful year-end scramble. The second is month-end financial reporting, replacing a manual routine of exporting bank transactions into a spreadsheet, dragging down formulas, and building a P&amp;L tab by hand. Because both are functions every business needs, he turned them into shareable skills that interview the user about their own tools and spreadsheets and build a bespoke version of the same workflow. Total build time for both was about four hours, and most of that wasn't spent building at all &mdash; it was answering Claude's clarifying questions and reviewing the test runs it generated on its own.</p>
+<p>Then comes the live build: a third automation, a monthly subscription and recurring-bill audit. Free Agent isn't one of the built-in connectors, so he'd already had Claude build and host a small MCP server against Free Agent's developer API to bridge the gap &mdash; adapting a public repo and adding upload/receipt-matching functionality himself. For anything else missing from the native connector list, he points to Composio as the fallback: a marketplace of roughly 147 app integrations with a free tier covering 20,000 requests a month, useful for cases like wiring up multiple Gmail inboxes through a single MCP connection with one-click OAuth. From there the actual task description is almost trivially short: pull recurring bills and expenses, compare each to the prior month, flag price increases, duplicates, and anything untouched for six months, and email the results on the first of the month. Before scheduling anything live, Claude runs the task retrospectively against real historical data and iterates on its own prompt until a test run looks right &mdash; a meaningful trust step before it goes unattended.</p>
+
+<h2>Standout moments</h2>
+<p>The finished audit is a good demonstration of why this is worth doing monthly rather than once: overall spend was up 15%, but the increase traced almost entirely to a Meta ad-spend bump rather than subscription creep. Buried underneath that, though, the audit still caught four subscriptions with real price increases (an added seat on one tool, a 30%-and-climbing Slack bill, a 20% jump on Airtable), three overlapping AI-assistant subscriptions, and four separate infrastructure providers all billing in parallel &mdash; exactly the kind of slow subscription sprawl nobody remembers to check by hand every month.</p>
+<p>The limitations section is unusually candid for this kind of video. Cloud scheduled tasks can't reach local files at all, so anything that genuinely needs a folder on your laptop still has to run locally, which defeats the point of moving it to the cloud in the first place. And you can't store raw credentials or API keys in the task, either as a connector configuration or pasted into the prompt body &mdash; you're limited to the built-in OAuth connectors or something like Composio standing in front of them, with real environment-variable support reserved for the more technical managed-agents product.</p>
+
+<h2>Why this matters for my work</h2>
+<p>This is the exact pattern the vault already runs on &mdash; this digest itself is a Cowork scheduled task &mdash; so the video is a useful gut-check on what's now trivial to schedule in the cloud versus what still needs the heavier managed-agents route, and the Composio detail is a concrete answer for wiring up apps that don't have a native Claude connector. For the 10x Operator course, the "audit an annoying task, turn it into a skill, schedule it" arc demoed here, four hours end to end and mostly spent answering questions rather than building, is close to a ready-made module: a non-technical business owner's first cloud-scheduled Claude automation in a single afternoon.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=50">0:50</a> &mdash; The three old ways to schedule an AI task (and why each was painful)</li>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=189">3:09</a> &mdash; Weekly invoice/receipt reconciliation, already running in production</li>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=303">5:03</a> &mdash; Month-end financial P&amp;L reporting, automated</li>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=383">6:23</a> &mdash; Turning both workflows into shareable, installable skills</li>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=426">7:06</a> &mdash; Live build: a monthly subscription/expense audit from scratch</li>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=570">9:30</a> &mdash; Composio as the fallback for the 147 apps without a native connector</li>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=762">12:42</a> &mdash; The honest limitations: no local file access, no raw API keys</li>
+<li><a href="https://youtu.be/b3OiEUp1GIU?t=843">14:03</a> &mdash; The finished audit&#x27;s results: price hikes, duplicate subs, parallel infra bills</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=b3OiEUp1GIU">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
