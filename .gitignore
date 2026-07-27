@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# Claude Code background-job worktrees (nested repos, never tracked in main repo)
+.claude/worktrees/
