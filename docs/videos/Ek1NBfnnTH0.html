@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5 Hacks to Instantly Level Up Your AI OS</title>
+<meta name="description" content="Four failure modes for a growing AI operating system (poisoning, bloat, confusion, clash), the expertise-vs-situational context split, and a free read-only &#x27;OS audit&#x27; skill.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>5 Hacks to Instantly Level Up Your AI OS</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-07-13 &middot; <strong>Length:</strong> 25 min &middot; <a href="https://www.youtube.com/watch?v=Ek1NBfnnTH0">Watch on YouTube</a></p>
+<p><strong>TL;DR:</strong> Nate answers his most-asked question, how to keep a personal AI operating system accurate as it grows, with a framework built around four specific failure modes, a distinction between context you always need versus context you load just in time, and a free downloadable skill that audits a whole project for staleness and routing errors without changing anything.</p><p><strong>The four context failure modes.</strong> Poisoning is when a single false fact sits among correct ones in the context; the agent isn't lying, it's just surfacing a factually wrong data point as if it were true. It's the easiest to fix, through verification: web-search fact-checks, cross-checking against a live database, or falling back to a human when confidence is low. Bloat is simply too much data in context, the classic 'needle in a haystack' problem, where relevant signal gets buried and irrelevant material bleeds into the answer; it's harder to fix and is where the expertise-vs-situational split becomes the real solution. Confusion happens when something is irrelevant or missing entirely and the agent fills the gap with its own guess, close to classic hallucination but distinct from poisoning because there's no single wrong fact to blame, just an absence the model papers over. Clash is when two sources genuinely disagree, his example being a policy that was 'always refund' in March and 'never refund' in June: the agent has no principled way to know which era's rule applies, and might trust the old one, the new one, or invent something else entirely.</p><p><strong>Expertise context versus situational context.</strong> This is the structural fix for bloat and clash both. Expertise context is what you need loaded in on every single run, who you are, what your business does, your standing policies, functionally your system prompt. Nate's analogy: a school principal knows how classrooms should generally run, but a teacher holds the situational context of which specific students shouldn't sit together. Situational context, like a single customer support ticket from yesterday, should never live permanently in the AI OS; it should be pulled in just in time, only when a specific question requires it, then discarded. Loading everything all the time is exactly what causes bloat, confusion, and clash to compound as an operating system scales.</p><p><strong>The OS audit skill, live.</strong> Nate runs his own audit skill against his real 'Herku 2' project on camera. It comes back with a red/yellow/green scorecard: routing integrity red (an OTAA misroute), index truth red (the index claims 55 folders but disk actually has 79, and 52 rows are stale), freshness red (knowledge is current only through June 29th, nearly a month stale at the time of the audit), bloat/duplication yellow, hygiene red. Crucially, it also translates each finding into a concrete failure scenario: any post-June-29th business question would get a confidently wrong 'June state' answer, a Q3 OTAA question would get misrouted, and project questions would return stale data. It then proposes a fix list (commit in-flight cleanup decisions, repair routing and index truth, ingest fresh meeting and Q&A data, set up a weekly cron to keep meeting transcripts and archives current) and explicitly waits for approval before touching anything, which is the actual design constraint of the skill: read-only, audit and report, never fix, rename, or delete on its own.</p><p><strong>Standout detail:</strong> the skill's own description states its philosophy directly, 'Indexes and wikis are claims about what exists and what's current. The audit checks every claim against reality.' That's a genuinely portable idea, treating a knowledge base's own metadata as a falsifiable claim to be checked, not a source of truth to be assumed.</p><p><strong>Why this matters for my work:</strong> this maps almost exactly onto how this vault's memory system already works, MEMORY.md as an index with entries that can drift stale, and process-inbox routing rules that could suffer the same 'misroute' failure mode described here. The four-failure-mode vocabulary (poisoning, bloat, confusion, clash) is worth adopting directly when reasoning about memory hygiene, and the expertise-vs-situational split gives a concrete test for what belongs in permanent memory versus what should only ever be pulled in just in time for a single task. A read-only audit skill in this same spirit, checking that MEMORY.md's index entries and routing rules still match the vault's actual current state, looks like a genuinely useful thing to build.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/Ek1NBfnnTH0?t=48">0:48</a> &mdash; The OS audit skill runs live against a real project</li>
+<li><a href="https://youtu.be/Ek1NBfnnTH0?t=118">1:58</a> &mdash; The four failure modes: poisoning, bloat, confusion, and clash defined</li>
+<li><a href="https://youtu.be/Ek1NBfnnTH0?t=215">3:35</a> &mdash; Expertise context (always loaded) vs situational context (just in time)</li>
+<li><a href="https://youtu.be/Ek1NBfnnTH0?t=497">8:17</a> &mdash; The live audit result: routing, index truth, and freshness all come back red</li>
+<li><a href="https://youtu.be/Ek1NBfnnTH0?t=600">10:00</a> &mdash; Why the skill is read-only: report the fix list, wait for approval, never auto-fix</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=Ek1NBfnnTH0">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

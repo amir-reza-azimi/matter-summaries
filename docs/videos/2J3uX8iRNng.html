@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Tested Opus 5 vs. Fable 5. What You Need to Know.</title>
+<meta name="description" content="A real-workflow benchmarking methodology for Opus 5 vs. Fable 5: cost, time, and a third model as judge, across a bug fix, a video generation task, and a landing page build.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>I Tested Opus 5 vs. Fable 5. What You Need to Know.</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk | AI Automation</a> &middot; <strong>Published:</strong> 2026-07-16 &middot; <strong>Length:</strong> 31 min &middot; <a href="https://www.youtube.com/watch?v=2J3uX8iRNng">Watch on YouTube</a></p>
+<p><strong>TL;DR:</strong> Rather than trusting published benchmarks, Nate runs Opus 5 and Fable 5 head-to-head on his own real Claude Code workflows, tracking cost, time, and token usage, then uses a third model (Codex) as an independent judge to score the actual output quality. The real finding isn't which model 'wins,' it's a reusable method for deciding which model earns its keep on which kind of task.</p><p><strong>Test one: codebase bug-fixing.</strong> Both models were given the same large codebase, the same bug description, and the same expected behavior, and asked to explore and fix it. Fable took 11 minutes and cost $5.30; Opus took 13 minutes but cost less, $4.22. Codex, acting as judge, called it close but gave Fable the edge because its patch was the cleaner, more immediately reviewable one-line fix.</p><p><strong>Test two: a second, harder bug-fixing pass on new code.</strong> Same setup, different codebase. This time Opus took 20 minutes at $6.50 while Fable took 12 minutes but cost more, $8.73. Codex's verdict flipped hard: Opus passed 4 of 4 test cases (scoring 93/95) while Fable passed only 2 of 4 and left one issue unresolved (66/95), despite Fable's patch still functionally addressing the user-facing bug. Both found the same core architectural issue independently; Opus was simply more thorough and more accurate on this one.</p><p><strong>The real insight: verification matters more than raw model choice.</strong> Nate pulls a line straight from Anthropic's own Opus 5 release notes, that Opus 5 is 'much stronger at verifying its work and iterating carefully until it succeeds,' and connects it to a broader practice: give a model an explicit stopping condition and a way to test whether it's actually met, whether that's an objective metric, or spinning up sub-agents that have to argue to consensus before finishing. His conclusion, stated plainly: 'what matters way more is how you instruct it and how you feed context in... find the best model for your use case and then understand how to talk to the models.'</p><p><strong>Test three: a 10-second announcement video, generated end to end.</strong> Same prompt to both models, full access to explore his computer for source material. Opus produced two versions (vertical and landscape) in 40 minutes for $11.19; Fable produced one version with different music and sound design in 7 minutes 49 seconds for about $7, roughly half the time and cost. Fable's version contained an outdated factual detail (referencing a speaker who hadn't actually appeared at the event), which Nate attributes to his own AI operating system not having current enough context rather than to the model itself, a useful reminder that output quality is frequently a context problem, not a model problem.</p><p><strong>Test four: a one-page landing page for a certified AI consultant program.</strong> Both were given the same open-ended creative brief and full access to his existing brand assets. Opus produced a page with a dynamic 3D background element and pulled his logo automatically; the two outputs diverged mainly on visual taste and structure rather than one being objectively better, underscoring that for open-ended creative tasks the 'right' model is often a matter of house style rather than benchmark score.</p><p><strong>Why this matters for my work:</strong> the core transferable piece isn't the specific Opus-vs-Fable verdict, which will be stale within weeks, it's the methodology: run the same real task through candidate models, track actual cost and time, and use an independent model as judge rather than trusting self-reported scores. That's a directly reusable evaluation pattern for deciding which model to route BI queries, content drafts, or agent tasks to, and the context-not-model diagnosis on the outdated video detail is a good reminder to keep this vault's own routing and context hygiene current before blaming a model for a bad output.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/2J3uX8iRNng?t=0">0:00</a> &mdash; Setup: real workflows, not published benchmarks, cost/time tracked for both</li>
+<li><a href="https://youtu.be/2J3uX8iRNng?t=216">3:36</a> &mdash; Using Codex as an independent judge to score the two models&#x27; outputs</li>
+<li><a href="https://youtu.be/2J3uX8iRNng?t=294">4:54</a> &mdash; Test 2 flips hard: Opus scores 93/95 vs Fable&#x27;s 66/95 on a harder bug fix</li>
+<li><a href="https://youtu.be/2J3uX8iRNng?t=331">5:31</a> &mdash; The real lesson from Anthropic&#x27;s notes: verification matters more than raw capability</li>
+<li><a href="https://youtu.be/2J3uX8iRNng?t=418">6:58</a> &mdash; Test 3: a 10-second announcement video, Opus 2 versions vs Fable&#x27;s 1, half the cost</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=2J3uX8iRNng">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
