@@ -92,12 +92,20 @@ def article_inner_html(rec):
     parts[-1] += (
         f' &middot; <a href="{esc(rec["url"])}">Watch on YouTube</a></p>'
     )
-    parts.append(rec.get("summary_html", ""))
+    summary_html = rec.get("summary_html", "")
+    source_page = rec.get("summary_from_page")
+    if source_page:
+        with open(os.path.join(DOCS_DIR, source_page)) as f:
+            rendered = f.read()
+        summary_html = rendered.split("<article>", 1)[1].split("</article>", 1)[0]
+        summary_html = summary_html.split("</h1>", 1)[1]
+    parts.append(summary_html)
     parts.append(LISTENABLE_EXTENSIONS.get(rec.get("id"), ""))
     wl = watch_list_html(rec)
     if wl:
         parts.append(wl)
-    parts.append(f'<p><a href="{esc(rec["url"])}">Watch the full video on YouTube</a></p>')
+    if not rec.get("omit_source_link"):
+        parts.append(f'<p><a href="{esc(rec["url"])}">Watch the full video on YouTube</a></p>')
     return "\n".join(parts)
 
 
