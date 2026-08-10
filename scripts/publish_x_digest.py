@@ -84,12 +84,14 @@ def article_inner_html(rec):
 
 def write_page(rec):
     inner = article_inner_html(rec)
+    suffix = os.environ.get("MATTER_PAGE_SUFFIX", "")
+    page_title = rec["title"] + (" · Audio brief" if suffix else "")
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(rec["title"])}</title>
+<title>{esc(page_title)}</title>
 <meta name="description" content="{esc(rec.get("date_range", ""))}">
 <style>
   body {{ max-width: 720px; margin: 2rem auto; padding: 0 1rem;
@@ -101,7 +103,7 @@ def write_page(rec):
 </head>
 <body>
 <article>
-<h1>{esc(rec["title"])}</h1>
+<h1>{esc(page_title)}</h1>
 {inner}
 </article>
 </body>

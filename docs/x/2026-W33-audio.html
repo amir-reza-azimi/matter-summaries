@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X digest — week of 2026-08-03 · Audio brief</title>
+<meta name="description" content="2026-08-03 – 2026-08-10">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>X digest — week of 2026-08-03 · Audio brief</h1>
+<p><strong>Week:</strong> 2026-W33 &middot; <strong>Window:</strong> 2026-08-03 – 2026-08-10 &middot; <strong>Sources:</strong> 4 posts</p>
+<h2>TL;DR</h2><p>This week's useful signal is less about a new model and more about operating safely as agents gain access to real systems. The strongest posts converge on three themes: prompt-injection defenses, practical context access through connectors, and tool composition that turns an assistant into a workflow participant.</p><h2>Claude Code and agent safety</h2><p>Boris Cherny describes prompt injection as the common path by which a malicious webpage can redirect an agent to expose a user's data. His more substantive follow-up is encouraging: layered defenses across model training, input probes, and an intent classifier reduced unseen attacks to nearly zero in his tests. The operating implication is not blind trust. It is to use a stack of safeguards and make autonomy conditional on them, rather than treating permission prompts as the only defense.</p><p>Thariq Shihipar adds an important practical detail: Auto mode is intended to be safer than manual permission review when those classifier-backed safeguards are active. This is worth monitoring as the default changes, but it does not remove the need to scope credentials and keep high-impact actions reviewable.</p><h2>Context and connected work</h2><p>Shihipar points out that connecting Claude to Gmail, Calendar, or Slack also exposes that context to Claude Code and Artifacts. That is a powerful connection between personal context and agentic execution. It is also a reminder that every connector changes the data boundary of a workflow. The right question is not merely whether the connection works, but which tasks can use it and what they are allowed to change.</p><h2>Composable tools</h2><p>Logan Kilpatrick notes that Gemini can now use Google Maps and Google Search together. The feature is small but illustrative: a useful agent often needs several tools in one step, with each providing a different kind of evidence. For commercial workflows, the equivalent is combining a customer record, web research, and a policy check before drafting or taking action.</p><h2>Worth a click</h2><p>Cherny's prompt-injection post is the one to read in full because it connects model behavior, evaluation, and real-world agent safety. Shihipar's connector note is the practical reminder to revisit the access surface of existing integrations.</p>
+<h2>What the posts mean together</h2><p>The common thread is that agent capability and agent control have to mature together. A connector makes a useful source of information available. A second tool makes a richer action possible. But every new connection also creates a new route through which instructions, sensitive context, or mistaken assumptions can affect a real outcome. The safe design question is therefore not just whether the agent can access something. It is what it is allowed to infer, which tools it can call next, and who notices when the evidence is weak.</p><p>Layered defenses are valuable because no single protection is reliable enough on its own. Model training can reduce the chance that an agent follows a malicious instruction. Input probes can identify suspicious content. An intent classifier can notice when an action conflicts with the user's apparent goal. Permissions and review gates can reduce the damage if the earlier layers fail. This is closer to a safety case than to a one-time setting. The system is safer because several independent checks have to fail before a bad action reaches a sensitive boundary.</p><h2>A practical operating checklist</h2><p>For each connected workflow, name the data it can read, the actions it can take, and the highest-consequence action it could reach through a chain of tool calls. Keep access narrow at first. Test with benign but adversarial inputs. Make the agent surface the evidence it used before it sends, publishes, or changes anything. Add a human checkpoint for external communication, sensitive data, money, permissions, and other irreversible effects. Then review actual runs, not only a clean demo, to see where the workflow accumulates ambiguity.</p><p>For the personal operating system and AI-native client work, the useful lesson is to design connectors as capabilities with explicit boundaries. A calendar, inbox, CRM, search tool, and internal knowledge base can be powerful in combination, but the workflow should say exactly what decision each one supports. This produces a system that is easier to audit, easier to improve, and safer to delegate. It also gives a clearer consulting conversation: the value is not more tools connected, but a defensible path from evidence to action.</p>
+<h2>Sources</h2>
+<ul>
+<li><strong>@bcherny</strong> &mdash; Prompt-injection defenses for agents (<a href="https://x.com/bcherny/status/2086520950259118464">open on X</a>)</li>
+<li><strong>@bcherny</strong> &mdash; Layered defenses and Auto mode (<a href="https://x.com/bcherny/status/2085860677990883454">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Claude connectors available to Code and Artifacts (<a href="https://x.com/trq212/status/2084387303959740449">open on X</a>)</li>
+<li><strong>@OfficialLoganK</strong> &mdash; Combined Google Maps and Search tools (<a href="https://x.com/OfficialLoganK/status/2084469065322729817">open on X</a>)</li>
+</ul>
+</article>
+</body>
+</html>
