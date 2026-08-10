@@ -39,6 +39,10 @@ X_DIR = os.path.join(DOCS_DIR, "x")
 
 SITE_BASE = "https://amir-reza-azimi.github.io/matter-summaries"
 
+LISTENABLE_EXTENSIONS = {
+    "2026-W33": """<h2>What the posts mean together</h2><p>The common thread is that agent capability and agent control have to mature together. A connector makes a useful source of information available. A second tool makes a richer action possible. But every new connection also creates a new route through which instructions, sensitive context, or mistaken assumptions can affect a real outcome. The safe design question is therefore not just whether the agent can access something. It is what it is allowed to infer, which tools it can call next, and who notices when the evidence is weak.</p><p>Layered defenses are valuable because no single protection is reliable enough on its own. Model training can reduce the chance that an agent follows a malicious instruction. Input probes can identify suspicious content. An intent classifier can notice when an action conflicts with the user's apparent goal. Permissions and review gates can reduce the damage if the earlier layers fail. This is closer to a safety case than to a one-time setting. The system is safer because several independent checks have to fail before a bad action reaches a sensitive boundary.</p><h2>A practical operating checklist</h2><p>For each connected workflow, name the data it can read, the actions it can take, and the highest-consequence action it could reach through a chain of tool calls. Keep access narrow at first. Test with benign but adversarial inputs. Make the agent surface the evidence it used before it sends, publishes, or changes anything. Add a human checkpoint for external communication, sensitive data, money, permissions, and other irreversible effects. Then review actual runs, not only a clean demo, to see where the workflow accumulates ambiguity.</p><p>For the personal operating system and AI-native client work, the useful lesson is to design connectors as capabilities with explicit boundaries. A calendar, inbox, CRM, search tool, and internal knowledge base can be powerful in combination, but the workflow should say exactly what decision each one supports. This produces a system that is easier to audit, easier to improve, and safer to delegate. It also gives a clearer consulting conversation: the value is not more tools connected, but a defensible path from evidence to action.</p>"""
+}
+
 
 def esc(s):
     return html.escape(str(s or ""), quote=True)
@@ -71,6 +75,7 @@ def article_inner_html(rec):
     meta += "</p>"
     parts.append(meta)
     parts.append(rec.get("summary_html", ""))
+    parts.append(LISTENABLE_EXTENSIONS.get(rec.get("week"), ""))
     sl = source_list_html(rec)
     if sl:
         parts.append(sl)
