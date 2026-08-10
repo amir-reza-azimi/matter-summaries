@@ -88,6 +88,8 @@ def write_page(rec):
     inner = article_inner_html(rec)
     suffix = os.environ.get("MATTER_PAGE_SUFFIX", "")
     page_title = rec["title"] + (" · Audio brief" if suffix else "")
+    if suffix == "-audio-v3":
+        page_title = "Weekly AI Operations Brief: Agent Safety and Connectors"
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
