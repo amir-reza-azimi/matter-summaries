@@ -22,9 +22,9 @@ A "record" is JSON with these fields (produced by the matter-video-digest skill)
     }
 
 The script:
-  1. Saves the record to data/<id>.json (system of record for the feed).
+  1. Saves the record to data/<id>.json (system of record for future harvests).
   2. Writes docs/videos/<id>.html (a clean reader page Matter can parse).
-  3. Rebuilds docs/feed.xml from every data/*.json, newest first.
+  3. Rebuilds docs/feed.xml from every data/*.json only in legacy full-feed mode.
 
 It is idempotent: re-running with the same id overwrites that one record/page
 and regenerates the feed. Nothing else is touched.
@@ -201,7 +201,7 @@ def build_index(records):
 
 
 def main():
-    # --page-only: write just docs/videos/<id>.html and skip the RSS feed/index.
+    # --page-only: write the page and durable record, but skip the RSS feed/index.
     # This is the current workflow — summaries are pushed to Matter directly via the
     # Matter CLI/API (matter items save --url <page>), NOT via an RSS subscription.
     args = [a for a in sys.argv[1:] if a != "--page-only"]
@@ -219,7 +219,10 @@ def main():
     write_page(rec)
 
     if page_only:
-        print(f'page-only: wrote docs/videos/{rec["id"]}.html '
+        os.makedirs(DATA_DIR, exist_ok=True)
+        with open(os.path.join(DATA_DIR, f'{rec["id"]}.json'), "w") as f:
+            json.dump(rec, f, indent=2, ensure_ascii=False)
+        print(f'page-only: wrote data/{rec["id"]}.json and docs/videos/{rec["id"]}.html '
               f'(feed.xml/index.html NOT rebuilt — push to Matter via CLI/API)')
         return
 

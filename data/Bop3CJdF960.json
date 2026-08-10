@@ -1,0 +1,29 @@
+{
+  "id": "Bop3CJdF960",
+  "title": "Chrome browser use solves the configuration tax that makes agent setup feel impossible",
+  "channel": "How I AI",
+  "channel_url": "https://www.youtube.com/@howiaipodcast",
+  "url": "https://www.youtube.com/watch?v=Bop3CJdF960",
+  "published": "2026-08-07",
+  "duration_minutes": 1,
+  "description": "A supervised browser-use pattern for handing complex SaaS configuration to an agent while retaining human control of authentication and final saves.",
+  "summary_html": "<h2>TL;DR</h2><p>Browser use can remove the configuration tax that makes setting up bots and third-party services feel disproportionately difficult. The agent navigates setup screens and permissions, while the human stays responsible for authentication, two-factor approval, and the final save.</p><h2>Walkthrough</h2><p>The example is configuring a Slack bot and a GitHub app. These tasks require many screens, permission decisions, scopes, and tokens. Instead of handling each click manually, the author lets an agent navigate the setup flow in an already logged-in browser. The human checks the result and completes the actions that require explicit authority.</p><p>The interaction model matters. When asked whether setup was complete, the agent identified remaining GitHub permissions. The user told it that Chrome was already authenticated, then intervened only when the agent could not press the final save button. This is a useful division of labour: the agent performs routine navigation and configuration, while the person performs high-trust actions.</p><h2>Why this matters for my work</h2><p>This is a practical operating pattern for making integrations less painful without delegating authority blindly. I could use it for SaaS setup tasks that are tedious but reversible, with clear pause points for 2FA, permissions, and confirmation.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "The configuration burden"
+    },
+    {
+      "t": 10,
+      "label": "Browser-use setup flow"
+    },
+    {
+      "t": 18,
+      "label": "Human checks and 2FA"
+    },
+    {
+      "t": 37,
+      "label": "Best use case: complex SaaS setup"
+    }
+  ]
+}

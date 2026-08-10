@@ -1,0 +1,33 @@
+{
+  "id": "h2C5UZGgUHs",
+  "title": "You don't have to review every AI-generated PR",
+  "channel": "How I AI",
+  "channel_url": "https://www.youtube.com/@howiaipodcast",
+  "url": "https://www.youtube.com/watch?v=h2C5UZGgUHs",
+  "published": "2026-08-08",
+  "duration_minutes": 1,
+  "description": "A risk-scoring framework that reserves human approval for medium- and high-risk AI-generated pull requests.",
+  "summary_html": "<h2>TL;DR</h2><p>The proposal is not to remove human review. It is to make review proportional to risk. An agent scores each pull request against explicit dimensions, allowing low-risk work to move quickly while medium- and high-risk changes stay with a human approver.</p><h2>Walkthrough</h2><p>The agent itself is built from instructions and skills, often expressed in markdown. After reading the code change, it evaluates six areas: change surface and blast radius, reversibility, whether the change touches data security, whether security is adequately covered, operational impact, and the verification gap. Verification asks whether CI completed and whether the available tests are enough to establish the change is safe.</p><p>The score has clear thresholds. Below 24 points is low risk, 25 to 64 is medium risk, and 65 or above is high risk. Medium and high risk require human approval. That turns a vague desire for autonomous code review into an explicit policy with inspectable criteria.</p><h2>Why this matters for my work</h2><p>This is a useful pattern for coding agents and for operational automations beyond software. I could define risk dimensions for one workflow, choose a conservative threshold, and use the results as an advisory signal before any automatic action is allowed.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "Agent instructions and skills"
+    },
+    {
+      "t": 11,
+      "label": "Risk-scoring dimensions"
+    },
+    {
+      "t": 24,
+      "label": "Verification gap"
+    },
+    {
+      "t": 37,
+      "label": "Low-risk threshold"
+    },
+    {
+      "t": 42,
+      "label": "Human approval rule"
+    }
+  ]
+}
