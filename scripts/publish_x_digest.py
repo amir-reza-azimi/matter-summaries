@@ -76,7 +76,9 @@ def article_inner_html(rec):
     parts.append(meta)
     parts.append(rec.get("summary_html", ""))
     parts.append(LISTENABLE_EXTENSIONS.get(rec.get("week"), ""))
-    sl = source_list_html(rec)
+    # Matter resolves embedded X URLs back to the old item. The audio-specific
+    # reader page keeps the spoken brief self-contained so it remains an article.
+    sl = "" if os.environ.get("MATTER_PAGE_SUFFIX") else source_list_html(rec)
     if sl:
         parts.append(sl)
     return "\n".join(parts)
