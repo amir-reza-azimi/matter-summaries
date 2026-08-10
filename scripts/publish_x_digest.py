@@ -112,7 +112,9 @@ def write_page(rec):
 </html>
 """
     page_id = rec.get("page_id", rec["week"] + os.environ.get("MATTER_PAGE_SUFFIX", ""))
-    with open(os.path.join(X_DIR, f'{page_id}.html'), "w") as f:
+    output_dir = os.path.join(DOCS_DIR, os.environ.get("MATTER_OUTPUT_DIR", "x"))
+    os.makedirs(output_dir, exist_ok=True)
+    with open(os.path.join(output_dir, f'{page_id}.html'), "w") as f:
         f.write(page)
 
 
