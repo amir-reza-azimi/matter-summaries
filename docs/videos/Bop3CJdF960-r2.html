@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chrome browser use solves the configuration tax that makes agent setup feel impossible</title>
+<meta name="description" content="A supervised browser-use pattern for delegating tedious SaaS configuration while retaining human control of sensitive actions.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Chrome browser use solves the configuration tax that makes agent setup feel impossible</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@howiaipodcast">How I AI</a> &middot; <strong>Published:</strong> 2026-08-07 &middot; <strong>Length:</strong> 1 min &middot; <a href="https://www.youtube.com/watch?v=Bop3CJdF960">Watch on YouTube</a></p>
+<h2>TL;DR</h2><p>Browser use is most valuable when a task is simple in principle but painful in practice. Setting up a Slack bot or GitHub app means navigating many screens, choosing permissions, and managing tokens. An agent can handle repetitive navigation while the person remains responsible for authentication, two-factor approval, and final confirmation.</p><h2>The configuration tax</h2><p>The example is familiar to anyone who has connected third-party services. The code may be easy, but the setup flow is spread across permission screens, scope choices, callback settings, and provider-specific forms. This creates friction that is too small to justify a project but large enough that useful integrations never get finished.</p><p>In the demonstration, an agent uses an authenticated Chrome session to navigate Slack-bot and GitHub-app setup. The user checks the result, performs 2FA, and intervenes at the final save action when the agent cannot complete it. The human is not replacing the agent. The human is the authority checkpoint.</p><h2>A safe division of responsibility</h2><p>The pattern works when the boundaries are explicit. The agent may inspect pages, fill routine fields, follow documented setup instructions, and report what remains. The user should retain account login, serious permission grants, payment, legal acceptance, 2FA, and final irreversible actions.</p><p>It also gives a better escalation model. When an agent hits a CAPTCHA, 2FA prompt, or blocked button, it can report the exact state and wait for a person to take the one required action. Work resumes from the same browser context rather than beginning again.</p><h2>Why this matters for my work</h2><p>This is a practical pattern for integrations and client setup. I could use it for reversible SaaS configuration while defining explicit stop points for login, sensitive permissions, and final saves.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/Bop3CJdF960?t=0">0:00</a> &mdash; The configuration burden</li>
+<li><a href="https://youtu.be/Bop3CJdF960?t=10">0:10</a> &mdash; Browser-use setup flow</li>
+<li><a href="https://youtu.be/Bop3CJdF960?t=18">0:18</a> &mdash; Human checks and 2FA</li>
+<li><a href="https://youtu.be/Bop3CJdF960?t=25">0:25</a> &mdash; Remaining permissions</li>
+<li><a href="https://youtu.be/Bop3CJdF960?t=33">0:33</a> &mdash; Final-save handoff</li>
+<li><a href="https://youtu.be/Bop3CJdF960?t=37">0:37</a> &mdash; Complex SaaS setup</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=Bop3CJdF960">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

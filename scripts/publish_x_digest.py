@@ -102,7 +102,8 @@ def write_page(rec):
 </body>
 </html>
 """
-    with open(os.path.join(X_DIR, f'{rec["week"]}.html'), "w") as f:
+    page_id = rec.get("page_id", rec["week"] + os.environ.get("MATTER_PAGE_SUFFIX", ""))
+    with open(os.path.join(X_DIR, f'{page_id}.html'), "w") as f:
         f.write(page)
 
 
@@ -129,7 +130,8 @@ def main():
         with open(os.path.join(DATA_DIR, f'x-{rec["week"]}.json'), "w") as f:
             json.dump(rec, f, indent=2, ensure_ascii=False)
 
-    print(f'wrote docs/x/{rec["week"]}.html '
+    page_id = rec.get("page_id", rec["week"] + os.environ.get("MATTER_PAGE_SUFFIX", ""))
+    print(f'wrote docs/x/{page_id}.html '
           f'({"page-only" if page_only else "page + data record"}) — push to Matter via API')
 
 

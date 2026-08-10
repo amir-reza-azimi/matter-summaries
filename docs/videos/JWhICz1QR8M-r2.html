@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Graph Engineering will 10x your Claude/Codex</title>
+<meta name="description" content="A practical way to turn an AI workflow into jobs, state, checks, loops, and human approvals.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>Why Graph Engineering will 10x your Claude/Codex</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@GregIsenberg">Greg Isenberg</a> &middot; <strong>Published:</strong> 2026-08-03 &middot; <strong>Length:</strong> 26 min &middot; <a href="https://www.youtube.com/watch?v=JWhICz1QR8M">Watch on YouTube</a></p>
+<p>Graph engineering is a useful term when it describes the structure of work rather than another prompting slogan. Prompt engineering improves the request. Context engineering improves the information available to the model. Graph engineering designs what happens around the model: the jobs, dependencies, shared state, parallel paths, checks, loops, and human approvals that turn a one-off chat into a reliable process.</p><h2>Jobs, arrows, and state</h2><p>The vocabulary is deliberately plain. A job is a bounded piece of work. An arrow is the dependency or handoff between jobs. State is the shared record of what has been learned or produced so far. Real work already has this shape. A support request may need classification, account context, policy lookup, drafting, checking, and escalation. A content process may need research, a thesis, examples, a draft, a specificity check, and then separate branches for titles and distribution.</p><p>The key distinction is between knowledge graphs and agent graphs. A knowledge graph improves reasoning over relationships among entities such as customers, companies, products, and teams. It can help where a simple RAG query returns the nearest-looking paragraph rather than the relevant relationship. An agent graph instead governs movement through work. It decides which agent researches, which challenges an assumption, which synthesises, and where a human must decide.</p><h2>When a graph is worth the overhead</h2><p>Not every prompt deserves a graph. The method becomes valuable when a workflow has several sources, multiple steps, parallel paths, checks, risk, or approvals. The Shopify bookkeeping example illustrates the point. Rather than asking one model to determine whether to launch a product, make the evidence collection, customer analysis, sceptical review, criteria, and decision gate visible. The resulting map makes it possible to see where an assumption entered and which part of the process should be improved.</p><p>The recommendation is to separate the writer from the checker. A model that grades its own answer is structurally inclined to give itself too much credit. A separate checking step can challenge evidence, test for policy or security issues, or look for missing cases. The point is not that two agents guarantee truth. It is that the workflow records disagreement and treats verification as a real job rather than a final flourish.</p><h2>Three levels of implementation</h2><p>Start with a manual graph. Draw the lanes on a whiteboard, Excalidraw, or tldraw and run the jobs with separate prompts or separate files. This exposes the shape of the work before a team invests in orchestration. The next level is a repository-driven workflow, where Claude Code or Codex gives each step a file and leaves a reviewable paper trail. The third level introduces tools such as LangGraph for state checkpoints and human-in-the-loop approvals, or n8n and Make when the graph reaches Slack, email, a CRM, or another external system.</p><p>The trap is building an oversized graph before the work is understood. The best graph is the smallest one that raises quality. Its human gate should sit where a mistake becomes expensive or irreversible. That keeps orchestration from becoming bureaucracy.</p><h2>Why this matters for my work</h2><p>This is directly applicable to agentic BI, marketing operations, and the vault's skills. I could take one recurring workflow, identify the jobs, state, checks, and decision gates, run the map manually, and only then decide whether it deserves n8n, LangGraph, or a custom implementation.</p>
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/JWhICz1QR8M?t=84">1:24</a> &mdash; Prompt, context, and graph engineering</li>
+<li><a href="https://youtu.be/JWhICz1QR8M?t=214">3:34</a> &mdash; Jobs, arrows, and shared state</li>
+<li><a href="https://youtu.be/JWhICz1QR8M?t=404">6:44</a> &mdash; Knowledge graphs versus agent graphs</li>
+<li><a href="https://youtu.be/JWhICz1QR8M?t=574">9:34</a> &mdash; When to use a graph</li>
+<li><a href="https://youtu.be/JWhICz1QR8M?t=910">15:10</a> &mdash; Three implementation levels</li>
+<li><a href="https://youtu.be/JWhICz1QR8M?t=1169">19:29</a> &mdash; Support, content, and coding graphs</li>
+<li><a href="https://youtu.be/JWhICz1QR8M?t=1334">22:14</a> &mdash; Avoiding oversized graphs</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=JWhICz1QR8M">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>

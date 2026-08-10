@@ -6,16 +6,20 @@
   "url": "https://www.youtube.com/watch?v=MReIEoyTDB8",
   "published": "2026-08-09",
   "duration_minutes": 1,
-  "description": "A compact pattern for continuous human evaluation of internal agents that touch critical systems.",
-  "summary_html": "<h2>TL;DR</h2><p>Internal agents need the same evaluation discipline as customer-facing AI. Log each run, have a qualified person review whether the agent and its scoring were correct, and use the results to improve both the agent and its evaluation criteria.</p><h2>Walkthrough</h2><p>The example is an internal agent that reviews pull requests. Every review is sent to an internal evaluation platform. An engineer then assesses whether the agent reached the right result, whether it made a mistake, and whether the scoring mechanism remains useful. The process produces a record of actual performance rather than relying on confidence or anecdote.</p><p>The key move is continuous review. Evals are not a pre-launch checklist. They are an operational feedback loop, especially when an agent touches important systems such as a codebase. The same pattern can be applied to analytics agents, routing assistants, or internal knowledge workflows.</p><h2>Why this matters for my work</h2><p>This is directly useful for AI-native BI and any skill that makes consequential recommendations. I could add a small sample-review loop to an existing agent, log the disagreement types, and turn recurring misses into concrete evaluation cases.</p>",
+  "description": "A continuous evaluation loop for internal agents that touch critical systems.",
+  "summary_html": "<h2>TL;DR</h2><p>Internal agents need the same disciplined evaluation loop as customer-facing AI. Log each run, have a qualified person review whether the result and score were correct, and turn recurring mistakes into new evaluation cases.</p><h2>The operating loop</h2><p>The example is an agent that reviews pull requests. Every review is sent to an internal evaluation platform. An engineer then asks whether the agent reached the right conclusion, missed something important, and used a scoring mechanism that rewards the right behaviour. The output is evidence of real performance rather than an agent's confidence or a one-time benchmark.</p><p>The important idea is that evaluation is not a launch checklist. An internal agent can drift as the codebase, policies, tools, and tasks change. A model may remain capable while the environment around it changes enough to make its old judgement unreliable. Sampling live work exposes that mismatch before it becomes normalised.</p><h2>How to apply it</h2><p>Start with one consequential workflow. Log the input, the agent output, the recommendation or score, and the human review. Define a small set of error labels such as wrong conclusion, missing evidence, unsafe recommendation, or weak scoring. Review a regular sample and look for patterns. When the same failure repeats, turn it into a regression case and adjust instructions, tools, or the evaluation rubric.</p><p>Human review remains necessary for high-impact work, but it becomes more useful when it teaches the system instead of merely catching the same mistakes repeatedly.</p><h2>Why this matters for my work</h2><p>This maps directly to AI-native BI and agent operations. I could add a sample-review loop to one existing agent, track disagreement types, and create a small but compounding evaluation set.</p>",
   "watch_list": [
     {
+      "t": 0,
+      "label": "Why internal agents need evals"
+    },
+    {
       "t": 8,
-      "label": "Log each internal-agent run"
+      "label": "Log every agent run"
     },
     {
       "t": 10,
-      "label": "Engineer reviews correctness"
+      "label": "Human judgement on correctness"
     },
     {
       "t": 15,
@@ -23,7 +27,7 @@
     },
     {
       "t": 21,
-      "label": "Apply evals to internal bots"
+      "label": "Apply the loop to critical internal bots"
     }
   ]
 }

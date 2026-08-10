@@ -6,12 +6,16 @@
   "url": "https://www.youtube.com/watch?v=NClayXM8pU0",
   "published": "2026-08-06",
   "duration_minutes": 1,
-  "description": "A brief demonstration of portable, encrypted memory shared between Claude, ChatGPT, and other agents.",
-  "summary_html": "<h2>TL;DR</h2><p>The clip demonstrates Walrus Memory, a layer that lets multiple AI tools share selected context. The central promise is continuity: teach Claude something once, then let ChatGPT or another agent use that same memory without repeating the setup.</p><h2>Walkthrough</h2><p>The proposed flow is simple. Create an account, connect it to Claude, have Claude remember information, then open ChatGPT and ask a related question. The claim is that the shared layer supplies the earlier context. The product positions this as portable memory rather than vendor-specific chat history.</p><p>The more important detail is control. The memory is described as encrypted and user-controlled, with the user choosing which model can access which information. That is the right evaluation lens. Cross-model continuity is valuable only when stored context is explicit, inspectable, scoped, and revocable.</p><h2>Why this matters for my work</h2><p>This is relevant to the vault and the multi-runtime workflow, but it is a product demonstration rather than a recommendation. I could assess whether an external memory layer offers a clearer permission model and better portability than the existing file-based knowledge base before adopting it.</p>",
+  "description": "Portable, user-controlled memory shared between Claude, ChatGPT, and other agents.",
+  "summary_html": "<h2>TL;DR</h2><p>The video demonstrates a portable memory service that lets several AI systems access selected context. Instead of rebuilding preferences, project facts, and prior decisions inside every new chat, it proposes a separate memory layer that can be shared selectively across tools.</p><h2>What the demonstration shows</h2><p>The workflow is simple. Create an account, connect Claude, and ask it to remember something. Open ChatGPT afterwards, ask a related question, and it can use the previously stored information. The claim is that the context is not trapped inside one provider's chat history. Claude, ChatGPT, and other agents can work from the same baseline rather than forcing the user to repeat themselves.</p><p>That matters because ordinary chat history is convenient but provider-bound. It may be hard to inspect, difficult to correct, and subject to unclear retention rules. A portable layer creates the possibility that information about a person or project lives somewhere separate from the model that happens to use it today.</p><h2>The evaluation criteria</h2><p>The clip describes the memory as encrypted and user-controlled, with access decided model by model. Those claims need verification before adoption, but they define the correct bar. Shared memory should be visible, editable, and revocable. It should show which facts are stored, which tool can access them, and what happens when a fact is deleted or changes.</p><p>It should also be compared with the existing file-based approach. The vault is portable, versionable, and readable by a human. A hosted memory layer may reduce setup friction and make retrieval smoother, but it introduces another service, permission boundary, and potential lock-in point.</p><h2>Why this matters for my work</h2><p>For Amir's personal operating system, the question is whether cross-model continuity improves without weakening ownership or inspectability. For client work, it is a concrete example of the difference between isolated AI chats and shared context architecture. I could trial it with non-sensitive facts, test it across models, and keep the vault as the source of truth.</p>",
   "watch_list": [
     {
+      "t": 0,
+      "label": "The cross-model memory promise"
+    },
+    {
       "t": 8,
-      "label": "Create and connect the memory account"
+      "label": "Create and connect the account"
     },
     {
       "t": 15,
@@ -20,6 +24,10 @@
     {
       "t": 24,
       "label": "Encryption and access control"
+    },
+    {
+      "t": 29,
+      "label": "The adoption claim"
     }
   ]
 }

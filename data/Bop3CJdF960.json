@@ -6,8 +6,8 @@
   "url": "https://www.youtube.com/watch?v=Bop3CJdF960",
   "published": "2026-08-07",
   "duration_minutes": 1,
-  "description": "A supervised browser-use pattern for handing complex SaaS configuration to an agent while retaining human control of authentication and final saves.",
-  "summary_html": "<h2>TL;DR</h2><p>Browser use can remove the configuration tax that makes setting up bots and third-party services feel disproportionately difficult. The agent navigates setup screens and permissions, while the human stays responsible for authentication, two-factor approval, and the final save.</p><h2>Walkthrough</h2><p>The example is configuring a Slack bot and a GitHub app. These tasks require many screens, permission decisions, scopes, and tokens. Instead of handling each click manually, the author lets an agent navigate the setup flow in an already logged-in browser. The human checks the result and completes the actions that require explicit authority.</p><p>The interaction model matters. When asked whether setup was complete, the agent identified remaining GitHub permissions. The user told it that Chrome was already authenticated, then intervened only when the agent could not press the final save button. This is a useful division of labour: the agent performs routine navigation and configuration, while the person performs high-trust actions.</p><h2>Why this matters for my work</h2><p>This is a practical operating pattern for making integrations less painful without delegating authority blindly. I could use it for SaaS setup tasks that are tedious but reversible, with clear pause points for 2FA, permissions, and confirmation.</p>",
+  "description": "A supervised browser-use pattern for delegating tedious SaaS configuration while retaining human control of sensitive actions.",
+  "summary_html": "<h2>TL;DR</h2><p>Browser use is most valuable when a task is simple in principle but painful in practice. Setting up a Slack bot or GitHub app means navigating many screens, choosing permissions, and managing tokens. An agent can handle repetitive navigation while the person remains responsible for authentication, two-factor approval, and final confirmation.</p><h2>The configuration tax</h2><p>The example is familiar to anyone who has connected third-party services. The code may be easy, but the setup flow is spread across permission screens, scope choices, callback settings, and provider-specific forms. This creates friction that is too small to justify a project but large enough that useful integrations never get finished.</p><p>In the demonstration, an agent uses an authenticated Chrome session to navigate Slack-bot and GitHub-app setup. The user checks the result, performs 2FA, and intervenes at the final save action when the agent cannot complete it. The human is not replacing the agent. The human is the authority checkpoint.</p><h2>A safe division of responsibility</h2><p>The pattern works when the boundaries are explicit. The agent may inspect pages, fill routine fields, follow documented setup instructions, and report what remains. The user should retain account login, serious permission grants, payment, legal acceptance, 2FA, and final irreversible actions.</p><p>It also gives a better escalation model. When an agent hits a CAPTCHA, 2FA prompt, or blocked button, it can report the exact state and wait for a person to take the one required action. Work resumes from the same browser context rather than beginning again.</p><h2>Why this matters for my work</h2><p>This is a practical pattern for integrations and client setup. I could use it for reversible SaaS configuration while defining explicit stop points for login, sensitive permissions, and final saves.</p>",
   "watch_list": [
     {
       "t": 0,
@@ -22,8 +22,16 @@
       "label": "Human checks and 2FA"
     },
     {
+      "t": 25,
+      "label": "Remaining permissions"
+    },
+    {
+      "t": 33,
+      "label": "Final-save handoff"
+    },
+    {
       "t": 37,
-      "label": "Best use case: complex SaaS setup"
+      "label": "Complex SaaS setup"
     }
   ]
 }

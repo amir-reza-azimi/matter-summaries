@@ -112,7 +112,8 @@ def write_page(rec):
 </body>
 </html>
 """
-    with open(os.path.join(VIDEOS_DIR, f'{rec["id"]}.html'), "w") as f:
+    page_id = rec.get("page_id", rec["id"] + os.environ.get("MATTER_PAGE_SUFFIX", ""))
+    with open(os.path.join(VIDEOS_DIR, f'{page_id}.html'), "w") as f:
         f.write(page)
 
 
@@ -222,7 +223,8 @@ def main():
         os.makedirs(DATA_DIR, exist_ok=True)
         with open(os.path.join(DATA_DIR, f'{rec["id"]}.json'), "w") as f:
             json.dump(rec, f, indent=2, ensure_ascii=False)
-        print(f'page-only: wrote data/{rec["id"]}.json and docs/videos/{rec["id"]}.html '
+        page_id = rec.get("page_id", rec["id"] + os.environ.get("MATTER_PAGE_SUFFIX", ""))
+        print(f'page-only: wrote data/{rec["id"]}.json and docs/videos/{page_id}.html '
               f'(feed.xml/index.html NOT rebuilt — push to Matter via CLI/API)')
         return
 
