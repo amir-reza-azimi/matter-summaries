@@ -82,16 +82,19 @@ def watch_list_html(rec):
 def article_inner_html(rec):
     """The body shared by the standalone page and the RSS content:encoded."""
     parts = []
-    parts.append(
-        f'<p><strong>Channel:</strong> '
-        f'<a href="{esc(rec.get("channel_url", rec["url"]))}">{esc(rec["channel"])}</a>'
-        f' &middot; <strong>Published:</strong> {esc(rec.get("published", ""))}'
-    )
-    if rec.get("duration_minutes"):
-        parts[-1] += f' &middot; <strong>Length:</strong> {esc(rec["duration_minutes"])} min'
-    parts[-1] += (
-        f' &middot; <a href="{esc(rec["url"])}">Watch on YouTube</a></p>'
-    )
+    if rec.get("metadata_html"):
+        parts.append(rec["metadata_html"])
+    else:
+        parts.append(
+            f'<p><strong>Channel:</strong> '
+            f'<a href="{esc(rec.get("channel_url", rec["url"]))}">{esc(rec["channel"])}</a>'
+            f' &middot; <strong>Published:</strong> {esc(rec.get("published", ""))}'
+        )
+        if rec.get("duration_minutes"):
+            parts[-1] += f' &middot; <strong>Length:</strong> {esc(rec["duration_minutes"])} min'
+        parts[-1] += (
+            f' &middot; <a href="{esc(rec["url"])}">Watch on YouTube</a></p>'
+        )
     summary_html = rec.get("summary_html", "")
     source_page = rec.get("summary_from_page")
     if source_page:
@@ -99,6 +102,8 @@ def article_inner_html(rec):
             rendered = f.read()
         summary_html = rendered.split("<article>", 1)[1].split("</article>", 1)[0]
         summary_html = summary_html.split("</h1>", 1)[1]
+        if rec.get("metadata_html"):
+            summary_html = summary_html.split("</p>", 1)[1]
     parts.append(summary_html)
     parts.append(LISTENABLE_EXTENSIONS.get(rec.get("id"), ""))
     wl = watch_list_html(rec)
