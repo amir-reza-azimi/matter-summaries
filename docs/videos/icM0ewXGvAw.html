@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>19 Claude Code Mistakes &quot;Pro&quot; Users Are Still Making</title>
+<meta name="description" content="A practical audit of context, skills, planning, subagents, and verification in Claude Code.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>19 Claude Code Mistakes &quot;Pro&quot; Users Are Still Making</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@simonscrapes">Simon Scrapes</a> &middot; <strong>Published:</strong> 2026-08-22 &middot; <strong>Length:</strong> 20 min &middot; <a href="https://www.youtube.com/watch?v=icM0ewXGvAw">Watch on YouTube</a></p>
+<h2>TL;DR</h2><p>This is a diagnostic tour of nineteen habits that make an otherwise capable Claude Code setup less reliable or more expensive. The durable lesson is to manage the operating environment, not merely write better prompts. Context needs a purpose and a budget. Reusable instructions should live in the right layer. Parallel work needs explicit coordination. And every output needs a verification path that does not turn the human into a permanent manual test harness.</p><h2>Walkthrough</h2><p>The video starts with the premise that old prompting habits linger after the product changed. The presenter argues that a persona-heavy opening prompt is a weak substitute for real project context. A stronger setup separates durable facts about the project from the task at hand. He also warns against turning every new capability into another always-on connector or instruction. The agent needs access to relevant information and tools, but irrelevant material still makes the operating environment harder to reason about.</p><p>Several early mistakes concern tool and context management. The video distinguishes a connector being available from it being actively useful in a task, and argues that a broad tool inventory is not the same as a good workflow. It also discusses routines and tool access: a routine should have a bounded outcome, the minimum permissions it needs, and a visible result. The practical question is not whether an agent can reach a system, but whether the workflow makes it obvious what it changed and how a person can inspect it.</p><p>The middle section turns to skills and subagents. The presenter notes that skills do not automatically compose into a coherent process simply because many have been installed. Each skill needs a clear trigger, scope, and relationship to the project instructions. Similarly, a subagent is not a free extra pair of hands. It has its own context and can create cost, duplicated research, or conflicting changes unless the primary task states the handoff precisely. Parallelism should be reserved for work that is genuinely independent, with expected artifacts and a point where someone reconciles the outputs.</p><p>Context is the other recurring theme. The video pushes back on the instinct to keep expanding the window or repeatedly compact everything. More retained history can preserve irrelevant assumptions along with valuable facts. Instead, the better pattern is to keep durable knowledge in maintained project files, bring in task-specific material deliberately, and compact or resume only when the summary preserves the active decision. A long context is not automatically a richer one. It can make an agent less focused and make failure harder to diagnose.</p><p>There is also an implicit maintenance lesson. A recurring failure should lead to a concrete edit in the source of truth, a skill, a task template, or a test, not another personal reminder to prompt more carefully. That lets the setup improve by accumulation. It also makes review faster, because an unexpected behaviour can be traced back to a named layer instead of being blamed on a mysterious model mood.</p><p>The final mistakes cover plans, models, and verification. The presenter treats a plan as a working artifact rather than a ceremonial preface: it should identify the outcome, constraints, and verification before implementation begins. He also challenges the simplistic equation of a cheaper model with a cheaper task. A low-cost model that needs repeated correction, or produces a result that cannot be safely verified, may cost more in total. Finally, he argues against asking a human to act as the entire verification loop. The system should run tests, inspect outputs, and state what it could not prove, leaving the person to make the consequential judgement.</p><h2>Standout moments</h2><p>The sharpest idea is that capability without an operating boundary is a source of hidden work. A connector, skill, or subagent becomes useful only when its inputs, authority, output, and review point are explicit. Another useful correction is that context quality is not measured by length. It is measured by whether the agent has the current facts needed for this task and can distinguish them from stale history.</p><h2>Why this matters for my work</h2><p>This maps directly to the vault and AI-native consulting work, where skills, project instructions, and scheduled routines already form an operating system. The opportunity is to audit each recurring agent workflow for a narrow context packet, a named source of truth, explicit tool authority, and an evidence-based done condition. So I could turn the strongest of these checks into a reusable client-facing workflow audit rather than collecting more generic prompting advice.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/icM0ewXGvAw?t=0">0:00</a> &mdash; Why familiar prompting habits now create weaker agent workflows</li>
+<li><a href="https://youtu.be/icM0ewXGvAw?t=141">2:21</a> &mdash; Routines and tool access need clear boundaries</li>
+<li><a href="https://youtu.be/icM0ewXGvAw?t=318">5:18</a> &mdash; Skills and subagents do not coordinate themselves</li>
+<li><a href="https://youtu.be/icM0ewXGvAw?t=657">10:57</a> &mdash; The case against indiscriminate context growth and compaction</li>
+<li><a href="https://youtu.be/icM0ewXGvAw?t=923">15:23</a> &mdash; Plans, model cost, and making verification part of the system</li>
+<li><a href="https://youtu.be/icM0ewXGvAw?t=1082">18:02</a> &mdash; Resuming work without losing the active decision</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=icM0ewXGvAw">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
