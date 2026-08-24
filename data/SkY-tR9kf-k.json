@@ -1,0 +1,41 @@
+{
+  "id": "SkY-tR9kf-k",
+  "title": "Claude Code New Features, Explained",
+  "channel": "Greg Isenberg",
+  "channel_url": "https://www.youtube.com/@GregIsenberg",
+  "url": "https://www.youtube.com/watch?v=SkY-tR9kf-k",
+  "published": "2026-08-17",
+  "duration_minutes": 49,
+  "description": "A nine-part operating loop for treating an agent as a bounded AI employee rather than a chat assistant.",
+  "summary_html": "<h2>TL;DR</h2><p>The presenter uses the metaphor of an AI employee to organize a practical Claude Code setup. An employee needs a workspace, memory, a brief, a ticket, tools to inspect the product, a review process, a schedule, and clear permissions. The sequence is more important than the product-specific demonstration. Define the job and the quality bar before expanding the agent's authority. Inspect what it did. Then make only the stable, low-ambiguity work recurring.</p><h2>Walkthrough</h2><p>The video opens by arguing that many people use Claude Code as a chat interface with better tools, while expecting employee-level output. The proposed correction is to give the system the same operating inputs a new hire would receive. The workspace is the home for the files, source material, and project structure. Memory supplies the durable facts about how the team works. A brief says what outcome matters in the current initiative. This is deliberately more structured than a long prompt because each layer has a different rate of change and a different owner.</p><p>The next layer is a clear ticket and a definition of done. The presenter shows plan mode as the point where an agent reads the environment, proposes an approach, and waits for approval rather than moving straight into implementation. The ticket keeps the scope to one reviewable outcome. The definition of done makes the finish line observable: a feature works, an artifact exists, the desired flow can be tested, or a decision has been supported with stated evidence. Without that standard, an agent can produce impressive-looking activity while leaving the owner unable to say whether the task is complete.</p><p>The video then focuses on giving the agent eyes. In a product or web workflow, the agent should not rely solely on code or its own description of the result. It can open a desktop preview, inspect the current state, click through the relevant path, and look for errors. The intended practice is not unsupervised browser authority. It is visual verification. The agent should report what it tested and what a real user would experience. That makes the output more reviewable and catches the gap between a technically valid change and a broken customer flow.</p><p>Review happens in layers. The agent can first examine its own work against the ticket, then use the diff or output artifacts to surface the material changes, and finally hand a focused review packet to the human. The presenter emphasizes that a person should not have to reconstruct the task from scratch to evaluate it. Good review guidance identifies the claim, the evidence, remaining uncertainty, and the exact decision being requested. This is a stronger model than simply telling an agent to be careful, because it creates an explicit checkpoint before the work becomes durable.</p><p>Only after the workflow works should it be scheduled. Routines turn a stable repeated request into background work, but they need a controlled trigger, a named destination, and a review path. The video also discusses parallel agents and worktree isolation. The transferable lesson is that parallel work requires separate scopes and a later integration point. Agents should not edit the same ambiguous surface simultaneously and leave the human to discover what conflicts. The work needs isolation where changes are independent and a clear owner for reconciliation.</p><p>The final part sets permissions and skills in context. Permissions are not a nuisance to remove. They encode which actions are safe, which require a prompt, and which remain human-owned because they create durable authority or risk. Skills and connectors then give the agent repeatable methods and access, but they should follow the project standards rather than create a second contradictory system. The seven-day rollout packages the whole approach into manageable steps instead of treating it as a single installation event.</p><h2>Standout moments</h2><p>The most useful framing is that an agent earns broader autonomy by operating inside a clear job design. Workspace, memory, brief, ticket, inspection, review, schedule, and permissions are not features to turn on. They are the conditions that make delegated work legible. The visual-review point is also important: an agent should verify the user-facing result, not merely claim that code was written.</p><h2>Why this matters for my work</h2><p>This is directly applicable to the vault and AI-native consulting, where agents need documented context, evidence-based finish lines, and human review before side effects. It also gives the 10x Operator course a strong teaching sequence for moving a user from chat to dependable delegated work. So I could turn the nine parts into a client maturity assessment that identifies the first missing operating layer rather than prescribing a generic agent stack.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "The AI employee map and why chat habits are insufficient"
+    },
+    {
+      "t": 120,
+      "label": "Workspace and memory as durable operating context"
+    },
+    {
+      "t": 241,
+      "label": "Tickets, plans, and a definition of done"
+    },
+    {
+      "t": 721,
+      "label": "Visual inspection and layered review"
+    },
+    {
+      "t": 1081,
+      "label": "Routines, parallel work, and worktree isolation"
+    },
+    {
+      "t": 1802,
+      "label": "Permissions as deliberate human-owned boundaries"
+    },
+    {
+      "t": 2640,
+      "label": "The seven-day rollout and user-facing verification"
+    }
+  ]
+}
