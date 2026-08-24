@@ -1,0 +1,41 @@
+{
+  "id": "qQluNEfSVHk",
+  "title": "Making $$$ with Grok Bot",
+  "channel": "Greg Isenberg",
+  "channel_url": "https://www.youtube.com/@GregIsenberg",
+  "url": "https://www.youtube.com/watch?v=qQluNEfSVHk",
+  "published": "2026-08-21",
+  "duration_minutes": 45,
+  "description": "A platform-specific interview with transferable patterns for agent teams, rollout cadence, and operating reports.",
+  "summary_html": "<h2>TL;DR</h2><p>This interview uses Grok Bot as its example, but the portable value is an operating model for a small AI-enabled business. Give one agent environment one mission. Start with a chief of staff that inventories the work and proposes a few roles. Roll those roles out in stages. Keep each agent's report short enough to preserve attention and context. Then automate only the repeated steps that have proved useful. The platform details matter less than the discipline around scope, feedback, and human attention.</p><h2>Walkthrough</h2><p>The opening argument is that an agent team becomes harder to manage when it serves several unrelated businesses in one context. The guest therefore treats one project as the unit of operation. A local newsletter, a directory, or a Shopify experiment gets its own environment and its own agent team. That separation is presented as a way to avoid context bloat, reduce confused handoffs, and keep the work legible. The useful question for any team is not how many agents it can create, but which bounded mission owns a given set of instructions, sources, and routines.</p><p>The first role is a chief of staff. It connects to the relevant systems, takes stock of the current work, and identifies the first few agents that could materially move it forward. In the example, those become research, sales, and platform-specific support roles. The chief of staff is not described as an autonomous executive. Its job is to provide a visible coordination layer: identify priorities, receive brief updates, and route the next decision to a person when needed. That creates a useful contrast with a flat collection of agents, each running tasks without a shared operating view.</p><p>The rollout plan is deliberately staged. Week one builds the team and the basic context. Week two focuses on executing the existing plan rather than constantly adding roles. Week three fills observed gaps, such as inbox handling or a specialist workflow. Week four adds routines so the agent team can move repeatable work forward without needing a new prompt. The sequence matters because it prevents automation from obscuring a process before anyone understands its bottlenecks. It also makes the first month a testable experiment with a narrow scope.</p><p>Reporting is another practical theme. The guest asks agents to send the chief of staff a five-line brief: what shipped, what is stuck, and what needs the human. The point is not a magical number of lines. It is to keep status reporting compact enough that the coordinating agent and human can identify action without consuming the context window with narrative. The human still decides which work deserves more tokens, authority, or budget. This turns the agent team into a source of structured operational signals rather than a source of continuous notifications.</p><p>The video moves through newsletter, sales, directory, and site-building examples. A research bot can scan a defined source list and place candidate items in a structured system. A sales agent can watch an inbox, prepare a pricing or sponsor sheet, and surface prospects. A content or directory workflow can turn source material into draft pages and publish only after an appropriate check. The common thread is not that every business should copy these use cases. It is that each workflow begins with a known input, produces an observable intermediate artifact, and has a human-owned commercial judgement somewhere in the chain.</p><p>It also makes a useful cost argument. Tokens should be spent on judgement or generation where an agent adds leverage. Repeated formatting, predictable transfers, and mechanical updates belong in scripts or conventional automation when possible. That boundary protects both cost and reliability. A team does not become more agentic by putting an LLM in every step. It becomes more useful when the model is reserved for ambiguity and the deterministic work is made inspectable.</p><h2>Standout moments</h2><p>The most reusable line is the one-project constraint. A clean mission gives an agent team an intelligible context boundary. The five-line reporting pattern is similarly valuable because it makes progress, blockers, and required decisions explicit without creating a second full-time job of reading agent updates.</p><h2>Why this matters for my work</h2><p>This maps to AI-native consulting and marketing workflows, especially where clients ask for an agent workforce before they have named the first process. The four-week rollout gives a credible way to start small and retain human control. So I could propose a one-mission pilot with a chief-of-staff reporting loop, evidence-based role additions, and a clear decision about what is better handled by code or standard automation.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "The case for one mission per agent environment"
+    },
+    {
+      "t": 369,
+      "label": "Starting with a chief-of-staff audit and three useful roles"
+    },
+    {
+      "t": 786,
+      "label": "The four-week build, execute, expand, automate rollout"
+    },
+    {
+      "t": 1082,
+      "label": "Five-line reports and the human decision boundary"
+    },
+    {
+      "t": 1200,
+      "label": "Newsletter, directory, and site-building workflow examples"
+    },
+    {
+      "t": 1922,
+      "label": "How to use a chief of staff without losing human judgement"
+    },
+    {
+      "t": 2401,
+      "label": "Where token spend belongs and where ordinary automation is better"
+    }
+  ]
+}
