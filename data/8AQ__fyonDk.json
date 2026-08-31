@@ -1,0 +1,29 @@
+{
+  "id": "8AQ__fyonDk",
+  "title": "Your coding agent can run your business operations, not just your codebase",
+  "channel": "How I AI",
+  "channel_url": "https://www.youtube.com/@howiaipodcast",
+  "url": "https://www.youtube.com/watch?v=8AQ__fyonDk",
+  "published": "2026-08-26",
+  "duration_minutes": 2,
+  "description": "A short operational reframing: agents with codebase context can support revenue and customer workflows.",
+  "summary_html": "<h2>TL;DR</h2><p>The clip argues that a coding agent should not be mentally limited to writing code. If it has useful context about a company and can write or modify software, it can also prepare and execute parts of business operations. The examples are deal desk, custom quoting, customer triage, documentation, and investor updates. This is not a call to automate everything. It is a prompt to look for recurring knowledge work where an agent can assemble evidence, produce a draft, and leave a human with a smaller, better-defined approval decision.</p><h2>What the examples have in common</h2><p>Deal desk and custom quoting combine account facts, product rules, commercial judgement, and a document that somebody must send. Customer triage combines incoming messages, prior context, operational rules, and a next action. Investor updates combine metrics, events, and a narrative. None of those workflows is only code, but each is made of information that can be retrieved, structured, checked, and turned into a first draft. The agent becomes useful when its context is accurate and its action boundary is explicit.</p><h2>How to apply the idea safely</h2><p>Start with preparation, not autonomous sending. Let the agent gather the source records, identify missing information, draft the quote or update, and explain which evidence supports each claim. Keep pricing exceptions, external messages, sensitive data, and irreversible system changes behind a human review. Then record the corrections. Over time, recurring corrections can become clearer instructions, a better data source, or a validation rule. The gain is not that the agent replaces commercial judgement. It is that it removes the repetitive assembly work around that judgement.</p><h2>Why this matters for my work</h2><p>For AI-native consulting and BI, this is a clean diagnostic question for clients: what would an informed colleague who can read the systems and write small tools do for the team? I could choose one routine such as weekly customer triage or a custom-report request, map its evidence and approval points, and test an agent as a preparation layer before proposing a broader operating model.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "Deal desk and custom quoting"
+    },
+    {
+      "t": 18,
+      "label": "Customer triage and documentation"
+    },
+    {
+      "t": 39,
+      "label": "Investor-update skill"
+    },
+    {
+      "t": 56,
+      "label": "Operational reframing"
+    }
+  ]
+}

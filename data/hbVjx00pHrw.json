@@ -1,0 +1,29 @@
+{
+  "id": "hbVjx00pHrw",
+  "title": "The job title for solo founders right now is agent manager, not engineer.",
+  "channel": "How I AI",
+  "channel_url": "https://www.youtube.com/@howiaipodcast",
+  "url": "https://www.youtube.com/watch?v=hbVjx00pHrw",
+  "published": "2026-08-25",
+  "duration_minutes": 2,
+  "description": "A short management model for running concurrent agent threads with explicit priorities.",
+  "summary_html": "<h2>TL;DR</h2><p>The clip reframes a solo founder's work as managing agents rather than personally doing every implementation task. The example uses 10 to 15 concurrent Devin threads grouped into P0, P1, P2, and bugs. The useful idea is not the number of threads. It is the operating discipline: each thread needs a clear goal, a priority, a bounded scope, and just enough supervision to prevent it from working on the wrong thing for a long time.</p><h2>Management rather than magic</h2><p>Parallel agents create a coordination problem. A useful setup resembles a small team: urgent customer-impacting work is visibly separate from planned improvements; a bug is not allowed to compete silently with a strategic experiment; and each worker has an outcome that can be reviewed. The manager's job is to set context, decide sequencing, inspect evidence, and intervene when a task becomes ambiguous. A vague goal or an unreviewed handoff does not become safe merely because an agent is fast.</p><h2>A conservative way to use it</h2><p>Begin with a small number of independent, reversible tasks. Give each task a written done condition and one clear source of truth. Use priorities to decide where attention goes, not as a label that every task receives. After a run, review which threads produced useful output, which needed repeated steering, and which lacked necessary context. Those observations are the raw material for better skills, project instructions, and scheduling rules.</p><h2>Why this matters for my work</h2><p>This fits the vault and the 10x Operator course because it shifts the question from how to prompt an agent to how to operate a small agent team. I could use a simple priority board for routines, research, and implementation work, with explicit review gates for any task that sends, publishes, changes data, or uses a sensitive external system.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "Concurrent agent setup"
+    },
+    {
+      "t": 18,
+      "label": "P0, P1, P2 and bugs"
+    },
+    {
+      "t": 39,
+      "label": "Managing agents as direct reports"
+    },
+    {
+      "t": 57,
+      "label": "Clear goals and minimal hand-holding"
+    }
+  ]
+}
