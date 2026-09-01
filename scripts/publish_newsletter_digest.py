@@ -4,7 +4,7 @@
 Usage:
   python3 scripts/publish_newsletter_digest.py --page-only record.json
 
-The input record requires ``week``, ``kind`` (``tools`` or ``news``), ``title``,
+The input record requires ``week``, ``kind`` (``tools``, ``news``, or ``ai-news``), ``title``,
 and ``summary_html``. Optional ``entries`` provide visible source links.
 """
 
@@ -79,8 +79,8 @@ def main() -> None:
     for field in ("week", "kind", "title", "summary_html"):
         if not record.get(field):
             raise SystemExit(f"record is missing required field: {field}")
-    if record["kind"] not in {"tools", "news"}:
-        raise SystemExit("kind must be tools or news")
+    if record["kind"] not in {"tools", "news", "ai-news"}:
+        raise SystemExit("kind must be tools, news, or ai-news")
     page_id, page = render(record)
     os.makedirs(DOCS_DIR, exist_ok=True)
     output = os.path.join(DOCS_DIR, f"{page_id}.html")
