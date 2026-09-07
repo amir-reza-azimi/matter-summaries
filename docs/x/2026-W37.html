@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X digest — week of 2026-09-01</title>
+<meta name="description" content="2026-08-03 to 2026-09-07">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>X digest — week of 2026-09-01</h1>
+<p><strong>Week:</strong> 2026-W37 &middot; <strong>Window:</strong> 2026-08-03 to 2026-09-07 &middot; <strong>Sources:</strong> 4 posts</p>
+<h2>TL;DR</h2><p>The useful thread this week is not a generic model-launch race. It is the way model capability is being packaged into lower-cost, controllable production primitives: efficient long-video analysis, structured voice input, feedback capture, and effort settings that match verification needs. The practical question is which of those primitives can improve an existing workflow with a measurable result.</p><h2>Agent-ready media and input</h2><p>Logan Kilpatrick announced Agentic Video in the Gemini API, describing a per-video control that reduces token consumption for long-video processing while improving quality. For a content or research pipeline, that is more useful than a broad video-model claim because it suggests a testable change: compare a focused extraction workflow against a full-transcript workflow, then measure cost, evidence quality, and missed moments. The same account also announced Gemini 3.5 Transcribe with custom vocabulary, multi-speaker identification, streaming, and function calling. Those are the features that matter for operational ingestion, where names and domain terms must survive the route from conversation to a structured record.</p><h2>Model choice should follow verification needs</h2><p>Thariq Shihipar’s practical note on Fable 5.1 is the most reusable operating principle in the set: use lower effort for tasks with fewer edge cases and less verification, rather than applying the strongest setting indiscriminately. A model setting is therefore part of a workflow’s risk design. Deterministic gathering and low-risk transformations can be fast, but evidence synthesis, external communication, and irreversible changes still need proportionate review. That is a better framing than treating effort as a quality slider alone.</p><h2>Feedback as an operational artifact</h2><p>Shihipar also described a SendFeedback tool that lets a user ask the agent to draft a report and approve it, instead of manually navigating to a feedback command. The value is small but concrete: when feedback is captured in a structured, reviewable way, repeated friction becomes a source of product and workflow improvement. It should still be a user-approved outbound action. For an internal operating system, the analogous pattern is to record the failing step, source evidence, and desired outcome where future runs can use it.</p><h2>Worth a click</h2><p>Open the Agentic Video and transcription announcements if you are evaluating media ingestion or voice-based capture. The effort-setting note is worth retaining as a routing heuristic for agent workflows.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><strong>@OfficialLoganK</strong> &mdash; Agentic Video API control for long-video processing (<a href="https://x.com/OfficialLoganK/status/2094843143623680264">open on X</a>)</li>
+<li><strong>@OfficialLoganK</strong> &mdash; Gemini 3.5 Transcribe: vocabulary, speakers, streaming, functions (<a href="https://x.com/OfficialLoganK/status/2092660925509890397">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Use lower effort when tasks need less verification (<a href="https://x.com/trq212/status/2094945951865520458">open on X</a>)</li>
+<li><strong>@trq212</strong> &mdash; Draft-and-approve feedback capture (<a href="https://x.com/trq212/status/2092696449616376140">open on X</a>)</li>
+</ul>
+</article>
+</body>
+</html>
