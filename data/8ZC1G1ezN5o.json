@@ -1,0 +1,37 @@
+{
+  "id": "8ZC1G1ezN5o",
+  "title": "Marketing Engineer: The $1M Job with AI Agents",
+  "channel": "Greg Isenberg",
+  "channel_url": "https://www.youtube.com/@GregIsenberg",
+  "url": "https://www.youtube.com/watch?v=8ZC1G1ezN5o",
+  "published": "2026-08-31",
+  "duration_minutes": 35,
+  "description": "A practical operating model for AI-native marketing systems.",
+  "summary_html": "<h2>TL;DR</h2><p>The useful idea here is not a new job title. It is a growth operating system whose inputs are customer evidence and whose outputs are content, outbound, experiments, and a measurable commercial view. The marketing engineer owns the system: they combine marketing judgment with enough data, code, and agent design to make the work compound instead of disappearing into one-off chats.</p><h2>Walkthrough</h2><p>The video starts with the shift in what a marketing team is expected to do. Earlier eras rewarded storytelling, digital acquisition, and measurable growth hacking. The proposed next role keeps those disciplines but adds the ability to turn market signal into workflows that agents can execute. That matters because a smaller team can now run more experiments, but only when it has a clear model of the customer, the message, and the metric that determines whether the work helped.</p><p>The first artifact is a growth repository. Rather than leave customer notes, founder ideas, past campaigns, and agent prompts scattered across chat threads, the repository keeps a versioned operating memory. The creator names folders for customer truth, the content engine, outbound signal, creative testing, and agent jobs. In practical terms, that gives each agent a bounded context: it can read the relevant voice file, customer evidence, prior campaign results, and job specification before it drafts or researches.</p><p>Customer truth comes first. The example uses calls, support conversations, sales notes, and observed market language to identify repeated pains. The point is to avoid an agent inventing positioning from generic internet language. A useful system should be able to show the source signal that led to a campaign or an outbound angle. Once that evidence exists, it can feed content, prospecting, and experiment design without each workstream starting from zero.</p><p>The content engine turns that material into founder-led posts and landing-page angles, with a feedback loop from performance rather than a one-time content calendar. The outbound signal engine looks for firms and people showing evidence of the problem the company solves, then prepares a specific first line and a relevant follow-up. The creator repeatedly returns to the distinction between an agent producing activity and a system producing qualified conversations. The latter needs a visible metric and a review point.</p><p>Creative testing and AI-search visibility are other parts of the model. The system can generate variants, but the test needs a real hypothesis, a defined audience, and a business result. The final piece is the growth cockpit: an executive should be able to see which customer pains, campaigns, and experiments are creating credible pipeline. This is more valuable than a dashboard full of agent output because it connects the work to a commercial decision.</p><p>The HVAC example makes the sequence concrete. A service company sees a recurring problem such as missed follow-up on replacement opportunities. The marketing system identifies the pain, writes content around it, finds similar prospects, and measures whether the resulting campaigns create qualified replies and opportunities. The exact vertical is not important. The pattern is: recover a real customer signal, define an agent job, keep a human judgment checkpoint, and measure the consequence.</p><h2>Standout moments</h2><p>The sharpest claim is that agent jobs should be specified like employee jobs. Each should name its data source, schedule, filter, expected output, approval step, and metric. Another useful constraint is to build one working system rather than five partially connected automations. It is a guard against confusing a large tool stack with an operating model.</p><h2>Why this matters for my work</h2><p>This maps directly to JOIN marketing and to the 10x Operator work. A small first test could create one customer-truth file, one narrowly scoped agent job, and one outcome metric for a specific audience. The consulting offer is then not agents in the abstract, but a traceable path from customer evidence to a repeatable growth motion.</p>",
+  "watch_list": [
+    {
+      "t": 269,
+      "label": "What the marketing-engineer role owns"
+    },
+    {
+      "t": 600,
+      "label": "Growth repository and founder voice files"
+    },
+    {
+      "t": 840,
+      "label": "Signal-based opportunity ranking"
+    },
+    {
+      "t": 1080,
+      "label": "HVAC example: turn a pain into a growth system"
+    },
+    {
+      "t": 1500,
+      "label": "Growth cockpit and commercial metrics"
+    },
+    {
+      "t": 1860,
+      "label": "From scattered signal to a repeatable motion"
+    }
+  ]
+}

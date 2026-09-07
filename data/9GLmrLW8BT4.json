@@ -1,0 +1,29 @@
+{
+  "id": "9GLmrLW8BT4",
+  "title": "GPT-6 Astra made GREAT YouTube thumbnails first try",
+  "channel": "How I AI",
+  "channel_url": "https://www.youtube.com/@howiaipodcast",
+  "url": "https://www.youtube.com/watch?v=9GLmrLW8BT4",
+  "published": "2026-09-06",
+  "duration_minutes": 1,
+  "description": "A human-in-the-loop pattern for preparing creative source assets.",
+  "summary_html": "<h2>TL;DR</h2><p>This short clip shows an agent working inside an existing thumbnail workflow rather than asking a model to invent a creative direction from scratch. The operator supplies podcast images and a pre-existing Flora workflow. The agent inspects the workflow, selects the relevant image-generation path and aspect ratio, uses the established prompts, and prepares assets for a designer to evaluate.</p><h2>Walkthrough</h2><p>The important design is the handoff. The agent does the mechanical preparation: it looks at the current workflow, imports the source image, chooses the generation node, applies the associated prompt context, and produces candidate visual material. The designer remains responsible for taste and final selection. This keeps automation where it is useful while retaining human ownership of the public-facing creative judgment.</p><p>For marketing work, the reusable pattern is to make the existing brand system legible before automating production. Keep approved prompt components, aspect ratios, source-image requirements, and review criteria in one place. Then ask an agent to assemble a first pass from those ingredients. The review should compare the result against the brief and brand cues, not merely reward novelty.</p><h2>Why this matters for my work</h2><p>For course, website, or event assets, this suggests a modest production lane: structured source images and a written creative brief in, candidate assets out, human selection before publication. The clip is too short to prove a complete workflow, but it is a useful reminder that good creative automation prepares judgment rather than replacing it.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "Existing thumbnail workflow and source images"
+    },
+    {
+      "t": 16,
+      "label": "Agent inspects the workflow"
+    },
+    {
+      "t": 32,
+      "label": "Selecting the generation node and aspect ratio"
+    },
+    {
+      "t": 46,
+      "label": "Designer retains taste and final review"
+    }
+  ]
+}

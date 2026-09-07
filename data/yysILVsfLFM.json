@@ -1,0 +1,41 @@
+{
+  "id": "yysILVsfLFM",
+  "title": "I Turned GPT-6 Astra Into the Ultimate AI Second Brain",
+  "channel": "Nate Herk",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=yysILVsfLFM",
+  "published": "2026-09-07",
+  "duration_minutes": 20,
+  "description": "An inspectable folder-and-skill approach to a personal AI operating system.",
+  "summary_html": "<h2>TL;DR</h2><p>The video’s useful contribution is a local, inspectable AI operating system rather than another promise of universal chat memory. It organizes business and personal context into files, skills, audits, and routines so an agent can retrieve a defined source of truth instead of relying on a sprawling conversation history.</p><h2>Walkthrough</h2><p>The system begins with a workspace that contains the information the operator wants an agent to understand: active projects, people, meetings, tasks, preferences, and reference material. The creator stresses that the agent becomes more helpful when this material is stored and usable, rather than merely remembered somewhere inside a model. The practical implication is that context can be inspected, corrected, and made stale on purpose.</p><p>A dashboard or index gives an overview of relationships, open work, upcoming meetings, and notes that may need refresh. The useful design choice is that it calls out staleness. An AI operating system should not only surface context; it should show when context has aged past the point where it should guide an action. That makes a review loop possible instead of treating all old notes as equally reliable.</p><p>Next comes a structured wiki and a set of files. The video describes keeping core information simple enough for an agent to navigate: identity and voice, project material, meeting history, and references. The important part is not the exact folder names. It is having a predictable place for each class of information, so retrieval does not depend on guessing which chat or app has the current answer.</p><p>Skills then turn that context into repeatable jobs. The creator uses them to organize work, connect tools, create audits, and establish routines. This is a useful separation of concerns. A skill should say what evidence it needs, what it can do, and what output it leaves behind. The workspace holds the truth; the skill describes the transformation. That structure also makes it easier to constrain an agent that has access to sensitive or consequential systems.</p><p>The video suggests forcing yourself to work through the system so gaps become visible. When a task cannot be completed because a source file is missing, ambiguous, or stale, that failure should become an improvement request for the system rather than a reason to let the model invent context. Over time, audits can identify outdated records and routines can maintain small, low-risk parts of the workspace.</p><p>The creator also demonstrates capturing information through an interview-style interaction and storing it into the operating system. This is most useful when the incoming information is later checked against a stable structure. The system should not be a dumping ground for every conversation. Its value comes from choosing which facts are canonical, where they live, and how they can be revised or retired.</p><h2>Standout moments</h2><p>The strongest practical pattern is to own the underlying files and use the agent as a reader and operator over them. The second is to treat audits as a first-class feature: they identify stale context and improve the operating system rather than merely generating another recap.</p><h2>Why this matters for my work</h2><p>The vault already offers a stronger version of the underlying idea. The actionable takeaway is to keep each automation’s scope, state, and source of truth explicit, then use skills to make the transformations repeatable. A useful next test would be one narrow audit that flags stale project instructions without changing them automatically.</p>",
+  "watch_list": [
+    {
+      "t": 60,
+      "label": "Relationship and staleness view"
+    },
+    {
+      "t": 180,
+      "label": "What belongs in an AI operating system"
+    },
+    {
+      "t": 360,
+      "label": "Simple files and workspace structure"
+    },
+    {
+      "t": 600,
+      "label": "Context and skills in the desktop app"
+    },
+    {
+      "t": 720,
+      "label": "Audits as a durable system feature"
+    },
+    {
+      "t": 900,
+      "label": "Interview capture and structured storage"
+    },
+    {
+      "t": 1140,
+      "label": "Owning the files agents crawl"
+    }
+  ]
+}
