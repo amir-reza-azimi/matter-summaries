@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "current": null,
+  "pending": null,
+  "story_ledger": {},
+  "processed_annotation_ids": [],
+  "preferences": {
+    "overrides": {},
+    "weights": {}
+  }
+}
