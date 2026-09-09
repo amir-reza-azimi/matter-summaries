@@ -1,8 +1,8 @@
 {
   "current": {
     "date": "2026-09-09",
-    "item_id": "itm_92aXx",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-09-daily-brief.html"
+    "item_id": "itm_92bKU",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-09-expanded-daily-brief.html"
   },
   "pending": null,
   "preferences": {
@@ -28,6 +28,118 @@
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-usa-gegenzoelle-100.html"
+      ]
+    },
+    "expanded-berlin-cyber-response": {
+      "category": "berlin",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html"
+      ]
+    },
+    "expanded-canada-countertariffs": {
+      "category": "world",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-usa-gegenzoelle-100.html"
+      ]
+    },
+    "expanded-china-exports": {
+      "category": "economy",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
+      ]
+    },
+    "expanded-dax-flat-oil": {
+      "category": "investment",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-boerse-dax-dow-jones-oel-100.html"
+      ]
+    },
+    "expanded-federal-budget": {
+      "category": "germany",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/inland/innenpolitik/haushalt-bundestag-ausgaben-schulden-100.html"
+      ]
+    },
+    "expanded-germany-electronics-orders": {
+      "category": "business",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/infoservices/alle-meldungen-100.html"
+      ]
+    },
+    "expanded-grid-suspect-arrest": {
+      "category": "germany",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/eilmeldung/eilmeldung-9502.html"
+      ]
+    },
+    "expanded-huawei-trial": {
+      "category": "technology",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/china-huawei-trial-trade-secrets-ed66f29aa8539941aa8fad311d511cc2"
+      ]
+    },
+    "expanded-israel-warning-report": {
+      "category": "world",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/ausland/asien/israel-netanjahu-bericht-warnung-100.html"
+      ]
+    },
+    "expanded-oil-pressure-markets": {
+      "category": "investment",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
+      ]
+    },
+    "expanded-pisa-results": {
+      "category": "germany",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/inland/gesellschaft/pisa-deutschland-schueler-100.html"
+      ]
+    },
+    "expanded-saxony-anhalt-reform-debate": {
+      "category": "germany",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/archiv?datum=2026-09-08&filter=tagesschau"
+      ]
+    },
+    "expanded-ukraine-attacks": {
+      "category": "world",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-krieg-100.html"
+      ]
+    },
+    "expanded-ukraine-grain-exports": {
+      "category": "world",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/ausland/europa/ukraine-export-getreide-100.html"
       ]
     },
     "germany-federal-budget-2027-debate-2026-09-08": {
