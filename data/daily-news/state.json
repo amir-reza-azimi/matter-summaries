@@ -6,7 +6,9 @@
   },
   "pending": null,
   "preferences": {
-    "overrides": {},
+    "overrides": {
+      "story_volume": "Target 14 stories, allow up to 21 on a news-dense day, and do not pad quiet days."
+    },
     "weights": {}
   },
   "processed_annotation_ids": [],
