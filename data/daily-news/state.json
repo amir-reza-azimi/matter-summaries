@@ -1,11 +1,72 @@
 {
-  "schema_version": 1,
-  "current": null,
+  "current": {
+    "date": "2026-09-09",
+    "item_id": "itm_92aXx",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-09-daily-brief.html"
+  },
   "pending": null,
-  "story_ledger": {},
-  "processed_annotation_ids": [],
   "preferences": {
     "overrides": {},
     "weights": {}
+  },
+  "processed_annotation_ids": [],
+  "schema_version": 1,
+  "story_ledger": {
+    "berlin-senate-cyberattack-response-2026-09-08": {
+      "category": "berlin",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html"
+      ]
+    },
+    "canada-us-retaliatory-tariffs-2026-09-08": {
+      "category": "world",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-usa-gegenzoelle-100.html"
+      ]
+    },
+    "germany-federal-budget-2027-debate-2026-09-08": {
+      "category": "germany",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/inland/innenpolitik/haushalt-bundestag-ausgaben-schulden-100.html"
+      ]
+    },
+    "germany-pisa-results-2026-09-08": {
+      "category": "germany",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/inland/gesellschaft/pisa-deutschland-schueler-100.html"
+      ]
+    },
+    "huawei-racketeering-trial-new-york-2026-09-08": {
+      "category": "technology",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/china-huawei-trial-trade-secrets-ed66f29aa8539941aa8fad311d511cc2"
+      ]
+    },
+    "oil-prices-wall-street-pressure-2026-09-08": {
+      "category": "investment",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
+      ]
+    },
+    "ukraine-russia-attacks-after-pause-2026-09-08": {
+      "category": "world",
+      "last_published": "2026-09-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-krieg-100.html"
+      ]
+    }
   }
 }
