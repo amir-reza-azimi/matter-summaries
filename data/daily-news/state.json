@@ -7,7 +7,8 @@
   "pending": null,
   "preferences": {
     "overrides": {
-      "story_volume": "Target 14 stories, allow up to 21 on a news-dense day, and do not pad quiet days."
+      "story_volume": "Target 14 stories, allow up to 21 on a news-dense day, and do not pad quiet days.",
+      "english_reader_links": "Every displayed Matter source link must be a direct English-language article. German reporting may inform selection but cannot be linked; omit stories without an approved English direct source."
     },
     "weights": {}
   },

@@ -33,7 +33,7 @@ def render(record: dict) -> str:
             f'<p class="meta">{esc(story["category"])} · {esc(story["importance"])}</p>'
             f'<h2>{esc(story["title"])}</h2>'
             f'<p>{esc(story["summary"])}</p>'
-            f'<p class="sources">Sources: {source_links}</p></section>'
+            f'<p class="sources">Read more: {source_links}</p></section>'
         )
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
