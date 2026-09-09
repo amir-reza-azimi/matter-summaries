@@ -7,7 +7,7 @@ from datetime import datetime
 from urllib.parse import urlparse
 
 
-MAX_STORIES = 9
+MAX_STORIES = 21
 MIN_STORIES_WITHOUT_NOTE = 5
 ALLOWED_CATEGORIES = {"berlin", "germany", "world", "economy", "technology", "business", "investment", "ai"}
 ALLOWED_IMPORTANCE = {"major", "notable", "watch"}
