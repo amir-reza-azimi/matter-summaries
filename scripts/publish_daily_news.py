@@ -39,8 +39,7 @@ def render(record: dict) -> str:
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(record["title"])}</title>
 <style>body{{max-width:720px;margin:2rem auto;padding:0 1rem;font:18px/1.6 -apple-system,system-ui,sans-serif;color:#1a1a1a}}h1{{font-size:1.8rem;line-height:1.25}}h2{{font-size:1.2rem;line-height:1.35;margin-bottom:.2rem}}.story{{border-top:1px solid #ddd;padding:1rem 0}}.meta,.sources{{font-size:.85rem;color:#555;margin:.1rem 0}}a{{color:#3b5bdb}}</style>
-</head><body><article><h1>{esc(record["title"])}</h1>
-{''.join(rows)}</article></body></html>"""
+</head><body><article>{''.join(rows)}</article></body></html>"""
 
 
 def main() -> None:
