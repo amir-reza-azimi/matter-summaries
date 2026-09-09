@@ -12,6 +12,7 @@ MIN_STORIES_WITHOUT_NOTE = 5
 ALLOWED_CATEGORIES = {"berlin", "germany", "world", "economy", "technology", "business", "investment", "ai"}
 ALLOWED_IMPORTANCE = {"major", "notable", "watch"}
 ALLOWED_TIERS = {"primary", "wire", "public-service", "established"}
+READER_LANGUAGE = "en"
 
 # Keep the list short and auditable. A live run must reject a new source until it is
 # deliberately added here with its tier and an independent editorial group.
@@ -115,12 +116,14 @@ def validate_record(record: dict, prior_stories: dict[str, dict] | None = None) 
 
         sources = story.get("sources")
         if not isinstance(sources, list) or not sources:
-            errors.append(f"{prefix}: at least one direct source is required")
+            errors.append(f"{prefix}: at least one English-language direct source is required")
             continue
         groups: set[str] = set()
         has_primary = False
         has_non_primary = False
         for source in sources:
+            if source.get("language") != READER_LANGUAGE:
+                errors.append(f"{prefix}: every Matter source must declare language 'en'")
             url = source.get("url", "")
             if urlparse(url).scheme != "https":
                 errors.append(f"{prefix}: source URL must use HTTPS")

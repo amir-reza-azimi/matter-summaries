@@ -52,13 +52,20 @@ def main() -> None:
             )
             run(sys.executable, str(STATE_TOOL), "promote", "--state", str(state), "--record", str(record))
         run(sys.executable, str(VALIDATOR), str(FIXTURES / "invalid-uncorroborated-major.json"), expect=1)
+        english_required = json.loads((FIXTURES / "2026-09-01.json").read_text())
+        english_required["stories"][0]["sources"][0].pop("language")
+        english_record = temp_path / "invalid-non-english-source.json"
+        english_record.write_text(json.dumps(english_required))
+        language_failure = run(sys.executable, str(VALIDATOR), str(english_record), expect=1)
+        if "language 'en'" not in language_failure.stdout:
+            raise SystemExit("daily sources must fail closed unless declared English")
         pages = sorted((temp_path / "pages").glob("*.html"))
         if [page.name for page in pages] != ["2026-09-01-daily-brief.html", "2026-09-02-daily-brief.html"]:
             raise SystemExit("daily pages were not immutable date-based outputs")
         final_state = json.loads(state.read_text())
         if final_state["current"]["date"] != "2026-09-02" or final_state["pending"] is not None:
             raise SystemExit("replacement state did not promote the latest verified item")
-    print("daily-news dry-run: 2 valid consecutive briefs rendered; 1 uncorroborated major claim rejected")
+    print("daily-news dry-run: 2 valid consecutive briefs rendered; uncorroborated major and non-English sources rejected")
 
 
 if __name__ == "__main__":
