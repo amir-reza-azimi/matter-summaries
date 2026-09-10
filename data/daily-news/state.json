@@ -1,20 +1,41 @@
 {
   "current": {
-    "date": "2026-09-09",
-    "item_id": "itm_92bKU",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-09-expanded-daily-brief.html"
+    "date": "2026-09-10",
+    "item_id": "itm_935jk",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-10-daily-brief.html"
   },
   "pending": null,
   "preferences": {
     "overrides": {
-      "story_volume": "Target 14 stories, allow up to 21 on a news-dense day, and do not pad quiet days.",
-      "english_reader_links": "Every displayed Matter source link must be a direct English-language article. German reporting may inform selection but cannot be linked; omit stories without an approved English direct source."
+      "english_reader_links": "Every displayed Matter source link must be a direct English-language article. German reporting may inform selection but cannot be linked; omit stories without an approved English direct source.",
+      "story_volume": "Target 14 stories, allow up to 21 on a news-dense day, and do not pad quiet days."
     },
-    "weights": {}
+    "weights": {
+      "source:ARD Tagesschau": 1,
+      "topic:world": 1
+    }
   },
-  "processed_annotation_ids": [],
+  "processed_annotation_ids": [
+    "ann_HOFH"
+  ],
   "schema_version": 1,
   "story_ledger": {
+    "apple-iphone-duo-foldable-2026-09-09": {
+      "category": "technology",
+      "last_published": "2026-09-10",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/apple-foldable-iphone-ternus-fd35312e6d894d5f3b055b3d62f22cd2"
+      ]
+    },
+    "artemis-ii-astronaut-retirements-2026-09-09": {
+      "category": "technology",
+      "last_published": "2026-09-10",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/nasa-artemis-astronauts-glover-wiseman-b679954ef6fca397e43a9f17a4c867ba"
+      ]
+    },
     "berlin-senate-cyberattack-response-2026-09-08": {
       "category": "berlin",
       "last_published": "2026-09-09",
@@ -104,11 +125,11 @@
       ]
     },
     "expanded-oil-pressure-markets": {
-      "category": "investment",
-      "last_published": "2026-09-09",
-      "material_update": null,
+      "category": "economy",
+      "last_published": "2026-09-10",
+      "material_update": "Brent moved back above $100 a barrel after a new round of US-Iran attacks, advancing the prior market-pressure story.",
       "source_urls": [
-        "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
+        "https://apnews.com/article/oil-prices-iran-attack-saudi-brent-crude-7538e6386a819bcdc2547d530ec3472e"
       ]
     },
     "expanded-pisa-results": {
@@ -165,6 +186,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/china-huawei-trial-trade-secrets-ed66f29aa8539941aa8fad311d511cc2"
+      ]
+    },
+    "iaea-iran-security-council-referral-2026-09-09": {
+      "category": "world",
+      "last_published": "2026-09-10",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/un-iran-atomic-watchdog-security-council-607ecdffcd8ef88ddf8f33041e86b720"
+      ]
+    },
+    "iran-proxies-gulf-threat-2026-09-09": {
+      "category": "world",
+      "last_published": "2026-09-10",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/iran-us-war-houthis-yemen-iraq-blockade-41b104b908daeb58ad1d714224f8f570"
       ]
     },
     "oil-prices-wall-street-pressure-2026-09-08": {
