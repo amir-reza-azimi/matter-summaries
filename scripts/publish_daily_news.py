@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 from pathlib import Path
 
 from daily_news_common import validate_record
@@ -46,12 +47,18 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("record", type=Path)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--page-suffix", help="Optional stable suffix for a user-requested replacement edition")
     args = parser.parse_args()
     record = json.loads(args.record.read_text())
     errors = validate_record(record)
     if errors:
         raise SystemExit("refusing to render invalid record:\n- " + "\n- ".join(errors))
-    page_id = f"{record['date']}-daily-brief"
+    suffix = ""
+    if args.page_suffix:
+        if not re.fullmatch(r"[a-z0-9-]+", args.page_suffix):
+            raise SystemExit("page suffix must use lowercase letters, numbers, and hyphens")
+        suffix = f"-{args.page_suffix}"
+    page_id = f"{record['date']}{suffix}-daily-brief"
     args.output_dir.mkdir(parents=True, exist_ok=True)
     output = args.output_dir / f"{page_id}.html"
     output.write_text(render(record))
