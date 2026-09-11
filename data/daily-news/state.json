@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-10",
-    "item_id": "itm_935jk",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-10-daily-brief.html"
+    "date": "2026-09-11",
+    "item_id": "itm_93bbO",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-11-daily-brief.html"
   },
   "pending": null,
   "preferences": {
@@ -12,11 +12,14 @@
     },
     "weights": {
       "source:ARD Tagesschau": 1,
-      "topic:world": 1
+      "source:Associated Press": 2,
+      "topic:world": 3
     }
   },
   "processed_annotation_ids": [
-    "ann_HOFH"
+    "ann_HOFH",
+    "ann_HOUu",
+    "ann_HOUs"
   ],
   "schema_version": 1,
   "story_ledger": {
@@ -42,6 +45,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html"
+      ]
+    },
+    "canada-drone-production-ukraine-2026-09-10": {
+      "category": "technology",
+      "last_published": "2026-09-11",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/russia-ukraine-war-canada-zelenskyy-2a74de6552061bda57a1c5aa4464db52"
       ]
     },
     "canada-us-retaliatory-tariffs-2026-09-08": {
@@ -125,11 +136,11 @@
       ]
     },
     "expanded-oil-pressure-markets": {
-      "category": "economy",
-      "last_published": "2026-09-10",
-      "material_update": "Brent moved back above $100 a barrel after a new round of US-Iran attacks, advancing the prior market-pressure story.",
+      "category": "investment",
+      "last_published": "2026-09-11",
+      "material_update": "Oil rose to its highest level since May and the resulting market decline extended the prior above-$100 energy-price move.",
       "source_urls": [
-        "https://apnews.com/article/oil-prices-iran-attack-saudi-brent-crude-7538e6386a819bcdc2547d530ec3472e"
+        "https://apnews.com/article/stocks-markets-oil-trump-rates-7fbc77061abd778608068d3beb1bbbaf"
       ]
     },
     "expanded-pisa-results": {
@@ -198,10 +209,18 @@
     },
     "iran-proxies-gulf-threat-2026-09-09": {
       "category": "world",
-      "last_published": "2026-09-10",
+      "last_published": "2026-09-11",
+      "material_update": "Houthi forces captured a strategic Yemeni port city, adding a concrete threat to Red Sea shipping beyond the earlier broader proxy warnings.",
+      "source_urls": [
+        "https://apnews.com/article/yemen-iran-houthi-rebels-red-sea-mokha-e4e799701b382799a955969c212800ea"
+      ]
+    },
+    "north-korea-successor-question-2026-09-10": {
+      "category": "world",
+      "last_published": "2026-09-11",
       "material_update": null,
       "source_urls": [
-        "https://apnews.com/article/iran-us-war-houthis-yemen-iraq-blockade-41b104b908daeb58ad1d714224f8f570"
+        "https://apnews.com/article/north-korea-kim-son-daughter-heir-3a6f6aa66442f0e9d62459df877b62e1"
       ]
     },
     "oil-prices-wall-street-pressure-2026-09-08": {
@@ -218,6 +237,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-krieg-100.html"
+      ]
+    },
+    "us-wholesale-prices-energy-2026-09-10": {
+      "category": "economy",
+      "last_published": "2026-09-11",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/producer-prices-inflation-economy-iran-66d1591b979271ee7b79b113d715f6ef"
       ]
     }
   }
