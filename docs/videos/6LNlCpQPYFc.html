@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Actually Choose the Right AI Agent</title>
+<meta name="description" content="A framework for choosing AI agents by the durable harness around the model.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>How to Actually Choose the Right AI Agent</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-09-11 &middot; <strong>Length:</strong> 34 min &middot; <a href="https://www.youtube.com/watch?v=6LNlCpQPYFc">Watch on YouTube</a></p>
+<h2>TL;DR</h2><p>The useful idea in this conversation is that choosing an AI agent should not start with a leaderboard. A model is the reasoning engine, but the agent that actually gets work done is a harness: the instructions, context, skills, tools, permissions, files, checks, and recovery behaviour wrapped around that engine. The practical goal is to build assets you can keep while models change.</p><h2>Start with the harness, not the brand</h2><p>The guests contrast the temptation to ask whether Claude, Codex, Gemini, Hermes, Pi, or a local model is best with a more durable question: what can the system read, edit, run, remember, and verify? A raw model can produce a plausible answer or some HTML. It cannot independently inspect the right repository, carry state across steps, launch a local server, use a trusted integration, or recognize that it has reached a meaningful completion condition. Those capabilities come from the surrounding harness.</p><p>That distinction matters for Amir’s work because a strong answer is rarely enough. A useful operating system needs named sources of truth, explicit tools, observable outputs, and boundaries around what the model may change. A portable skill that says how to retrieve a canonical record, validate the result, and report uncertainty will outlast a provider-specific prompt.</p><h2>Keep your own assets portable</h2><p>The recommendation is to be loyal to the assets you own, not to a particular model. Those assets include project instructions, reusable skills, reliable prompt patterns, structured data, test cases, and decision records. Put them where they can be reviewed and versioned. Then changing models becomes a controlled experiment: preserve the workflow and compare whether another engine improves accuracy, speed, cost, or tool use.</p><p>This reframes migration. Do not rebuild an entire personal operating system when a new model launches. Run the same bounded task through the new model, inspect its tool calls and output, and compare the result against a known-good baseline. If it performs better, move the task’s model routing. If it does not, keep the harness and wait. The asset is the workflow, not the transient model preference.</p><h2>Design the agent around real work</h2><p>The video repeatedly returns to the difference between a single purpose-built bot and reusable capabilities. Rather than creating a separate agent for every request, identify the repeated work units: research, extract, classify, draft, verify, publish, or schedule. Give each unit an explicit input, output, source boundary, and stop condition. Compose those units for a specific job. This prevents the system from becoming a set of opaque, overlapping bots that nobody can safely maintain.</p><p>For example, an AI-native consulting workflow might use a research skill to gather source material, a classification skill to identify candidate opportunities, a synthesis step to draft recommendations, and a verification step to check claims before any client-facing delivery. The actual model can change. The workflow’s accountability does not.</p><h2>Maintenance is part of the product</h2><p>Skills and instructions decay as models become better at some tasks and as tools, integrations, and project structures change. The sensible response is not to preserve every old prompt forever. Regularly test a skill on representative work, remove instructions that the model no longer needs, keep only constraints that protect source fidelity or safety, and add regression cases when a mistake recurs. A compact skill with clear outcomes is generally more durable than a long collection of past workarounds.</p><p>So I could audit one recurring workflow each month: name the canonical source, list the tools it truly needs, test it against a current task, record failures, and trim obsolete scaffolding. That creates a system that can take advantage of new models without losing the context and guardrails that make the work trustworthy.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/6LNlCpQPYFc?t=6">0:06</a> &mdash; Why the harness matters more than the model</li>
+<li><a href="https://youtu.be/6LNlCpQPYFc?t=35">0:35</a> &mdash; Be loyal to the harness and owned assets</li>
+<li><a href="https://youtu.be/6LNlCpQPYFc?t=146">2:26</a> &mdash; What tools add beyond a raw model</li>
+<li><a href="https://youtu.be/6LNlCpQPYFc?t=615">10:15</a> &mdash; Choosing and switching agent platforms</li>
+<li><a href="https://youtu.be/6LNlCpQPYFc?t=1007">16:47</a> &mdash; Making skills portable</li>
+<li><a href="https://youtu.be/6LNlCpQPYFc?t=1801">30:01</a> &mdash; Organizing projects and global rules</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=6LNlCpQPYFc">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
