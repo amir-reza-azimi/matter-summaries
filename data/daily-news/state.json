@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-11",
-    "item_id": "itm_93bbO",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-11-daily-brief.html"
+    "date": "2026-09-14",
+    "item_id": "itm_94lJc",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-14-daily-brief.html"
   },
   "pending": null,
   "preferences": {
@@ -23,6 +23,14 @@
   ],
   "schema_version": 1,
   "story_ledger": {
+    "amazon-cargo-crash-2026-09-14": {
+      "category": "business",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cx2zg554w9ko"
+      ]
+    },
     "apple-iphone-duo-foldable-2026-09-09": {
       "category": "technology",
       "last_published": "2026-09-10",
@@ -47,12 +55,36 @@
         "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html"
       ]
     },
+    "brics-delhi-iran-war-2026-09-13": {
+      "category": "world",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/ce8767g4jdpo"
+      ]
+    },
     "canada-drone-production-ukraine-2026-09-10": {
       "category": "technology",
       "last_published": "2026-09-11",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/russia-ukraine-war-canada-zelenskyy-2a74de6552061bda57a1c5aa4464db52"
+      ]
+    },
+    "canada-eu-alliance-2026-09-14": {
+      "category": "economy",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cj4jq50eew0o"
+      ]
+    },
+    "canada-global-investors-2026-09-13": {
+      "category": "business",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c0m3neyyzm7o"
       ]
     },
     "canada-us-retaliatory-tariffs-2026-09-08": {
@@ -207,12 +239,44 @@
         "https://apnews.com/article/un-iran-atomic-watchdog-security-council-607ecdffcd8ef88ddf8f33041e86b720"
       ]
     },
+    "indonesia-ferry-capsize-2026-09-13": {
+      "category": "world",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cvgykzgljlyo"
+      ]
+    },
+    "iran-hormuz-ship-talks-2026-09-13": {
+      "category": "world",
+      "last_published": "2026-09-14",
+      "material_update": "A ship strike and postponed regional talks add concrete pressure around the Strait of Hormuz.",
+      "source_urls": [
+        "https://apnews.com/article/iran-us-war-hormuz-ship-struck-aa034da0d8226f5a3b4794b10afb8b3b"
+      ]
+    },
     "iran-proxies-gulf-threat-2026-09-09": {
       "category": "world",
       "last_published": "2026-09-11",
       "material_update": "Houthi forces captured a strategic Yemeni port city, adding a concrete threat to Red Sea shipping beyond the earlier broader proxy warnings.",
       "source_urls": [
         "https://apnews.com/article/yemen-iran-houthi-rebels-red-sea-mokha-e4e799701b382799a955969c212800ea"
+      ]
+    },
+    "irish-whiskey-tariffs-2026-09-13": {
+      "category": "business",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cx2z79n0eeno"
+      ]
+    },
+    "nepal-floods-india-economy-2026-09-13": {
+      "category": "economy",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/crm9ezvwjpno"
       ]
     },
     "north-korea-successor-question-2026-09-10": {
@@ -231,12 +295,61 @@
         "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
       ]
     },
+    "sweden-election-close-2026-09-13": {
+      "category": "world",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c0qx5d79kdeo"
+      ]
+    },
+    "turkey-lgbtq-raids-2026-09-13": {
+      "category": "world",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cpve191wy47o"
+      ]
+    },
+    "uk-rent-forecast-2026-09-13": {
+      "category": "economy",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c4gqjv476qeo"
+      ]
+    },
     "ukraine-russia-attacks-after-pause-2026-09-08": {
       "category": "world",
       "last_published": "2026-09-09",
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-krieg-100.html"
+      ]
+    },
+    "ukraine-russia-diesel-strikes-2026-09-13": {
+      "category": "world",
+      "last_published": "2026-09-14",
+      "material_update": "The issue has shifted from battlefield strikes to an explicit global diesel-supply concern.",
+      "source_urls": [
+        "https://apnews.com/article/russia-ukraine-war-drones-odesa-refinery-border-crossing-17bb6a0401abc3eaa7d4586150a41d7d"
+      ]
+    },
+    "ukraine-train-strike-2026-09-13": {
+      "category": "world",
+      "last_published": "2026-09-14",
+      "material_update": "The new strike targeted rail infrastructure immediately after a high-profile European visit.",
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cy5zg41dkqwo"
+      ]
+    },
+    "us-ai-guardrails-2026-09-13": {
+      "category": "ai",
+      "last_published": "2026-09-14",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c7v48vp31mdo",
+        "https://apnews.com/article/trump-artificial-intelligence-guardrails-china-midterms-congress-9df0ebb4c1b0619aa0f88057b5a1092d"
       ]
     },
     "us-wholesale-prices-energy-2026-09-10": {
