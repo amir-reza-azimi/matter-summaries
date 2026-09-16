@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-15",
-    "item_id": "itm_95EHP",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-15-daily-brief.html"
+    "date": "2026-09-16",
+    "item_id": "itm_95huH",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-16-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -103,12 +103,28 @@
         "https://www.bbc.com/news/articles/c0m3neyyzm7o"
       ]
     },
+    "canada-investment-tax-breaks-2026-09-15": {
+      "category": "business",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/2a3858e806b7da77dc744382d96228e7"
+      ]
+    },
     "canada-us-retaliatory-tariffs-2026-09-08": {
       "category": "world",
       "last_published": "2026-09-09",
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-usa-gegenzoelle-100.html"
+      ]
+    },
+    "congo-constitutional-protests-2026-09-15": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/africa/congo-police-break-up-protests-against-proposed-constitutional-changes-2026-09-15/"
       ]
     },
     "epa-power-plant-emissions-rule-2026-09-14": {
@@ -287,6 +303,14 @@
         "https://apnews.com/article/un-iran-atomic-watchdog-security-council-607ecdffcd8ef88ddf8f33041e86b720"
       ]
     },
+    "indonesia-borneo-wildfire-haze-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/environment/indonesias-choking-wildfire-haze-worsen-breathing-woes-borneo-2026-09-16/"
+      ]
+    },
     "indonesia-ferry-capsize-2026-09-13": {
       "category": "world",
       "last_published": "2026-09-14",
@@ -311,12 +335,28 @@
         "https://apnews.com/article/yemen-iran-houthi-rebels-red-sea-mokha-e4e799701b382799a955969c212800ea"
       ]
     },
+    "iran-war-cost-cbo-2026-09-15": {
+      "category": "economy",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/iran-war-cost-hits-38-billion-forecast-rise-3-billion-month-cbo-says-2026-09-15/"
+      ]
+    },
     "irish-whiskey-tariffs-2026-09-13": {
       "category": "business",
       "last_published": "2026-09-14",
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/cx2z79n0eeno"
+      ]
+    },
+    "israel-us-munitions-sale-2026-09-15": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/us/trump-administration-plans-28-billion-munitions-sale-israel-sources-say-2026-09-15/"
       ]
     },
     "microsoft-student-ai-privacy-2026-09-15": {
@@ -335,6 +375,14 @@
         "https://www.bbc.com/news/articles/crm9ezvwjpno"
       ]
     },
+    "north-korea-aukus-nuclear-submarines-2026-09-15": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup-2026-09-15/"
+      ]
+    },
     "north-korea-successor-question-2026-09-10": {
       "category": "world",
       "last_published": "2026-09-11",
@@ -351,12 +399,36 @@
         "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
       ]
     },
+    "russia-economy-pre-vote-2026-09-15": {
+      "category": "economy",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/europe/russians-make-best-struggling-economy-before-vote-2026-09-15/"
+      ]
+    },
+    "russian-dissident-murder-plot-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/e37b0027e717823605af688096184b37"
+      ]
+    },
     "saudi-east-west-pipeline-closure-2026-09-14": {
       "category": "economy",
       "last_published": "2026-09-15",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/efa431e2fa771e34880c8453c62ffb92"
+      ]
+    },
+    "saudi-egypt-houthi-shipping-2026-09-15": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/bfee618a925924b8562f9fb0a58538b7"
       ]
     },
     "sweden-election-close-2026-09-13": {
@@ -381,6 +453,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/c4gqjv476qeo"
+      ]
+    },
+    "ukraine-energy-strikes-2026-09-15": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": "Fresh Reuters reporting documents continued energy-site strikes after the prior day\u2019s proposed reciprocal pause.",
+      "source_urls": [
+        "https://www.reuters.com/world/europe/russia-hits-petrol-station-warehouse-facilities-kyiv-mayor-says-2026-09-15/"
       ]
     },
     "ukraine-russia-attacks-after-pause-2026-09-08": {
@@ -430,6 +510,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/091df7e9a6abbe9b01cf7531d2aa6442"
+      ]
+    },
+    "us-military-aid-europe-redirection-2026-09-15": {
+      "category": "world",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/c92157ab38b809a9faef9fa19be50cf7"
+      ]
+    },
+    "us-stocks-oil-yields-2026-09-15": {
+      "category": "investment",
+      "last_published": "2026-09-16",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/b1b1bc9f943da62c6a639a8761b4eca3"
       ]
     },
     "us-wholesale-prices-energy-2026-09-10": {
