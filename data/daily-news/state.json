@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-16",
-    "item_id": "itm_95huH",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-16-daily-brief.html"
+    "date": "2026-09-17",
+    "item_id": "itm_96Cjb",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-17-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -31,6 +31,14 @@
   ],
   "schema_version": 1,
   "story_ledger": {
+    "afghan-migrants-return-iran-taliban-2026-09-17": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/impoverished-by-war-iran-afghan-migrants-return-taliban-rule-2026-09-17/"
+      ]
+    },
     "amazon-cargo-crash-2026-09-14": {
       "category": "business",
       "last_published": "2026-09-14",
@@ -95,6 +103,14 @@
         "https://www.bbc.com/news/articles/cj4jq50eew0o"
       ]
     },
+    "canada-eu-associate-membership-2026-09-16": {
+      "category": "economy",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/eu-opens-door-canada-become-first-associate-member-eu-commission-president-says-2026-09-16/"
+      ]
+    },
     "canada-global-investors-2026-09-13": {
       "category": "business",
       "last_published": "2026-09-14",
@@ -133,6 +149,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/cac1c2c75f8656d8eaf5f0a240edae15"
+      ]
+    },
+    "eu-counter-drone-security-mechanism-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/4ce4fef2ba8e3866e436655075afc6d3"
       ]
     },
     "expanded-berlin-cyber-response": {
@@ -255,12 +279,28 @@
         "https://apnews.com/article/ffd60cca8bb045bb9b1c389f5f1b73af"
       ]
     },
+    "federal-reserve-rate-hike-2026-09-16": {
+      "category": "economy",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/f0ea070bd8d0d6bfa88203b62c33fed7"
+      ]
+    },
     "germany-federal-budget-2027-debate-2026-09-08": {
       "category": "germany",
       "last_published": "2026-09-09",
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/inland/innenpolitik/haushalt-bundestag-ausgaben-schulden-100.html"
+      ]
+    },
+    "germany-merzs-regional-election-test-2026-09-16": {
+      "category": "germany",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/df17e9fec6cb00a347b5b8a9f09bb548"
       ]
     },
     "germany-pisa-results-2026-09-08": {
@@ -309,6 +349,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/environment/indonesias-choking-wildfire-haze-worsen-breathing-woes-borneo-2026-09-16/"
+      ]
+    },
+    "indonesia-capsized-ship-search-2026-09-17": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/indonesian-rescuers-plan-right-capsized-ship-weather-hampers-search-129-missing-2026-09-17/"
       ]
     },
     "indonesia-ferry-capsize-2026-09-13": {
@@ -375,6 +423,15 @@
         "https://www.bbc.com/news/articles/crm9ezvwjpno"
       ]
     },
+    "nepal-glacier-collapse-climate-link-2026-09-17": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/65ee7e50dfe7914dff37d893a5e6b810",
+        "https://www.reuters.com/sustainability/cop/climate-change-likely-have-helped-trigger-nepal-glacier-collapse-scientists-say-2026-09-17/"
+      ]
+    },
     "north-korea-aukus-nuclear-submarines-2026-09-15": {
       "category": "world",
       "last_published": "2026-09-16",
@@ -391,12 +448,28 @@
         "https://apnews.com/article/north-korea-kim-son-daughter-heir-3a6f6aa66442f0e9d62459df877b62e1"
       ]
     },
+    "north-korea-us-arms-buildup-2026-09-17": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/north-korea-vice-defence-minister-says-us-arms-buildup-justifies-expanding-2026-09-17/"
+      ]
+    },
     "oil-prices-wall-street-pressure-2026-09-08": {
       "category": "investment",
       "last_published": "2026-09-09",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
+      ]
+    },
+    "palestinian-delegation-visas-denied-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/2ab54a7b420dd7fc5aea068d883b5cee"
       ]
     },
     "russia-economy-pre-vote-2026-09-15": {
@@ -431,12 +504,36 @@
         "https://apnews.com/article/bfee618a925924b8562f9fb0a58538b7"
       ]
     },
+    "saudi-interceptor-supply-pressure-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": "The new report identifies strain on interceptor supplies, rather than the prior shipping-security escalation.",
+      "source_urls": [
+        "https://apnews.com/article/895320bde6dc589cebb628b63832c38a"
+      ]
+    },
+    "sweden-centre-left-election-lead-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/swedens-centre-left-opposition-maintains-election-lead-count-nears-end-2026-09-16/"
+      ]
+    },
     "sweden-election-close-2026-09-13": {
       "category": "world",
       "last_published": "2026-09-14",
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/c0qx5d79kdeo"
+      ]
+    },
+    "taiwan-us-allies-trump-xi-2026-09-17": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/us-allies-fret-over-how-trump-might-play-his-taiwan-hand-with-xi-2026-09-17/"
       ]
     },
     "turkey-lgbtq-raids-2026-09-13": {
@@ -461,6 +558,22 @@
       "material_update": "Fresh Reuters reporting documents continued energy-site strikes after the prior day\u2019s proposed reciprocal pause.",
       "source_urls": [
         "https://www.reuters.com/world/europe/russia-hits-petrol-station-warehouse-facilities-kyiv-mayor-says-2026-09-15/"
+      ]
+    },
+    "ukraine-passenger-bus-drone-strike-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/6c85022eda557416995d0c26a55fdda0"
+      ]
+    },
+    "ukraine-record-defence-spending-proposal-2026-09-16": {
+      "category": "economy",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/ukraine-proposes-record-defence-spending-next-year-war-costs-soar-2026-09-16/"
       ]
     },
     "ukraine-russia-attacks-after-pause-2026-09-08": {
@@ -510,6 +623,15 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/091df7e9a6abbe9b01cf7531d2aa6442"
+      ]
+    },
+    "us-house-russia-sanctions-bill-2026-09-16": {
+      "category": "world",
+      "last_published": "2026-09-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/f377fc956c442195dfcf50571b01a1c4",
+        "https://www.reuters.com/legal/government/us-house-takes-up-russia-sanctions-bill-backed-by-late-senator-graham-2026-09-16/"
       ]
     },
     "us-military-aid-europe-redirection-2026-09-15": {
