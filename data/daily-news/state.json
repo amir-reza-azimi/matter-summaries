@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-17",
-    "item_id": "itm_96Cjb",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-17-daily-brief.html"
+    "date": "2026-09-18",
+    "item_id": "itm_96hQ4",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-18-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -69,6 +69,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/nasa-artemis-astronauts-glover-wiseman-b679954ef6fca397e43a9f17a4c867ba"
+      ]
+    },
+    "bank-england-rates-gilt-sales-2026-09-17": {
+      "category": "economy",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/44bc4245-f235-4c1d-af93-deb5810f635a"
+      ]
+    },
+    "bank-japan-rate-high-1995-2026-09-18": {
+      "category": "economy",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2"
       ]
     },
     "berlin-senate-cyberattack-response-2026-09-08": {
@@ -149,6 +165,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/cac1c2c75f8656d8eaf5f0a240edae15"
+      ]
+    },
+    "eu-china-hybrid-car-export-limits-2026-09-18": {
+      "category": "business",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/0b45cb01-7f62-41c5-8c48-10c47f2e1ae6"
       ]
     },
     "eu-counter-drone-security-mechanism-2026-09-16": {
@@ -287,6 +311,14 @@
         "https://apnews.com/article/f0ea070bd8d0d6bfa88203b62c33fed7"
       ]
     },
+    "france-spending-cuts-deficit-2026-09-18": {
+      "category": "economy",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/ad358e9f-4daf-4a2a-a100-3c1effa6de11"
+      ]
+    },
     "germany-federal-budget-2027-debate-2026-09-08": {
       "category": "germany",
       "last_published": "2026-09-09",
@@ -383,6 +415,14 @@
         "https://apnews.com/article/yemen-iran-houthi-rebels-red-sea-mokha-e4e799701b382799a955969c212800ea"
       ]
     },
+    "iran-war-clean-energy-shift-2026-09-17": {
+      "category": "economy",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/48bb12e1cd5713764bca103e9104309d"
+      ]
+    },
     "iran-war-cost-cbo-2026-09-15": {
       "category": "economy",
       "last_published": "2026-09-16",
@@ -405,6 +445,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/us/trump-administration-plans-28-billion-munitions-sale-israel-sources-say-2026-09-15/"
+      ]
+    },
+    "mahan-air-cuts-flights-sanctions-2026-09-17": {
+      "category": "business",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/a65f3f5d-e8ec-44b1-8529-24651e6254c3"
       ]
     },
     "microsoft-student-ai-privacy-2026-09-15": {
@@ -464,6 +512,15 @@
         "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
       ]
     },
+    "openai-concerning-model-behaviour-2026-09-17": {
+      "category": "ai",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/089e75b95bc935af092da7b79d92706d",
+        "https://www.ft.com/content/2c34414a-5381-4083-ac34-00bbe67ef8db"
+      ]
+    },
     "palestinian-delegation-visas-denied-2026-09-16": {
       "category": "world",
       "last_published": "2026-09-17",
@@ -512,6 +569,14 @@
         "https://apnews.com/article/895320bde6dc589cebb628b63832c38a"
       ]
     },
+    "softbank-data-centre-ipo-2026-09-18": {
+      "category": "business",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/6c467774-9d91-425e-a901-26db055e37ad"
+      ]
+    },
     "sweden-centre-left-election-lead-2026-09-16": {
       "category": "world",
       "last_published": "2026-09-17",
@@ -536,12 +601,52 @@
         "https://www.reuters.com/world/china/us-allies-fret-over-how-trump-might-play-his-taiwan-hand-with-xi-2026-09-17/"
       ]
     },
+    "tata-boardroom-turmoil-ipo-2026-09-17": {
+      "category": "business",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/c34d492b-1468-47cb-8036-12a4a0627ea0"
+      ]
+    },
+    "thames-water-temporary-public-ownership-2026-09-17": {
+      "category": "business",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/76616441-6419-4792-9d27-31c5fa436dc4"
+      ]
+    },
     "turkey-lgbtq-raids-2026-09-13": {
       "category": "world",
       "last_published": "2026-09-14",
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/cpve191wy47o"
+      ]
+    },
+    "turkey-stock-market-scandal-2026-09-17": {
+      "category": "investment",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/ef54585a-4d2f-4538-b185-9bff75ef2f5e"
+      ]
+    },
+    "uk-made-in-europe-policy-2026-09-17": {
+      "category": "business",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/267dfd88-0eda-409a-9370-21c477ef0724"
+      ]
+    },
+    "uk-nationalised-steelworks-cost-2026-09-17": {
+      "category": "business",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/50f1f686-528c-4c1c-b014-e628da7c055f"
       ]
     },
     "uk-rent-forecast-2026-09-13": {
@@ -608,6 +713,22 @@
         "https://www.bbc.com/news/articles/cy5zg41dkqwo"
       ]
     },
+    "un-chief-global-cooperation-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/ca2c4ed803381fd12ca7259f1ce4f34d"
+      ]
+    },
+    "un-experts-us-iran-strikes-2026-09-17": {
+      "category": "world",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/99e690efd1e818e835d4f5a00e0d261b"
+      ]
+    },
     "us-ai-guardrails-2026-09-13": {
       "category": "ai",
       "last_published": "2026-09-14",
@@ -642,12 +763,28 @@
         "https://apnews.com/article/c92157ab38b809a9faef9fa19be50cf7"
       ]
     },
+    "us-stock-indexes-september-17-2026": {
+      "category": "investment",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/a8ce06ff4ffcf66d9f28bd3453bdf998"
+      ]
+    },
     "us-stocks-oil-yields-2026-09-15": {
       "category": "investment",
       "last_published": "2026-09-16",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/b1b1bc9f943da62c6a639a8761b4eca3"
+      ]
+    },
+    "us-tokenised-stock-trading-2026-09-17": {
+      "category": "investment",
+      "last_published": "2026-09-18",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/b528698e-9b04-4497-9d22-67e401be21d3"
       ]
     },
     "us-wholesale-prices-energy-2026-09-10": {
