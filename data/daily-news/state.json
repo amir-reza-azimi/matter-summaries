@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-18",
-    "item_id": "itm_96hQ4",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-18-daily-brief.html"
+    "date": "2026-09-19",
+    "item_id": "itm_97AeN",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-19-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -87,12 +87,28 @@
         "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2"
       ]
     },
+    "berlin-elif-eralp-mayoral-race-2026-09-19": {
+      "category": "berlin",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/7cf54faa-90d7-4f2b-a626-a57fb402be61"
+      ]
+    },
     "berlin-senate-cyberattack-response-2026-09-08": {
       "category": "berlin",
       "last_published": "2026-09-09",
       "material_update": null,
       "source_urls": [
         "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html"
+      ]
+    },
+    "brazil-rio-organised-crime-plan-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/521190f5fba23a93ba3633af3b2a59df"
       ]
     },
     "brics-delhi-iran-war-2026-09-13": {
@@ -311,6 +327,14 @@
         "https://apnews.com/article/f0ea070bd8d0d6bfa88203b62c33fed7"
       ]
     },
+    "france-g7-oil-reserves-2026-09-19": {
+      "category": "economy",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/31c53c3c-5cc1-4248-98dc-68fc8956e8cc"
+      ]
+    },
     "france-spending-cuts-deficit-2026-09-18": {
       "category": "economy",
       "last_published": "2026-09-18",
@@ -359,6 +383,14 @@
         "https://apnews.com/article/5c09f669e692b06f53991f4c1455d6de"
       ]
     },
+    "greenland-security-denmark-agreement-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/2ecc74bd-2fba-4ca6-9f1c-f0a927ed983c"
+      ]
+    },
     "huawei-racketeering-trial-new-york-2026-09-08": {
       "category": "technology",
       "last_published": "2026-09-09",
@@ -405,6 +437,14 @@
       "material_update": "A ship strike and postponed regional talks add concrete pressure around the Strait of Hormuz.",
       "source_urls": [
         "https://apnews.com/article/iran-us-war-hormuz-ship-struck-aa034da0d8226f5a3b4794b10afb8b3b"
+      ]
+    },
+    "iran-land-routes-us-blockade-2026-09-19": {
+      "category": "economy",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/f69943f7-b173-444c-a79e-c9396a0380bd"
       ]
     },
     "iran-proxies-gulf-threat-2026-09-09": {
@@ -529,6 +569,14 @@
         "https://apnews.com/article/2ab54a7b420dd7fc5aea068d883b5cee"
       ]
     },
+    "paramount-wbd-antitrust-settlement-2026-09-19": {
+      "category": "business",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/e0e384b8-aa4c-4948-b4ee-7bdff414641b"
+      ]
+    },
     "russia-economy-pre-vote-2026-09-15": {
       "category": "economy",
       "last_published": "2026-09-16",
@@ -593,6 +641,14 @@
         "https://www.bbc.com/news/articles/c0qx5d79kdeo"
       ]
     },
+    "taiwan-first-joint-drone-drills-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/e7c1c16040f6f9ca5e7672a3fda0ab60"
+      ]
+    },
     "taiwan-us-allies-trump-xi-2026-09-17": {
       "category": "world",
       "last_published": "2026-09-17",
@@ -609,12 +665,44 @@
         "https://www.ft.com/content/c34d492b-1468-47cb-8036-12a4a0627ea0"
       ]
     },
+    "texas-big-bend-border-wall-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/cdcdc43cd541cf0b42cb43c7cf9d0d8f"
+      ]
+    },
     "thames-water-temporary-public-ownership-2026-09-17": {
       "category": "business",
       "last_published": "2026-09-18",
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/76616441-6419-4792-9d27-31c5fa436dc4"
+      ]
+    },
+    "trump-russia-sanctions-signed-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": "The previously passed sanctions bill was signed into law, creating the material legal change.",
+      "source_urls": [
+        "https://apnews.com/article/d1715ad5e8feccba76bfae51c5f28c45"
+      ]
+    },
+    "trump-venezuela-rodriguez-meeting-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/47d8027590fea4b3009ae48ce3842942"
+      ]
+    },
+    "trump-white-house-media-ban-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/bb675679fb10738a51bef90bde6c525a"
       ]
     },
     "turkey-lgbtq-raids-2026-09-13": {
@@ -755,6 +843,14 @@
         "https://www.reuters.com/legal/government/us-house-takes-up-russia-sanctions-bill-backed-by-late-senator-graham-2026-09-16/"
       ]
     },
+    "us-midterm-early-voting-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/10a3e620ce194144ce1af5e9d4fb6786"
+      ]
+    },
     "us-military-aid-europe-redirection-2026-09-15": {
       "category": "world",
       "last_published": "2026-09-16",
@@ -801,6 +897,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/8f72a301be85728018018735163f4dad"
+      ]
+    },
+    "yen-sinks-after-boj-hike-2026-09-19": {
+      "category": "investment",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2"
+      ]
+    },
+    "zelensky-regional-summit-2026-09-18": {
+      "category": "world",
+      "last_published": "2026-09-19",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/b05ea50c3ed8b64cf25e254783a17d39"
       ]
     }
   }
