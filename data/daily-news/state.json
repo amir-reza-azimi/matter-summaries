@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-19",
-    "item_id": "itm_97AeN",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-19-daily-brief.html"
+    "date": "2026-09-20",
+    "item_id": "itm_97TjP",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-20-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -119,6 +119,14 @@
         "https://www.bbc.com/news/articles/ce8767g4jdpo"
       ]
     },
+    "buffett-patience-investing-legacy-2026-09-19": {
+      "category": "investment",
+      "last_published": "2026-09-20",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/d4f6956286de815dbf63e7ceccc58b9c"
+      ]
+    },
     "canada-drone-production-ukraine-2026-09-10": {
       "category": "technology",
       "last_published": "2026-09-11",
@@ -165,6 +173,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-usa-gegenzoelle-100.html"
+      ]
+    },
+    "china-oil-stockpile-iran-war-2026-09-19": {
+      "category": "economy",
+      "last_published": "2026-09-20",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/78b8ccd21cbc4bc0ab19a79f68372ec0"
       ]
     },
     "congo-constitutional-protests-2026-09-15": {
@@ -503,6 +519,14 @@
         "https://apnews.com/article/89b040631d635e0d8673f1e9aa9a6e28"
       ]
     },
+    "nazi-looted-art-lawsuits-2026-09-19": {
+      "category": "world",
+      "last_published": "2026-09-20",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/7abc2100abc10c55dcb6281e4e7e850c"
+      ]
+    },
     "nepal-floods-india-economy-2026-09-13": {
       "category": "economy",
       "last_published": "2026-09-14",
@@ -577,6 +601,14 @@
         "https://www.ft.com/content/e0e384b8-aa4c-4948-b4ee-7bdff414641b"
       ]
     },
+    "paramount-wbd-antitrust-settlement-update-2026-09-20": {
+      "category": "business",
+      "last_published": "2026-09-20",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/e0e384b8-aa4c-4948-b4ee-7bdff414641b"
+      ]
+    },
     "russia-economy-pre-vote-2026-09-15": {
       "category": "economy",
       "last_published": "2026-09-16",
@@ -607,6 +639,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/bfee618a925924b8562f9fb0a58538b7"
+      ]
+    },
+    "saudi-houthi-capital-attack-2026-09-19": {
+      "category": "world",
+      "last_published": "2026-09-20",
+      "material_update": "The reported attempted attack on Saudi Arabia's capital is a concrete escalation beyond the prior interceptor-supply pressure.",
+      "source_urls": [
+        "https://apnews.com/article/24211a3b34731a669f3e7ab93314afdf"
       ]
     },
     "saudi-interceptor-supply-pressure-2026-09-16": {
@@ -859,6 +899,14 @@
         "https://apnews.com/article/c92157ab38b809a9faef9fa19be50cf7"
       ]
     },
+    "us-mortgage-rate-near-seven-percent-2026-09-19": {
+      "category": "economy",
+      "last_published": "2026-09-20",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/c8445da73298f6baa701f468d42bf68f"
+      ]
+    },
     "us-stock-indexes-september-17-2026": {
       "category": "investment",
       "last_published": "2026-09-18",
@@ -897,6 +945,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/8f72a301be85728018018735163f4dad"
+      ]
+    },
+    "white-house-media-badges-deactivated-2026-09-19": {
+      "category": "world",
+      "last_published": "2026-09-20",
+      "material_update": "The announced ban was carried out through denial of entry and deactivation of reporters' credentials.",
+      "source_urls": [
+        "https://apnews.com/article/d160e253453229600ce54f8e91351523"
       ]
     },
     "yen-sinks-after-boj-hike-2026-09-19": {
