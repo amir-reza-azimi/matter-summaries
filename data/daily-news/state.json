@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-20",
-    "item_id": "itm_97TjP",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-20-daily-brief.html"
+    "date": "2026-09-21",
+    "item_id": "itm_97taA",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-21-matter-edition-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -103,6 +103,14 @@
         "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html"
       ]
     },
+    "biodiesel-shipping-cheaper-2026-09-20": {
+      "category": "business",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/e2cbfd2e-ee56-4d8b-a403-cbaae4cce191"
+      ]
+    },
     "brazil-rio-organised-crime-plan-2026-09-18": {
       "category": "world",
       "last_published": "2026-09-19",
@@ -173,6 +181,22 @@
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/wirtschaft/weltwirtschaft/kanada-usa-gegenzoelle-100.html"
+      ]
+    },
+    "catl-us-pickup-batteries-2026-09-20": {
+      "category": "business",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/bfe6fc60-51b3-41f0-b6c9-32583735150e"
+      ]
+    },
+    "chevron-drilling-spree-2026-09-20": {
+      "category": "business",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/bbf1d846-7d89-45f6-8c0f-1fba1e334b4b"
       ]
     },
     "china-oil-stockpile-iran-war-2026-09-19": {
@@ -407,6 +431,14 @@
         "https://www.ft.com/content/2ecc74bd-2fba-4ca6-9f1c-f0a927ed983c"
       ]
     },
+    "houthi-missile-saudi-capital-2026-09-20": {
+      "category": "world",
+      "last_published": "2026-09-21",
+      "material_update": "The reported missile launch at Riyadh is a material escalation beyond the prior attempted attack.",
+      "source_urls": [
+        "https://www.ft.com/content/07fd42b5-0610-470c-8fb8-4840b5401271"
+      ]
+    },
     "huawei-racketeering-trial-new-york-2026-09-08": {
       "category": "technology",
       "last_published": "2026-09-09",
@@ -503,12 +535,36 @@
         "https://www.reuters.com/world/us/trump-administration-plans-28-billion-munitions-sale-israel-sources-say-2026-09-15/"
       ]
     },
+    "luxembourg-bank-sale-2026-09-20": {
+      "category": "business",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/44433853-1d29-4b42-b13b-846abe9ffa3b"
+      ]
+    },
     "mahan-air-cuts-flights-sanctions-2026-09-17": {
       "category": "business",
       "last_published": "2026-09-18",
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/a65f3f5d-e8ec-44b1-8529-24651e6254c3"
+      ]
+    },
+    "merz-regional-election-result-2026-09-21": {
+      "category": "germany",
+      "last_published": "2026-09-21",
+      "material_update": "The regional election produced a concrete CDU setback and a public commitment by Merz to remain in office.",
+      "source_urls": [
+        "https://www.ft.com/content/d74ce82a-2a15-404a-ae3a-3921e887bab3"
+      ]
+    },
+    "meta-uk-online-safety-act-challenge-2026-09-20": {
+      "category": "technology",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/c1ba743f-7330-4419-bc8d-a8b5ce4420a0"
       ]
     },
     "microsoft-student-ai-privacy-2026-09-15": {
@@ -609,6 +665,14 @@
         "https://www.ft.com/content/e0e384b8-aa4c-4948-b4ee-7bdff414641b"
       ]
     },
+    "russia-air-campaign-ukraine-economy-2026-09-21": {
+      "category": "world",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/0ecc81ad-2119-4763-90fb-ba5d399d913d"
+      ]
+    },
     "russia-economy-pre-vote-2026-09-15": {
       "category": "economy",
       "last_published": "2026-09-16",
@@ -639,6 +703,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/bfee618a925924b8562f9fb0a58538b7"
+      ]
+    },
+    "saudi-exits-china-currency-platform-2026-09-20": {
+      "category": "investment",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/ac104987-f43d-4e7d-97b6-057d98f7e422"
       ]
     },
     "saudi-houthi-capital-attack-2026-09-19": {
@@ -721,6 +793,14 @@
         "https://www.ft.com/content/76616441-6419-4792-9d27-31c5fa436dc4"
       ]
     },
+    "trump-arch-military-complex-2026-09-21": {
+      "category": "world",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/33b317b4-cd7b-486a-8707-4d65db837c6d"
+      ]
+    },
     "trump-russia-sanctions-signed-2026-09-18": {
       "category": "world",
       "last_published": "2026-09-19",
@@ -769,6 +849,14 @@
         "https://www.ft.com/content/267dfd88-0eda-409a-9370-21c477ef0724"
       ]
     },
+    "uk-mansion-tax-budget-warning-2026-09-20": {
+      "category": "economy",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/f37d9712-009a-4573-b268-a438b4c7502b"
+      ]
+    },
     "uk-nationalised-steelworks-cost-2026-09-17": {
       "category": "business",
       "last_published": "2026-09-18",
@@ -791,6 +879,14 @@
       "material_update": "Fresh Reuters reporting documents continued energy-site strikes after the prior day\u2019s proposed reciprocal pause.",
       "source_urls": [
         "https://www.reuters.com/world/europe/russia-hits-petrol-station-warehouse-facilities-kyiv-mayor-says-2026-09-15/"
+      ]
+    },
+    "ukraine-moscow-drone-attack-2026-09-21": {
+      "category": "world",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/2b6f1b4b-4010-4e95-8b5c-dfb2e32cd7ae"
       ]
     },
     "ukraine-passenger-bus-drone-strike-2026-09-16": {
@@ -866,6 +962,23 @@
         "https://apnews.com/article/trump-artificial-intelligence-guardrails-china-midterms-congress-9df0ebb4c1b0619aa0f88057b5a1092d"
       ]
     },
+    "us-audit-fees-regulatory-rollback-2026-09-20": {
+      "category": "business",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/b455ab48-76ef-4fd4-9137-1f666344ab45"
+      ]
+    },
+    "us-china-ai-incident-dialogue-2026-09-21": {
+      "category": "ai",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/2c7f54f07e755f506d9db9b91df282bd",
+        "https://www.ft.com/content/d29d769e-039c-4d11-9152-e63ccd397b32"
+      ]
+    },
     "us-crypto-bill-ethics-2026-09-14": {
       "category": "business",
       "last_published": "2026-09-15",
@@ -905,6 +1018,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/c8445da73298f6baa701f468d42bf68f"
+      ]
+    },
+    "us-motor-oil-shortage-2026-09-20": {
+      "category": "economy",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/64f90ab8-5fb0-4594-a900-d03e5ca051e3"
+      ]
+    },
+    "us-short-term-debt-one-trillion-2026-09-21": {
+      "category": "investment",
+      "last_published": "2026-09-21",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/3fcee89f-b69d-4f4b-a944-39fe1c214fb8"
       ]
     },
     "us-stock-indexes-september-17-2026": {
