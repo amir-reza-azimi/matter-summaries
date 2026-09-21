@@ -21,7 +21,7 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def render(record: dict) -> str:
+def render(record: dict, page_title: str | None = None) -> str:
     rows = []
     for story in record["stories"]:
         source_links = " · ".join(
@@ -38,7 +38,7 @@ def render(record: dict) -> str:
         )
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(record["title"])}</title>
+<title>{esc(page_title or record["title"])}</title>
 <style>body{{max-width:720px;margin:2rem auto;padding:0 1rem;font:18px/1.6 -apple-system,system-ui,sans-serif;color:#1a1a1a}}h1{{font-size:1.8rem;line-height:1.25}}h2{{font-size:1.2rem;line-height:1.35;margin-bottom:.2rem}}.story{{border-top:1px solid #ddd;padding:1rem 0}}.meta,.sources{{font-size:.85rem;color:#555;margin:.1rem 0}}a{{color:#3b5bdb}}</style>
 </head><body><article>{''.join(rows)}</article></body></html>"""
 
@@ -48,6 +48,7 @@ def main() -> None:
     parser.add_argument("record", type=Path)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--page-suffix", help="Optional stable suffix for a user-requested replacement edition")
+    parser.add_argument("--title-suffix", help="Optional HTML title suffix for a replacement edition")
     args = parser.parse_args()
     record = json.loads(args.record.read_text())
     errors = validate_record(record)
@@ -61,7 +62,10 @@ def main() -> None:
     page_id = f"{record['date']}{suffix}-daily-brief"
     args.output_dir.mkdir(parents=True, exist_ok=True)
     output = args.output_dir / f"{page_id}.html"
-    output.write_text(render(record))
+    title = record["title"]
+    if args.title_suffix:
+        title = f"{title} · {args.title_suffix}"
+    output.write_text(render(record, title))
     print(json.dumps({"page_id": page_id, "path": str(output), "url": f"{SITE_BASE}/{page_id}.html"}))
 
 
