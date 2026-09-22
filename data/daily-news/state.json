@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-21",
-    "item_id": "itm_97taA",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-21-matter-edition-daily-brief.html"
+    "date": "2026-09-22",
+    "item_id": "itm_98KIE",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-22-matter-edition-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -37,6 +37,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/asia-pacific/impoverished-by-war-iran-afghan-migrants-return-taliban-rule-2026-09-17/"
+      ]
+    },
+    "ai-slowdown-antitrust-lawsuit-2026-09-22": {
+      "category": "business",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b"
       ]
     },
     "amazon-cargo-crash-2026-09-14": {
@@ -367,6 +375,14 @@
         "https://apnews.com/article/f0ea070bd8d0d6bfa88203b62c33fed7"
       ]
     },
+    "florida-dengue-outbreak-2026-09-22": {
+      "category": "world",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/dengue-death-florida-mosquito-climate-57574815fdca4f8bc3336bb429a3d1fc"
+      ]
+    },
     "france-g7-oil-reserves-2026-09-19": {
       "category": "economy",
       "last_published": "2026-09-19",
@@ -445,6 +461,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/china-huawei-trial-trade-secrets-ed66f29aa8539941aa8fad311d511cc2"
+      ]
+    },
+    "hurricane-polo-mexico-2026-09-22": {
+      "category": "world",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/polo-odalys-fay-major-hurricane-mexico-8d857bb0cb9db18befb4d23b04feca32"
       ]
     },
     "iaea-iran-security-council-referral-2026-09-09": {
@@ -641,6 +665,14 @@
         "https://www.ft.com/content/2c34414a-5381-4083-ac34-00bbe67ef8db"
       ]
     },
+    "openai-new-concerning-ai-behavior-2026-09-22": {
+      "category": "technology",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d"
+      ]
+    },
     "palestinian-delegation-visas-denied-2026-09-16": {
       "category": "world",
       "last_published": "2026-09-17",
@@ -659,10 +691,10 @@
     },
     "paramount-wbd-antitrust-settlement-update-2026-09-20": {
       "category": "business",
-      "last_published": "2026-09-20",
-      "material_update": null,
+      "last_published": "2026-09-22",
+      "material_update": "The parties reached a settlement after the prior brief reported negotiations toward one.",
       "source_urls": [
-        "https://www.ft.com/content/e0e384b8-aa4c-4948-b4ee-7bdff414641b"
+        "https://apnews.com/article/warner-bros-paramount-skydance-merger-settlement-1aaa7c471d8ba286ccfad92b18bc1ecf"
       ]
     },
     "russia-air-campaign-ukraine-economy-2026-09-21": {
@@ -785,6 +817,14 @@
         "https://apnews.com/article/cdcdc43cd541cf0b42cb43c7cf9d0d8f"
       ]
     },
+    "texas-ice-shooting-detention-2026-09-22": {
+      "category": "world",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/austin-texas-ice-shooting-driver-wilber-perez-ebdb9d481d28e322f62c15f1076f3c18"
+      ]
+    },
     "thames-water-temporary-public-ownership-2026-09-17": {
       "category": "business",
       "last_published": "2026-09-18",
@@ -799,6 +839,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/33b317b4-cd7b-486a-8707-4d65db837c6d"
+      ]
+    },
+    "trump-helipad-media-coverage-2026-09-22": {
+      "category": "world",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trump-helipad-cnn-ban-press-xi-61667fb3faaa9a7e9cfc9ffb4f7dc90e"
       ]
     },
     "trump-russia-sanctions-signed-2026-09-18": {
@@ -945,12 +993,28 @@
         "https://apnews.com/article/ca2c4ed803381fd12ca7259f1ce4f34d"
       ]
     },
+    "un-climate-efforts-fuel-ai-disasters-2026-09-22": {
+      "category": "economy",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/climate-change-un-fuel-ai-renewables-f3208930e39c7d233bdc24315065dcd2"
+      ]
+    },
     "un-experts-us-iran-strikes-2026-09-17": {
       "category": "world",
       "last_published": "2026-09-18",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/99e690efd1e818e835d4f5a00e0d261b"
+      ]
+    },
+    "un-leaders-war-ai-climate-2026-09-22": {
+      "category": "world",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/un-assembly-leaders-ai-trump-netanyahu-climate-c4727651b9030d6e7f81c0457a33440b"
       ]
     },
     "us-ai-guardrails-2026-09-13": {
@@ -977,6 +1041,14 @@
       "source_urls": [
         "https://apnews.com/article/2c7f54f07e755f506d9db9b91df282bd",
         "https://www.ft.com/content/d29d769e-039c-4d11-9152-e63ccd397b32"
+      ]
+    },
+    "us-china-ai-safety-talks-2026-09-22": {
+      "category": "technology",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/china-us-trump-xi-meeting-ai-d08e58524de21511dcaba51f43faad95"
       ]
     },
     "us-crypto-bill-ethics-2026-09-14": {
@@ -1028,6 +1100,22 @@
         "https://www.ft.com/content/64f90ab8-5fb0-4594-a900-d03e5ca051e3"
       ]
     },
+    "us-news-outlets-white-house-access-lawsuit-2026-09-22": {
+      "category": "world",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trump-ban-ms-now-media-cnn-politico-72f9acf68244ca70e9078d9d3661c722"
+      ]
+    },
+    "us-northeast-flight-disruption-2026-09-22": {
+      "category": "world",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/faa-flights-laguardia-newark-jfk-airport-85e2321733ff604f7a5e93ce136945b9"
+      ]
+    },
     "us-short-term-debt-one-trillion-2026-09-21": {
       "category": "investment",
       "last_published": "2026-09-21",
@@ -1074,6 +1162,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/8f72a301be85728018018735163f4dad"
+      ]
+    },
+    "wall-street-rally-oil-yields-2026-09-22": {
+      "category": "investment",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/stocks-markets-rates-oil-energy-trump-xi-1f1a267bf4556c01513f506914eb6359"
+      ]
+    },
+    "wendys-major-franchisee-bankruptcy-2026-09-22": {
+      "category": "business",
+      "last_published": "2026-09-22",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/wendys-franchisee-bankruptcy-meritage-5404c2e8e18e2fde34d7369e727408e5"
       ]
     },
     "white-house-media-badges-deactivated-2026-09-19": {
