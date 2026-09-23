@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-22",
-    "item_id": "itm_98KIE",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-22-matter-edition-daily-brief.html"
+    "date": "2026-09-23",
+    "item_id": "itm_98rcs",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-23-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -135,6 +135,14 @@
         "https://www.bbc.com/news/articles/ce8767g4jdpo"
       ]
     },
+    "british-columbia-snap-election-2026-09-23": {
+      "category": "world",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/canada-british-columbia-election-trump-631ff2622c5c30f8a3988db89f4bdcae"
+      ]
+    },
     "buffett-patience-investing-legacy-2026-09-19": {
       "category": "investment",
       "last_published": "2026-09-20",
@@ -173,6 +181,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/c0m3neyyzm7o"
+      ]
+    },
+    "canada-india-g20-trade-talks-2026-09-23": {
+      "category": "economy",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/canada-india-modi-free-trade-8130ecaafdde2f9bb09a880695a14d33"
       ]
     },
     "canada-investment-tax-breaks-2026-09-15": {
@@ -215,6 +231,14 @@
         "https://apnews.com/article/78b8ccd21cbc4bc0ab19a79f68372ec0"
       ]
     },
+    "clinton-global-initiative-retreating-governments-2026-09-23": {
+      "category": "world",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/bill-clinton-global-initiative-897455f16ceed678e4a43e31f5be3456"
+      ]
+    },
     "congo-constitutional-protests-2026-09-15": {
       "category": "world",
       "last_published": "2026-09-16",
@@ -231,6 +255,14 @@
         "https://apnews.com/article/cac1c2c75f8656d8eaf5f0a240edae15"
       ]
     },
+    "eqt-us-natural-gas-output-2026-09-23": {
+      "category": "business",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/eqt-sees-higher-2026-us-natgas-output-lower-spending-ceo-says-2026-09-22"
+      ]
+    },
     "eu-china-hybrid-car-export-limits-2026-09-18": {
       "category": "business",
       "last_published": "2026-09-18",
@@ -245,6 +277,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/4ce4fef2ba8e3866e436655075afc6d3"
+      ]
+    },
+    "eu-philippines-free-trade-deal-2026-09-23": {
+      "category": "economy",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/eu-philippines-free-trade-deal-european-union-85e74be2f192e180614a4b763ccfeae9"
       ]
     },
     "expanded-berlin-cyber-response": {
@@ -399,6 +439,14 @@
         "https://www.ft.com/content/ad358e9f-4daf-4a2a-a100-3c1effa6de11"
       ]
     },
+    "german-growth-forecasts-raised-2026-09-23": {
+      "category": "germany",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/german-institutes-raise-2026-2027-economic-growth-forecasts-sources-say-2026-09-22"
+      ]
+    },
     "germany-federal-budget-2027-debate-2026-09-08": {
       "category": "germany",
       "last_published": "2026-09-09",
@@ -429,6 +477,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/0aec7624d6752cd65cfcb8e04f4649c6"
+      ]
+    },
+    "global-biofuel-output-2030-2026-09-23": {
+      "category": "business",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/global-biofuel-output-jump-nearly-70-by-2030-due-gulf-energy-crisis-study-finds-2026-09-22"
       ]
     },
     "greece-migrant-boat-rescue-2026-09-14": {
@@ -525,6 +581,14 @@
       "material_update": "Houthi forces captured a strategic Yemeni port city, adding a concrete threat to Red Sea shipping beyond the earlier broader proxy warnings.",
       "source_urls": [
         "https://apnews.com/article/yemen-iran-houthi-rebels-red-sea-mokha-e4e799701b382799a955969c212800ea"
+      ]
+    },
+    "iran-us-revival-talks-un-2026-09-23": {
+      "category": "world",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/tehran-hints-hormuz-talks-with-us-leaders-gather-un-2026-09-22"
       ]
     },
     "iran-war-clean-energy-shift-2026-09-17": {
@@ -648,6 +712,14 @@
         "https://www.reuters.com/business/aerospace-defense/north-korea-vice-defence-minister-says-us-arms-buildup-justifies-expanding-2026-09-17/"
       ]
     },
+    "oil-falls-gulf-supply-us-iran-talks-2026-09-23": {
+      "category": "investment",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/oil-falls-increased-gulf-supply-hopes-us-iran-talks-2026-09-23"
+      ]
+    },
     "oil-prices-wall-street-pressure-2026-09-08": {
       "category": "investment",
       "last_published": "2026-09-09",
@@ -719,6 +791,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/e37b0027e717823605af688096184b37"
+      ]
+    },
+    "saudi-east-west-oil-pipeline-restart-2026-09-23": {
+      "category": "business",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/saudi-arabia-restarts-east-west-oil-pipeline-resume-exports-yanbu-sources-say-2026-09-22"
       ]
     },
     "saudi-east-west-pipeline-closure-2026-09-14": {
@@ -873,6 +953,14 @@
         "https://apnews.com/article/bb675679fb10738a51bef90bde6c525a"
       ]
     },
+    "trump-xi-chinese-american-scientist-detention-2026-09-23": {
+      "category": "world",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trump-xi-detainees-youlin-chen-min-zin-c2724e81163fd2fdae18c684c20c5cd5"
+      ]
+    },
     "turkey-lgbtq-raids-2026-09-13": {
       "category": "world",
       "last_published": "2026-09-14",
@@ -1009,6 +1097,14 @@
         "https://apnews.com/article/99e690efd1e818e835d4f5a00e0d261b"
       ]
     },
+    "un-leaders-speeches-september-22-2026": {
+      "category": "world",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/un-leaders-speeches-united-nations-b8e1bf67dbadfc97811da9bda93fe6d9"
+      ]
+    },
     "un-leaders-war-ai-climate-2026-09-22": {
       "category": "world",
       "last_published": "2026-09-22",
@@ -1057,6 +1153,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/091df7e9a6abbe9b01cf7531d2aa6442"
+      ]
+    },
+    "us-diesel-export-ban-market-impact-2026-09-23": {
+      "category": "economy",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/us/ban-us-diesel-exports-would-hurt-not-help-fuel-markets-analysts-say-2026-09-22"
       ]
     },
     "us-house-russia-sanctions-bill-2026-09-16": {
@@ -1130,6 +1234,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/a8ce06ff4ffcf66d9f28bd3453bdf998"
+      ]
+    },
+    "us-stock-indexes-september-22-2026": {
+      "category": "investment",
+      "last_published": "2026-09-23",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/wall-street-stocks-dow-nasdaq-23404cf80ac7fb7f67fca2eafa050f2b"
       ]
     },
     "us-stocks-oil-yields-2026-09-15": {
