@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-23",
-    "item_id": "itm_98rcs",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-23-daily-brief.html"
+    "date": "2026-09-24",
+    "item_id": "itm_99Kpv",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-24-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -247,6 +247,22 @@
         "https://www.reuters.com/world/africa/congo-police-break-up-protests-against-proposed-constitutional-changes-2026-09-15/"
       ]
     },
+    "diesel-prices-us-politics-2026-09-24": {
+      "category": "world",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/diesel-prices-trump-exports-iran-522435dd87d2a9b5270eebfa309f4a73"
+      ]
+    },
+    "energy-transition-integration-2026-09-24": {
+      "category": "business",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/commentary/reuters-open-interest/global-energy-transition-shifts-generation-integration-2026-09-23"
+      ]
+    },
     "epa-power-plant-emissions-rule-2026-09-14": {
       "category": "world",
       "last_published": "2026-09-15",
@@ -285,6 +301,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/eu-philippines-free-trade-deal-european-union-85e74be2f192e180614a4b763ccfeae9"
+      ]
+    },
+    "euro-zone-pmi-upturn-2026-09-24": {
+      "category": "economy",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/euro-zone-business-activity-posts-surprise-upturn-september-pmi-shows-2026-09-23"
       ]
     },
     "expanded-berlin-cyber-response": {
@@ -415,6 +439,14 @@
         "https://apnews.com/article/f0ea070bd8d0d6bfa88203b62c33fed7"
       ]
     },
+    "five-percent-treasury-yields-2026-09-24": {
+      "category": "investment",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/global-markets-treasuries-analysis-2026-09-23"
+      ]
+    },
     "florida-dengue-outbreak-2026-09-22": {
       "category": "world",
       "last_published": "2026-09-22",
@@ -485,6 +517,22 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/energy/global-biofuel-output-jump-nearly-70-by-2030-due-gulf-energy-crisis-study-finds-2026-09-22"
+      ]
+    },
+    "global-bonds-oil-peace-talks-2026-09-24": {
+      "category": "investment",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-24"
+      ]
+    },
+    "global-gas-tightness-iran-war-2026-09-24": {
+      "category": "economy",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/global-gas-market-pricing-prolonged-tightness-due-iran-war-igu-executive-says-2026-09-23"
       ]
     },
     "greece-migrant-boat-rescue-2026-09-14": {
@@ -712,6 +760,14 @@
         "https://www.reuters.com/business/aerospace-defense/north-korea-vice-defence-minister-says-us-arms-buildup-justifies-expanding-2026-09-17/"
       ]
     },
+    "oecd-ai-energy-shock-2026-09-24": {
+      "category": "economy",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/oecd-expects-ai-boom-help-offset-middle-east-energy-shock-now-2026-09-23"
+      ]
+    },
     "oil-falls-gulf-supply-us-iran-talks-2026-09-23": {
       "category": "investment",
       "last_published": "2026-09-23",
@@ -769,6 +825,14 @@
         "https://apnews.com/article/warner-bros-paramount-skydance-merger-settlement-1aaa7c471d8ba286ccfad92b18bc1ecf"
       ]
     },
+    "portugal-ren-state-grid-2026-09-24": {
+      "category": "business",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/portugal-says-entry-into-grid-operator-ren-wont-affect-chinas-state-grid-2026-09-23"
+      ]
+    },
     "russia-air-campaign-ukraine-economy-2026-09-21": {
       "category": "world",
       "last_published": "2026-09-21",
@@ -783,6 +847,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/europe/russians-make-best-struggling-economy-before-vote-2026-09-15/"
+      ]
+    },
+    "russia-gas-output-forecasts-2026-09-24": {
+      "category": "economy",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/russia-cuts-natural-gas-output-export-forecasts-2026-09-23"
       ]
     },
     "russian-dissident-murder-plot-2026-09-16": {
@@ -919,6 +991,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/33b317b4-cd7b-486a-8707-4d65db837c6d"
+      ]
+    },
+    "trump-diesel-export-dilemma-2026-09-24": {
+      "category": "economy",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/commentary/reuters-open-interest/trumps-diesel-export-dilemma-good-politics-bad-economics-bousso-2026-09-23"
       ]
     },
     "trump-helipad-media-coverage-2026-09-22": {
@@ -1130,6 +1210,14 @@
         "https://www.ft.com/content/b455ab48-76ef-4fd4-9137-1f666344ab45"
       ]
     },
+    "us-business-activity-inflation-2026-09-24": {
+      "category": "economy",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/us-business-activity-more-than-five-year-high-inflation-pressures-building-2026-09-23"
+      ]
+    },
     "us-china-ai-incident-dialogue-2026-09-21": {
       "category": "ai",
       "last_published": "2026-09-21",
@@ -1220,6 +1308,14 @@
         "https://apnews.com/article/faa-flights-laguardia-newark-jfk-airport-85e2321733ff604f7a5e93ce136945b9"
       ]
     },
+    "us-rates-one-percent-2026-09-24": {
+      "category": "investment",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/theres-reason-trump-is-only-one-talking-about-1-rates-2026-09-23"
+      ]
+    },
     "us-short-term-debt-one-trillion-2026-09-21": {
       "category": "investment",
       "last_published": "2026-09-21",
@@ -1242,6 +1338,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/wall-street-stocks-dow-nasdaq-23404cf80ac7fb7f67fca2eafa050f2b"
+      ]
+    },
+    "us-stock-indexes-september-23-2026": {
+      "category": "investment",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2625f87993578025820f4572e0ea0c0b"
       ]
     },
     "us-stocks-oil-yields-2026-09-15": {
@@ -1298,6 +1402,14 @@
       "material_update": "The announced ban was carried out through denial of entry and deactivation of reporters' credentials.",
       "source_urls": [
         "https://apnews.com/article/d160e253453229600ce54f8e91351523"
+      ]
+    },
+    "xi-washington-state-visit-2026-09-24": {
+      "category": "world",
+      "last_published": "2026-09-24",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/live/trump-xi-china-cnn-unga-news-updates-09-23-2026"
       ]
     },
     "yen-sinks-after-boj-hike-2026-09-19": {
