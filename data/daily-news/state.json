@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-24",
-    "item_id": "itm_99Kpv",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-24-daily-brief.html"
+    "date": "2026-09-28",
+    "item_id": "itm_9B1OC",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-28-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -55,6 +55,14 @@
         "https://www.bbc.com/news/articles/cx2zg554w9ko"
       ]
     },
+    "apple-haptic-patent-verdict-2026": {
+      "category": "technology",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/legal/litigation/us-jury-says-apple-owes-record-57-billion-haptic-technology-patent-case-2026-09-26"
+      ]
+    },
     "apple-iphone-duo-foldable-2026-09-09": {
       "category": "technology",
       "last_published": "2026-09-10",
@@ -77,6 +85,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/nasa-artemis-astronauts-glover-wiseman-b679954ef6fca397e43a9f17a4c867ba"
+      ]
+    },
+    "azerbaijan-investment-deals-2026": {
+      "category": "business",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/azerbaijan-signs-investment-agreements-worth-more-than-10-billion-2026-09-26"
       ]
     },
     "bank-england-rates-gilt-sales-2026-09-17": {
@@ -117,6 +133,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/e2cbfd2e-ee56-4d8b-a403-cbaae4cce191"
+      ]
+    },
+    "boeing-737-max-navigation-glitch-2026": {
+      "category": "technology",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/boeing-flags-737-max-software-glitch-affecting-landing-navigation-feature-wsj-2026-09-26"
       ]
     },
     "brazil-rio-organised-crime-plan-2026-09-18": {
@@ -311,6 +335,14 @@
         "https://www.reuters.com/business/euro-zone-business-activity-posts-surprise-upturn-september-pmi-shows-2026-09-23"
       ]
     },
+    "europe-seas-fisheries-2026": {
+      "category": "world",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/europe/europes-seas-are-breaking-heat-records-its-fisheries-are-paying-price-2026-09-26"
+      ]
+    },
     "expanded-berlin-cyber-response": {
       "category": "berlin",
       "last_published": "2026-09-09",
@@ -471,6 +503,14 @@
         "https://www.ft.com/content/ad358e9f-4daf-4a2a-a100-3c1effa6de11"
       ]
     },
+    "german-deportation-calls-2026": {
+      "category": "germany",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/africa/german-minister-calls-expedited-deportation-mass-border-crossings-2026-09-26"
+      ]
+    },
     "german-growth-forecasts-raised-2026-09-23": {
       "category": "germany",
       "last_published": "2026-09-23",
@@ -607,6 +647,14 @@
         "https://www.bbc.com/news/articles/cvgykzgljlyo"
       ]
     },
+    "iran-deal-pitch-2026": {
+      "category": "world",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/iran-trump-deal-proposal-midterms-explainer-4f949bd0fd2777fa6960b56d8bf3169b"
+      ]
+    },
     "iran-hormuz-ship-talks-2026-09-13": {
       "category": "world",
       "last_published": "2026-09-14",
@@ -711,6 +759,14 @@
         "https://apnews.com/article/89b040631d635e0d8673f1e9aa9a6e28"
       ]
     },
+    "monzo-nubank-sale-talks-2026": {
+      "category": "business",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/monzo-talks-sale-nubank-about-10-billion-valuation-sky-news-reports-2026-09-26"
+      ]
+    },
     "nazi-looted-art-lawsuits-2026-09-19": {
       "category": "world",
       "last_published": "2026-09-20",
@@ -734,6 +790,14 @@
       "source_urls": [
         "https://apnews.com/article/65ee7e50dfe7914dff37d893a5e6b810",
         "https://www.reuters.com/sustainability/cop/climate-change-likely-have-helped-trigger-nepal-glacier-collapse-scientists-say-2026-09-17/"
+      ]
+    },
+    "noreaster-power-outages-2026": {
+      "category": "world",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/environment/noreaster-leaves-over-100000-customers-without-power-us-northeast-over-400-2026-09-26"
       ]
     },
     "north-korea-aukus-nuclear-submarines-2026-09-15": {
@@ -823,6 +887,14 @@
       "material_update": "The parties reached a settlement after the prior brief reported negotiations toward one.",
       "source_urls": [
         "https://apnews.com/article/warner-bros-paramount-skydance-merger-settlement-1aaa7c471d8ba286ccfad92b18bc1ecf"
+      ]
+    },
+    "pope-paris-crowd-2026": {
+      "category": "world",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/europe/pope-leo-set-largest-event-france-tour-paris-crowds-swell-2026-09-26"
       ]
     },
     "portugal-ren-state-grid-2026-09-24": {
@@ -1057,6 +1129,14 @@
         "https://www.ft.com/content/ef54585a-4d2f-4538-b185-9bff75ef2f5e"
       ]
     },
+    "ubs-swiss-base-2026": {
+      "category": "investment",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/swiss-finance-minister-says-unlikely-ubs-would-leave-its-home-base-2026-09-26"
+      ]
+    },
     "uk-made-in-europe-policy-2026-09-17": {
       "category": "business",
       "last_published": "2026-09-18",
@@ -1079,6 +1159,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/50f1f686-528c-4c1c-b014-e628da7c055f"
+      ]
+    },
+    "uk-public-finances-stability-2026": {
+      "category": "economy",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/uk/uks-burnham-says-it-is-crucial-have-stability-public-finances-2026-09-26"
       ]
     },
     "uk-rent-forecast-2026-09-13": {
@@ -1235,6 +1323,14 @@
         "https://apnews.com/article/china-us-trump-xi-meeting-ai-d08e58524de21511dcaba51f43faad95"
       ]
     },
+    "us-china-tariff-ai-dialogue-2026-09-27": {
+      "category": "world",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/china-us-agree-30-billion-tariff-cut-ai-dialogue-during-xi-visit-2026-09-26"
+      ]
+    },
     "us-crypto-bill-ethics-2026-09-14": {
       "category": "business",
       "last_published": "2026-09-15",
@@ -1243,12 +1339,28 @@
         "https://apnews.com/article/091df7e9a6abbe9b01cf7531d2aa6442"
       ]
     },
+    "us-cuba-deal-prediction-2026": {
+      "category": "world",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/americas/trump-predicts-cuba-us-will-make-deal-2026-09-26"
+      ]
+    },
     "us-diesel-export-ban-market-impact-2026-09-23": {
       "category": "economy",
       "last_published": "2026-09-23",
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/us/ban-us-diesel-exports-would-hurt-not-help-fuel-markets-analysts-say-2026-09-22"
+      ]
+    },
+    "us-fuel-economy-standards-2026": {
+      "category": "economy",
+      "last_published": "2026-09-28",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/trump-says-he-approved-fuel-economy-standards-ending-biden-ev-mandate-2026-09-26"
       ]
     },
     "us-house-russia-sanctions-bill-2026-09-16": {
