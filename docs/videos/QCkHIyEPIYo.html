@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Had Opus 5.5 Build me the Same App at Every Effort Level</title>
+<meta name="description" content="A practical way to compare agent effort levels using quality, cost, time, checks, and questions.">
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font: 18px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; line-height: 1.25; }
+  h2 { margin-top: 2rem; }
+  a { color: #3b5bdb; }
+</style>
+</head>
+<body>
+<article>
+<h1>I Had Opus 5.5 Build me the Same App at Every Effort Level</h1>
+<p><strong>Channel:</strong> <a href="https://www.youtube.com/@nateherk">Nate Herk</a> &middot; <strong>Published:</strong> 2026-09-24 &middot; <strong>Length:</strong> 62 min &middot; <a href="https://www.youtube.com/watch?v=QCkHIyEPIYo">Watch on YouTube</a></p>
+<h2>TL;DR</h2><p>The core experiment is useful: hold a complex build brief constant, run it at several model effort levels, and compare the outputs rather than assuming that a higher setting is automatically better. The stated comparison includes output quality, run time, API cost, token use, checks performed, and how often the agent asked for clarification. That is a sensible basis for routing work, provided the brief and review rubric are real and the outcome is independently checked.</p><h2>Control the brief before comparing the model</h2><p>The video uses one ambitious prompt: turn recordings and event assets into an explorable 3D conference experience. It asks the agent to use a source folder, infer an agenda, build navigable spaces, and judge the result on creativity, design, physics, and feel. The value of that setup is not the 3D setting. It is that every run starts from the same goal, materials, and criteria. Without that control, a comparison of effort levels mostly measures changing inputs.</p><p>For work Amir is likely to run, the brief should be smaller and more observable. A useful first benchmark might ask an agent to turn a fixed source pack into a structured research memo, create a page component that meets stated design constraints, or produce an analysis backed by named tables. Each test case should specify available sources, non-negotiable constraints, desired artifacts, and criteria for acceptance. The output should be saved so reviewers can compare the actual files, not only screenshots or a model's self-description.</p><h2>Measure more than apparent polish</h2><p>The experiment lists five dimensions that are worth keeping. Quality is the obvious one, but it needs a rubric: does the result work, meet the brief, remain grounded in the input, and behave correctly in important edge cases? Duration indicates whether a setting can fit a real workflow. Cost and token use show whether improvements are proportionate. Checks reveal whether the agent validates its own work. Clarifying questions can reveal either healthy caution or an inefficient failure to proceed with an adequately specified brief.</p><p>Those metrics should be paired with a human review of defects. In the early low-effort example, the output has some recognisable structure but misses branding, contains visual glitches, and substitutes static images for intended video. That is more informative than saying the result felt weaker. It tells the operator which acceptance criteria failed. A later, more polished result may still be unsafe if it invents facts, ignores a source constraint, or hides a broken interaction. The review therefore needs both a visual or functional check and a source-fidelity check.</p><h2>Effort is a routing decision</h2><p>The lesson is not to always use the highest setting. Different task shapes need different handling. A deterministic extraction or format conversion should rely on tools and validators. A straightforward classification may be adequate at low or medium effort when the decision boundary is clear. An ambiguous build, a design-heavy synthesis, or a consequential recommendation may justify more reasoning and an independent check. The right choice is based on the cost of being wrong, the quality threshold, reversibility, and the value of speed.</p><p>That frame avoids two common mistakes. The first is spending expensive reasoning on work a script can check deterministically. The second is trusting a quick output merely because it looks plausible. The model's visible effort level is not a quality guarantee. The outcome must still meet the review criteria, and an agent should not be allowed to infer permissions, modify sensitive state, or approve its own consequential work just because it had more time to think.</p><h2>Turn the comparison into a regression suite</h2><p>A one-off comparison can be entertaining; a small regression suite makes it operational. Keep a compact set of representative tasks: one routine transformation, one source-grounded analysis, one creative production job, one task with an intentional ambiguity, and one task designed to trigger an error. Record expected properties, not only a preferred narrative answer. When tools, prompts, or routing policy change, re-run those cases and compare the result.</p><p>Track where the extra effort changed the actual decision. Did it uncover a missing source? Did it produce a functional rather than decorative result? Did it reduce reviewer repair time enough to justify the cost? If not, the lower setting may be the better production route. Conversely, a high-risk task may need a stronger synthesis pass and a fresh reviewer even when low effort happens to produce an attractive first draft.</p><h2>Why this matters for my work</h2><p>This gives Amir a grounded way to tune AI workflows rather than selecting effort by intuition. So I could define a handful of real consulting and content tasks, test them with a fixed rubric across routes, and use the observed quality, repair time, and cost to decide where higher reasoning or independent verification genuinely earns its place.</p>
+
+<h2>Watch these moments</h2>
+<ul>
+<li><a href="https://youtu.be/QCkHIyEPIYo?t=95">1:35</a> &mdash; The fixed brief and comparison dimensions</li>
+<li><a href="https://youtu.be/QCkHIyEPIYo?t=420">7:00</a> &mdash; What low-effort output gets wrong</li>
+<li><a href="https://youtu.be/QCkHIyEPIYo?t=1380">23:00</a> &mdash; Comparing build quality across settings</li>
+<li><a href="https://youtu.be/QCkHIyEPIYo?t=2500">41:40</a> &mdash; Checks, questions, and completion behaviour</li>
+<li><a href="https://youtu.be/QCkHIyEPIYo?t=3300">55:00</a> &mdash; Cost and runtime trade-offs</li>
+<li><a href="https://youtu.be/QCkHIyEPIYo?t=3600">60:00</a> &mdash; Choosing a practical effort level</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=QCkHIyEPIYo">Watch the full video on YouTube</a></p>
+</article>
+</body>
+</html>
