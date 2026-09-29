@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-28",
-    "item_id": "itm_9B1OC",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-28-daily-brief.html"
+    "date": "2026-09-29",
+    "item_id": "itm_9BV37",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-29-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -53,6 +53,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/cx2zg554w9ko"
+      ]
+    },
+    "anthropic-ipo-costs-2026-09-29": {
+      "category": "business",
+      "last_published": "2026-09-29",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28"
       ]
     },
     "apple-haptic-patent-verdict-2026": {
@@ -453,6 +461,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/ausland/europa/ukraine-export-getreide-100.html"
+      ]
+    },
+    "fed-cook-inflation-2026-09-29": {
+      "category": "economy",
+      "last_published": "2026-09-29",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/feds-cook-sees-further-inflationary-pressures-ahead-2026-09-28"
       ]
     },
     "fed-rate-expectations-2026-09-15": {
@@ -1363,6 +1379,14 @@
         "https://www.reuters.com/world/trump-says-he-approved-fuel-economy-standards-ending-biden-ev-mandate-2026-09-26"
       ]
     },
+    "us-fuel-economy-standards-finalized-2026-09-29": {
+      "category": "business",
+      "last_published": "2026-09-29",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/autos-transportation/us-finalizes-new-lower-fuel-economy-standards-2026-09-28"
+      ]
+    },
     "us-house-russia-sanctions-bill-2026-09-16": {
       "category": "world",
       "last_published": "2026-09-17",
@@ -1484,6 +1508,14 @@
         "https://apnews.com/article/producer-prices-inflation-economy-iran-66d1591b979271ee7b79b113d715f6ef"
       ]
     },
+    "wall-st-oil-iran-proposal-2026-09-29": {
+      "category": "investment",
+      "last_published": "2026-09-29",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/wall-st-futures-drop-oil-spikes-after-trump-rejects-iran-peace-proposal-2026-09-28"
+      ]
+    },
     "wall-street-oil-ai-stocks-2026-09-14": {
       "category": "investment",
       "last_published": "2026-09-15",
@@ -1530,6 +1562,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2"
+      ]
+    },
+    "zambia-growth-target-2026-09-29": {
+      "category": "economy",
+      "last_published": "2026-09-29",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/africa/zambia-aims-lift-economic-growth-7-over-next-three-years-2026-09-28"
       ]
     },
     "zelensky-regional-summit-2026-09-18": {
