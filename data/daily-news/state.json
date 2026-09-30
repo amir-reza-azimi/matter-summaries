@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-09-29",
-    "item_id": "itm_9BV37",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-29-daily-brief.html"
+    "date": "2026-09-30",
+    "item_id": "itm_9C4P2",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-09-30-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -253,6 +253,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/bbf1d846-7d89-45f6-8c0f-1fba1e334b4b"
+      ]
+    },
+    "china-golden-week-spending-2026-09-30": {
+      "category": "economy",
+      "last_published": "2026-09-30",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/chinas-golden-week-travel-surge-masks-cautious-consumer-spending-2026-09-29/"
       ]
     },
     "china-oil-stockpile-iran-war-2026-09-19": {
@@ -517,6 +525,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/ad358e9f-4daf-4a2a-a100-3c1effa6de11"
+      ]
+    },
+    "french-budget-strikes-2026-09-30": {
+      "category": "world",
+      "last_published": "2026-09-30",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/europe/student-protests-french-public-sector-strike-heap-pressure-macron-2026-09-29/"
       ]
     },
     "german-deportation-calls-2026": {
@@ -840,6 +856,14 @@
         "https://www.reuters.com/business/aerospace-defense/north-korea-vice-defence-minister-says-us-arms-buildup-justifies-expanding-2026-09-17/"
       ]
     },
+    "novo-hengrui-glp1-deal-2026-09-30": {
+      "category": "business",
+      "last_published": "2026-09-30",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/legal/litigation/chinas-hengrui-inks-up-26-billion-deal-with-novo-nordisk-obesity-drug-2026-09-29/"
+      ]
+    },
     "oecd-ai-energy-shock-2026-09-24": {
       "category": "economy",
       "last_published": "2026-09-24",
@@ -1007,6 +1031,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/6c467774-9d91-425e-a901-26db055e37ad"
+      ]
+    },
+    "spacex-engine-moon-mission-2026-09-30": {
+      "category": "technology",
+      "last_published": "2026-09-30",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/media-telecom/spacexs-starship-engine-failure-could-impact-nasas-moon-mission-objectives-2026-09-29/"
       ]
     },
     "sweden-centre-left-election-lead-2026-09-16": {
@@ -1394,6 +1426,14 @@
       "source_urls": [
         "https://apnews.com/article/f377fc956c442195dfcf50571b01a1c4",
         "https://www.reuters.com/legal/government/us-house-takes-up-russia-sanctions-bill-backed-by-late-senator-graham-2026-09-16/"
+      ]
+    },
+    "us-job-openings-august-2026-09-30": {
+      "category": "economy",
+      "last_published": "2026-09-30",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/employment-economy-inflation-layoffs-59a79b9752ff98ab1a1aa70d0f129607"
       ]
     },
     "us-midterm-early-voting-2026-09-18": {
