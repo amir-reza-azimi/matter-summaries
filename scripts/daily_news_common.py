@@ -110,8 +110,8 @@ def validate_record(record: dict, prior_stories: dict[str, dict] | None = None) 
         summary = str(story.get("summary", "")).strip()
         if not title or not summary:
             errors.append(f"{prefix}: title and summary are required")
-        if sentence_count(summary) > 2:
-            errors.append(f"{prefix}: summary may contain at most two sentences")
+        if sentence_count(summary) > 3:
+            errors.append(f"{prefix}: summary may contain at most three sentences")
         total_words += len((title + " " + summary).split())
 
         sources = story.get("sources")
