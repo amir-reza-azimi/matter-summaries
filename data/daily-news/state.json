@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-01",
-    "item_id": "itm_9CkHZ",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-01-daily-brief.html"
+    "date": "2026-10-02",
+    "item_id": "itm_9DC1m",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-02-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -311,6 +311,14 @@
         "https://www.reuters.com/world/africa/congo-police-break-up-protests-against-proposed-constitutional-changes-2026-09-15/"
       ]
     },
+    "corporate-profit-boom-2026-10-02": {
+      "category": "investment",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/legal/transactional/investors-wary-slowdown-us-corporate-profit-boom-2026-10-01"
+      ]
+    },
     "diesel-prices-us-politics-2026-09-24": {
       "category": "world",
       "last_published": "2026-09-24",
@@ -341,6 +349,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/energy/eqt-sees-higher-2026-us-natgas-output-lower-spending-ceo-says-2026-09-22"
+      ]
+    },
+    "equities-treasury-yields-2026-10-02": {
+      "category": "investment",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/dow-futures-hit-three-month-low-yields-surge-micron-earnings-offer-support-2026-10-01"
       ]
     },
     "eu-china-hybrid-car-export-limits-2026-09-18": {
@@ -543,6 +559,14 @@
         "https://www.ft.com/content/31c53c3c-5cc1-4248-98dc-68fc8956e8cc"
       ]
     },
+    "france-public-debt-2026": {
+      "category": "world",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/france-economy-presidential-election-record-debt-7cd020a54d0810a8d9df8a5544cd5312"
+      ]
+    },
     "france-spending-cuts-deficit-2026-09-18": {
       "category": "economy",
       "last_published": "2026-09-18",
@@ -559,6 +583,14 @@
         "https://www.reuters.com/world/europe/student-protests-french-public-sector-strike-heap-pressure-macron-2026-09-29/"
       ]
     },
+    "g20-trade-talks-2026": {
+      "category": "world",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trade-trump-canada-china-a49cd9e6132e9ad7937b7b35f08e0470"
+      ]
+    },
     "german-deportation-calls-2026": {
       "category": "germany",
       "last_published": "2026-09-28",
@@ -573,6 +605,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/german-institutes-raise-2026-2027-economic-growth-forecasts-sources-say-2026-09-22"
+      ]
+    },
+    "german-tallest-wind-turbine-2026": {
+      "category": "germany",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/germany-wind-turbine-tallest-gircon-40ef52be4578df6dfd0e3e9181730f80"
       ]
     },
     "germany-federal-budget-2027-debate-2026-09-08": {
@@ -615,6 +655,14 @@
         "https://www.reuters.com/business/energy/global-biofuel-output-jump-nearly-70-by-2030-due-gulf-energy-crisis-study-finds-2026-09-22"
       ]
     },
+    "global-bond-rout-2026-10-02": {
+      "category": "investment",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/bonds-teeter-after-us-treasuries-worst-quarter-since-1994-2026-10-01"
+      ]
+    },
     "global-bonds-oil-peace-talks-2026-09-24": {
       "category": "investment",
       "last_published": "2026-09-24",
@@ -629,6 +677,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/energy/global-gas-market-pricing-prolonged-tightness-due-iran-war-igu-executive-says-2026-09-23"
+      ]
+    },
+    "global-ma-deals-q3-2026-10-02": {
+      "category": "business",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/global-ma-deal-rush-fades-third-quarter-rising-borrowing-costs-bite-2026-10-01"
       ]
     },
     "greece-migrant-boat-rescue-2026-09-14": {
@@ -677,6 +733,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/un-iran-atomic-watchdog-security-council-607ecdffcd8ef88ddf8f33041e86b720"
+      ]
+    },
+    "illinois-data-centers-jobs-2026": {
+      "category": "technology",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/illinois-new-study-data-centers-917729159902decef71a8679dce50d3e"
       ]
     },
     "indonesia-borneo-wildfire-haze-2026-09-16": {
@@ -1169,6 +1233,14 @@
         "https://www.ft.com/content/76616441-6419-4792-9d27-31c5fa436dc4"
       ]
     },
+    "treasury-yields-ease-2026-10-02": {
+      "category": "investment",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-2026-10-01"
+      ]
+    },
     "trump-arch-military-complex-2026-09-21": {
       "category": "world",
       "last_published": "2026-09-21",
@@ -1183,6 +1255,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/commentary/reuters-open-interest/trumps-diesel-export-dilemma-good-politics-bad-economics-bousso-2026-09-23"
+      ]
+    },
+    "trump-economic-approval-2026": {
+      "category": "world",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trump-economy-approval-trump-midterms-8d5809758a31b29c73f4351a8008147c"
       ]
     },
     "trump-economic-record-2026-10-01": {
@@ -1532,6 +1612,30 @@
         "https://apnews.com/article/employment-economy-inflation-layoffs-59a79b9752ff98ab1a1aa70d0f129607"
       ]
     },
+    "us-jobless-claims-197k-2026": {
+      "category": "economy",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/jobs-unemployment-claims-layoffs-6f2362a2320d739dc78210a899ce4edf"
+      ]
+    },
+    "us-layoffs-labor-market-2026-10-02": {
+      "category": "economy",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/legal/litigation/us-weekly-jobless-claims-fall-layoffs-drop-september-2026-10-01"
+      ]
+    },
+    "us-manufacturing-september-2026-10-02": {
+      "category": "economy",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/us-manufacturing-steady-september-input-prices-increase-2026-10-01"
+      ]
+    },
     "us-midterm-early-voting-2026-09-18": {
       "category": "world",
       "last_published": "2026-09-19",
@@ -1626,6 +1730,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2625f87993578025820f4572e0ea0c0b"
+      ]
+    },
+    "us-stocks-october-2026": {
+      "category": "investment",
+      "last_published": "2026-10-02",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c367e6e87c621f06078ea223ab7ce6d1"
       ]
     },
     "us-stocks-oil-yields-2026-09-15": {
