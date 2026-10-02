@@ -110,8 +110,8 @@ def validate_record(record: dict, prior_stories: dict[str, dict] | None = None) 
         summary = str(story.get("summary", "")).strip()
         if not title or not summary:
             errors.append(f"{prefix}: title and summary are required")
-        if sentence_count(summary) > 3:
-            errors.append(f"{prefix}: summary may contain at most three sentences")
+        if sentence_count(summary) > 7:
+            errors.append(f"{prefix}: summary may contain at most seven sentences")
         total_words += len((title + " " + summary).split())
 
         sources = story.get("sources")
@@ -150,6 +150,6 @@ def validate_record(record: dict, prior_stories: dict[str, dict] | None = None) 
         if continuation.get("material_update") and len(str(continuation.get("material_update"))) < 20:
             errors.append(f"{prefix}: material_update must name the new development")
 
-    if total_words > 850:
-        errors.append(f"brief is {total_words} words; maximum is 850 for a five-minute read")
+    if total_words > 2200:
+        errors.append(f"brief is {total_words} words; maximum is 2200 for a fuller listening brief")
     return errors
