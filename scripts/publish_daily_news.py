@@ -24,6 +24,8 @@ def esc(value: object) -> str:
 def render(record: dict, page_title: str | None = None) -> str:
     rows = []
     for story in record["stories"]:
+        paragraphs = [part.strip() for part in str(story["summary"]).split("\n\n") if part.strip()]
+        body = "".join(f"<p>{esc(paragraph)}</p>" for paragraph in paragraphs)
         source_links = " · ".join(
             f'<a href="{esc(source["url"])}">{esc(source["publisher"])} </a>'
             for source in story["sources"]
@@ -33,7 +35,7 @@ def render(record: dict, page_title: str | None = None) -> str:
             f'data-story-id="{esc(story["id"])}">'
             f'<p class="meta">{esc(story["category"])} · {esc(story["importance"])}</p>'
             f'<h2>{esc(story["title"])}</h2>'
-            f'<p>{esc(story["summary"])}</p>'
+            f'{body}'
             f'<p class="sources">Read more: {source_links}</p></section>'
         )
     return f"""<!DOCTYPE html>
