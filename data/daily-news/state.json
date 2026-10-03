@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-02",
-    "item_id": "itm_9DC1m",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-02-daily-brief.html"
+    "date": "2026-10-03",
+    "item_id": "itm_9DfG4",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-03-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -47,12 +47,36 @@
         "https://apnews.com/article/antitrust-lawsuit-ai-slowdown-anthropic-openai-spacexai-google-960af4308161eaf4ed13c383b0ce1c1b"
       ]
     },
+    "airbus-board-ceo-succession-2026-10-02": {
+      "category": "business",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/legal/transactional/airbus-board-appointments-herald-ceo-decision-next-year-sources-say-2026-10-02/"
+      ]
+    },
     "amazon-cargo-crash-2026-09-14": {
       "category": "business",
       "last_published": "2026-09-14",
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/cx2zg554w9ko"
+      ]
+    },
+    "amazon-data-center-community-fund-2026-10-02": {
+      "category": "technology",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/amazon-data-centers-1-billion-investment-91b65ba1729540c1c0d92e35deef35d8"
+      ]
+    },
+    "amazon-nvidia-chip-vehicle-2026-10-02": {
+      "category": "technology",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/"
       ]
     },
     "anthropic-ipo-costs-2026-09-29": {
@@ -277,6 +301,22 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/bbf1d846-7d89-45f6-8c0f-1fba1e334b4b"
+      ]
+    },
+    "china-copper-commitments-anglo-teck-2026-10-02": {
+      "category": "business",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/china-demands-copper-supply-commitments-anglo-teck-merger-approval-sources-say-2026-10-02"
+      ]
+    },
+    "china-fuel-export-suspension-asia-2026-10-02": {
+      "category": "business",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/china-fuel-export-suspension-choke-supplies-asia-2026-10-02/"
       ]
     },
     "china-golden-week-spending-2026-09-30": {
@@ -591,6 +631,15 @@
         "https://apnews.com/article/trade-trump-canada-china-a49cd9e6132e9ad7937b7b35f08e0470"
       ]
     },
+    "g7-diesel-reserves-release-2026-10-02": {
+      "category": "economy",
+      "last_published": "2026-10-03",
+      "material_update": "The G7 formally agreed a quantified, coordinated reserve release rather than leaving the diesel response at the proposal stage.",
+      "source_urls": [
+        "https://www.reuters.com/business/energy/g7-release-100-million-barrels-diesel-other-reserves-through-iea-2026-10-02/",
+        "https://apnews.com/article/trump-europe-diesel-fuel-prices-774a360d1646d9ce8aba764fdd9959d2"
+      ]
+    },
     "german-deportation-calls-2026": {
       "category": "germany",
       "last_published": "2026-09-28",
@@ -847,6 +896,22 @@
         "https://www.reuters.com/world/us/trump-administration-plans-28-billion-munitions-sale-israel-sources-say-2026-09-15/"
       ]
     },
+    "italy-budget-growth-deficit-2026-10-02": {
+      "category": "economy",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/europe/italy-scales-back-defence-spending-hike-new-budget-plan-2026-10-02"
+      ]
+    },
+    "kyiv-bridge-and-infrastructure-attacks-2026-10-02": {
+      "category": "world",
+      "last_published": "2026-10-03",
+      "material_update": "Strikes repeatedly hit Kyiv's Pivdennyi bridge, suspending metro and road traffic and adding data-connectivity disruption to the ongoing infrastructure campaign.",
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c6wyv44y4ywjo"
+      ]
+    },
     "luxembourg-bank-sale-2026-09-20": {
       "category": "business",
       "last_published": "2026-09-21",
@@ -863,6 +928,14 @@
         "https://www.ft.com/content/a65f3f5d-e8ec-44b1-8529-24651e6254c3"
       ]
     },
+    "manchester-jewish-community-plot-charges-2026-10-02": {
+      "category": "world",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cqx29nke55kno"
+      ]
+    },
     "markets-q4-transition-2026-10-01": {
       "category": "investment",
       "last_published": "2026-10-01",
@@ -877,6 +950,14 @@
       "material_update": "The regional election produced a concrete CDU setback and a public commitment by Merz to remain in office.",
       "source_urls": [
         "https://www.ft.com/content/d74ce82a-2a15-404a-ae3a-3921e887bab3"
+      ]
+    },
+    "meta-glasses-dutch-privacy-pause-2026-10-02": {
+      "category": "technology",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/sustainability/dutch-eyewear-chain-hans-anders-halts-sale-meta-glasses-citing-privacy-concerns-2026-10-02"
       ]
     },
     "meta-uk-online-safety-act-challenge-2026-09-20": {
@@ -1151,6 +1232,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/media-telecom/spacexs-starship-engine-failure-could-impact-nasas-moon-mission-objectives-2026-09-29/"
+      ]
+    },
+    "spain-housing-decree-rejected-2026-10-02": {
+      "category": "world",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/ally-spanish-pm-threatens-derail-housing-decree-fury-over-evictions-grows-2026-10-02/"
       ]
     },
     "stocks-q3-ai-bonds-crude-2026-10-01": {
@@ -1700,6 +1789,15 @@
         "https://www.reuters.com/business/theres-reason-trump-is-only-one-talking-about-1-rates-2026-09-23"
       ]
     },
+    "us-september-jobs-slowdown-2026-10-02": {
+      "category": "economy",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/us-job-growth-slows-sharply-september-unemployment-rate-rises-42-2026-10-02",
+        "https://www.bbc.com/news/articles/cm2d6gg0642yo"
+      ]
+    },
     "us-short-term-debt-one-trillion-2026-09-21": {
       "category": "investment",
       "last_published": "2026-09-21",
@@ -1730,6 +1828,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2625f87993578025820f4572e0ea0c0b"
+      ]
+    },
+    "us-stocks-jobs-rate-expectations-2026-10-02": {
+      "category": "investment",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/wall-st-futures-gain-yields-oil-prices-ease-ahead-jobs-report-2026-10-02"
       ]
     },
     "us-stocks-october-2026": {
@@ -1770,6 +1876,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/producer-prices-inflation-economy-iran-66d1591b979271ee7b79b113d715f6ef"
+      ]
+    },
+    "volvo-cars-withdraws-guidance-2026-10-02": {
+      "category": "business",
+      "last_published": "2026-10-03",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/volvo-cars-warns-weaker-sales-cash-flow-2026-10-02/"
       ]
     },
     "wall-st-oil-iran-proposal-2026-09-29": {
