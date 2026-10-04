@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-03",
-    "item_id": "itm_9DfG4",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-03-daily-brief.html"
+    "date": "2026-10-04",
+    "item_id": "itm_9DyAx",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-04-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -93,6 +93,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/anthropics-ipo-pitch-embraces-ais-promise-peril-2026-09-30"
+      ]
+    },
+    "ap-norc-voter-party-confidence-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/109768f7544c9e0fcc7e716de0dc2157"
       ]
     },
     "apple-haptic-patent-verdict-2026": {
@@ -197,6 +205,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/japan-economy-boj-inflation-oil-war-a6606c3b8735dbd00f82a9aa358e4a23"
+      ]
+    },
+    "brazil-presidential-election-eve-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/3b699682b8c69e9f845e0575a86c483c"
       ]
     },
     "brazil-rio-organised-crime-plan-2026-09-18": {
@@ -591,6 +607,14 @@
         "https://apnews.com/article/dengue-death-florida-mosquito-climate-57574815fdca4f8bc3336bb429a3d1fc"
       ]
     },
+    "flydubai-emergency-crew-intervention-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/a837a1226f3c4f748d181702f0ff8bd1"
+      ]
+    },
     "france-g7-oil-reserves-2026-09-19": {
       "category": "economy",
       "last_published": "2026-09-19",
@@ -752,6 +776,14 @@
         "https://www.ft.com/content/2ecc74bd-2fba-4ca6-9f1c-f0a927ed983c"
       ]
     },
+    "hemp-thc-federal-ban-2026-10-03": {
+      "category": "business",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/a6f2a02b40c7c5d33d99c84f3221e93f"
+      ]
+    },
     "houthi-missile-saudi-capital-2026-09-20": {
       "category": "world",
       "last_published": "2026-09-21",
@@ -856,6 +888,14 @@
         "https://apnews.com/article/yemen-iran-houthi-rebels-red-sea-mokha-e4e799701b382799a955969c212800ea"
       ]
     },
+    "iran-rial-currency-support-2026-10-03": {
+      "category": "economy",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/iranian-rial-new-low-cenbank-sells-dollars-support-currency-2026-10-03"
+      ]
+    },
     "iran-us-revival-talks-un-2026-09-23": {
       "category": "world",
       "last_published": "2026-09-23",
@@ -910,6 +950,14 @@
       "material_update": "Strikes repeatedly hit Kyiv's Pivdennyi bridge, suspending metro and road traffic and adding data-connectivity disruption to the ongoing infrastructure campaign.",
       "source_urls": [
         "https://www.bbc.com/news/articles/c6wyv44y4ywjo"
+      ]
+    },
+    "kyiv-north-bridge-strike-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": "A strike on Kyiv's North Bridge expanded disruption from the previously hit Southern Bridge to a second major Dnipro crossing.",
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c83vqxzdg1yko"
       ]
     },
     "luxembourg-bank-sale-2026-09-20": {
@@ -984,6 +1032,14 @@
         "https://www.reuters.com/business/finance/monzo-talks-sale-nubank-about-10-billion-valuation-sky-news-reports-2026-09-26"
       ]
     },
+    "navistar-ohio-layoffs-2026-10-03": {
+      "category": "business",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/7c8dc7901de15a22a909bcd9c8b78a3e"
+      ]
+    },
     "nazi-looted-art-lawsuits-2026-09-19": {
       "category": "world",
       "last_published": "2026-09-20",
@@ -1023,6 +1079,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/asia-pacific/north-korea-says-us-driven-nuclear-submarine-push-justifies-its-own-weapons-buildup-2026-09-15/"
+      ]
+    },
+    "north-korea-intermediate-range-missile-drill-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/north-korea-says-it-conducted-intermediate-range-strategic-missile-drill-2026-10-03"
       ]
     },
     "north-korea-successor-question-2026-09-10": {
@@ -1218,6 +1282,14 @@
         "https://apnews.com/article/senate-chinese-ev-ban-elections-mercedesbenz-220c9c816ed0f73eb867775c666b0b9e"
       ]
     },
+    "serbia-vucic-prime-minister-bid-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/12260c5e6971650269cec1a4b4420eb3"
+      ]
+    },
     "softbank-data-centre-ipo-2026-09-18": {
       "category": "business",
       "last_published": "2026-09-18",
@@ -1240,6 +1312,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/ally-spanish-pm-threatens-derail-housing-decree-fury-over-evictions-grows-2026-10-02/"
+      ]
+    },
+    "spain-housing-protests-escalate-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": "After parliament rejected the housing decree, the issue escalated into nationwide demonstrations and violence in Madrid.",
+      "source_urls": [
+        "https://www.reuters.com/world/tens-thousands-protest-across-spain-over-housing-crisis-2026-10-03"
       ]
     },
     "stocks-q3-ai-bonds-crude-2026-10-01": {
@@ -1322,6 +1402,14 @@
         "https://www.ft.com/content/76616441-6419-4792-9d27-31c5fa436dc4"
       ]
     },
+    "tigray-mekelle-airport-counteroffensive-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/africa/pro-government-forces-say-they-retake-airport-ethiopias-tigray-region-2026-10-03"
+      ]
+    },
     "treasury-yields-ease-2026-10-02": {
       "category": "investment",
       "last_published": "2026-10-02",
@@ -1368,6 +1456,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/trump-helipad-cnn-ban-press-xi-61667fb3faaa9a7e9cfc9ffb4f7dc90e"
+      ]
+    },
+    "trump-medicare-premium-payment-2026-10-03": {
+      "category": "economy",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/2a314c1c4b5ae929f3dfc8a262b4f1c7"
+      ]
+    },
+    "trump-ohio-data-centers-2026-10-03": {
+      "category": "technology",
+      "last_published": "2026-10-04",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/a86aad6b19d4afb2c505b902171ebd8e"
       ]
     },
     "trump-russia-sanctions-signed-2026-09-18": {
@@ -1496,6 +1600,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/finance/ukraine-proposes-record-defence-spending-next-year-war-costs-soar-2026-09-16/"
+      ]
+    },
+    "ukraine-refinery-strategy-2026-10-03": {
+      "category": "world",
+      "last_published": "2026-10-04",
+      "material_update": "Zelenskyy publicly committed Ukraine to intensifying refinery attacks as a direct response to Moscow's airstrike doctrine.",
+      "source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/ukraine-will-hit-russian-refineries-response-moscows-new-doctrine-airstrikes-2026-10-03"
       ]
     },
     "ukraine-russia-attacks-after-pause-2026-09-08": {
