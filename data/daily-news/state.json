@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-04",
-    "item_id": "itm_9DyAx",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-04-daily-brief.html"
+    "date": "2026-10-05",
+    "item_id": "itm_9EJLP",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-05-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -143,6 +143,14 @@
         "https://www.reuters.com/world/china/global-economy-asian-factory-activity-expands-thanks-global-ai-boom-2026-10-01"
       ]
     },
+    "austria-babler-resignation-2026-10-04": {
+      "category": "world",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/austrian-governments-no-2-figure-says-he-will-step-down-2026-10-04"
+      ]
+    },
     "azerbaijan-investment-deals-2026": {
       "category": "business",
       "last_published": "2026-09-28",
@@ -207,12 +215,28 @@
         "https://apnews.com/article/japan-economy-boj-inflation-oil-war-a6606c3b8735dbd00f82a9aa358e4a23"
       ]
     },
+    "bosnia-dodik-election-claim-2026-10-04": {
+      "category": "world",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/8d8ce8f6a3c676ef8ba3422f68ea9d11"
+      ]
+    },
     "brazil-presidential-election-eve-2026-10-03": {
       "category": "world",
       "last_published": "2026-10-04",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/3b699682b8c69e9f845e0575a86c483c"
+      ]
+    },
+    "brazil-presidential-runoff-2026-10-04": {
+      "category": "world",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/c194f8965632c8af9bcc4e7a3716cd7c"
       ]
     },
     "brazil-rio-organised-crime-plan-2026-09-18": {
@@ -760,6 +784,22 @@
         "https://www.reuters.com/business/finance/global-ma-deal-rush-fades-third-quarter-rising-borrowing-costs-bite-2026-10-01"
       ]
     },
+    "global-markets-fed-hike-bets-recede-2026-10-05": {
+      "category": "investment",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-05"
+      ]
+    },
+    "gold-fed-rate-expectations-2026-10-05": {
+      "category": "investment",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/india/gold-gains-october-fed-rate-hike-prospects-fade-2026-10-05"
+      ]
+    },
     "greece-migrant-boat-rescue-2026-09-14": {
       "category": "world",
       "last_published": "2026-09-15",
@@ -822,6 +862,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/illinois-new-study-data-centers-917729159902decef71a8679dce50d3e"
+      ]
+    },
+    "india-rbi-rate-hike-bets-2026-10-05": {
+      "category": "economy",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/india/markets-bet-rbi-rate-hike-inflation-pressure-builds-2026-10-05"
+      ]
+    },
+    "indian-rupee-oil-fed-relief-2026-10-05": {
+      "category": "economy",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/india/indian-rupee-set-mild-relief-dip-oil-fading-fed-october-hike-bets-2026-10-05"
       ]
     },
     "indonesia-borneo-wildfire-haze-2026-09-16": {
@@ -944,6 +1000,14 @@
         "https://www.reuters.com/world/europe/italy-scales-back-defence-spending-hike-new-budget-plan-2026-10-02"
       ]
     },
+    "japan-services-pmi-slowdown-2026-10-05": {
+      "category": "economy",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/japan-service-sector-activity-slows-5-month-high-pmi-shows-2026-10-05"
+      ]
+    },
     "kyiv-bridge-and-infrastructure-attacks-2026-10-02": {
       "category": "world",
       "last_published": "2026-10-03",
@@ -998,6 +1062,14 @@
       "material_update": "The regional election produced a concrete CDU setback and a public commitment by Merz to remain in office.",
       "source_urls": [
         "https://www.ft.com/content/d74ce82a-2a15-404a-ae3a-3921e887bab3"
+      ]
+    },
+    "merz-ukraine-aid-package-2026-10-04": {
+      "category": "germany",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/89bb8d2a97cc09d01a316723d08d2fb3"
       ]
     },
     "meta-glasses-dutch-privacy-pause-2026-10-02": {
@@ -1121,6 +1193,14 @@
         "https://www.reuters.com/world/china/oecd-expects-ai-boom-help-offset-middle-east-energy-shock-now-2026-09-23"
       ]
     },
+    "oil-exports-g7-stock-release-2026-10-05": {
+      "category": "investment",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/oil-climbs-after-yemeni-houthis-attack-saudi-aramco-sites-2026-10-04"
+      ]
+    },
     "oil-falls-gulf-supply-us-iran-talks-2026-09-23": {
       "category": "investment",
       "last_published": "2026-09-23",
@@ -1135,6 +1215,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/stocks-markets-trump-oil-ai-rates-d3d6157a534584985987f828a940cffa"
+      ]
+    },
+    "opec-plus-november-output-steady-2026-10-04": {
+      "category": "economy",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/2b1f98d5fc11048ff65fa93952d86844"
       ]
     },
     "openai-concerning-model-behaviour-2026-09-17": {
@@ -1707,6 +1795,14 @@
         "https://apnews.com/article/consumer-spending-inflation-tariffs-wages-01d0c6f32f74d9101a39ca6007813b61"
       ]
     },
+    "us-b1-bombers-raf-fairford-2026-10-04": {
+      "category": "world",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/uk/us-removes-b-1-bombers-uk-base-amid-security-concerns-2026-10-04"
+      ]
+    },
     "us-business-activity-inflation-2026-09-24": {
       "category": "economy",
       "last_published": "2026-09-24",
@@ -1770,6 +1866,15 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/economic-growth-inflation-trump-trade-b759367e9e6149fe145652cc95887aa0"
+      ]
+    },
+    "us-federal-ai-task-force-2026-10-04": {
+      "category": "ai",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trump-jay-clayton-artificial-intelligence-task-force-b8689ea07de9102a52bd1cd2049b5901",
+        "https://www.bbc.com/news/articles/cqj6jenp26zyo"
       ]
     },
     "us-fuel-economy-standards-2026": {
@@ -2044,6 +2149,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/live/trump-xi-china-cnn-unga-news-updates-09-23-2026"
+      ]
+    },
+    "yemen-operation-houthi-territory-2026-10-04": {
+      "category": "world",
+      "last_published": "2026-10-05",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cx8dzj9vpp01o"
       ]
     },
     "yen-sinks-after-boj-hike-2026-09-19": {
