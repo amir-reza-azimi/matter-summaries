@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-06",
-    "item_id": "itm_9EpkD",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-06-daily-brief.html"
+    "date": "2026-10-07",
+    "item_id": "itm_9FOXQ",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-07-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -31,6 +31,14 @@
   ],
   "schema_version": 1,
   "story_ledger": {
+    "afd-regional-parliament-president-2026-10-07": {
+      "category": "germany",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/76db879a-2c53-4aee-8354-b30185f1d3a4"
+      ]
+    },
     "afghan-migrants-return-iran-taliban-2026-09-17": {
       "category": "world",
       "last_published": "2026-09-17",
@@ -77,6 +85,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/"
+      ]
+    },
+    "anduril-maryland-shipyard-2026-10-06": {
+      "category": "business",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trump-baltimore-moore-submarines-midterms-1cacc864be999e71ef8bcf9b15e21cda"
       ]
     },
     "anthropic-ipo-costs-2026-09-29": {
@@ -141,6 +157,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/china/global-economy-asian-factory-activity-expands-thanks-global-ai-boom-2026-10-01"
+      ]
+    },
+    "asos-hack-notification-2026-10-07": {
+      "category": "business",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/eab7052d-6640-4928-a128-8df73455ba0a"
       ]
     },
     "austria-babler-resignation-2026-10-04": {
@@ -407,6 +431,14 @@
         "https://www.reuters.com/world/africa/congo-police-break-up-protests-against-proposed-constitutional-changes-2026-09-15/"
       ]
     },
+    "corporate-borrowing-costs-2026-10-07": {
+      "category": "investment",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/7c7ccb82-2973-47af-ad9b-b469c6ea0048"
+      ]
+    },
     "corporate-profit-boom-2026-10-02": {
       "category": "investment",
       "last_published": "2026-10-02",
@@ -453,6 +485,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/dow-futures-hit-three-month-low-yields-surge-micron-earnings-offer-support-2026-10-01"
+      ]
+    },
+    "erebor-deposits-growth-2026-10-07": {
+      "category": "business",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/42b6fa88-f730-4f8a-a194-8f53d0759aaf"
       ]
     },
     "eu-china-hybrid-car-export-limits-2026-09-18": {
@@ -613,6 +653,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/ausland/europa/ukraine-export-getreide-100.html"
+      ]
+    },
+    "ey-data-breach-goldman-man-group-2026-10-07": {
+      "category": "business",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/2ad1ff25-f08e-4e78-83c9-90e7ea3844ee"
       ]
     },
     "fed-cook-inflation-2026-09-29": {
@@ -864,6 +912,14 @@
         "https://apnews.com/article/a6f2a02b40c7c5d33d99c84f3221e93f"
       ]
     },
+    "hormuz-captain-pay-2026-10-06": {
+      "category": "world",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/0d665e5b-d8c8-4f1e-acf5-bba7193b4e6e"
+      ]
+    },
     "houthi-missile-saudi-capital-2026-09-20": {
       "category": "world",
       "last_published": "2026-09-21",
@@ -942,6 +998,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/cvgykzgljlyo"
+      ]
+    },
+    "ion-creditor-debt-2026-10-07": {
+      "category": "business",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/fba91434-70d3-40e6-adb1-8d0c5d6f4fe6"
       ]
     },
     "iran-currency-record-low-2026": {
@@ -1072,6 +1136,14 @@
         "https://www.bbc.com/news/articles/c83vqxzdg1yko"
       ]
     },
+    "le-pen-fiscal-pledge-2026-10-07": {
+      "category": "economy",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/4e1a4297-62f4-4b42-a41a-2ad23b64cbe9"
+      ]
+    },
     "luxembourg-bank-sale-2026-09-20": {
       "category": "business",
       "last_published": "2026-09-21",
@@ -1086,6 +1158,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/a65f3f5d-e8ec-44b1-8529-24651e6254c3"
+      ]
+    },
+    "mali-kidal-russian-forces-2026-10-07": {
+      "category": "world",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/bb6cc173-8daf-457f-abd1-502087b981b0"
       ]
     },
     "manchester-jewish-community-plot-charges-2026-10-02": {
@@ -1466,6 +1546,14 @@
         "https://www.reuters.com/business/media-telecom/spacexs-starship-engine-failure-could-impact-nasas-moon-mission-objectives-2026-09-29/"
       ]
     },
+    "spacex-nvidia-chip-financing-2026-10-06": {
+      "category": "business",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/d3f5928d-f38c-4666-8f7a-8737f9c45f51"
+      ]
+    },
     "spain-housing-decree-rejected-2026-10-02": {
       "category": "world",
       "last_published": "2026-10-03",
@@ -1640,6 +1728,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/a86aad6b19d4afb2c505b902171ebd8e"
+      ]
+    },
+    "trump-putin-pneumonic-plague-2026-10-07": {
+      "category": "world",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/dcf35eaf-e1d3-4289-bc7a-e0c91725ad59"
       ]
     },
     "trump-russia-sanctions-signed-2026-09-18": {
@@ -2070,6 +2166,14 @@
         "https://apnews.com/article/faa-flights-laguardia-newark-jfk-airport-85e2321733ff604f7a5e93ce136945b9"
       ]
     },
+    "us-petrol-tax-suspension-2026-10-07": {
+      "category": "economy",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/3fd43fc5-4973-4a26-9d9c-47b6361e6217"
+      ]
+    },
     "us-private-payrolls-2026-10-01": {
       "category": "economy",
       "last_published": "2026-10-01",
@@ -2197,6 +2301,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/producer-prices-inflation-economy-iran-66d1591b979271ee7b79b113d715f6ef"
+      ]
+    },
+    "vitol-tanker-shortage-oil-2026-10-07": {
+      "category": "economy",
+      "last_published": "2026-10-07",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/95db1fbd-4e1f-45cf-b678-c40635f59197"
       ]
     },
     "volvo-cars-withdraws-guidance-2026-10-02": {
