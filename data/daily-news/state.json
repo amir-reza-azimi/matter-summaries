@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-07",
-    "item_id": "itm_9FOXQ",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-07-daily-brief.html"
+    "date": "2026-10-08",
+    "item_id": "itm_9Fub3",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-08-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -141,6 +141,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/2c298545771b20a9bc9a398bee282bb7"
+      ]
+    },
+    "arini-credit-bets-losses-2026-10-07": {
+      "category": "investment",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/b52c8acc-7ea5-4bd0-b26a-b9956e19867b"
       ]
     },
     "artemis-ii-astronaut-retirements-2026-09-09": {
@@ -389,6 +397,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/energy/china-demands-copper-supply-commitments-anglo-teck-merger-approval-sources-say-2026-10-02"
+      ]
+    },
+    "china-eu-hybrid-export-curbs-2026-10-07": {
+      "category": "germany",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/32e1c801-fe7d-4389-b3fc-ab687cbb087b"
       ]
     },
     "china-fuel-export-suspension-asia-2026-10-02": {
@@ -679,6 +695,14 @@
         "https://apnews.com/article/ffd60cca8bb045bb9b1c389f5f1b73af"
       ]
     },
+    "fed-rate-rise-consensus-2026-10-07": {
+      "category": "investment",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/acca8690-c230-4abc-b2c5-4a1d2f082753"
+      ]
+    },
     "federal-reserve-rate-hike-2026-09-16": {
       "category": "economy",
       "last_published": "2026-09-17",
@@ -749,6 +773,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/europe/student-protests-french-public-sector-strike-heap-pressure-macron-2026-09-29/"
+      ]
+    },
+    "french-central-bank-ecb-intervention-2026-10-07": {
+      "category": "investment",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/d9ba8e1f-54f9-4739-9ce3-94e62d585e26"
       ]
     },
     "g20-trade-talks-2026": {
@@ -920,6 +952,14 @@
         "https://www.ft.com/content/0d665e5b-d8c8-4f1e-acf5-bba7193b4e6e"
       ]
     },
+    "hormuz-tanker-diesel-inflation-2026-10-07": {
+      "category": "economy",
+      "last_published": "2026-10-08",
+      "material_update": "A reported $2bn tanker position shows commercial pricing of persistent Hormuz disruption and diesel inflation risk.",
+      "source_urls": [
+        "https://www.ft.com/content/ff76eda4-0c63-4fcd-a5a1-2729fbbffccc"
+      ]
+    },
     "houthi-missile-saudi-capital-2026-09-20": {
       "category": "world",
       "last_published": "2026-09-21",
@@ -952,12 +992,28 @@
         "https://apnews.com/article/un-iran-atomic-watchdog-security-council-607ecdffcd8ef88ddf8f33041e86b720"
       ]
     },
+    "iea-diesel-release-price-jump-2026-10-07": {
+      "category": "economy",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/2761b6af-df11-49e8-a348-792a9597c9af"
+      ]
+    },
     "illinois-data-centers-jobs-2026": {
       "category": "technology",
       "last_published": "2026-10-02",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/illinois-new-study-data-centers-917729159902decef71a8679dce50d3e"
+      ]
+    },
+    "imf-debt-ai-warning-2026-10-07": {
+      "category": "economy",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/war-ai-georgieva-imf-oil-debt-2da9d879e2eb70e1e16d14fd1a307a99"
       ]
     },
     "india-rbi-rate-hike-bets-2026-10-05": {
@@ -1182,6 +1238,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-2026-09-30"
+      ]
+    },
+    "merz-cdu-afd-saxony-anhalt-2026-10-07": {
+      "category": "germany",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/1f101722-bfb7-4872-b7d9-70039c981615"
       ]
     },
     "merz-regional-election-result-2026-09-21": {
@@ -1418,6 +1482,14 @@
         "https://www.reuters.com/business/energy/portugal-says-entry-into-grid-operator-ren-wont-affect-chinas-state-grid-2026-09-23"
       ]
     },
+    "rubio-traditional-values-athens-2026-10-07": {
+      "category": "world",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/404bfe74-3778-4acc-8a01-329a6744b078"
+      ]
+    },
     "russia-air-campaign-ukraine-economy-2026-09-21": {
       "category": "world",
       "last_published": "2026-09-21",
@@ -1514,6 +1586,14 @@
         "https://apnews.com/article/895320bde6dc589cebb628b63832c38a"
       ]
     },
+    "sec-activist-campaign-collaboration-2026-10-07": {
+      "category": "business",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/20557850-9cd1-4685-8238-f292023afc1f"
+      ]
+    },
     "senate-chinese-cars-ban-2026": {
       "category": "business",
       "last_published": "2026-10-01",
@@ -1536,6 +1616,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/6c467774-9d91-425e-a901-26db055e37ad"
+      ]
+    },
+    "spacex-credit-risk-borrowing-2026-10-07": {
+      "category": "business",
+      "last_published": "2026-10-08",
+      "material_update": "Credit-default swaps rose after the reported $40bn chip-financing plan, shifting attention to SpaceX borrowing risk.",
+      "source_urls": [
+        "https://www.ft.com/content/4f2417d3-3de6-4f62-bd3a-8c8f740a4b29"
       ]
     },
     "spacex-engine-moon-mission-2026-09-30": {
@@ -1666,6 +1754,14 @@
         "https://www.reuters.com/world/africa/pro-government-forces-say-they-retake-airport-ethiopias-tigray-region-2026-10-03"
       ]
     },
+    "treasury-auction-global-bond-pressure-2026-10-07": {
+      "category": "investment",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/33c67aa0-bfdb-457b-84bb-960b4fed94b6"
+      ]
+    },
     "treasury-yields-ease-2026-10-02": {
       "category": "investment",
       "last_published": "2026-10-02",
@@ -1680,6 +1776,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/33b317b4-cd7b-486a-8707-4d65db837c6d"
+      ]
+    },
+    "trump-balkans-advisers-2026-10-07": {
+      "category": "world",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/ea58254a-947e-4e87-86d2-95ffbd8a1c9d"
       ]
     },
     "trump-diesel-export-dilemma-2026-09-24": {
@@ -1792,6 +1896,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/finance/swiss-finance-minister-says-unlikely-ubs-would-leave-its-home-base-2026-09-26"
+      ]
+    },
+    "uk-iran-war-public-finances-2026-10-07": {
+      "category": "economy",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/2cb13aed-f6bf-4f45-b906-fa1194405a0c"
       ]
     },
     "uk-made-in-europe-policy-2026-09-17": {
@@ -2325,6 +2437,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/wall-st-futures-drop-oil-spikes-after-trump-rejects-iran-peace-proposal-2026-09-28"
+      ]
+    },
+    "wall-street-bond-yields-oil-2026-10-07": {
+      "category": "investment",
+      "last_published": "2026-10-08",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/stocks-markets-rates-oil-earnings-44b75c188756038371cf3112ede9cee8"
       ]
     },
     "wall-street-oil-ai-stocks-2026-09-14": {
