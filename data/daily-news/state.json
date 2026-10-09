@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-08",
-    "item_id": "itm_9Fub3",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-08-daily-brief.html"
+    "date": "2026-10-09",
+    "item_id": "itm_9GQoz",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-09-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -87,6 +87,14 @@
         "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/"
       ]
     },
+    "amex-money-laundering-fine-2026-10-08": {
+      "category": "business",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/6777c34c-876f-4f72-9eec-d3cddb2f1f45"
+      ]
+    },
     "anduril-maryland-shipyard-2026-10-06": {
       "category": "business",
       "last_published": "2026-10-07",
@@ -109,6 +117,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/anthropics-ipo-pitch-embraces-ais-promise-peril-2026-09-30"
+      ]
+    },
+    "ap-norc-ai-public-opinion-2026-10-08": {
+      "category": "technology",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/artificial-intelligence-ai-poll-trump-democrats-republicans-9ce5531b7ea53234c4e600f8c0e9cf27"
       ]
     },
     "ap-norc-voter-party-confidence-2026-10-03": {
@@ -767,6 +783,14 @@
         "https://www.ft.com/content/ad358e9f-4daf-4a2a-a100-3c1effa6de11"
       ]
     },
+    "french-bonds-bottom-fishing-2026-10-08": {
+      "category": "investment",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/9cf103ed-548e-4b06-baed-71632abca961"
+      ]
+    },
     "french-budget-strikes-2026-09-30": {
       "category": "world",
       "last_published": "2026-09-30",
@@ -950,6 +974,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/0d665e5b-d8c8-4f1e-acf5-bba7193b4e6e"
+      ]
+    },
+    "hormuz-oil-price-tanker-attacks-2026-10-08": {
+      "category": "economy",
+      "last_published": "2026-10-09",
+      "material_update": "Tanker attacks and a renewed fall in Hormuz traffic mark a deterioration from the prior day\u2019s costly rerouting and diesel concern.",
+      "source_urls": [
+        "https://www.ft.com/content/ec860f96-5a2b-461a-a897-a957860c3dba"
       ]
     },
     "hormuz-tanker-diesel-inflation-2026-10-07": {
@@ -1288,6 +1320,14 @@
         "https://apnews.com/article/89b040631d635e0d8673f1e9aa9a6e28"
       ]
     },
+    "microsoft-us-residency-sponsorship-ban-2026-10-08": {
+      "category": "technology",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/5cfecbba-69ed-42d0-98fd-3ae019144692"
+      ]
+    },
     "monzo-nubank-sale-talks-2026": {
       "category": "business",
       "last_published": "2026-09-28",
@@ -1417,6 +1457,14 @@
         "https://apnews.com/article/2b1f98d5fc11048ff65fa93952d86844"
       ]
     },
+    "openai-annualised-revenue-reporting-2026-10-08": {
+      "category": "technology",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/b66a9858-f8fb-46cb-b506-44bfe26fca2a"
+      ]
+    },
     "openai-concerning-model-behaviour-2026-09-17": {
       "category": "ai",
       "last_published": "2026-09-18",
@@ -1480,6 +1528,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/energy/portugal-says-entry-into-grid-operator-ren-wont-affect-chinas-state-grid-2026-09-23"
+      ]
+    },
+    "riyadh-airport-houthi-disruption-2026-10-08": {
+      "category": "world",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/7e39cdb9-977c-4a4c-b35c-6f775a9822db"
       ]
     },
     "rubio-traditional-values-athens-2026-10-07": {
@@ -1642,6 +1698,14 @@
         "https://www.ft.com/content/d3f5928d-f38c-4666-8f7a-8737f9c45f51"
       ]
     },
+    "spacex-spectrum-us-telcos-2026-10-08": {
+      "category": "business",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/8c3f95ec-2428-4102-9f67-b707f1264c69"
+      ]
+    },
     "spain-housing-decree-rejected-2026-10-02": {
       "category": "world",
       "last_published": "2026-10-03",
@@ -1664,6 +1728,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/7c6bfe8f-eae2-47f7-98e5-19e714195c58"
+      ]
+    },
+    "starbucks-chipotle-takeover-exploration-2026-10-08": {
+      "category": "business",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/79cef26a-e5e9-41d0-9af2-876dc23a9a7d"
       ]
     },
     "stocks-q3-ai-bonds-crude-2026-10-01": {
@@ -1818,6 +1890,14 @@
         "https://apnews.com/article/trump-helipad-cnn-ban-press-xi-61667fb3faaa9a7e9cfc9ffb4f7dc90e"
       ]
     },
+    "trump-iran-no-attack-midterms-2026-10-08": {
+      "category": "world",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/e0cc2789-0e71-401d-8096-d58303970a37"
+      ]
+    },
     "trump-medicare-premium-payment-2026-10-03": {
       "category": "economy",
       "last_published": "2026-10-04",
@@ -1898,6 +1978,14 @@
         "https://www.reuters.com/business/finance/swiss-finance-minister-says-unlikely-ubs-would-leave-its-home-base-2026-09-26"
       ]
     },
+    "uk-germany-fighter-jet-scheme-2026-10-08": {
+      "category": "germany",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/3d482d55-dc7d-44d9-9ad3-a374e6d5e97d"
+      ]
+    },
     "uk-iran-war-public-finances-2026-10-07": {
       "category": "economy",
       "last_published": "2026-10-08",
@@ -1952,6 +2040,14 @@
       "material_update": "Fresh Reuters reporting documents continued energy-site strikes after the prior day\u2019s proposed reciprocal pause.",
       "source_urls": [
         "https://www.reuters.com/world/europe/russia-hits-petrol-station-warehouse-facilities-kyiv-mayor-says-2026-09-15/"
+      ]
+    },
+    "ukraine-kramatorsk-bus-bombing-2026-10-08": {
+      "category": "world",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/russia-ukraine-war-drones-missiles-zelenskyy-putin-7f395d215bb67082da29f9c4467ef776"
       ]
     },
     "ukraine-moscow-drone-attack-2026-09-21": {
@@ -2254,6 +2350,14 @@
         "https://apnews.com/article/c8445da73298f6baa701f468d42bf68f"
       ]
     },
+    "us-mortgage-rates-seven-week-rise-2026-10-08": {
+      "category": "investment",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/04d6ae65-5d5f-4ed6-9c15-16aa0f4d0713"
+      ]
+    },
     "us-motor-oil-shortage-2026-09-20": {
       "category": "economy",
       "last_published": "2026-09-21",
@@ -2453,6 +2557,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/8f72a301be85728018018735163f4dad"
+      ]
+    },
+    "wall-street-oil-tech-bonds-2026-10-08": {
+      "category": "investment",
+      "last_published": "2026-10-09",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/stocks-markets-bonds-oil-us-6a096d714c874db13632794a32cebaa6"
       ]
     },
     "wall-street-rally-oil-yields-2026-09-22": {
