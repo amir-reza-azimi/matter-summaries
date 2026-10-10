@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-09",
-    "item_id": "itm_9GQoz",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-09-daily-brief.html"
+    "date": "2026-10-10",
+    "item_id": "itm_9GujX",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-10-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -213,6 +213,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/44bc4245-f235-4c1d-af93-deb5810f635a"
+      ]
+    },
+    "bank-failure-backstops-watchdog-2026-10-09": {
+      "category": "investment",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/ca31d01f-d5a0-4bd4-bcc2-4aaa68f4ca22"
       ]
     },
     "bank-japan-rate-high-1995-2026-09-18": {
@@ -479,6 +487,14 @@
         "https://www.reuters.com/legal/transactional/investors-wary-slowdown-us-corporate-profit-boom-2026-10-01"
       ]
     },
+    "delta-fuel-profit-outlook-2026-10-09": {
+      "category": "business",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/77d73223-3cfc-4892-a3c5-5502595f42d4"
+      ]
+    },
     "diesel-prices-us-politics-2026-09-24": {
       "category": "world",
       "last_published": "2026-09-24",
@@ -535,12 +551,44 @@
         "https://www.ft.com/content/0b45cb01-7f62-41c5-8c48-10c47f2e1ae6"
       ]
     },
+    "eu-china-hybrid-car-understanding-2026-10-09": {
+      "category": "germany",
+      "last_published": "2026-10-10",
+      "material_update": "Beijing\u2019s reported agreement to restrict exports replaces the prior day\u2019s rejection of voluntary curbs.",
+      "source_urls": [
+        "https://www.ft.com/content/2823ef6f-b3d7-494b-b131-414c02d6a59f"
+      ]
+    },
     "eu-counter-drone-security-mechanism-2026-09-16": {
       "category": "world",
       "last_published": "2026-09-17",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/4ce4fef2ba8e3866e436655075afc6d3"
+      ]
+    },
+    "eu-energy-windfall-tax-2026-10-09": {
+      "category": "economy",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/ffb13044-216b-4b31-885c-cda9c78cbfdb"
+      ]
+    },
+    "eu-financial-market-supervision-overhaul-2026-10-09": {
+      "category": "investment",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/77b79f83-9dd1-49b1-be59-b5ca3c2ad5fd"
+      ]
+    },
+    "eu-fossil-climate-report-delay-2026-10-09": {
+      "category": "economy",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/39f9b46f-b7ee-43b6-b377-6e47aa1af9a1"
       ]
     },
     "eu-philippines-free-trade-deal-2026-09-23": {
@@ -727,6 +775,14 @@
         "https://apnews.com/article/f0ea070bd8d0d6bfa88203b62c33fed7"
       ]
     },
+    "firmus-data-centre-ipo-withdrawal-2026-10-09": {
+      "category": "business",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/205ef7a5-321f-46e3-8097-d055bf1f6b3b"
+      ]
+    },
     "five-percent-treasury-yields-2026-09-24": {
       "category": "investment",
       "last_published": "2026-09-24",
@@ -846,6 +902,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/germany-wind-turbine-tallest-gircon-40ef52be4578df6dfd0e3e9181730f80"
+      ]
+    },
+    "germany-ecb-presidency-pivot-2026-10-09": {
+      "category": "germany",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/8354b63b-44ae-4aef-9c6b-5cef1f9bb001"
       ]
     },
     "germany-federal-budget-2027-debate-2026-09-08": {
@@ -1142,6 +1206,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/middle-east/iranian-rial-new-low-cenbank-sells-dollars-support-currency-2026-10-03"
+      ]
+    },
+    "iran-tanker-attacks-beyond-hormuz-2026-10-09": {
+      "category": "world",
+      "last_published": "2026-10-10",
+      "material_update": "Reported attacks beyond Hormuz broaden the shipping-risk geography beyond the earlier fall in strait traffic.",
+      "source_urls": [
+        "https://www.ft.com/content/83b817d5-df71-41a6-bef5-3db55a3a89cf"
       ]
     },
     "iran-us-revival-talks-un-2026-09-23": {
@@ -1698,6 +1770,14 @@
         "https://www.ft.com/content/d3f5928d-f38c-4666-8f7a-8737f9c45f51"
       ]
     },
+    "spacex-spectrum-telco-losses-2026-10-09": {
+      "category": "business",
+      "last_published": "2026-10-10",
+      "material_update": "The new $60bn valuation loss quantifies the market impact of SpaceX\u2019s spectrum acquisition.",
+      "source_urls": [
+        "https://www.ft.com/content/8c3f95ec-2428-4102-9f67-b707f1264c69"
+      ]
+    },
     "spacex-spectrum-us-telcos-2026-10-08": {
       "category": "business",
       "last_published": "2026-10-09",
@@ -1882,6 +1962,14 @@
         "https://www.reuters.com/legal/government/trump-says-he-has-done-bad-job-explaining-his-economic-record-2026-09-30"
       ]
     },
+    "trump-fed-lisa-cook-committee-2026-10-09": {
+      "category": "investment",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/d0c81cd2-f944-46b9-a859-abc3f0bd3516"
+      ]
+    },
     "trump-helipad-media-coverage-2026-09-22": {
       "category": "world",
       "last_published": "2026-09-22",
@@ -1904,6 +1992,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/2a314c1c4b5ae929f3dfc8a262b4f1c7"
+      ]
+    },
+    "trump-mexico-energy-trade-talks-2026-10-09": {
+      "category": "world",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/dda61be8-88bd-4ebc-bde5-ba440308d518"
       ]
     },
     "trump-ohio-data-centers-2026-10-03": {
@@ -2114,6 +2210,14 @@
         "https://www.bbc.com/news/articles/cy5zg41dkqwo"
       ]
     },
+    "ukraine-yandex-data-centres-2026-10-09": {
+      "category": "technology",
+      "last_published": "2026-10-10",
+      "material_update": "Ukraine\u2019s strike on named Yandex data centres turns the earlier infrastructure conflict into a specific technology-sector escalation.",
+      "source_urls": [
+        "https://www.ft.com/content/b90417e7-4d32-48cc-a508-5d405e7cd2ee"
+      ]
+    },
     "un-chief-global-cooperation-2026-09-18": {
       "category": "world",
       "last_published": "2026-09-18",
@@ -2292,6 +2396,14 @@
       "source_urls": [
         "https://apnews.com/article/f377fc956c442195dfcf50571b01a1c4",
         "https://www.reuters.com/legal/government/us-house-takes-up-russia-sanctions-bill-backed-by-late-senator-graham-2026-09-16/"
+      ]
+    },
+    "us-icc-sanctions-campaign-2026-10-09": {
+      "category": "world",
+      "last_published": "2026-10-10",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/4d5757e9-78b5-42f6-b26b-d9556321c0c8"
       ]
     },
     "us-job-openings-august-2026-09-30": {
