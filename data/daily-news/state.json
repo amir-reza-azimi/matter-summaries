@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-10",
-    "item_id": "itm_9GujX",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-10-daily-brief.html"
+    "date": "2026-10-11",
+    "item_id": "itm_9HEtl",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-11-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -31,6 +31,14 @@
   ],
   "schema_version": 1,
   "story_ledger": {
+    "abbas-postpones-palestinian-election-2026-10-10": {
+      "category": "world",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/abbas-postpones-palestinian-elections-sets-presidential-poll-september-2027-2026-10-10/"
+      ]
+    },
     "afd-regional-parliament-president-2026-10-07": {
       "category": "germany",
       "last_published": "2026-10-07",
@@ -45,6 +53,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/asia-pacific/impoverished-by-war-iran-afghan-migrants-return-taliban-rule-2026-09-17/"
+      ]
+    },
+    "ai-infrastructure-borrowing-slowdown-2026-10-10": {
+      "category": "investment",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/9c13d40e-d2b2-45d5-921c-a68cd4b308f9"
       ]
     },
     "ai-slowdown-antitrust-lawsuit-2026-09-22": {
@@ -189,6 +205,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/eab7052d-6640-4928-a128-8df73455ba0a"
+      ]
+    },
+    "astronauts-return-space-station-2026-10-10": {
+      "category": "technology",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/spacex-nasa-space-station-3d4ca5874f95fe94afc037b2443f184c"
       ]
     },
     "austria-babler-resignation-2026-10-04": {
@@ -543,6 +567,14 @@
         "https://www.ft.com/content/42b6fa88-f730-4f8a-a194-8f53d0759aaf"
       ]
     },
+    "eritrea-ethiopia-un-standoff-2026-10-10": {
+      "category": "world",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/africa/ethiopian-forces-regain-control-border-city-after-reported-eritrean-incursion-2026-10-10/"
+      ]
+    },
     "eu-china-hybrid-car-export-limits-2026-09-18": {
       "category": "business",
       "last_published": "2026-09-18",
@@ -557,6 +589,14 @@
       "material_update": "Beijing\u2019s reported agreement to restrict exports replaces the prior day\u2019s rejection of voluntary curbs.",
       "source_urls": [
         "https://www.ft.com/content/2823ef6f-b3d7-494b-b131-414c02d6a59f"
+      ]
+    },
+    "eu-common-budget-proposal-cut-2026-10-10": {
+      "category": "germany",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/a96adda5-89fb-4f8b-96c4-96c171489a40"
       ]
     },
     "eu-counter-drone-security-mechanism-2026-09-16": {
@@ -1072,12 +1112,28 @@
         "https://apnews.com/article/china-huawei-trial-trade-secrets-ed66f29aa8539941aa8fad311d511cc2"
       ]
     },
+    "hurricane-isaias-energy-disruption-2026-10-10": {
+      "category": "business",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/environment/category-3-hurricane-isaias-makes-landfall-near-destin-florida-nhc-says-2026-10-10/"
+      ]
+    },
     "hurricane-polo-mexico-2026-09-22": {
       "category": "world",
       "last_published": "2026-09-22",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/polo-odalys-fay-major-hurricane-mexico-8d857bb0cb9db18befb4d23b04feca32"
+      ]
+    },
+    "hurricane-simon-category-four-2026-10-10": {
+      "category": "world",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/environment/hurricane-simon-strengthens-category-4-off-mexico-coast-2026-10-10/"
       ]
     },
     "iaea-iran-security-council-referral-2026-09-09": {
@@ -1110,6 +1166,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/war-ai-georgieva-imf-oil-debt-2da9d879e2eb70e1e16d14fd1a307a99"
+      ]
+    },
+    "india-central-bank-rupee-support-2026-10-10": {
+      "category": "economy",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/b373cf00-9a94-4dc7-bdda-bc7006da1148"
       ]
     },
     "india-rbi-rate-hike-bets-2026-10-05": {
@@ -1150,6 +1214,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/cvgykzgljlyo"
+      ]
+    },
+    "infosys-us-perm-suspension-2026-10-10": {
+      "category": "technology",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/us/indias-infosys-does-not-expect-material-impact-us-perm-suspension-2026-10-10/"
       ]
     },
     "ion-creditor-debt-2026-10-07": {
@@ -1489,6 +1561,14 @@
         "https://www.reuters.com/legal/litigation/chinas-hengrui-inks-up-26-billion-deal-with-novo-nordisk-obesity-drug-2026-09-29/"
       ]
     },
+    "nvidia-reflection-ai-acquisition-talks-2026-10-10": {
+      "category": "technology",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a"
+      ]
+    },
     "oecd-ai-energy-shock-2026-09-24": {
       "category": "economy",
       "last_published": "2026-09-24",
@@ -1586,6 +1666,14 @@
         "https://www.ft.com/content/18e475be-1012-43e9-a0ff-ef0181b772ad"
       ]
     },
+    "pope-leo-death-penalty-livestream-2026-10-10": {
+      "category": "world",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/us/pope-leo-condemns-death-penalty-trump-mulls-livestreamed-execution-2026-10-10/"
+      ]
+    },
     "pope-paris-crowd-2026": {
       "category": "world",
       "last_published": "2026-09-28",
@@ -1600,6 +1688,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/energy/portugal-says-entry-into-grid-operator-ren-wont-affect-chinas-state-grid-2026-09-23"
+      ]
+    },
+    "riyadh-airport-houthi-attack-2026-10-10": {
+      "category": "world",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/loud-blast-heard-riyadh-airport-airlines-cancel-more-flights-2026-10-10/"
       ]
     },
     "riyadh-airport-houthi-disruption-2026-10-08": {
@@ -1648,6 +1744,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/9e8457e61919802d50a5d2571e8afa76"
+      ]
+    },
+    "russian-diesel-us-supply-skepticism-2026-10-10": {
+      "category": "economy",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/trump-russia-diesel-oil-prices-8428a31b39e20a3a3f1fa3f0e15b8f99"
       ]
     },
     "russian-dissident-murder-plot-2026-09-16": {
@@ -2048,6 +2152,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/trump-xi-detainees-youlin-chen-min-zin-c2724e81163fd2fdae18c684c20c5cd5"
+      ]
+    },
+    "trump-zelenskiy-russia-diesel-deal-2026-10-10": {
+      "category": "world",
+      "last_published": "2026-10-11",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/russian-attack-ukraines-zaporizhzhia-kills-seven-governor-says-2026-10-10/"
       ]
     },
     "turkey-lgbtq-raids-2026-09-13": {
