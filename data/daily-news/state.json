@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-11",
-    "item_id": "itm_9HEtl",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-11-daily-brief.html"
+    "date": "2026-10-12",
+    "item_id": "itm_9HYw9",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-12-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -439,6 +439,14 @@
         "https://www.ft.com/content/bbf1d846-7d89-45f6-8c0f-1fba1e334b4b"
       ]
     },
+    "chile-el-teniente-mine-landslide-2026-10-11": {
+      "category": "business",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/americas/chiles-codelco-reports-mudslide-el-teniente-mine-three-workers-affected-2026-10-11/"
+      ]
+    },
     "china-copper-commitments-anglo-teck-2026-10-02": {
       "category": "business",
       "last_published": "2026-10-03",
@@ -477,6 +485,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/78b8ccd21cbc4bc0ab19a79f68372ec0"
+      ]
+    },
+    "china-sanctions-paraguay-belize-taiwan-2026-10-12": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/china-sanctions-paraguay-belize-ministers-over-taiwan-ties-2026-10-12/"
       ]
     },
     "clinton-global-initiative-retreating-governments-2026-09-23": {
@@ -525,6 +541,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/diesel-prices-trump-exports-iran-522435dd87d2a9b5270eebfa309f4a73"
+      ]
+    },
+    "djibouti-yemen-migrant-boat-capsize-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/africa/109-migrants-including-15-children-dead-after-boat-djibouti-yemen-capsizes-un-2026-10-11/"
       ]
     },
     "energy-transition-integration-2026-09-24": {
@@ -781,6 +805,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/2ad1ff25-f08e-4e78-83c9-90e7ea3844ee"
+      ]
+    },
+    "faa-saudi-flight-caution-2026-10-11": {
+      "category": "business",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/faa-tells-us-airlines-exercise-caution-saudi-arabia-flights-citing-safety-risks-2026-10-11/"
       ]
     },
     "fed-cook-inflation-2026-09-29": {
@@ -1136,6 +1168,15 @@
         "https://www.reuters.com/business/environment/hurricane-simon-strengthens-category-4-off-mexico-coast-2026-10-10/"
       ]
     },
+    "hurricane-simon-flooding-mexico-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": "Simon weakened from Category 4 but began producing damaging coastal flooding, changing the immediate risk profile.",
+      "source_urls": [
+        "https://www.reuters.com/business/environment/mexicos-sheinbaum-urges-coastal-residents-remain-indoors-hurricane-simon-nears-2026-10-11/",
+        "https://apnews.com/article/mexico-hurricane-simon-0e3336ba92518117ca8008c5746d230e"
+      ]
+    },
     "iaea-iran-security-council-referral-2026-09-09": {
       "category": "world",
       "last_published": "2026-09-10",
@@ -1182,6 +1223,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/india/markets-bet-rbi-rate-hike-inflation-pressure-builds-2026-10-05"
+      ]
+    },
+    "india-river-linking-project-flood-protests-2026-10-12": {
+      "category": "economy",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/environment/rising-waters-flood-homes-temples-villagers-protest-indias-87-billion-river-2026-10-12/"
       ]
     },
     "indian-rupee-oil-fed-relief-2026-10-05": {
@@ -1537,6 +1586,14 @@
         "https://www.reuters.com/world/asia-pacific/north-korea-says-it-conducted-intermediate-range-strategic-missile-drill-2026-10-03"
       ]
     },
+    "north-korea-missiles-after-hypersonic-test-2026-10-12": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/north-korea-fires-unidentified-projectile-toward-sea-off-its-east-coast-seoul-2026-10-12/"
+      ]
+    },
     "north-korea-successor-question-2026-09-10": {
       "category": "world",
       "last_published": "2026-09-11",
@@ -1634,12 +1691,28 @@
         "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d"
       ]
     },
+    "pakistan-emergency-imran-khan-province-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/pakistan-president-imposes-emergency-province-ruled-by-ex-pm-imran-khans-party-2026-10-11/"
+      ]
+    },
     "palestinian-delegation-visas-denied-2026-09-16": {
       "category": "world",
       "last_published": "2026-09-17",
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/2ab54a7b420dd7fc5aea068d883b5cee"
+      ]
+    },
+    "panama-earthquake-aftershocks-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/environment/panama-suffers-over-200-aftershocks-after-fridays-77-magnitude-earthquake-2026-10-11/"
       ]
     },
     "paramount-wbd-antitrust-settlement-2026-09-19": {
@@ -1672,6 +1745,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/us/pope-leo-condemns-death-penalty-trump-mulls-livestreamed-execution-2026-10-10/"
+      ]
+    },
+    "pope-leo-lung-surgery-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/healthcare-pharmaceuticals/pope-leo-says-will-undergo-surgery-small-growth-lung-2026-10-11/"
       ]
     },
     "pope-paris-crowd-2026": {
@@ -1760,6 +1841,15 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/e37b0027e717823605af688096184b37"
+      ]
+    },
+    "saudi-airport-second-houthi-attack-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": "A second strike closed the airport and added a new fatality after the prior day's mass-casualty attack.",
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/yemens-houthis-renew-warning-over-saudi-airports-after-deadly-riyadh-attack-2026-10-11/",
+        "https://apnews.com/article/saudi-yemen-houthi-riyadh-airport-d2e0868ffb18d883c16465d7d6a87ccb"
       ]
     },
     "saudi-aramco-oil-stockpiles-2026-10-05": {
@@ -1944,6 +2034,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.bbc.com/news/articles/c0qx5d79kdeo"
+      ]
+    },
+    "taiwan-china-live-fire-drills-2026-10-12": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/china/taiwan-says-it-is-closely-monitoring-series-chinese-live-fire-drills-2026-10-12/"
       ]
     },
     "taiwan-first-joint-drone-drills-2026-09-18": {
@@ -2306,6 +2404,15 @@
         "https://apnews.com/article/russia-ukraine-war-drones-odesa-refinery-border-crossing-17bb6a0401abc3eaa7d4586150a41d7d"
       ]
     },
+    "ukraine-russia-energy-ceasefire-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": "The reported energy ceasefire is a new diplomatic claim following the prior dispute over Russian diesel and attacks on energy infrastructure.",
+      "source_urls": [
+        "https://www.reuters.com/world/europe/ukraine-will-halt-strikes-refineries-if-russia-stops-energy-attacks-zelenskiy-2026-10-11/",
+        "https://apnews.com/article/russia-ukraine-war-yandex-trump-zelenskyy-f621fa788196f204448e7f75fcc78c68"
+      ]
+    },
     "ukraine-russia-infrastructure-reciprocity-2026-09-14": {
       "category": "world",
       "last_published": "2026-09-15",
@@ -2532,6 +2639,23 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/jobs-unemployment-claims-layoffs-6f2362a2320d739dc78210a899ce4edf"
+      ]
+    },
+    "us-judge-halts-trump-taxpayer-ads-2026-10-11": {
+      "category": "world",
+      "last_published": "2026-10-12",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/us/us-judge-orders-halt-taxpayer-funded-ads-featuring-trump-2026-10-11/"
+      ]
+    },
+    "us-lawmakers-russian-diesel-deal-2026-10-11": {
+      "category": "economy",
+      "last_published": "2026-10-12",
+      "material_update": "Bipartisan congressional opposition now challenges the legality and political viability of the Russian diesel arrangement.",
+      "source_urls": [
+        "https://www.reuters.com/business/energy/prominent-republican-senator-says-trumps-russian-diesel-deal-may-be-illegal-2026-10-11/",
+        "https://apnews.com/article/trump-diesel-russia-ukraine-senators-protest-93fa63c8a88e538f1456e7d448fc550d"
       ]
     },
     "us-layoffs-labor-market-2026-10-02": {
