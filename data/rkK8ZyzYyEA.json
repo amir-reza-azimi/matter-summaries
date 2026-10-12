@@ -1,0 +1,41 @@
+{
+  "id": "rkK8ZyzYyEA",
+  "title": "8 GitHub Repos To Go Viral and Make Money",
+  "channel": "Greg Isenberg",
+  "channel_url": "https://www.youtube.com/@GregIsenberg",
+  "url": "https://www.youtube.com/watch?v=rkK8ZyzYyEA",
+  "published": "2026-10-08T18:30:11+00:00",
+  "duration_minutes": 24.5,
+  "description": "A practical tour of repositories and agent skills for customer research, content production, proposals, agent coordination, and design review.",
+  "summary_html": "<h2>TL;DR</h2><p>This is a useful catalogue rather than a single method. Its strongest idea is to start with a business process that already hurts, validate it with evidence from customers, then use agent skills and reusable assets to make a small, reviewable service repeatable. The most relevant pieces for Amir are the customer-research workflow, editable-proposal workflow, and the idea of putting explicit critique into an agent loop.</p><h2>Walkthrough</h2><p>Greg starts with Brag, a skill that turns a project or website into a short launch video. The value is not that every company needs another AI video; it is the outreach pattern. Make a concrete artifact for a company before asking for a meeting, then use their reaction to learn whether there is a real service opportunity. He recommends controlling format and tone, reviewing individual scenes, and treating a first video as a conversation starter rather than a finished deliverable.</p><p>The more transferable workflow is Agent Reach. It equips an agent to search YouTube, Reddit, and X for customer language. Greg suggests searching for phrases such as “I export it,” “I copy this into,” and “does anyone know a workaround,” then tracing those statements back to people who will explain the work. The important discipline is to use this as a lead to an interview, not as proof of demand. For a commercial team, this becomes a repeatable research brief: identify a manual workaround around an existing system of record, collect examples, interview users, and test whether a small automation removes the annoying step without requiring a platform replacement.</p><p>Several later tools support delivery. Voice Studio makes local voice generation and dubbing a possible service, but the speaker gives the sensible constraint: begin with one short recording and a few lines, verify quality with a fluent reviewer, and only clone voices with permission. PPT Master turns notes into editable decks. The practical test is a proposal that already exists, with private details removed, followed by a review of how much editing remains. A better operating pattern is to feed it call notes, agreed scope, and price, then write for the decision-maker who was not in the conversation.</p><p>OpenRig is presented as a way to coordinate coding agents: one builds, another reviews, and work is passed between them. The lesson is less about that specific product than about making hand-offs explicit. When Amir is repeatedly copying work between an implementer and a reviewer, the coordination itself should become a documented workflow with clear checks. The video also covers reusable skills for marketing lead magnets, idea interviews that expose assumptions, and design guidance for agents. These are useful only when they create a repeatable quality bar, not when they become a pile of untested prompts.</p><h2>Standout moments</h2><p>The sharpest insight is that observable manual workarounds are better discovery inputs than abstract trend research. A second is to use a deliverable as outreach, but constrain it so the prospect can judge it safely. Finally, the speaker repeatedly pairs automation with review: customer interviews before product bets, fluent review before translated onboarding, and editable outputs before sending a proposal.</p><h2>Why this matters for my work</h2><p>This maps to AI-native consulting and marketing operations. I could run a small customer-workaround research sprint for a client, turn the evidence into one validated automation proposal, and use an editable deck to explain the before-and-after workflow. I could also turn the critique and review rules into a reusable skill, so I could deliver the same quality bar without rebuilding the process for every engagement.</p>",
+  "watch_list": [
+    {
+      "t": 85,
+      "label": "Brag and artifact-first outreach"
+    },
+    {
+      "t": 290,
+      "label": "Agent Reach customer-workaround research"
+    },
+    {
+      "t": 466,
+      "label": "Local voice and review constraints"
+    },
+    {
+      "t": 641,
+      "label": "Editable proposal workflow"
+    },
+    {
+      "t": 779,
+      "label": "Agent-team coordination"
+    },
+    {
+      "t": 1025,
+      "label": "Assumption interviews before building"
+    },
+    {
+      "t": 1171,
+      "label": "Design guidance as a reusable quality bar"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "HhZdNYI4pJs",
+  "title": "I Tried 100+ Github Repos for Claude. These 6 Are the Best",
+  "channel": "Nate Herk",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=HhZdNYI4pJs",
+  "published": "2026-10-11T12:30:18+00:00",
+  "duration_minutes": 10.6,
+  "description": "A practical shortlist of agent skills and CLI tooling for Google Workspace, browser testing, security checks, and more reliable client delivery.",
+  "summary_html": "<h2>TL;DR</h2><p>This video is a pragmatic shortlist rather than a neutral benchmark. Its value is the delivery pattern behind the recommendations: give agents structured skills for recurring work, keep sensitive integrations explicitly scoped, and make verification part of the build rather than trusting a completion claim. The Google Workspace CLI, planning skills, Playwright CLI, and security review practices are the most useful ideas for Amir’s operating system and consulting work.</p><h2>Walkthrough</h2><p>The first example, Hyperframes, turns natural-language instructions into rendered video with captions, motion, and title cards. The practical takeaway is not to automate every creative edit. It is to package a narrowly defined recurring deliverable, such as captioned clips or an onboarding video variant, with an explicit review point. That converts a vague “AI content” promise into a service with an output a client can inspect.</p><p>The Google Workspace CLI is the most relevant integration example. It can expose Drive, Gmail, Calendar, Docs, Sheets, and Slides to an agent through a command-line interface, while skills explain how to use the surface. The required safeguard is permission scope: authorize only the products and actions a workflow needs, and test against a low-risk task first. For a small-business operating workflow, this could make weekly reporting, invoice follow-up, or structured meeting preparation repeatable without inventing a separate dashboard.</p><p>The video then covers tools for data collection, design, and copy. An MCP service such as Apify can let an agent obtain data that ordinary browsing cannot access, but it has per-result costs and should be selected for a defined job rather than added speculatively. Scrollcraft represents a different pattern: encode design rules and screenshot-based checks so an agent can fix a page against an explicit standard. The Humanizer repository is framed as a stylistic pass over outbound copy. The broader lesson is to turn quality criteria into a reusable check, while retaining a human editor for factual and voice-sensitive material.</p><p>The strongest section is about keeping longer builds coherent. Addy Osmani’s agent skills move the specification, plan, and task list from ephemeral chat context into files. That lets a new agent session resume from durable artifacts and surfaces edge cases such as refunds, time zones, or double bookings before the build. It is a sensible method for client work because the same specification doubles as an alignment document.</p><p>Finally, the speaker recommends browser-based verification and security review before release. Playwright CLI exercises a real browser and can produce repeatable checks without loading an entire page into model context. A separate security review plugin can look for vulnerabilities, but it should not replace evidence: validate the booking flow, permissions, and data isolation using a test account. The client may not care about the tool names; they care that the form works and customer data is not exposed.</p><h2>Standout moments</h2><p>The best advice is to keep the plan in durable files, not a fragile conversation. The second is to scope integrations and permissions before convenience. The third is to prove a workflow in a browser with a test user instead of accepting an agent’s “done.”</p><h2>Why this matters for my work</h2><p>This maps directly to Amir’s course and client delivery. I could teach a compact “spec, plan, build, verify” loop using one contained business workflow, with permissions documented and browser verification required before handover. I could also use that structure for internal automations so their instructions, tests, and approval boundaries survive across sessions.</p>",
+  "watch_list": [
+    {
+      "t": 24,
+      "label": "What makes a repository useful in client work"
+    },
+    {
+      "t": 88,
+      "label": "Google Workspace CLI and permission scope"
+    },
+    {
+      "t": 184,
+      "label": "External-data access and cost control"
+    },
+    {
+      "t": 296,
+      "label": "Design rules with screenshot checks"
+    },
+    {
+      "t": 438,
+      "label": "Durable specs and plans"
+    },
+    {
+      "t": 550,
+      "label": "Browser verification and security review"
+    }
+  ]
+}
