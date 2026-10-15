@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-12",
-    "item_id": "itm_9HYw9",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-12-daily-brief.html"
+    "date": "2026-10-15",
+    "item_id": "itm_9J4bs",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-15-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -21,13 +21,15 @@
     "weights": {
       "source:ARD Tagesschau": 1,
       "source:Associated Press": 2,
-      "topic:world": 3
+      "source:Reuters": 1,
+      "topic:world": 4
     }
   },
   "processed_annotation_ids": [
     "ann_HOFH",
     "ann_HOUu",
-    "ann_HOUs"
+    "ann_HOUs",
+    "ann_HXHV"
   ],
   "schema_version": 1,
   "story_ledger": {
@@ -133,6 +135,15 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/anthropics-ipo-pitch-embraces-ais-promise-peril-2026-09-30"
+      ]
+    },
+    "anthropic-revenue-investor-day-2026-10-15": {
+      "category": "ai",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/anthropics-q3-revenue-surges-45-nearly-17-billion-2026-10-14/",
+        "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b"
       ]
     },
     "ap-norc-ai-public-opinion-2026-10-08": {
@@ -253,6 +264,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2"
+      ]
+    },
+    "bank-of-america-regulatory-charge-2026-10-14": {
+      "category": "business",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/bank-america-profit-hurt-by-12-billion-fine-over-anti-money-laundering-2026-10-14/"
       ]
     },
     "berlin-elif-eralp-mayoral-race-2026-09-19": {
@@ -525,6 +544,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/legal/transactional/investors-wary-slowdown-us-corporate-profit-boom-2026-10-01"
+      ]
+    },
+    "costa-rica-cacco-prison-2026-10-14": {
+      "category": "world",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/americas/costa-rica-opens-mega-prison-organized-crime-fight-intensifies-2026-10-14/"
       ]
     },
     "delta-fuel-profit-outlook-2026-10-09": {
@@ -813,6 +840,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/middle-east/faa-tells-us-airlines-exercise-caution-saudi-arabia-flights-citing-safety-risks-2026-10-11/"
+      ]
+    },
+    "fed-beige-book-diesel-costs-2026-10-14": {
+      "category": "economy",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/fed-survey-shows-price-pressures-intensifying-amid-rise-fuel-costs-2026-10-14/"
       ]
     },
     "fed-cook-inflation-2026-09-29": {
@@ -1110,6 +1145,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/0d665e5b-d8c8-4f1e-acf5-bba7193b4e6e"
+      ]
+    },
+    "hormuz-commercial-ships-sink-2026-10-14": {
+      "category": "world",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/container-ship-sinks-near-hormuz-after-being-hit-by-projectile-sources-say-2026-10-14/"
       ]
     },
     "hormuz-oil-price-tanker-attacks-2026-10-08": {
@@ -1529,6 +1572,22 @@
         "https://www.reuters.com/business/finance/monzo-talks-sale-nubank-about-10-billion-valuation-sky-news-reports-2026-09-26"
       ]
     },
+    "morgan-stanley-equity-trading-q3-2026-10-14": {
+      "category": "investment",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/morgan-stanley-profit-rises-equity-trading-strength-2026-10-14/"
+      ]
+    },
+    "nasdaq-inflation-rate-hike-selloff-2026-10-14": {
+      "category": "investment",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/sp-500-dow-futures-rise-ahead-big-bank-results-cpi-data-2026-10-14/"
+      ]
+    },
     "navistar-ohio-layoffs-2026-10-03": {
       "category": "business",
       "last_published": "2026-10-04",
@@ -1560,6 +1619,15 @@
       "source_urls": [
         "https://apnews.com/article/65ee7e50dfe7914dff37d893a5e6b810",
         "https://www.reuters.com/sustainability/cop/climate-change-likely-have-helped-trigger-nepal-glacier-collapse-scientists-say-2026-09-17/"
+      ]
+    },
+    "netflix-layoffs-2026-10-14": {
+      "category": "business",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/world-at-work/netflix-cuts-about-6-jobs-wsj-reports-2026-10-14/",
+        "https://apnews.com/article/netflix-layoffs-2290c8472a155adb9c4b85fdc885bc7e"
       ]
     },
     "noreaster-power-outages-2026": {
@@ -1785,6 +1853,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/7e39cdb9-977c-4a4c-b35c-6f775a9822db"
+      ]
+    },
+    "rocket-lab-neutron-delay-2026-10-14": {
+      "category": "technology",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/rocket-lab-pushes-neutron-rockets-debut-flight-2027-shares-fall-2026-10-14/"
       ]
     },
     "rubio-traditional-values-athens-2026-10-07": {
@@ -2284,6 +2360,14 @@
         "https://www.reuters.com/business/finance/swiss-finance-minister-says-unlikely-ubs-would-leave-its-home-base-2026-09-26"
       ]
     },
+    "uk-chornobyl-confinement-repairs-2026-10-15": {
+      "category": "world",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/uk-government-provide-17-million-for-chornobyl-plant-repairs-2026-10-14/"
+      ]
+    },
     "uk-germany-fighter-jet-scheme-2026-10-08": {
       "category": "germany",
       "last_published": "2026-10-09",
@@ -2421,6 +2505,14 @@
         "https://apnews.com/article/dbba56f09562f337aa731f7d4bbd1235"
       ]
     },
+    "ukraine-starlink-restrictions-2026-10-14": {
+      "category": "world",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/media-telecom/ukraine-accuses-spacex-crippling-drone-missions-ties-with-us-worsen-2026-10-14/"
+      ]
+    },
     "ukraine-train-strike-2026-09-13": {
       "category": "world",
       "last_published": "2026-09-14",
@@ -2475,6 +2567,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/un-assembly-leaders-ai-trump-netanyahu-climate-c4727651b9030d6e7f81c0457a33440b"
+      ]
+    },
+    "unifil-lebanon-mandate-talks-2026-10-14": {
+      "category": "world",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/un-peacekeeping-chief-says-talks-future-lebanon-mission-must-begin-soon-2026-10-14/"
       ]
     },
     "us-ai-guardrails-2026-09-13": {
@@ -2760,6 +2860,22 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/trump-nebraska-senate-pete-ricketts-106c5ad829c53b71bdf18a501fc6e07f"
+      ]
+    },
+    "us-russian-assets-peace-talks-proposal-2026-10-15": {
+      "category": "world",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/europe/us-floats-unfreezing-some-russian-assets-restart-ukraine-peace-talks-ft-reports-2026-10-14/"
+      ]
+    },
+    "us-september-inflation-37-percent-2026-10-14": {
+      "category": "economy",
+      "last_published": "2026-10-15",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/cpi-inflation-consumer-prices-affordability-3985019a54c82421e6112fb57baba048"
       ]
     },
     "us-september-jobs-slowdown-2026-10-02": {
