@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-15",
-    "item_id": "itm_9J4bs",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-15-daily-brief.html"
+    "date": "2026-10-16",
+    "item_id": "itm_9JbfM",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-16-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -79,6 +79,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/legal/transactional/airbus-board-appointments-herald-ceo-decision-next-year-sources-say-2026-10-02/"
+      ]
+    },
+    "amazon-bee-ai-listening-devices-2026-10-15": {
+      "category": "technology",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/technology/amazon-launches-two-new-portable-ai-listening-devices-2026-10-15/"
       ]
     },
     "amazon-cargo-crash-2026-09-14": {
@@ -288,6 +296,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html"
+      ]
+    },
+    "beyondtrust-vulnerability-china-linked-exploitation-2026-10-16": {
+      "category": "technology",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/technology/google-warns-suspected-china-linked-hackers-could-exploit-beyondtrust-flaw-2026-10-15/"
       ]
     },
     "big-oil-supreme-court-climate-damages-2026-10-05": {
@@ -584,6 +600,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/commentary/reuters-open-interest/global-energy-transition-shifts-generation-integration-2026-09-23"
+      ]
+    },
+    "england-wales-extreme-pornography-ban-2026-10-16": {
+      "category": "technology",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.bbc.com/news/articles/cmpqgepejr2ro"
       ]
     },
     "epa-power-plant-emissions-rule-2026-09-14": {
@@ -1083,6 +1107,14 @@
         "https://www.reuters.com/world/china/global-markets-global-markets-2026-09-24"
       ]
     },
+    "global-ev-sales-september-decline-2026-10-16": {
+      "category": "business",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/autos-transportation/global-ev-sales-fall-2-september-ending-six-month-growth-streak-2026-10-15/"
+      ]
+    },
     "global-gas-tightness-iran-war-2026-09-24": {
       "category": "economy",
       "last_published": "2026-09-24",
@@ -1444,6 +1476,14 @@
         "https://www.ft.com/content/49526246-46ac-4154-942f-3d4d705f1652"
       ]
     },
+    "kfc-coca-cola-pepsico-us-supplier-2026-10-15": {
+      "category": "business",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/kfc-sign-coca-cola-beverage-partner-ditching-pepsico-wsj-reports-2026-10-15/"
+      ]
+    },
     "kyiv-bridge-and-infrastructure-attacks-2026-10-02": {
       "category": "world",
       "last_published": "2026-10-03",
@@ -1630,6 +1670,14 @@
         "https://apnews.com/article/netflix-layoffs-2290c8472a155adb9c4b85fdc885bc7e"
       ]
     },
+    "netflix-peter-rice-content-chief-2026-10-16": {
+      "category": "business",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/media-telecom/netflix-names-former-disney-executive-rice-new-content-chief-bajaria-departs-2026-10-15/"
+      ]
+    },
     "noreaster-power-outages-2026": {
       "category": "world",
       "last_published": "2026-09-28",
@@ -1759,12 +1807,28 @@
         "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d"
       ]
     },
+    "oregon-elementary-school-shooting-2026-10-15": {
+      "category": "world",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/shooter-is-killed-oregon-elementary-school-least-two-taken-away-ambulance-2026-10-15/"
+      ]
+    },
     "pakistan-emergency-imran-khan-province-2026-10-11": {
       "category": "world",
       "last_published": "2026-10-12",
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/asia-pacific/pakistan-president-imposes-emergency-province-ruled-by-ex-pm-imran-khans-party-2026-10-11/"
+      ]
+    },
+    "pakistan-peshawar-school-roof-collapse-2026-10-15": {
+      "category": "world",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/seventeen-students-one-teacher-killed-school-roof-collapse-pakistan-2026-10-15/"
       ]
     },
     "palestinian-delegation-visas-denied-2026-09-16": {
@@ -2014,6 +2078,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/6c467774-9d91-425e-a901-26db055e37ad"
+      ]
+    },
+    "sp500-healthcare-rotation-ai-valuation-2026-10-15": {
+      "category": "investment",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/nasdaq-futures-dive-1-ai-rout-deepens-debt-concerns-2026-10-15/"
       ]
     },
     "spacex-credit-risk-borrowing-2026-10-07": {
@@ -2472,6 +2544,14 @@
         "https://www.reuters.com/business/aerospace-defense/ukraine-will-hit-russian-refineries-response-moscows-new-doctrine-airstrikes-2026-10-03"
       ]
     },
+    "ukraine-refinery-strike-energy-truce-ends-2026-10-15": {
+      "category": "world",
+      "last_published": "2026-10-16",
+      "material_update": "Ukraine ended the announced energy-site pause and struck the Ryazan refinery after continued Russian attacks on power infrastructure.",
+      "source_urls": [
+        "https://www.reuters.com/world/zelenskiy-says-ukraine-will-resume-strikes-russian-refineries-ft-reports-2026-10-15/"
+      ]
+    },
     "ukraine-russia-attacks-after-pause-2026-09-08": {
       "category": "world",
       "last_published": "2026-09-09",
@@ -2535,6 +2615,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/ca2c4ed803381fd12ca7259f1ce4f34d"
+      ]
+    },
+    "un-chief-grynspan-reform-bid-2026-10-15": {
+      "category": "world",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/americas/un-chief-frontrunner-rebeca-grynspan-says-un-has-become-too-risk-averse-2026-10-15/"
       ]
     },
     "un-climate-efforts-fuel-ai-disasters-2026-09-22": {
@@ -2846,6 +2934,14 @@
         "https://www.reuters.com/business/us-private-payrolls-growth-picks-up-september-adp-says-2026-09-30"
       ]
     },
+    "us-producer-prices-september-inflation-2026-10-15": {
+      "category": "economy",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/producer-prices-inflation-economy-ff5adf8283a770c2ca9897b10a09dda7"
+      ]
+    },
     "us-rates-one-percent-2026-09-24": {
       "category": "investment",
       "last_published": "2026-09-24",
@@ -3007,6 +3103,14 @@
         "https://www.reuters.com/business/wall-st-futures-drop-oil-spikes-after-trump-rejects-iran-peace-proposal-2026-09-28"
       ]
     },
+    "wall-street-banks-capital-markets-lull-2026-10-15": {
+      "category": "business",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/finance/wall-st-banks-caught-capital-markets-lull-after-strong-first-half-2026-2026-10-15/"
+      ]
+    },
     "wall-street-bond-yields-oil-2026-10-07": {
       "category": "investment",
       "last_published": "2026-10-08",
@@ -3061,6 +3165,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/live/trump-xi-china-cnn-unga-news-updates-09-23-2026"
+      ]
+    },
+    "yemen-aden-presidential-palace-attack-2026-10-15": {
+      "category": "world",
+      "last_published": "2026-10-16",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/houthis-fire-missiles-presidential-palace-yemens-aden-officials-say-2026-10-15/"
       ]
     },
     "yemen-bab-el-mandeb-recapture-2026-10-05": {
