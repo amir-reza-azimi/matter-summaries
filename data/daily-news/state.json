@@ -1,8 +1,8 @@
 {
   "current": {
-    "date": "2026-10-16",
-    "item_id": "itm_9JbfM",
-    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-16-daily-brief.html"
+    "date": "2026-10-17",
+    "item_id": "itm_9K5pY",
+    "url": "https://amir-reza-azimi.github.io/matter-summaries/daily-news/2026-10-17-daily-brief.html"
   },
   "handpicked_berlin": {
     "processed_message_ids": {
@@ -79,6 +79,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/legal/transactional/airbus-board-appointments-herald-ceo-decision-next-year-sources-say-2026-10-02/"
+      ]
+    },
+    "albania-student-protests-rama-resignation-2026-10-16": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/europe/thousands-march-albanian-capital-as-anti-government-protests-spread-2026-10-16/"
       ]
     },
     "amazon-bee-ai-listening-devices-2026-10-15": {
@@ -330,6 +338,14 @@
         "https://www.reuters.com/business/aerospace-defense/boeing-flags-737-max-software-glitch-affecting-landing-navigation-feature-wsj-2026-09-26"
       ]
     },
+    "boeing-brad-mcmullen-retirement-2026-10-16": {
+      "category": "business",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/boeing-sales-chief-mcmullen-retire-company-memo-says-2026-10-16/"
+      ]
+    },
     "boj-survey-2026": {
       "category": "investment",
       "last_published": "2026-10-01",
@@ -528,6 +544,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/china/china-sanctions-paraguay-belize-ministers-over-taiwan-ties-2026-10-12/"
+      ]
+    },
+    "china-tech-export-controls-draft-2026-10-16": {
+      "category": "technology",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/china-export-restrictions-ai-chips-solar-us-5ac381c0c6d6628bbea2e0da7d855a5b"
       ]
     },
     "clinton-global-initiative-retreating-governments-2026-09-23": {
@@ -848,6 +872,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.tagesschau.de/ausland/europa/ukraine-export-getreide-100.html"
+      ]
+    },
+    "exxon-refining-margin-boost-2026-10-16": {
+      "category": "business",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/energy/exxonmobil-signals-lower-third-quarter-earnings-2026-10-16/"
       ]
     },
     "ey-data-breach-goldman-man-group-2026-10-07": {
@@ -1292,6 +1324,14 @@
         "https://www.ft.com/content/b373cf00-9a94-4dc7-bdda-bc7006da1148"
       ]
     },
+    "india-cockroach-movement-delhi-protests-2026-10-16": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://apnews.com/article/india-cockroach-protests-voters-elections-fc2868da068525b11506c97f2ee8932e"
+      ]
+    },
     "india-rbi-rate-hike-bets-2026-10-05": {
       "category": "economy",
       "last_published": "2026-10-05",
@@ -1508,6 +1548,14 @@
         "https://www.ft.com/content/4e1a4297-62f4-4b42-a41a-2ad23b64cbe9"
       ]
     },
+    "lebanon-us-direct-flights-safety-roadblock-2026-10-16": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/trump-move-restart-direct-us-flights-with-lebanon-hits-roadblock-2026-10-16/"
+      ]
+    },
     "luxembourg-bank-sale-2026-09-20": {
       "category": "business",
       "last_published": "2026-09-21",
@@ -1678,12 +1726,28 @@
         "https://www.reuters.com/business/media-telecom/netflix-names-former-disney-executive-rice-new-content-chief-bajaria-departs-2026-10-15/"
       ]
     },
+    "new-york-fed-service-sector-price-pressure-2026-10-16": {
+      "category": "economy",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/ny-fed-service-sector-survey-finds-notable-price-pressures-2026-10-16/"
+      ]
+    },
     "noreaster-power-outages-2026": {
       "category": "world",
       "last_published": "2026-09-28",
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/environment/noreaster-leaves-over-100000-customers-without-power-us-northeast-over-400-2026-09-26"
+      ]
+    },
+    "north-korea-ai-equipped-torpedo-test-2026-10-17": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/north-korea-tests-new-ai-equipped-torpedo-kcna-says-2026-10-16/"
       ]
     },
     "north-korea-aukus-nuclear-submarines-2026-09-15": {
@@ -1895,12 +1959,28 @@
         "https://www.reuters.com/world/europe/pope-leo-set-largest-event-france-tour-paris-crowds-swell-2026-09-26"
       ]
     },
+    "pope-putin-oleshky-aid-cooperation-2026-10-16": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/pope-leo-urges-putin-allow-aid-occupied-ukrainian-town-2026-10-16/"
+      ]
+    },
     "portugal-ren-state-grid-2026-09-24": {
       "category": "business",
       "last_published": "2026-09-24",
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/business/energy/portugal-says-entry-into-grid-operator-ren-wont-affect-chinas-state-grid-2026-09-23"
+      ]
+    },
+    "putin-non-negotiable-ukraine-security-zone-2026-10-16": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": "Putin made the proposed Ukrainian border security zone explicitly non-negotiable and gave its planned overall span.",
+      "source_urls": [
+        "https://www.reuters.com/world/putin-says-russia-is-building-non-negotiable-security-zone-ukraine-along-border-2026-10-16/"
       ]
     },
     "riyadh-airport-houthi-attack-2026-10-10": {
@@ -2070,6 +2150,14 @@
       "material_update": null,
       "source_urls": [
         "https://apnews.com/article/12260c5e6971650269cec1a4b4420eb3"
+      ]
+    },
+    "softbank-allied-universal-acquisition-2026-10-16": {
+      "category": "business",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/media-telecom/softbank-weighs-18-billion-acquisition-allied-universal-bloomberg-news-reports-2026-10-16/"
       ]
     },
     "softbank-data-centre-ipo-2026-09-18": {
@@ -2813,6 +2901,14 @@
         "https://www.ft.com/content/4d5757e9-78b5-42f6-b26b-d9556321c0c8"
       ]
     },
+    "us-import-prices-september-inflation-2026-10-16": {
+      "category": "economy",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/us-import-prices-increase-more-than-expected-september-2026-10-16/"
+      ]
+    },
     "us-job-openings-august-2026-09-30": {
       "category": "economy",
       "last_published": "2026-09-30",
@@ -2900,6 +2996,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.ft.com/content/64f90ab8-5fb0-4594-a900-d03e5ca051e3"
+      ]
+    },
+    "us-myanmar-secret-talks-tokyo-2026-10-16": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/us-holds-more-secret-talks-with-myanmars-military-backed-rulers-tokyo-sources-2026-10-16/"
       ]
     },
     "us-news-outlets-white-house-access-lawsuit-2026-09-22": {
@@ -3103,6 +3207,14 @@
         "https://www.reuters.com/business/wall-st-futures-drop-oil-spikes-after-trump-rejects-iran-peace-proposal-2026-09-28"
       ]
     },
+    "wall-street-ai-debt-oil-selloff-2026-10-16": {
+      "category": "investment",
+      "last_published": "2026-10-17",
+      "material_update": null,
+      "source_urls": [
+        "https://www.reuters.com/business/wall-st-futures-mixed-tech-wobbles-again-tesla-gains-2026-10-16/"
+      ]
+    },
     "wall-street-banks-capital-markets-lull-2026-10-15": {
       "category": "business",
       "last_published": "2026-10-16",
@@ -3205,6 +3317,14 @@
       "material_update": null,
       "source_urls": [
         "https://www.reuters.com/world/africa/zambia-aims-lift-economic-growth-7-over-next-three-years-2026-09-28"
+      ]
+    },
+    "zelenskiy-us-russia-diesel-deal-2026-10-16": {
+      "category": "world",
+      "last_published": "2026-10-17",
+      "material_update": "Zelenskiy publicly linked the abandoned energy pause to a proposed US-Russia diesel arrangement and sought a larger European role.",
+      "source_urls": [
+        "https://www.reuters.com/world/ukraines-zelenskiy-blasts-us-russian-diesel-deal-welcomes-bigger-european-role-2026-10-16/"
       ]
     },
     "zelensky-regional-summit-2026-09-18": {
