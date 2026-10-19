@@ -1,0 +1,33 @@
+{
+  "id": "NmN6jn6IiMA",
+  "title": "Clay's AI Agent Builds Your Outbound From One Prompt",
+  "channel": "Nate Herk | AI Automation",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=NmN6jn6IiMA",
+  "published": "2026-10-18",
+  "duration_minutes": 8,
+  "description": "An outcome-first outbound workflow built from research, enrichment, verification, segmentation, and campaign feedback.",
+  "summary_html": "<h2>TL;DR</h2><p>The useful idea in this walkthrough is not that a chat can write an outbound message. It is that a single outcome can coordinate the complete path from a target-market instruction to a usable, verified segment. Clay is shown taking an instruction such as finding recently funded software companies, identifying the relevant sales leader, verifying contact details, and saving the result as a segment. That turns a formerly manual chain of tools into a visible workflow with an explicit commercial output.</p><h2>Start with the outcome, not a tool list</h2><p>The source contrasts this with assembling a sequence of disconnected steps. A normal outbound build often requires separate company research, person lookup, enrichment, email verification, list creation, and campaign configuration. The agent accepts the desired audience and assembles the work behind it. The important operating principle is still to specify the target precisely: company type, funding or intent signal, buyer role, geography, exclusions, and what a valid record must contain. An agent can coordinate these steps, but it cannot supply a sound definition of a qualified account.</p><h2>Keep the workflow inspectable</h2><p>The demonstration also points to a stronger design for agentic sales operations. Each stage should have a checkable output. Research yields candidate accounts. Contact finding yields named people. Enrichment yields fields with a source. Verification yields a deliverability status. Segmentation yields a count and a rule set. If an agent fails, these outputs make the failure local rather than mysterious. They also make it possible to test the process on a small cohort before scaling it.</p><h2>Use business memory carefully</h2><p>The product's knowledge hub is intended to retain information about an ICP, personas, and conversion signals. That can improve iteration, but only if the stored inputs are owned and reviewed. A practical implementation should treat the approved ICP, exclusions, messaging claims, and qualification rules as the source of truth. Campaign results can then update a controlled hypothesis, not silently rewrite the operating rules. The workflow becomes more useful when feedback is structured: which accounts replied, which roles converted, which data was inaccurate, and which message version was used.</p><h2>What to test first</h2><p>A small pilot should use one tightly defined segment and a limited sample. Check whether the right companies were selected, whether the right seniority was found, how many records were verifiable, and whether the segment produces qualified conversations rather than merely a larger list. The goal is not to automate volume for its own sake. It is to reduce the cost of getting from a commercial hypothesis to a trustworthy audience while keeping the evidence and human judgement visible.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "The outcome-first outbound claim"
+    },
+    {
+      "t": 45,
+      "label": "Example: funded SaaS companies and sales leaders"
+    },
+    {
+      "t": 90,
+      "label": "Research, enrichment, and verification sequence"
+    },
+    {
+      "t": 180,
+      "label": "Segment creation as the usable output"
+    },
+    {
+      "t": 300,
+      "label": "Knowledge hub and conversion feedback"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "kXBRfy3CjLo",
+  "title": "Muse dodged every trap in this billing ticket",
+  "channel": "How I AI",
+  "channel_url": "https://www.youtube.com/@howiaipodcast",
+  "url": "https://www.youtube.com/watch?v=kXBRfy3CjLo",
+  "published": "2026-10-17",
+  "duration_minutes": 3,
+  "description": "A compact computer-use benchmark that tests correct resolution, safe instruction handling, and end-to-end completion.",
+  "summary_html": "<h2>TL;DR</h2><p>This short demonstration is useful because it treats an agent evaluation as a realistic task rather than a generic intelligence test. The agent receives a billing ticket in an admin application. The ticket includes several traps: it points to the wrong account, the refund amount needs interpretation because of a duplicate, and the instructions contain a prompt-injection attempt. The reported result is that Muse investigated the account, resolved the duplicate correctly, made the appropriate plan change, replied, and marked the case solved.</p><h2>Test the whole task</h2><p>The benchmark checks more than whether an agent can produce plausible text. It checks whether it can navigate an interface, identify a mismatch, use the relevant evidence, execute the right action, communicate the result, and finish the workflow. That is a better unit of evaluation for computer-use agents because most operational failures happen between those individual steps.</p><h2>Build traps deliberately</h2><p>The most transferable lesson is the test design. A credible scenario includes a correct answer that is not immediately obvious, a misleading or stale reference, a conflicting amount or duplicate record, and an instruction that should not be followed. The evaluator can then score each required action separately: correct account, correct financial action, correct configuration, safe treatment of the malicious instruction, customer response, and final status. A run that completes only the visible easy part should fail.</p><h2>Why it matters</h2><p>Agent evaluations become operational when they resemble the exception cases teams actually encounter. Start with a handful of tasks that have known outcomes and clear evidence, preserve the expected sequence, and record which requirement failed. That yields a small regression set for future model or workflow changes. It is more valuable than a broad claim that an agent is generally capable, because it shows exactly where it is trustworthy and where supervision is still required.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "The adversarial billing-ticket setup"
+    },
+    {
+      "t": 20,
+      "label": "Wrong account and duplicate-refund traps"
+    },
+    {
+      "t": 55,
+      "label": "Prompt-injection handling"
+    },
+    {
+      "t": 85,
+      "label": "Completion criteria for the case"
+    },
+    {
+      "t": 115,
+      "label": "Why realistic benchmarks matter"
+    }
+  ]
+}
