@@ -56,6 +56,11 @@ class PrivacyTests(unittest.TestCase):
     def test_identity_in_code_comments_is_also_blocked(self):
         self.assertTrue(guard.scan_entries([("100644", "scripts/example.py", b"# Private Reader")], set()))
 
+    def test_regex_url_literals_in_code_are_not_malformed_links(self):
+        value = r'pattern = r"https://[a-z0-9]+\..+"'
+        self.assertFalse(guard.findings(value, content=False))
+        self.assertIn("malformed URL", guard.findings("https://" + "[unclosed"))
+
     def test_missing_policy_and_unknown_fields_block(self):
         with self.assertRaises(guard.PrivacyError):
             guard.check_record({"summary_html": "safe", "private_notes": "hidden context"}, {"summary_html"})

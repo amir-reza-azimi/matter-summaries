@@ -104,7 +104,9 @@ def findings(text: str, *, content: bool = True) -> list[str]:
             if url.fragment and re.search(r"access_token|id_token", url.fragment, re.I):
                 reasons.append("credential URL fragment")
         except ValueError:
-            reasons.append("malformed URL")
+            # Code may contain URL-matching regexes, which are not actual URLs.
+            if content:
+                reasons.append("malformed URL")
     return sorted(set(reasons))
 
 
