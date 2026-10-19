@@ -18,7 +18,9 @@ def main() -> None:
     args = parser.parse_args()
     record = json.loads(args.record.read_text())
     prior_stories = {}
-    if args.state and args.state.exists():
+    if args.state and not args.state.exists():
+        raise SystemExit("private state file is missing; repeat detection cannot be verified")
+    if args.state:
         prior_stories = (json.loads(args.state.read_text()).get("story_ledger") or {})
     errors = validate_record(record, prior_stories)
     if errors:

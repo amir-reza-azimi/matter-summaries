@@ -3,3 +3,15 @@ __pycache__/
 
 # Claude Code background-job worktrees (nested repos, never tracked in main repo)
 .claude/worktrees/
+
+# Private inputs, state, and review receipts never belong in public history.
+.env
+.env.*
+*.pem
+*.key
+.private/
+private/
+quarantine/
+identity.json
+publication-reviews.json
+data/daily-news/state.json

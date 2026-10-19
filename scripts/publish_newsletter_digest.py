@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+from privacy_guard import check_record, assert_public, public_write, safe_component
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -46,6 +47,7 @@ def entry_html(entries: list[dict]) -> str:
 
 
 def render(record: dict) -> tuple[str, str]:
+    check_record(record, {"week", "kind", "title", "summary_html", "date_range", "entries", "page_id"})
     week = record["week"]
     kind = record["kind"]
     page_id = record.get("page_id") or f"{week}-{safe_id(kind)}"
@@ -67,6 +69,8 @@ def render(record: dict) -> tuple[str, str]:
   {entry_html(record.get("entries") or [])}
 </article></body></html>
 """
+    safe_component(page_id)
+    assert_public(page)
     return page_id, page
 
 
@@ -84,8 +88,7 @@ def main() -> None:
     page_id, page = render(record)
     os.makedirs(DOCS_DIR, exist_ok=True)
     output = os.path.join(DOCS_DIR, f"{page_id}.html")
-    with open(output, "w", encoding="utf-8") as handle:
-        handle.write(page)
+    public_write(output, page)
     print(f"wrote docs/newsletters/{page_id}.html — push to Matter with {SITE_BASE}/newsletters/{page_id}.html")
 
 

@@ -1,0 +1,33 @@
+{
+  "id": "NClayXM8pU0",
+  "title": "Give ChatGPT and Claude the Same Memory",
+  "channel": "Nate Herk",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=NClayXM8pU0",
+  "published": "2026-08-06",
+  "duration_minutes": 1,
+  "description": "Portable, user-controlled memory shared between Claude, ChatGPT, and other agents.",
+  "summary_html": "<h2>TL;DR</h2><p>The video demonstrates a portable memory service that lets several AI systems access selected context. Instead of rebuilding preferences, project facts, and prior decisions inside every new chat, it proposes a separate memory layer that can be shared selectively across tools.</p><h2>What the demonstration shows</h2><p>The workflow is simple. Create an account, connect Claude, and ask it to remember something. Open ChatGPT afterwards, ask a related question, and it can use the previously stored information. The claim is that the context is not trapped inside one provider's chat history. Claude, ChatGPT, and other agents can work from the same baseline rather than forcing the user to repeat themselves.</p><p>That matters because ordinary chat history is convenient but provider-bound. It may be hard to inspect, difficult to correct, and subject to unclear retention rules. A portable layer creates the possibility that information about a person or project lives somewhere separate from the model that happens to use it today.</p><h2>What has to be true for this to help</h2><p>Shared memory is not automatically useful just because several models can read it. It needs a small, intentional schema. Stable preferences, project goals, definitions, decisions, and current constraints are sensible candidates. Temporary brainstorming, unverified claims, emotional context, and credentials are not. Without that distinction, a memory layer becomes a noisy second chat history and makes retrieval less reliable rather than more reliable.</p><p>There also needs to be an ownership rule. Someone must be able to see a fact, trace where it came from, correct it, and revoke access without relying on a model to remember the correction. For a team, the practical question is whether the same context remains correct when a person leaves, a project changes direction, or two tools disagree about what happened. A usable system treats memory as maintained operational data, not as an invisible convenience feature.</p><h2>The evaluation criteria</h2><p>The clip describes the memory as encrypted and user-controlled, with access decided model by model. Those claims need verification before adoption, but they define the correct bar. Shared memory should be visible, editable, and revocable. It should show which facts are stored, which tool can access them, and what happens when a fact is deleted or changes.</p>",
+  "watch_list": [
+    {
+      "t": 0,
+      "label": "The cross-model memory promise"
+    },
+    {
+      "t": 8,
+      "label": "Create and connect the account"
+    },
+    {
+      "t": 15,
+      "label": "Shared context across tools"
+    },
+    {
+      "t": 24,
+      "label": "Encryption and access control"
+    },
+    {
+      "t": 29,
+      "label": "The adoption claim"
+    }
+  ]
+}

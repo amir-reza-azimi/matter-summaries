@@ -10,6 +10,7 @@ import re
 from pathlib import Path
 
 from daily_news_common import validate_record
+from privacy_guard import check_record, assert_public, public_write
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,6 +23,7 @@ def esc(value: object) -> str:
 
 
 def render(record: dict, page_title: str | None = None) -> str:
+    check_record(record, {"schema_version", "date", "title", "window", "stories", "selection_note", "recovery_window"})
     rows = []
     for story in record["stories"]:
         paragraphs = [part.strip() for part in str(story["summary"]).split("\n\n") if part.strip()]
@@ -38,11 +40,13 @@ def render(record: dict, page_title: str | None = None) -> str:
             f'{body}'
             f'<p class="sources">Read more: {source_links}</p></section>'
         )
-    return f"""<!DOCTYPE html>
+    page = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(page_title or record["title"])}</title>
 <style>body{{max-width:720px;margin:2rem auto;padding:0 1rem;font:18px/1.6 -apple-system,system-ui,sans-serif;color:#1a1a1a}}h1{{font-size:1.8rem;line-height:1.25}}h2{{font-size:1.2rem;line-height:1.35;margin-bottom:.2rem}}.story{{border-top:1px solid #ddd;padding:1rem 0}}.meta,.sources{{font-size:.85rem;color:#555;margin:.1rem 0}}a{{color:#3b5bdb}}</style>
 </head><body><article>{''.join(rows)}</article></body></html>"""
+    assert_public(page)
+    return page
 
 
 def main() -> None:
@@ -67,7 +71,7 @@ def main() -> None:
     title = record["title"]
     if args.title_suffix:
         title = f"{title} · {args.title_suffix}"
-    output.write_text(render(record, title))
+    public_write(output, render(record, title), allow_external=True)
     print(json.dumps({"page_id": page_id, "path": str(output), "url": f"{SITE_BASE}/{page_id}.html"}))
 
 

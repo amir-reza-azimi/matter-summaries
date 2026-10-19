@@ -17,6 +17,8 @@ def load(path: Path) -> dict:
 
 
 def save(path: Path, state: dict) -> None:
+    if path.resolve().is_relative_to(Path(__file__).resolve().parents[1]):
+        raise SystemExit("private daily-news state must live outside the public repository")
     path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile("w", dir=path.parent, delete=False) as handle:
         json.dump(state, handle, indent=2, sort_keys=True)
