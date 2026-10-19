@@ -74,14 +74,14 @@ def findings(text: str, *, content: bool = True) -> list[str]:
     text = SELF_URL.sub("https://public-host.invalid/site", text)
     active = RULES if content else {k: RULES[k] for k in ("credential", "assigned secret", "email address")}
     reasons = [name for name, pattern in active.items() if re.search(pattern, text, re.I)]
-    if content:
-        # Catch markup splitting names as well as raw attributes/comments/JSON.
-        visible = re.sub(r"<[^>]*>", "", text)
-        for term in settings["identifiers"] + settings.get("terms", []):
-            pattern = r"(?<!\w)" + re.escape(normalize(term)) + r"(?!\w)"
-            if re.search(pattern, text, re.I) or re.search(pattern, visible, re.I):
-                reasons.append("private identity or context")
-                break
+    # Identity checks also cover code comments and string literals. The private
+    # policy stays outside Git, so detection rules need no public identity literals.
+    visible = re.sub(r"<[^>]*>", "", text)
+    for term in settings["identifiers"] + settings.get("terms", []):
+        pattern = r"(?<!\w)" + re.escape(normalize(term)) + r"(?!\w)"
+        if re.search(pattern, text, re.I) or re.search(pattern, visible, re.I):
+            reasons.append("private identity or context")
+            break
     for candidate in re.findall(r"\b[A-Z]{2}\d{2}[A-Z0-9]{11,30}\b", text):
         numeric = "".join(str(ord(c) - 55) if c.isalpha() else c for c in candidate[4:] + candidate[:4])
         if int(numeric) % 97 == 1:
