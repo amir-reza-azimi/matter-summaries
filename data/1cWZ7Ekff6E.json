@@ -1,0 +1,45 @@
+{
+  "id": "1cWZ7Ekff6E",
+  "title": "Use Grok Bot Better Than 99% of People (Full Course)",
+  "channel": "Greg Isenberg",
+  "channel_url": "https://www.youtube.com/@GregIsenberg",
+  "url": "https://www.youtube.com/watch?v=1cWZ7Ekff6E",
+  "published": "2026-11-11",
+  "duration_minutes": 49,
+  "description": "A practical tour of persistent project agents for engineering, design, content research, business context, and everyday web tasks.",
+  "summary_html": "<h2>TL;DR</h2><p>Ras Mic presents Grok Bot as a persistent coordination layer rather than a single all-purpose chatbot. He gives serious projects their own contextual bots, lets those bots delegate specialist work to Claude Code and connected tools, and keeps himself in the loop for plans, design, security, and final decisions. The most useful lesson is architectural: separate durable context from execution, create a dedicated agent only when a body of work needs its own history, and delete it when that context stops being useful.</p><h2>Context decides the shape of the system</h2><p>The workflow begins with a general engineering bot for small experiments and separate bots for projects that are intended to ship. Each serious bot holds its own context, skills, and computer, which avoids mixing unrelated projects into one stream of chat. Small ideas stay with the general bot; products that require repeated attention get a dedicated space. Ras Mic is equally willing to remove a bot once a project becomes irrelevant. That discipline matters because a shelf full of stale agents creates the same navigation problem as a shelf full of abandoned chat threads.</p><p>For product work, the bot is usually an orchestrator. In one example, a project plan arrived as a PDF. The agent reviewed the plan, challenged assumptions, incorporated human feedback, and produced a revised approach. Only after the plan was approved did it delegate the implementation to Claude Code. The result was a set of pull requests rather than one opaque burst of code. The broader pattern is to ask the coordinator to manage context and sequence while a specialist tool performs the implementation.</p><h2>Design before code</h2><p>The strongest design lesson is to avoid sending an undeveloped idea straight into code. Ras Mic collects visual references, asks an agent to turn them into a design system, and develops the interface in Paper through its MCP connection. The design system defines typography, colors, spacing, shapes, buttons, and cards so the coding agent has an explicit visual contract. Comments on the design become a structured feedback mechanism: the human marks what feels wrong, the agent addresses the comments, and the design is approved before front-end code is generated.</p><p>This adds an intentional human checkpoint without slowing the automation down. It is cheaper to correct a font, layout, or interaction in the design surface than after deployment. It also reduces the generic look that comes from asking a model to invent both the product and its visual language at the same time.</p><h2>Recurring agents for content and research</h2><p>A YouTube research bot runs twice a day against X. It returns three candidate topics, the public posts that support each idea, suggested titles, and useful references. The bot does not write the final script. Its job is to keep the creator informed and maintain a supply of grounded ideas. A separate editor bot helps translate informal visual feedback into instructions an editor can use. The division is deliberate: agents gather, organize, prototype, and explain; the creator keeps the voice and decides what deserves publication.</p><p>The same orchestration principle extends to business tasks. A project bot can ask another agent to contact a provider, compare options, or gather listings. A financial-adviser example combines goals and transaction context to challenge impulsive purchases, while a government-contracting bot compares opportunities with the capabilities and resources already known to the system. These examples are powerful precisely because the agent has context, but they also illustrate why sensitive connections and consequential decisions need explicit permission boundaries and human ownership.</p><h2>What is actually transferable</h2><p>The transferable system is not a particular product or model. It is a layered operating pattern. First, give each sustained project a canonical context. Second, let a coordinator route tasks to specialist tools. Third, require inspectable artifacts such as plans, designs, pull requests, and source lists at each handoff. Fourth, keep humans responsible for design approval, security, money, and deployment. Finally, retire agents and context that no longer serve an active purpose.</p><p>The episode sometimes treats agent output as more trustworthy than it deserves. A generated application was shown before it had even been run, and the security advice relies heavily on asking another model to inspect the work. Those moments are reminders to verify rather than demonstrations of proof. The durable idea is still strong: persistent context can make several specialist tools feel like one coherent operating system, provided every important outcome is tested and every consequential action remains owned by a person.</p>",
+  "watch_list": [
+    {
+      "t": 133,
+      "label": "Why separate project bots preserve context"
+    },
+    {
+      "t": 325,
+      "label": "Reviewing and revising a plan before building"
+    },
+    {
+      "t": 434,
+      "label": "Using a coordinator to run Claude Code sessions"
+    },
+    {
+      "t": 1036,
+      "label": "The rule for creating or deleting a bot"
+    },
+    {
+      "t": 1314,
+      "label": "Moving from design references to a design system"
+    },
+    {
+      "t": 1584,
+      "label": "Why design approval should happen before code"
+    },
+    {
+      "t": 1877,
+      "label": "A twice-daily content research agent"
+    },
+    {
+      "t": 2242,
+      "label": "Combining business context with an adviser agent"
+    }
+  ]
+}

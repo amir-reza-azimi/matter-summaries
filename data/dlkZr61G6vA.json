@@ -1,0 +1,49 @@
+{
+  "id": "dlkZr61G6vA",
+  "title": "Everything Alex Hormozi Said About AI in 2026",
+  "channel": "Nate Herk | AI Automation",
+  "channel_url": "https://www.youtube.com/@nateherk",
+  "url": "https://www.youtube.com/watch?v=dlkZr61G6vA",
+  "published": "2026-11-11",
+  "duration_minutes": 12,
+  "description": "A constraint-first framework for using AI where it changes business outcomes, while preserving human judgment and accountability.",
+  "summary_html": "<h2>TL;DR</h2><p>Nate Herk assembles a year of Alex Hormozi's comments into a coherent business rule: increasing AI usage is not an outcome. Start with the constraint limiting growth, break real roles into observable workflows, and measure whether the work changes views, leads, revenue, cost, or delivery. AI can amplify execution, but humans still own prioritization, judgment, risk, trust, and the consequences of the final decision.</p><h2>Usage without results is a warning</h2><p>The opening contradiction is useful. Hormozi has argued that learning AI should be a top priority, yet he later stopped expanding his team's AI budget because usage had risen while revenue stayed flat. The point was not that AI had failed. It was that people were applying it to work that did not matter. Vendors charge for tokens whether the result is useful or not, so activity can grow while the business stands still.</p><p>His preferred test is commercial and simple. If AI use rises, some relevant result should rise with it: more reach, more leads, more revenue, better delivery, or lower cost. If those measures remain unchanged, the organization should find its real bottleneck before buying another tool or automating another task.</p><h2>Decompose roles into workflows</h2><p>Instead of asking whether an editor can be replaced, Hormozi asks what distinct activities create an edited video. Finding the highest-tension moments, cutting dead air, removing filler words, arranging clips, and applying a style are separate workflows. That decomposition creates small units that can be tested and improved independently. The same approach helped his media team increase output without adding headcount, while keeping people responsible for taste and final quality.</p><p>His writing workflow makes the boundary clearer. AI helps extract ideas from meetings and calendars, organize source material, and generate options, but it does not supply the lived experience or final voice. The content is grounded in things that actually happened. That gives the model evidence to work with and prevents it from becoming a machine for producing generic claims.</p><h2>Automate the constraint, not the convenient task</h2><p>The sharpest cautionary example is a company that paid about eleven thousand dollars per month for eleven virtual assistants doing data cleaning, then spent three hundred and fifty thousand dollars trying to replace them. The existing process worked and was not limiting growth. The automation consumed roughly three years of the old operating cost without addressing the company's real constraint.</p><p>That leads to a useful decision order. First ask whether the task should exist. Then ask whether improving it would move the bottleneck. Only then decide whether automation is the right intervention. The same standard applies to client work: every proposed AI system should be tied to a named business metric and a reason that metric is currently constrained.</p><h2>Use humans where stakes remain real</h2><p>The examples show that the right boundary depends on the channel. Five support agents reportedly handled a large book-launch volume, resolving most routine tickets without human intervention. A text sales agent sells a meaningful number of units, while human sellers still outperform voice systems. Repetitive retrieval and suggestion are good candidates for automation; high-context persuasion and consequential decisions still need people.</p><p>Hormozi's strongest line is that AI should not own the big decision. Models can provide recommendations, but somebody must risk the money, own the company, protect the reputation, and accept the result. Cheap intelligence does not make accountability cheap. It increases the value of people who can exercise judgment and take responsibility.</p><h2>A practical operating loop</h2><p>The suggested starting cadence is four focused hours per week. Pick one recurring task, map its current workflow, and automate or amplify one part. Validate the result before moving on. Over time, an employee can bring a set of useful agents to a role, but the agents should extend demonstrated competence rather than disguise the absence of it.</p><p>The same principle applies to communication. Customers still want outcomes, not an AI label. Trust and distribution remain valuable because they are grounded in reality, experience, and stakes. A strong AI strategy therefore combines measurable workflow improvement with human proof: do the work, own the decision, and use the saved time to build evidence that a generic model cannot manufacture.</p>",
+  "watch_list": [
+    {
+      "t": 37,
+      "label": "The contrast between high AI usage and flat revenue"
+    },
+    {
+      "t": 82,
+      "label": "Breaking a role into testable workflows"
+    },
+    {
+      "t": 117,
+      "label": "Using AI for writing support without outsourcing voice"
+    },
+    {
+      "t": 165,
+      "label": "Where AI sales agents still lose to humans"
+    },
+    {
+      "t": 224,
+      "label": "The expensive automation that missed the constraint"
+    },
+    {
+      "t": 301,
+      "label": "A measurable test for useful AI work"
+    },
+    {
+      "t": 449,
+      "label": "Turning one support problem into a family of tools"
+    },
+    {
+      "t": 479,
+      "label": "A four-hour weekly improvement cadence"
+    },
+    {
+      "t": 539,
+      "label": "Why humans still own risk and accountability"
+    }
+  ]
+}
